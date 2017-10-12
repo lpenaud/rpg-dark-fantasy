@@ -1,5 +1,5 @@
 {
-	"commun": [
+	"common": [
 		
 		{
 			"number": 0,
@@ -457,8 +457,7 @@
 			"classe": "F - F/S"
 		}
 	],
-
-	"peuCommun": [
+	"unCommon": [
 		{
 			"number": 0,
 			"nom": "Arc solide",
@@ -481,7 +480,7 @@
 			"classe": "Aucun"
 		}
 	],
-	"epique": [
+	"epic": [
 		{
 			"number": 0,
 			"nom": "Arc long en os de dragon",
@@ -490,7 +489,7 @@
 			"classe": "Aucun"
 		}
 	],
-	"legendaire": [
+	"legendary": [
 		{
 			"number": 0,
 			"nom": "Heaume à plumes de la Flamme Blanche",
@@ -527,12 +526,12 @@
 			"classe": "Aucun"
 		}
 	],
-	"mythique": [
+	"mythical": [
 		{
 			"number": 0,
-			"nom": "",
-			"effet": "",
-			"classe": ""
+			"nom": "test nom arme mythique",
+			"effet": "test effet arme mythique",
+			"classe": "test classe arme mythique"
 		}
 	]
 }
