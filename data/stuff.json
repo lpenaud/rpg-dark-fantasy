@@ -1,6 +1,5 @@
 {
 	"common": [
-		
 		{
 			"number": 0,
 			"nom": "Épée en fer émoussé",
@@ -22,7 +21,6 @@
 			"effet": "Aucun",
 			"classe": "P - P/F"
 		},
-		
 		{
 			"number": 0,
 			"nom": "Espadon en fer brisé",
@@ -44,7 +42,6 @@
 			"effet": "Aucun",
 			"classe": "P"
 		},
-		
 		{
 			"number": 0,
 			"nom": "Dague fêlée",
@@ -66,7 +63,6 @@
 			"effet": "Aucun",
 			"classe": "F - F/S"
 		},
-		
 		{
 			"number": 0,
 			"nom": "Arc moisie",
@@ -88,7 +84,6 @@
 			"effet": "Aucun",
 			"classe": "F"
 		},
-		
 		{
 			"number": 0,
 			"nom": "Arbalète craquelée moisie",
@@ -110,7 +105,6 @@
 			"effet": "Aucun",
 			"classe": "P/F"
 		},
-		
 		{
 			"number": 0,
 			"nom": "Grimoire moisie",
@@ -132,7 +126,6 @@
 			"effet": "Aucun",
 			"classe": "S"
 		},
-		
 		{
 			"number": 0,
 			"nom": "Bâton brisé en bois",
@@ -154,7 +147,6 @@
 			"effet": "Aucun",
 			"classe": "P/S"
 		},
-		
 		{
 			"number": 0,
 			"nom": "Chakram en fer rouillé",
@@ -176,7 +168,6 @@
 			"effet": "Aucun",
 			"classe": "P/S"
 		},
-		
 		{
 			"number": 0,
 			"nom": "Lame d'éther affaiblie",
@@ -198,7 +189,6 @@
 			"effet": "Aucun",
 			"classe": "F/S"
 		},
-		
 		{
 			"number": 0,
 			"nom": "Chaine en fer rouillée",
@@ -220,7 +210,6 @@
 			"effet": "Aucun",
 			"classe": "P/F/S"
 		},
-		
 		{
 			"number": 0,
 			"nom": "Lame Elfique en fer",
@@ -242,7 +231,6 @@
 			"effet": "Aucun",
 			"classe": "F/S"
 		},
-		
 		{
 			"number": 0,
 			"nom": "Faux abîmée en fer",
@@ -264,7 +252,6 @@
 			"effet": "Aucun",
 			"classe": "F - F/S"
 		},
-		
 		{
 			"number": 0,
 			"nom": "Griffes en fer cassé",
@@ -286,7 +273,6 @@
 			"effet": "Aucun",
 			"classe": "F - F/P"
 		},
-		
 		{
 			"number": 0,
 			"nom": "Capuche en haillon",
@@ -371,7 +357,6 @@
 			"effet": "Qualité supérieure : Bonus à l'armure de 1",
 			"classe": "S - S/F"
 		},
-		
 		{
 			"number": 0,
 			"nom": "Chapeau en cuir percé",
@@ -455,6 +440,90 @@
 			"desc": "Des Chaussures en cuir de qualité",
 			"effet": "Qualité supérieure : Bonus à l'armure de 1",
 			"classe": "F - F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Casque en mailles rouillées",
+			"desc": "Une casque en mailles rouillées",
+			"effet": "Qualité supérieure : Bonus à l'armure de 1",
+			"classe": "P - P/F"
+		},
+		{
+			"number": 0,
+			"nom": "Haubert en mailles rouillées",
+			"desc": "Un haubert en mailles rouillées",
+			"effet": "Mauvais état : Armure diminuée de 2",
+			"classe": "P - P/F"
+		},
+		{
+			"number": 0,
+			"nom": "Jambières en mailles rouillées",
+			"desc": "Des jambières en mailles rouillées",
+			"effet": "Mauvais état : Armure diminuée de 2",
+			"classe": "P - P/F"
+		},
+		{
+			"number": 0,
+			"nom": "Chausses en mailles rouillées",
+			"desc": "Des chausses en mailles rouillées",
+			"effet": "Mauvais état : Armure diminuée de 2",
+			"classe": "P - P/F"
+		},
+		{
+			"number": 0,
+			"nom": "Casque en mailles",
+			"desc": "Une casque en mailles",
+			"effet": "Aucun",
+			"classe": "P - P/F"
+		},
+		{
+			"number": 0,
+			"nom": "Haubert en mailles",
+			"desc": "Un haubert en mailles",
+			"effet": "Aucun",
+			"classe": "P - P/F"
+		},
+		{
+			"number": 0,
+			"nom": "Jambières en mailles",
+			"desc": "Des jambières en mailles",
+			"effet": "Aucun",
+			"classe": "P - P/F"
+		},
+		{
+			"number": 0,
+			"nom": "Chausses en mailles",
+			"desc": "Des chausses en mailles",
+			"effet": "Aucun",
+			"classe": "P - P/F"
+		},
+		{
+			"number": 0,
+			"nom": "Casque en mailles de qualité",
+			"desc": "Une casque en mailles",
+			"effet": "Qualité supérieure : Bonus à l'armure de 2",
+			"classe": "P - P/F"
+		},
+		{
+			"number": 0,
+			"nom": "Haubert en mailles de qualité",
+			"desc": "Un haubert en mailles de qualité",
+			"effet": "Qualité supérieure : Bonus à l'armure de 2",
+			"classe": "P - P/F"
+		},
+		{
+			"number": 0,
+			"nom": "Jambières en mailles de qualité",
+			"desc": "Des jambières en mailles de qualité",
+			"effet": "Qualité supérieure : Bonus à l'armure de 2",
+			"classe": "P - P/F"
+		},
+		{
+			"number": 0,
+			"nom": "Chausses en mailles de qualité",
+			"desc": "Des chausses en mailles de qualité",
+			"effet": "Qualité supérieure : Bonus à l'armure de 2",
+			"classe": "P - P/F"
 		}
 	],
 	"unCommon": [
