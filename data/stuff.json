@@ -520,10 +520,94 @@
 		},
 		{
 			"number": 0,
-			"nom": "Chausses en mailles de qualité",
-			"desc": "Des chausses en mailles de qualité",
+			"nom": "Chausses en maille de qualité",
+			"desc": "Des chausses en maille de qualité",
 			"effet": "Qualité supérieure : Bonus à l'armure de 2",
-			"classe": "P - P/F"
+			"classe": "P"
+		},
+		{
+			"number": 0,
+			"nom": "Heaume en plate cabossé",
+			"desc": "Un casque en plate",
+			"effet": "Mauvais état : Armure diminuée de 2",
+			"classe": "P"
+		},
+		{
+			"number": 0,
+			"nom": "Plastron en plate cabossé",
+			"desc": "Un haubert en plate cabossé",
+			"effet": "Mauvais état : Armure diminuée de 2",
+			"classe": "P"
+		},
+		{
+			"number": 0,
+			"nom": "Jambières en plate cabossées",
+			"desc": "Des jambières en plate cabossées",
+			"effet": "Mauvais état : Armure diminuée de 2",
+			"classe": "P"
+		},
+		{
+			"number": 0,
+			"nom": "Solerets en plate cabossés",
+			"desc": "Des solerets en plate cabossés",
+			"effet": "Mauvais état : Armure diminuée de 2",
+			"classe": "P"
+		},
+		{
+			"number": 0,
+			"nom": "Heaume en plate",
+			"desc": "Un casque en plate",
+			"effet": "Aucun",
+			"classe": "P"
+		},
+		{
+			"number": 0,
+			"nom": "Plastron en plate",
+			"desc": "Un haubert en plate",
+			"effet": "Aucun",
+			"classe": "P"
+		},
+		{
+			"number": 0,
+			"nom": "Jambières en plate",
+			"desc": "Des jambières en plate",
+			"effet": "Aucun",
+			"classe": "P"
+		},
+		{
+			"number": 0,
+			"nom": "Solerets en plate",
+			"desc": "Des solerets en plate",
+			"effet": "Aucun",
+			"classe": "P"
+		},
+		{
+			"number": 0,
+			"nom": "Heaume en plate de qualité",
+			"desc": "Un casque en plate",
+			"effet": "Qualité supérieure : Bonus à l'armure de 3",
+			"classe": "P"
+		},
+		{
+			"number": 0,
+			"nom": "Plastron en plate de qualité",
+			"desc": "Un haubert en plate de qualité",
+			"effet": "Qualité supérieure : Bonus à l'armure de 3",
+			"classe": "P"
+		},
+		{
+			"number": 0,
+			"nom": "Jambières en plate de qualité",
+			"desc": "Des jambières en plate de qualité",
+			"effet": "Qualité supérieure : Bonus à l'armure de 3",
+			"classe": "P"
+		},
+		{
+			"number": 0,
+			"nom": "Solerets en plate de qualité",
+			"desc": "Des solerets en plate de qualité",
+			"effet": "Qualité supérieure : Bonus à l'armure de 3",
+			"classe": "P"
 		}
 	],
 	"unCommon": [
