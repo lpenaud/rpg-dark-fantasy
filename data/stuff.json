@@ -613,16 +613,46 @@
 	"unCommon": [
 		{
 			"number": 0,
-			"nom": "Arc solide",
-			"desc": "Un arc puissant",
-			"effet": "Aucun"
+			"nom": "Épée en acier émoussé",
+			"desc": "Une épée dont la lame en acier est émoussée",
+			"effet": "Émoussé : L'arme n'inflige que la moitié de ses dégâts normaux",
+			"classe": "P - P/F"
 		},
 		{
 			"number": 0,
-			"nom": "Épée bâtarde",
-			"desc": "Épée bâtarde à double tranchant",
-			"effet": "Double coup : Une fois par attaque, vous avez 15% de chance d'infliger une deuxième fois la moitié des dégâts infligés par le premier coup"
-		}
+			"nom": "Épée en argent brillant",
+			"desc": "Une épée en argent brillant de qualité",
+			"effet": "Argent Brillant : Bonus de dégâts de 10 contre les monstres",
+			"classe": "P - P/F"
+		},
+		{
+			"number": 0,
+			"nom": "Épée en acier",
+			"desc": "Une épée en acier de soldat",
+			"effet": "Aucun",
+			"classe": "P - P/F"
+		},
+		{
+			"number": 0,
+			"nom": "Espadon en acier émoussé",
+			"desc": "Un espadon à lame émoussée",
+			"effet": "Émoussé : L'arme n'inflige que la moitié de ses dégâts normaux",
+			"classe": "P"
+		},
+		{
+			"number": 0,
+			"nom": "Espadon en argent brillant",
+			"desc": "Un espadon en argent brillant de qualité",
+			"effet": "Argent : Bonus de dégâts de 10 contre les monstres",
+			"classe": "P"
+		},
+		{
+			"number": 0,
+			"nom": "Espadon en acier",
+			"desc": "Un espadon en acier de bonne taille",
+			"effet": "Aucun",
+			"classe": "P"
+		},
 	],
 	"rare": [
 		{
