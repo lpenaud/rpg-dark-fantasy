@@ -114,9 +114,9 @@
 		},
 		{
 			"number": 0,
-			"nom": "Grimoire de monstres",
+			"nom": "Grimoire de sort de lumières",
 			"desc": "Un grimoire contenant des incantations contre les monstres",
-			"effet": "Anti-monstres : Dégâts normaux contre les monstres",
+			"effet": "Sorts de Lumières : Dégâts normaux contre les monstres",
 			"classe": "S"
 		},
 		{
@@ -643,7 +643,7 @@
 			"number": 0,
 			"nom": "Espadon en argent brillant",
 			"desc": "Un espadon en argent brillant de qualité",
-			"effet": "Argent : Bonus de dégâts de 10 contre les monstres",
+			"effet": "Argent Brillant : Bonus de dégâts de 10 contre les monstres",
 			"classe": "P"
 		},
 		{
@@ -653,6 +653,90 @@
 			"effet": "Aucun",
 			"classe": "P"
 		},
+		{
+			"number": 0,
+			"nom": "Dague en acier fêlée",
+			"desc": "Un dague en acier très abîmée",
+			"effet": "Usée : L'arme n'inflige que la moitié de ses dégâts normaux",
+			"classe": "F - F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Dague en argent brillant",
+			"desc": "Une dague en argent brillant de qualité ",
+			"effet": "Argent Brillant : Bonus de dégâts de 10 contre les monstres",
+			"classe": "F - F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Dague en acier",
+			"desc": "Une dague en acier",
+			"effet": "Aucun",
+			"classe": "F - F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Arc en bois de chêne",
+			"desc": "Un arc solide mais difficile à bander",
+			"effet": "Raideur : Effectuez un jet de physique avant chaque tir avec 50% de chance de réussite. S'il est raté, vous tirez magré tout mais les dégâts sont divisés par 3",
+			"classe": "F"
+		},
+		{
+			"number": 0,
+			"nom": "Arc en argent brillant",
+			"desc": "Un arc fait pour tirer des flèches d'argents brillantes",
+			"effet": "Argent Brillant : Bonus de dégâts de 10 contre les monstres",
+			"classe": "F"
+		},
+		{
+			"number": 0,
+			"nom": "Arc en bois de sapin",
+			"desc": "Un arc simple relativement souple en bois de sapin",
+			"effet": "Aucun",
+			"classe": "F"
+		},
+		{
+			"number": 0,
+			"nom": "Grimoire ancien",
+			"desc": "Un grimoire ancien. Les inscriptions sont difficiles à déchiffrer",
+			"effet": "Langue ancienne : 1 chance sur 4 de mal lire les incantations de rater votre prochain sort",
+			"classe": "S"
+		},
+		{
+			"number": 0,
+			"nom": "Grimoire immmaculé",
+			"desc": "Un grimoire contenant des incantations très efficaces contre les monstres",
+			"effet": "Immaculé : Bonus de dégâts de 10 contre les monstres",
+			"classe": "S"
+		},
+		{
+			"number": 0,
+			"nom": "Grimoire de mage",
+			"desc": "Un grimoire standard utilisé par la plupart des mages",
+			"effet": "Aucun",
+			"classe": "S"
+		},
+		{
+			"number": 0,
+			"nom": "Bâton en bois de frêne",
+			"desc": "Un bâton magique assez fragile",
+			"effet": "Fragilité : L'arme a 1 chance sur 5 de se briser en attaquant avec",
+			"classe": "P/S"
+		},
+		{
+			"number": 0,
+			"nom": "Bâton en argent brillant",
+			"desc": "Un bâton feuilleté d'argent brillant",
+			"effet": "Argent brillant : Bonus de dégâts de 10 contre les monstres",
+			"classe": "P/S"
+		},
+		{
+			"number": 0,
+			"nom": "Bâton en bois de sapin",
+			"desc": "Un bâton solide en bois de sapin",
+			"effet": "Aucun",
+			"classe": "P/S"
+		}
 	],
 	"rare": [
 		{
