@@ -151,7 +151,7 @@
 			"number": 0,
 			"nom": "Chakram en fer rouillé",
 			"desc": "Un Chakram rouillé de très faible qualité",
-			"effet": "Rouillé : L'arme a 1 chance sur 3 de vous blesser de 2pv quand vous attaquer avec",
+			"effet": "Rouillé : L'arme a 1 chance sur 3 de vous blesser de 2pv quand vous attaquez avec",
 			"classe": "P/S"
 		},
 		{
@@ -172,7 +172,7 @@
 			"number": 0,
 			"nom": "Lame d'éther affaiblie",
 			"desc": "L'éther de cette lame semble s'être affaiblie",
-			"effet": "Rouillé : L'arme a 1 chance sur 3 de vous blesser de 2pv quand vous attaquer avec",
+			"effet": "Rouillé : L'arme a 1 chance sur 3 de vous blesser de 2pv quand vous attaquez avec",
 			"classe": "F/S"
 		},
 		{
@@ -193,14 +193,14 @@
 			"number": 0,
 			"nom": "Chaine en fer rouillée",
 			"desc": "Une chaine en fer rouillé capable d'immobilisé une cible",
-			"effet": "Rouillé : L'arme a 1 chance sur 3 de vous blesser de 2pv quand vous attaquer avec",
+			"effet": "Rouillé : L'arme a 1 chance sur 3 de vous blesser de 2pv quand vous attaquez avec",
 			"classe": "P/F/S"
 		},
 		{
 			"number": 0,
 			"nom": "Chaîne d'argent",
 			"desc": "Une chaine en argent capable d'immobilisé un monstre",
-			"effet": "Argent : Peut immobiliser les monstres",
+			"effet": "Argent : Peut immobiliser les monstres inférieur à une taille d'homme",
 			"classe": "P/F/S"
 		},
 		{
@@ -214,7 +214,7 @@
 			"number": 0,
 			"nom": "Lame Elfique en fer",
 			"desc": "Bien qu'ayant la forme d'une épée elfique, cette lame est sans doute une contrefaçon",
-			"effet": "Contrefaçon : L'arme n'inflige que 1/3 des dégâts normaux",
+			"effet": "Contrefaçon : L'arme n'inflige que 1/4 des dégâts normaux",
 			"classe": "F - P/F"
 		},
 		{
@@ -222,14 +222,14 @@
 			"nom": "Lame Eflique argentée",
 			"desc": "Une belle lame Elfique en argent",
 			"effet": "Argent elfique : Bonus de dégâts de 1d5 contre les monstres",
-			"classe": "F/S"
+			"classe": "F - P/F"
 		},
 		{
 			"number": 0,
 			"nom": "Lame Elfique en acier",
 			"desc": "Une lame elfique en acier",
 			"effet": "Aucun",
-			"classe": "F/S"
+			"classe": "F - P/F"
 		},
 		{
 			"number": 0,
@@ -255,7 +255,7 @@
 		{
 			"number": 0,
 			"nom": "Griffes en fer cassé",
-			"desc": "Des griffes faites d'un acier fort rouillé",
+			"desc": "Des griffes faites d'un fer fort rouillé",
 			"effet": "Mauvais état : L'arme a 1 chance sur 3 de se briser en attaquant avec",
 			"classe": "F - F/P"
 		},
@@ -736,6 +736,468 @@
 			"desc": "Un bâton solide en bois de sapin",
 			"effet": "Aucun",
 			"classe": "P/S"
+		},
+		{
+			"number": 0,
+			"nom": "Chakram en acier émoussé",
+			"desc": "Un Chakram en acier peu tranchant",
+			"effet": "Émoussé : L'arme n'inflige que la moitié de ses dégâts normaux",
+			"classe": "P/S"
+		},
+		{
+			"number": 0,
+			"nom": "Chakram en argent brillant",
+			"desc": "Un Chakram feuilleté d'argent brillant",
+			"effet": "Argent brillant : Bonus de dégâts de 10 contre les monstres",
+			"classe": "P/S"
+		},
+		{
+			"number": 0,
+			"nom": "Chakram en acier",
+			"desc": "Un Chakram simple en acier",
+			"effet": "Aucun",
+			"classe": "P/S"
+		},
+		{
+			"number": 0,
+			"nom": "Lame d'éther instable",
+			"desc": "L'éther de cette lame est très instable et ses effets imprévisibles",
+			"effet": "Instabilité : En attaquant avec cette arme, jetez 1d100, entre 1 et 25, l'arme inflige 1,5x ses dégâts normaux, entre 26 et 51, l'arme inflige ses dégâts normaux, au dessus de 51, l'arme inflige la moitié de ses dégâts normaux.",
+			"classe": "F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Lame d'éther brillante argentée",
+			"desc": "L'éther de cette lame est très efficace contre les monstres",
+			"effet": "Argent Brillant : Dégâts normaux contre les monstres",
+			"classe": "F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Lame d'éther stable",
+			"desc": "Une lame d'éther stable et fiable",
+			"effet": "Aucun",
+			"classe": "F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Chaine en acier de faible qualité",
+			"desc": "L'acier de cette chaîne est de piêtre qualité",
+			"effet": "Faible qualité : L'arme a 1 chance sur 3 de se briser quand vous attaquez avec",
+			"classe": "P/F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Chaîne d'argent brillant",
+			"desc": "Une chaine en argent brillant capable d'immobilisé des monstres plus puissants",
+			"effet": "Argent Brillant : Peut immobiliser les monstres de taille d'homme",
+			"classe": "P/F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Chaine en acier à pointes",
+			"desc": "Une chaine en acier commune",
+			"effet": "Saignement : 1 chance sur 3 de provoquer un saignement de la cible équivalent à 5% de ses points de vies par tour en l'immobilisant avec cette chaîne.",
+			"classe": "P/F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Lame Elfique en acier de qualité",
+			"desc": "Une lame elfique en bon acier",
+			"effet": "Aucun",
+			"classe": "F - P/F"
+		},
+		{
+			"number": 0,
+			"nom": "Lame Eflique en argent brillant",
+			"desc": "Une belle lame Elfique en argent brillant",
+			"effet": "Argent brillant elfique : Bonus de dégâts de 1d15 + 5 contre les monstres",
+			"classe": "F - P/F"
+		},
+		{
+			"number": 0,
+			"nom": "Lame Elfique en vif-acier",
+			"desc": "Une lame elfique en bon acier",
+			"effet": "Aucun",
+			"classe": "F - P/F"
+		},
+		{
+			"number": 0,
+			"nom": "Faux en acier émoussé",
+			"desc": "Une faux en acier émoussé",
+			"effet": "Émoussé : L'arme n'inflige que la moitié de ses dégâts normaux",
+			"classe": "F - F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Faux en argent brillant",
+			"desc": "Une grande faux en argent brillant",
+			"effet": "Argent brillant : Bonus de dégâts de 10 contre les monstres",
+			"classe": "F - F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Faux en acier",
+			"desc": "Une faux en acier",
+			"effet": "Aucun",
+			"classe": "F - F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Griffes endommagées en acier ",
+			"desc": "Il manque quelques doigts à ces griffes",
+			"effet": "Mauvais état : L'arme n'inflige que la moitié de ses dégâts normaux",
+			"classe": "F - F/P"
+		},
+		{
+			"number": 0,
+			"nom": "Griffes en argent brillant",
+			"desc": "Des griffes en argent brillant",
+			"effet": "Argent brillant : Bonus de dégâts de 10 contre les monstres",
+			"classe": "F - F/P"
+		},
+		{
+			"number": 0,
+			"nom": "Griffes en acier",
+			"desc": "Des griffes en acier",
+			"effet": "Aucun",
+			"classe": "F - F/P"
+		},
+		{
+			"number": 0,
+			"nom": "Capuche en bon lin",
+			"desc": "Une capuche en lin qualitatif",
+			"effet": "Ensemble 'bon lin' : Augmente vos dégâts des sorts de 10 si vous avez l'ensemble complet",
+			"classe": "S - S/F"
+		},
+		{
+			"number": 0,
+			"nom": "Tunique en bon lin",
+			"desc": "Une Tunique en lin qualitatif",
+			"effet": "Ensemble 'bon lin' : Augmente vos dégâts des sorts de 10 si vous avez l'ensemble complet",
+			"classe": "S - S/F"
+		},
+		{
+			"number": 0,
+			"nom": "Pantalon en bon lin",
+			"desc": "Un Pantalon en lin qualitatif",
+			"effet": "Ensemble 'bon lin' : Augmente vos dégâts des sorts de 10 si vous avez l'ensemble complet",
+			"classe": "S - S/F"
+		},
+		{
+			"number": 0,
+			"nom": "Chausses en haillon",
+			"desc": "Des Chausses en lin qualitatif",
+			"effet": "Ensemble 'coton supérieur' : Augmente vos dégâts des sorts de 5 et votre armure de 5 si vous avez l'ensemble complet",
+			"classe": "S - S/F"
+		},
+		{
+			"number": 0,
+			"nom": "Capuche en coton",
+			"desc": "Une capuche en coton",
+			"effet": "Aucun",
+			"classe": "S - S/F"
+		},
+		{
+			"number": 0,
+			"nom": "Tunique en coton",
+			"desc": "Une tunique en coton",
+			"effet": "Aucun",
+			"classe": "S - S/F"
+		},
+		{
+			"number": 0,
+			"nom": "Pantalon en coton",
+			"desc": "Un pantalon en coton",
+			"effet": "Aucun",
+			"classe": "S - S/F"
+		},
+		{
+			"number": 0,
+			"nom": "Chausses en coton",
+			"desc": "Des chausses en coton",
+			"effet": "Aucun",
+			"classe": "S - S/F"
+		},
+		{
+			"number": 0,
+			"nom": "Capuche en coton supérieur",
+			"desc": "Une capuche en coton supérieur",
+			"effet": "Ensemble 'coton supérieur' : Augmente vos dégâts des sorts de 7 et votre armure de 4 si vous avez l'ensemble complet",
+			"classe": "S - S/F"
+		},
+		{
+			"number": 0,
+			"nom": "Tunique en coton supérieur",
+			"desc": "Une tunique en coton supérieur",
+			"effet": "Ensemble 'coton supérieur' : Augmente vos dégâts des sorts de 7 et votre armure de 4 si vous avez l'ensemble complet",
+			"classe": "S - S/F"
+		},
+		{
+			"number": 0,
+			"nom": "Pantalon en coton supérieur",
+			"desc": "Un pantalon en coton supérieur",
+			"effet": "Ensemble 'coton supérieur' : Augmente vos dégâts des sorts de 7 et votre armure de 4 si vous avez l'ensemble complet",
+			"classe": "S - S/F"
+		},
+		{
+			"number": 0,
+			"nom": "Chausses en coton supérieur",
+			"desc": "Des chausses en coton supérieur",
+			"effet": "Ensemble 'coton supérieur' : Augmente vos dégâts des sorts de 7 et votre armure de 4 si vous avez l'ensemble complet",
+			"classe": "S - S/F"
+		},
+		{
+			"number": 0,
+			"nom": "Chapeau en cuir percé",
+			"desc": "Une Chapeau en cuir percé",
+			"effet": "Mauvais état : Armure diminuée de 1",
+			"classe": "F - F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Pourpoint en cuir percé",
+			"desc": "Un Pourpoint en cuir percé",
+			"effet": "Mauvais état : Armure diminuée de 1",
+			"classe": "F - F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Guenille en cuir percé",
+			"desc": "Des Guenilles en cuir percé",
+			"effet": "Mauvais état : Armure diminuée de 1",
+			"classe": "F - F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Chaussures en cuir percé",
+			"desc": "Des Chaussures en cuir percé",
+			"effet": "Mauvais état : Armure diminuée de 1",
+			"classe": "F - F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Chapeau en cuir",
+			"desc": "Une Chapeau en cuir",
+			"effet": "Aucun",
+			"classe": "F - F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Pourpoint en cuir",
+			"desc": "Un Pourpoint en cuir",
+			"effet": "Aucun",
+			"classe": "F - F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Guenille en cuir",
+			"desc": "Des Guenilles en cuir",
+			"effet": "Aucun",
+			"classe": "F - F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Chaussures en cuir",
+			"desc": "Des Chaussures en cuir",
+			"effet": "Aucun",
+			"classe": "F - F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Chapeau en cuir de qualité",
+			"desc": "Une Chapeau en cuir de qualité",
+			"effet": "Qualité supérieure : Bonus à l'armure de 1",
+			"classe": "F - F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Pourpoint en cuir de qualité",
+			"desc": "Un Pourpoint en cuir de qualité",
+			"effet": "Qualité supérieure : Bonus à l'armure de 1",
+			"classe": "F - F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Guenille en cuir de qualité",
+			"desc": "Des Guenilles en cuir de qualité",
+			"effet": "Qualité supérieure : Bonus à l'armure de 1",
+			"classe": "F - F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Chaussures en cuir de qualité",
+			"desc": "Des Chaussures en cuir de qualité",
+			"effet": "Qualité supérieure : Bonus à l'armure de 1",
+			"classe": "F - F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Casque en mailles rouillées",
+			"desc": "Une casque en mailles rouillées",
+			"effet": "Qualité supérieure : Bonus à l'armure de 1",
+			"classe": "P - P/F"
+		},
+		{
+			"number": 0,
+			"nom": "Haubert en mailles rouillées",
+			"desc": "Un haubert en mailles rouillées",
+			"effet": "Mauvais état : Armure diminuée de 2",
+			"classe": "P - P/F"
+		},
+		{
+			"number": 0,
+			"nom": "Jambières en mailles rouillées",
+			"desc": "Des jambières en mailles rouillées",
+			"effet": "Mauvais état : Armure diminuée de 2",
+			"classe": "P - P/F"
+		},
+		{
+			"number": 0,
+			"nom": "Chausses en mailles rouillées",
+			"desc": "Des chausses en mailles rouillées",
+			"effet": "Mauvais état : Armure diminuée de 2",
+			"classe": "P - P/F"
+		},
+		{
+			"number": 0,
+			"nom": "Casque en mailles",
+			"desc": "Une casque en mailles",
+			"effet": "Aucun",
+			"classe": "P - P/F"
+		},
+		{
+			"number": 0,
+			"nom": "Haubert en mailles",
+			"desc": "Un haubert en mailles",
+			"effet": "Aucun",
+			"classe": "P - P/F"
+		},
+		{
+			"number": 0,
+			"nom": "Jambières en mailles",
+			"desc": "Des jambières en mailles",
+			"effet": "Aucun",
+			"classe": "P - P/F"
+		},
+		{
+			"number": 0,
+			"nom": "Chausses en mailles",
+			"desc": "Des chausses en mailles",
+			"effet": "Aucun",
+			"classe": "P - P/F"
+		},
+		{
+			"number": 0,
+			"nom": "Casque en mailles de qualité",
+			"desc": "Une casque en mailles",
+			"effet": "Qualité supérieure : Bonus à l'armure de 2",
+			"classe": "P - P/F"
+		},
+		{
+			"number": 0,
+			"nom": "Haubert en mailles de qualité",
+			"desc": "Un haubert en mailles de qualité",
+			"effet": "Qualité supérieure : Bonus à l'armure de 2",
+			"classe": "P - P/F"
+		},
+		{
+			"number": 0,
+			"nom": "Jambières en mailles de qualité",
+			"desc": "Des jambières en mailles de qualité",
+			"effet": "Qualité supérieure : Bonus à l'armure de 2",
+			"classe": "P - P/F"
+		},
+		{
+			"number": 0,
+			"nom": "Chausses en maille de qualité",
+			"desc": "Des chausses en maille de qualité",
+			"effet": "Qualité supérieure : Bonus à l'armure de 2",
+			"classe": "P"
+		},
+		{
+			"number": 0,
+			"nom": "Heaume en plate cabossé",
+			"desc": "Un casque en plate",
+			"effet": "Mauvais état : Armure diminuée de 2",
+			"classe": "P"
+		},
+		{
+			"number": 0,
+			"nom": "Plastron en plate cabossé",
+			"desc": "Un haubert en plate cabossé",
+			"effet": "Mauvais état : Armure diminuée de 2",
+			"classe": "P"
+		},
+		{
+			"number": 0,
+			"nom": "Jambières en plate cabossées",
+			"desc": "Des jambières en plate cabossées",
+			"effet": "Mauvais état : Armure diminuée de 2",
+			"classe": "P"
+		},
+		{
+			"number": 0,
+			"nom": "Solerets en plate cabossés",
+			"desc": "Des solerets en plate cabossés",
+			"effet": "Mauvais état : Armure diminuée de 2",
+			"classe": "P"
+		},
+		{
+			"number": 0,
+			"nom": "Heaume en plate",
+			"desc": "Un casque en plate",
+			"effet": "Aucun",
+			"classe": "P"
+		},
+		{
+			"number": 0,
+			"nom": "Plastron en plate",
+			"desc": "Un haubert en plate",
+			"effet": "Aucun",
+			"classe": "P"
+		},
+		{
+			"number": 0,
+			"nom": "Jambières en plate",
+			"desc": "Des jambières en plate",
+			"effet": "Aucun",
+			"classe": "P"
+		},
+		{
+			"number": 0,
+			"nom": "Solerets en plate",
+			"desc": "Des solerets en plate",
+			"effet": "Aucun",
+			"classe": "P"
+		},
+		{
+			"number": 0,
+			"nom": "Heaume en plate de qualité",
+			"desc": "Un casque en plate",
+			"effet": "Qualité supérieure : Bonus à l'armure de 3",
+			"classe": "P"
+		},
+		{
+			"number": 0,
+			"nom": "Plastron en plate de qualité",
+			"desc": "Un haubert en plate de qualité",
+			"effet": "Qualité supérieure : Bonus à l'armure de 3",
+			"classe": "P"
+		},
+		{
+			"number": 0,
+			"nom": "Jambières en plate de qualité",
+			"desc": "Des jambières en plate de qualité",
+			"effet": "Qualité supérieure : Bonus à l'armure de 3",
+			"classe": "P"
+		},
+		{
+			"number": 0,
+			"nom": "Solerets en plate de qualité",
+			"desc": "Des solerets en plate de qualité",
+			"effet": "Qualité supérieure : Bonus à l'armure de 3",
+			"classe": "P"
 		}
 	],
 	"rare": [
