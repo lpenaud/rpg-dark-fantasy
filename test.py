@@ -18,9 +18,12 @@ def displayLoot(loot):
 randLoot = example.loot()
 i = 1
 
-while randLoot['options']['rarety'] != 'mythical':
+while randLoot['options']['rarety'] != 'legendary':
     randLoot = example.loot()
     i += 1
 
-displayLoot(randLoot)
-print(i)
+# displayLoot(randLoot)
+
+for loot in example.history:
+    displayLoot(loot)
+

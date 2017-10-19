@@ -52,7 +52,15 @@ class Lottery(object):
 
     @property
     def history(self):
-        return self.__history.copy()
+        history = []
+
+        for value in self.__history:
+            history.append({
+                'item': self.__rarity[value[0]]['items'][value[1]],
+                'options': self.__rarity[value[0]]['options']
+            })
+
+        return history
 
     @property
     def rarity(self):
@@ -63,12 +71,13 @@ class Lottery(object):
         category = {}
         indexItem = 0
 
-        for key, value in self.rarity.items():
+        for key in self.rarity.keys():
             if randNum >= key[0] and randNum <= key[1]:
                 category = self.rarity[key]
                 break
 
         indexItem = rand.randint(0, len(category['items']) - 1)
+        self.__history.append((key, indexItem))
 
         return {
             'item': category['items'][indexItem],

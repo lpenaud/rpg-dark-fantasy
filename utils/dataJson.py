@@ -12,8 +12,9 @@ def load(strf):
     if not(isinstance(strf, str)):
         raise TypeError("arg must be a str")
 
-    f = open(strf, mode='r', encoding="utf-8")
-    tmp = json.loads(f.read())
+    with open(strf, mode='r', encoding="utf-8") as f:
+        tmp = json.loads(f.read())
+
     jsonData = {}
 
     for key, value in tmp.items(): #Enable set() class in list in JSON
