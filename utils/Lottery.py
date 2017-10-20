@@ -1,3 +1,6 @@
+#!/usr/bin/env/python3
+# coding: utf-8
+
 import random as rand
 from dataJson import *
 
@@ -60,7 +63,7 @@ class Lottery(object):
                 'options': self.__rarity[value[0]]['options']
             })
 
-        return history
+        return tuple(history)
 
     @property
     def rarity(self):
