@@ -2,8 +2,9 @@
 <!-- Generated with glade 3.18.3 -->
 <interface>
   <requires lib="gtk+" version="3.12"/>
-  <object class="GtkWindow" id="window1">
+  <object class="GtkWindow" id="Lottery">
     <property name="can_focus">False</property>
+    <signal name="destroy" handler="onDeleteWindow" swapped="no"/>
     <child>
       <object class="GtkBox" id="box1">
         <property name="visible">True</property>
@@ -72,6 +73,7 @@
                         <property name="can_focus">False</property>
                         <property name="use_underline">True</property>
                         <property name="use_stock">True</property>
+                        <signal name="activate" handler="onDeleteWindow" swapped="no"/>
                       </object>
                     </child>
                   </object>
@@ -174,7 +176,7 @@
             <property name="valign">center</property>
             <property name="orientation">vertical</property>
             <child>
-              <object class="GtkImage" id="image4">
+              <object class="GtkImage" id="image-give-me-your-money">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="stock">gtk-missing-image</property>
@@ -186,7 +188,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkLabel" id="label4">
+              <object class="GtkLabel" id="label-give-me-your-money">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes">label</property>
@@ -217,7 +219,7 @@
                 <property name="opacity">0.93000000000000005</property>
                 <property name="orientation">vertical</property>
                 <child>
-                  <object class="GtkImage" id="image1">
+                  <object class="GtkImage" id="image-item-1">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="stock">gtk-missing-image</property>
@@ -229,7 +231,7 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkLabel" id="label1">
+                  <object class="GtkLabel" id="label-item-1">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="label" translatable="yes">label</property>
@@ -252,7 +254,7 @@
                 <property name="can_focus">False</property>
                 <property name="orientation">vertical</property>
                 <child>
-                  <object class="GtkImage" id="image2">
+                  <object class="GtkImage" id="image-item-2">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="stock">gtk-missing-image</property>
@@ -264,7 +266,7 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkLabel" id="label2">
+                  <object class="GtkLabel" id="label-item-2">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="label" translatable="yes">label</property>
@@ -287,7 +289,7 @@
                 <property name="can_focus">False</property>
                 <property name="orientation">vertical</property>
                 <child>
-                  <object class="GtkImage" id="image3">
+                  <object class="GtkImage" id="image-item-3">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="stock">gtk-missing-image</property>
@@ -299,7 +301,7 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkLabel" id="label3">
+                  <object class="GtkLabel" id="label-item-3">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="label" translatable="yes">label</property>
@@ -342,11 +344,12 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="button2">
+              <object class="GtkButton" id="button-hello-world">
                 <property name="label" translatable="yes">button</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <signal name="clicked" handler="helloWorld" swapped="no"/>
               </object>
               <packing>
                 <property name="expand">False</property>
