@@ -444,7 +444,7 @@
 		{
 			"number": 0,
 			"nom": "Casque en mailles rouillées",
-			"desc": "Une casque en mailles rouillées",
+			"desc": "Un casque en mailles rouillées",
 			"effet": "Qualité supérieure : Bonus à l'armure de 1",
 			"classe": "P - P/F"
 		},
@@ -472,7 +472,7 @@
 		{
 			"number": 0,
 			"nom": "Casque en mailles",
-			"desc": "Une casque en mailles",
+			"desc": "Un casque en mailles",
 			"effet": "Aucun",
 			"classe": "P - P/F"
 		},
@@ -500,7 +500,7 @@
 		{
 			"number": 0,
 			"nom": "Casque en mailles de qualité",
-			"desc": "Une casque en mailles",
+			"desc": "Un casque en mailles",
 			"effet": "Qualité supérieure : Bonus à l'armure de 2",
 			"classe": "P - P/F"
 		},
@@ -865,34 +865,6 @@
 		},
 		{
 			"number": 0,
-			"nom": "Capuche en bon lin",
-			"desc": "Une capuche en lin qualitatif",
-			"effet": "Ensemble 'bon lin' : Augmente vos dégâts des sorts de 10 si vous avez l'ensemble complet",
-			"classe": "S - S/F"
-		},
-		{
-			"number": 0,
-			"nom": "Tunique en bon lin",
-			"desc": "Une Tunique en lin qualitatif",
-			"effet": "Ensemble 'bon lin' : Augmente vos dégâts des sorts de 10 si vous avez l'ensemble complet",
-			"classe": "S - S/F"
-		},
-		{
-			"number": 0,
-			"nom": "Pantalon en bon lin",
-			"desc": "Un Pantalon en lin qualitatif",
-			"effet": "Ensemble 'bon lin' : Augmente vos dégâts des sorts de 10 si vous avez l'ensemble complet",
-			"classe": "S - S/F"
-		},
-		{
-			"number": 0,
-			"nom": "Chausses en haillon",
-			"desc": "Des Chausses en lin qualitatif",
-			"effet": "Ensemble 'coton supérieur' : Augmente vos dégâts des sorts de 5 et votre armure de 5 si vous avez l'ensemble complet",
-			"classe": "S - S/F"
-		},
-		{
-			"number": 0,
 			"nom": "Capuche en coton",
 			"desc": "Une capuche en coton",
 			"effet": "Aucun",
@@ -921,120 +893,148 @@
 		},
 		{
 			"number": 0,
+			"nom": "Capuche en bon lin",
+			"desc": "Une capuche en lin qualitatif",
+			"effet": "Ensemble 'bon lin' : Augmente vos dégâts des sorts de 10 si vous avez l'ensemble complet",
+			"classe": "S - S/F"
+		},
+		{
+			"number": 0,
+			"nom": "Tunique en bon lin",
+			"desc": "Une Tunique en lin qualitatif",
+			"effet": "Ensemble 'bon lin' : Augmente vos dégâts des sorts de 10 si vous avez l'ensemble complet",
+			"classe": "S - S/F"
+		},
+		{
+			"number": 0,
+			"nom": "Pantalon en bon lin",
+			"desc": "Un Pantalon en lin qualitatif",
+			"effet": "Ensemble 'bon lin' : Augmente vos dégâts des sorts de 10 si vous avez l'ensemble complet",
+			"classe": "S - S/F"
+		},
+		{
+			"number": 0,
+			"nom": "Chausses en bon lin",
+			"desc": "Des Chausses en lin qualitatif",
+			"effet": "Ensemble 'bon lin' : Augmente vos dégâts des sorts de 10 si vous avez l'ensemble complet",
+			"classe": "S - S/F"
+		},
+		{
+			"number": 0,
 			"nom": "Capuche en coton supérieur",
 			"desc": "Une capuche en coton supérieur",
-			"effet": "Ensemble 'coton supérieur' : Augmente vos dégâts des sorts de 7 et votre armure de 4 si vous avez l'ensemble complet",
+			"effet": "Ensemble 'coton supérieur' : Augmente vos dégâts des sorts de 7 et votre armure de 3 si vous avez l'ensemble complet",
 			"classe": "S - S/F"
 		},
 		{
 			"number": 0,
 			"nom": "Tunique en coton supérieur",
 			"desc": "Une tunique en coton supérieur",
-			"effet": "Ensemble 'coton supérieur' : Augmente vos dégâts des sorts de 7 et votre armure de 4 si vous avez l'ensemble complet",
+			"effet": "Ensemble 'coton supérieur' : Augmente vos dégâts des sorts de 7 et votre armure de 3 si vous avez l'ensemble complet",
 			"classe": "S - S/F"
 		},
 		{
 			"number": 0,
 			"nom": "Pantalon en coton supérieur",
 			"desc": "Un pantalon en coton supérieur",
-			"effet": "Ensemble 'coton supérieur' : Augmente vos dégâts des sorts de 7 et votre armure de 4 si vous avez l'ensemble complet",
+			"effet": "Ensemble 'coton supérieur' : Augmente vos dégâts des sorts de 7 et votre armure de 3 si vous avez l'ensemble complet",
 			"classe": "S - S/F"
 		},
 		{
 			"number": 0,
 			"nom": "Chausses en coton supérieur",
 			"desc": "Des chausses en coton supérieur",
-			"effet": "Ensemble 'coton supérieur' : Augmente vos dégâts des sorts de 7 et votre armure de 4 si vous avez l'ensemble complet",
+			"effet": "Ensemble 'coton supérieur' : Augmente vos dégâts des sorts de 7 et votre armure de 3 si vous avez l'ensemble complet",
 			"classe": "S - S/F"
 		},
 		{
 			"number": 0,
-			"nom": "Chapeau en cuir percé",
-			"desc": "Une Chapeau en cuir percé",
-			"effet": "Mauvais état : Armure diminuée de 1",
-			"classe": "F - F/S"
-		},
-		{
-			"number": 0,
-			"nom": "Pourpoint en cuir percé",
-			"desc": "Un Pourpoint en cuir percé",
-			"effet": "Mauvais état : Armure diminuée de 1",
-			"classe": "F - F/S"
-		},
-		{
-			"number": 0,
-			"nom": "Guenille en cuir percé",
-			"desc": "Des Guenilles en cuir percé",
-			"effet": "Mauvais état : Armure diminuée de 1",
-			"classe": "F - F/S"
-		},
-		{
-			"number": 0,
-			"nom": "Chaussures en cuir percé",
-			"desc": "Des Chaussures en cuir percé",
-			"effet": "Mauvais état : Armure diminuée de 1",
-			"classe": "F - F/S"
-		},
-		{
-			"number": 0,
-			"nom": "Chapeau en cuir",
-			"desc": "Une Chapeau en cuir",
+			"nom": "Chapeau en cuir bouilli",
+			"desc": "Un Chapeau en cuir bouilli",
 			"effet": "Aucun",
 			"classe": "F - F/S"
 		},
 		{
 			"number": 0,
-			"nom": "Pourpoint en cuir",
-			"desc": "Un Pourpoint en cuir",
+			"nom": "Pourpoint en cuir bouillien cuir bouilli",
+			"desc": "Un Pourpoint en cuir bouilli",
 			"effet": "Aucun",
 			"classe": "F - F/S"
 		},
 		{
 			"number": 0,
-			"nom": "Guenille en cuir",
-			"desc": "Des Guenilles en cuir",
+			"nom": "Pantalon en cuir bouilli",
+			"desc": "Un Pantalon en cuir bouilli",
 			"effet": "Aucun",
 			"classe": "F - F/S"
 		},
 		{
 			"number": 0,
-			"nom": "Chaussures en cuir",
-			"desc": "Des Chaussures en cuir",
+			"nom": "Chaussures en cuir bouilli",
+			"desc": "Des Chaussures en cuir bouilli",
 			"effet": "Aucun",
 			"classe": "F - F/S"
 		},
 		{
 			"number": 0,
-			"nom": "Chapeau en cuir de qualité",
-			"desc": "Une Chapeau en cuir de qualité",
-			"effet": "Qualité supérieure : Bonus à l'armure de 1",
+			"nom": "Chapeau en cuir clouté",
+			"desc": "Un Chapeau en cuir clouté",
+			"effet": "Résistance : Ensemble 'cuir clouté' : Augmente vos dégâts physiques de 3 et votre armure de 7",
 			"classe": "F - F/S"
 		},
 		{
 			"number": 0,
-			"nom": "Pourpoint en cuir de qualité",
-			"desc": "Un Pourpoint en cuir de qualité",
-			"effet": "Qualité supérieure : Bonus à l'armure de 1",
+			"nom": "Pourpoint en cuir clouté",
+			"desc": "Un Pourpoint en cuir clouté",
+			"effet": "Résistance : Ensemble 'cuir clouté' : Augmente vos dégâts physiques de 3 et votre armure de 7",
 			"classe": "F - F/S"
 		},
 		{
 			"number": 0,
-			"nom": "Guenille en cuir de qualité",
-			"desc": "Des Guenilles en cuir de qualité",
-			"effet": "Qualité supérieure : Bonus à l'armure de 1",
+			"nom": "Guenille en cuir clouté",
+			"desc": "Des Guenilles en cuir clouté",
+			"effet": "Résistance : Ensemble 'cuir clouté' : Augmente vos dégâts physiques de 3 et votre armure de 7",
 			"classe": "F - F/S"
 		},
 		{
 			"number": 0,
-			"nom": "Chaussures en cuir de qualité",
-			"desc": "Des Chaussures en cuir de qualité",
-			"effet": "Qualité supérieure : Bonus à l'armure de 1",
+			"nom": "Chaussures en cuir clouté",
+			"desc": "Des Chaussures en cuir clouté",
+			"effet": "Résistance : : Ensemble 'cuir clouté' : Augmente vos dégâts physiques de 3 et votre armure de 7",
+			"classe": "F - F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Chapeau en cuir souple de qualité",
+			"desc": "Un Chapeau en cuir souple de qualité",
+			"effet": "Ensemble 'Souplesse' : Augmente vos dégâts furtif de 3, vos dégâts physique de 3 et vos dégâts à distance de 3",
+			"classe": "F - F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Pourpoint en cuir souple de qualité",
+			"desc": "Un Pourpoint en cuir souple de qualité",
+			"effet": "Ensemble 'Souplesse' : Augmente vos dégâts furtif de 3, vos dégâts physique de 3 et vos dégâts à distance de 3",
+			"classe": "F - F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Pantalob en cuir souple de qualité",
+			"desc": "un pantalon en cuir souple de qualité",
+			"effet": "Ensemble 'Souplesse' : Augmente vos dégâts furtif de 3, vos dégâts physique de 3 et vos dégâts à distance de 3",
+			"classe": "F - F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Chaussures en cuir souple de qualité",
+			"desc": "Des Chaussures en cuir souple de qualité",
+			"effet": "Ensemble 'Souplesse' : Augmente vos dégâts furtif de 3, vos dégâts physique de 3 et vos dégâts à distance de 3",
 			"classe": "F - F/S"
 		},
 		{
 			"number": 0,
 			"nom": "Casque en mailles rouillées",
-			"desc": "Une casque en mailles rouillées",
+			"desc": "Un casque en mailles rouillées",
 			"effet": "Qualité supérieure : Bonus à l'armure de 1",
 			"classe": "P - P/F"
 		},
@@ -1062,7 +1062,7 @@
 		{
 			"number": 0,
 			"nom": "Casque en mailles",
-			"desc": "Une casque en mailles",
+			"desc": "Un casque en mailles",
 			"effet": "Aucun",
 			"classe": "P - P/F"
 		},
@@ -1090,7 +1090,7 @@
 		{
 			"number": 0,
 			"nom": "Casque en mailles de qualité",
-			"desc": "Une casque en mailles",
+			"desc": "Un casque en mailles",
 			"effet": "Qualité supérieure : Bonus à l'armure de 2",
 			"classe": "P - P/F"
 		},
