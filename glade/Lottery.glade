@@ -210,18 +210,20 @@
           <object class="GtkGrid" id="grid4">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
-            <property name="column_spacing">261</property>
+            <property name="valign">center</property>
             <property name="column_homogeneous">True</property>
             <child>
               <object class="GtkBox" id="box3">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
-                <property name="opacity">0.93000000000000005</property>
+                <property name="opacity">0.98999999865889554</property>
                 <property name="orientation">vertical</property>
                 <child>
                   <object class="GtkImage" id="image-item-1">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
+                    <property name="halign">center</property>
+                    <property name="valign">center</property>
                     <property name="stock">gtk-missing-image</property>
                   </object>
                   <packing>
@@ -234,6 +236,8 @@
                   <object class="GtkLabel" id="label-item-1">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
+                    <property name="halign">center</property>
+                    <property name="valign">center</property>
                     <property name="label" translatable="yes">label</property>
                   </object>
                   <packing>
@@ -257,6 +261,8 @@
                   <object class="GtkImage" id="image-item-2">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
+                    <property name="halign">center</property>
+                    <property name="valign">center</property>
                     <property name="stock">gtk-missing-image</property>
                   </object>
                   <packing>
@@ -269,11 +275,13 @@
                   <object class="GtkLabel" id="label-item-2">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
+                    <property name="halign">center</property>
+                    <property name="valign">center</property>
                     <property name="label" translatable="yes">label</property>
                   </object>
                   <packing>
                     <property name="expand">False</property>
-                    <property name="fill">True</property>
+                    <property name="fill">False</property>
                     <property name="position">1</property>
                   </packing>
                 </child>
@@ -292,6 +300,8 @@
                   <object class="GtkImage" id="image-item-3">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
+                    <property name="halign">center</property>
+                    <property name="valign">center</property>
                     <property name="stock">gtk-missing-image</property>
                   </object>
                   <packing>
@@ -304,11 +314,13 @@
                   <object class="GtkLabel" id="label-item-3">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
+                    <property name="halign">center</property>
+                    <property name="valign">center</property>
                     <property name="label" translatable="yes">label</property>
                   </object>
                   <packing>
                     <property name="expand">False</property>
-                    <property name="fill">True</property>
+                    <property name="fill">False</property>
                     <property name="position">1</property>
                   </packing>
                 </child>
@@ -321,7 +333,7 @@
           </object>
           <packing>
             <property name="expand">True</property>
-            <property name="fill">False</property>
+            <property name="fill">True</property>
             <property name="position">2</property>
           </packing>
         </child>
@@ -329,7 +341,6 @@
           <object class="GtkBox" id="box8">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
-            <property name="spacing">277</property>
             <child>
               <object class="GtkButton" id="button1">
                 <property name="label" translatable="yes">button</property>
@@ -344,12 +355,14 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="button-hello-world">
+              <object class="GtkButton" id="button-lanch">
                 <property name="label" translatable="yes">button</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
-                <signal name="clicked" handler="helloWorld" swapped="no"/>
+                <property name="margin_left">100</property>
+                <property name="margin_right">100</property>
+                <signal name="clicked" handler="randomise" swapped="no"/>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -363,6 +376,8 @@
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="margin_left">100</property>
+                <property name="margin_right">100</property>
               </object>
               <packing>
                 <property name="expand">False</property>

@@ -3,7 +3,9 @@
 
 from config import Lottery, Window
 
-builder = Window.LotteryWindow()
+example = Lottery.Lottery('../data/stuff.json')
+
+builder = Window.LotteryWindow(example)
 window = builder.getWindow()
 builder.changeImage("image-give-me-your-money", '../images/piece.png')
 builder.changeTextLabel("label-give-me-your-money", "Hi stranger!")
