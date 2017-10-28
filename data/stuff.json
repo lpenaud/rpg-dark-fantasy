@@ -446,84 +446,84 @@
 			"nom": "Casque en mailles rouillées",
 			"desc": "Un casque en mailles rouillées",
 			"effet": "Qualité supérieure : Bonus à l'armure de 1",
-			"classe": "P - P/F"
+			"classe": "P - P/F - P/S"
 		},
 		{
 			"number": 0,
 			"nom": "Haubert en mailles rouillées",
 			"desc": "Un haubert en mailles rouillées",
 			"effet": "Mauvais état : Armure diminuée de 2",
-			"classe": "P - P/F"
+			"classe": "P - P/F - P/S"
 		},
 		{
 			"number": 0,
 			"nom": "Jambières en mailles rouillées",
 			"desc": "Des jambières en mailles rouillées",
 			"effet": "Mauvais état : Armure diminuée de 2",
-			"classe": "P - P/F"
+			"classe": "P - P/F - P/S"
 		},
 		{
 			"number": 0,
 			"nom": "Chausses en mailles rouillées",
 			"desc": "Des chausses en mailles rouillées",
 			"effet": "Mauvais état : Armure diminuée de 2",
-			"classe": "P - P/F"
+			"classe": "P - P/F - P/S"
 		},
 		{
 			"number": 0,
 			"nom": "Casque en mailles",
 			"desc": "Un casque en mailles",
 			"effet": "Aucun",
-			"classe": "P - P/F"
+			"classe": "P - P/F - P/S"
 		},
 		{
 			"number": 0,
 			"nom": "Haubert en mailles",
 			"desc": "Un haubert en mailles",
 			"effet": "Aucun",
-			"classe": "P - P/F"
+			"classe": "P - P/F - P/S"
 		},
 		{
 			"number": 0,
 			"nom": "Jambières en mailles",
 			"desc": "Des jambières en mailles",
 			"effet": "Aucun",
-			"classe": "P - P/F"
+			"classe": "P - P/F - P/S"
 		},
 		{
 			"number": 0,
 			"nom": "Chausses en mailles",
 			"desc": "Des chausses en mailles",
 			"effet": "Aucun",
-			"classe": "P - P/F"
+			"classe": "P - P/F - P/S"
 		},
 		{
 			"number": 0,
 			"nom": "Casque en mailles de qualité",
 			"desc": "Un casque en mailles",
 			"effet": "Qualité supérieure : Bonus à l'armure de 2",
-			"classe": "P - P/F"
+			"classe": "P - P/F - P/S"
 		},
 		{
 			"number": 0,
 			"nom": "Haubert en mailles de qualité",
 			"desc": "Un haubert en mailles de qualité",
 			"effet": "Qualité supérieure : Bonus à l'armure de 2",
-			"classe": "P - P/F"
+			"classe": "P - P/F - P/S"
 		},
 		{
 			"number": 0,
 			"nom": "Jambières en mailles de qualité",
 			"desc": "Des jambières en mailles de qualité",
 			"effet": "Qualité supérieure : Bonus à l'armure de 2",
-			"classe": "P - P/F"
+			"classe": "P - P/F - P/S"
 		},
 		{
 			"number": 0,
 			"nom": "Chausses en maille de qualité",
 			"desc": "Des chausses en maille de qualité",
 			"effet": "Qualité supérieure : Bonus à l'armure de 2",
-			"classe": "P"
+			"classe": "P - P/F - P/S"
 		},
 		{
 			"number": 0,
@@ -895,56 +895,56 @@
 			"number": 0,
 			"nom": "Capuche en bon lin",
 			"desc": "Une capuche en lin qualitatif",
-			"effet": "Ensemble 'bon lin' : Augmente vos dégâts des sorts de 10 si vous avez l'ensemble complet",
+			"effet": "Ensemble 'Bon lin' : Augmente vos dégâts des sorts de 10 si vous avez l'ensemble complet",
 			"classe": "S - S/F"
 		},
 		{
 			"number": 0,
 			"nom": "Tunique en bon lin",
 			"desc": "Une Tunique en lin qualitatif",
-			"effet": "Ensemble 'bon lin' : Augmente vos dégâts des sorts de 10 si vous avez l'ensemble complet",
+			"effet": "Ensemble 'Bon lin' : Augmente vos dégâts des sorts de 10 si vous avez l'ensemble complet",
 			"classe": "S - S/F"
 		},
 		{
 			"number": 0,
 			"nom": "Pantalon en bon lin",
 			"desc": "Un Pantalon en lin qualitatif",
-			"effet": "Ensemble 'bon lin' : Augmente vos dégâts des sorts de 10 si vous avez l'ensemble complet",
+			"effet": "Ensemble 'Bon lin' : Augmente vos dégâts des sorts de 10 si vous avez l'ensemble complet",
 			"classe": "S - S/F"
 		},
 		{
 			"number": 0,
 			"nom": "Chausses en bon lin",
 			"desc": "Des Chausses en lin qualitatif",
-			"effet": "Ensemble 'bon lin' : Augmente vos dégâts des sorts de 10 si vous avez l'ensemble complet",
+			"effet": "Ensemble 'Bon lin' : Augmente vos dégâts des sorts de 10 si vous avez l'ensemble complet",
 			"classe": "S - S/F"
 		},
 		{
 			"number": 0,
 			"nom": "Capuche en coton supérieur",
 			"desc": "Une capuche en coton supérieur",
-			"effet": "Ensemble 'coton supérieur' : Augmente vos dégâts des sorts de 7 et votre armure de 3 si vous avez l'ensemble complet",
+			"effet": "Ensemble 'Coton supérieur' : Augmente vos dégâts des sorts de 7 et votre armure de 3 si vous avez l'ensemble complet",
 			"classe": "S - S/F"
 		},
 		{
 			"number": 0,
 			"nom": "Tunique en coton supérieur",
 			"desc": "Une tunique en coton supérieur",
-			"effet": "Ensemble 'coton supérieur' : Augmente vos dégâts des sorts de 7 et votre armure de 3 si vous avez l'ensemble complet",
+			"effet": "Ensemble 'Coton supérieur' : Augmente vos dégâts des sorts de 7 et votre armure de 3 si vous avez l'ensemble complet",
 			"classe": "S - S/F"
 		},
 		{
 			"number": 0,
 			"nom": "Pantalon en coton supérieur",
 			"desc": "Un pantalon en coton supérieur",
-			"effet": "Ensemble 'coton supérieur' : Augmente vos dégâts des sorts de 7 et votre armure de 3 si vous avez l'ensemble complet",
+			"effet": "Ensemble 'Coton supérieur' : Augmente vos dégâts des sorts de 7 et votre armure de 3 si vous avez l'ensemble complet",
 			"classe": "S - S/F"
 		},
 		{
 			"number": 0,
 			"nom": "Chausses en coton supérieur",
 			"desc": "Des chausses en coton supérieur",
-			"effet": "Ensemble 'coton supérieur' : Augmente vos dégâts des sorts de 7 et votre armure de 3 si vous avez l'ensemble complet",
+			"effet": "Ensemble 'Coton supérieur' : Augmente vos dégâts des sorts de 7 et votre armure de 3 si vous avez l'ensemble complet",
 			"classe": "S - S/F"
 		},
 		{
@@ -979,234 +979,542 @@
 			"number": 0,
 			"nom": "Chapeau en cuir clouté",
 			"desc": "Un Chapeau en cuir clouté",
-			"effet": "Résistance : Ensemble 'cuir clouté' : Augmente vos dégâts physiques de 3 et votre armure de 7",
+			"effet": "Résistance : Ensemble 'Cuir clouté' : Augmente vos dégâts des sorts, vos dégâts furtif et à distance de 3",
 			"classe": "F - F/S"
 		},
 		{
 			"number": 0,
 			"nom": "Pourpoint en cuir clouté",
 			"desc": "Un Pourpoint en cuir clouté",
-			"effet": "Résistance : Ensemble 'cuir clouté' : Augmente vos dégâts physiques de 3 et votre armure de 7",
+			"effet": "Résistance : Ensemble 'Cuir clouté' : Augmente vos dégâts des sorts, vos dégâts furtif et à distance de 3",
 			"classe": "F - F/S"
 		},
 		{
 			"number": 0,
-			"nom": "Guenille en cuir clouté",
-			"desc": "Des Guenilles en cuir clouté",
-			"effet": "Résistance : Ensemble 'cuir clouté' : Augmente vos dégâts physiques de 3 et votre armure de 7",
+			"nom": "Pantalon en cuir clouté",
+			"desc": "Un pantalon en cuir clouté",
+			"effet": "Résistance : Ensemble 'Cuir clouté' : Augmente vos dégâts des sorts, vos dégâts furtif et à distance de 3",
 			"classe": "F - F/S"
 		},
 		{
 			"number": 0,
 			"nom": "Chaussures en cuir clouté",
 			"desc": "Des Chaussures en cuir clouté",
-			"effet": "Résistance : : Ensemble 'cuir clouté' : Augmente vos dégâts physiques de 3 et votre armure de 7",
+			"effet": "Résistance : : Ensemble 'Cuir clouté' : Augmente vos dégâts des sorts et à distance de 3",
 			"classe": "F - F/S"
 		},
 		{
 			"number": 0,
 			"nom": "Chapeau en cuir souple de qualité",
 			"desc": "Un Chapeau en cuir souple de qualité",
-			"effet": "Ensemble 'Souplesse' : Augmente vos dégâts furtif de 3, vos dégâts physique de 3 et vos dégâts à distance de 3",
+			"effet": "Ensemble 'Souplesse' :Augmente vos dégâts furtif, vos dégâts physique et vos dégâts à distance de 3",
 			"classe": "F - F/S"
 		},
 		{
 			"number": 0,
 			"nom": "Pourpoint en cuir souple de qualité",
 			"desc": "Un Pourpoint en cuir souple de qualité",
-			"effet": "Ensemble 'Souplesse' : Augmente vos dégâts furtif de 3, vos dégâts physique de 3 et vos dégâts à distance de 3",
+			"effet": "Ensemble 'Souplesse' : Augmente vos dégâts furtif, vos dégâts physique et vos dégâts à distance de 3",
 			"classe": "F - F/S"
 		},
 		{
 			"number": 0,
-			"nom": "Pantalob en cuir souple de qualité",
-			"desc": "un pantalon en cuir souple de qualité",
-			"effet": "Ensemble 'Souplesse' : Augmente vos dégâts furtif de 3, vos dégâts physique de 3 et vos dégâts à distance de 3",
+			"nom": "Pantalon en cuir souple de qualité",
+			"desc": "Un pantalon en cuir souple de qualité",
+			"effet": "Ensemble 'Souplesse' : Augmente vos dégâts furtif, vos dégâts physique et vos dégâts à distance de 3",
 			"classe": "F - F/S"
 		},
 		{
 			"number": 0,
 			"nom": "Chaussures en cuir souple de qualité",
 			"desc": "Des Chaussures en cuir souple de qualité",
-			"effet": "Ensemble 'Souplesse' : Augmente vos dégâts furtif de 3, vos dégâts physique de 3 et vos dégâts à distance de 3",
+			"effet": "Ensemble 'Souplesse' : Augmente vos dégâts furtif, vos dégâts physique et vos dégâts à distance de 3",
 			"classe": "F - F/S"
 		},
 		{
 			"number": 0,
-			"nom": "Casque en mailles rouillées",
-			"desc": "Un casque en mailles rouillées",
-			"effet": "Qualité supérieure : Bonus à l'armure de 1",
-			"classe": "P - P/F"
-		},
-		{
-			"number": 0,
-			"nom": "Haubert en mailles rouillées",
-			"desc": "Un haubert en mailles rouillées",
-			"effet": "Mauvais état : Armure diminuée de 2",
-			"classe": "P - P/F"
-		},
-		{
-			"number": 0,
-			"nom": "Jambières en mailles rouillées",
-			"desc": "Des jambières en mailles rouillées",
-			"effet": "Mauvais état : Armure diminuée de 2",
-			"classe": "P - P/F"
-		},
-		{
-			"number": 0,
-			"nom": "Chausses en mailles rouillées",
-			"desc": "Des chausses en mailles rouillées",
-			"effet": "Mauvais état : Armure diminuée de 2",
-			"classe": "P - P/F"
-		},
-		{
-			"number": 0,
-			"nom": "Casque en mailles",
-			"desc": "Un casque en mailles",
+			"nom": "Casque en mailles rigides",
+			"desc": "Un casque en mailles rigides",
 			"effet": "Aucun",
-			"classe": "P - P/F"
+			"classe": "P - P/F - P/S"
 		},
 		{
 			"number": 0,
-			"nom": "Haubert en mailles",
-			"desc": "Un haubert en mailles",
+			"nom": "Haubert en mailles rigides",
+			"desc": "Un haubert en mailles rigides",
 			"effet": "Aucun",
-			"classe": "P - P/F"
+			"classe": "P - P/F - P/S"
 		},
 		{
 			"number": 0,
-			"nom": "Jambières en mailles",
-			"desc": "Des jambières en mailles",
+			"nom": "Jambières en mailles rigides",
+			"desc": "Des jambières en mailles rigides",
 			"effet": "Aucun",
-			"classe": "P - P/F"
+			"classe": "P - P/F - P/S"
 		},
 		{
 			"number": 0,
-			"nom": "Chausses en mailles",
-			"desc": "Des chausses en mailles",
+			"nom": "Chausses en mailles rigides",
+			"desc": "Des chausses en mailles rigides",
 			"effet": "Aucun",
-			"classe": "P - P/F"
+			"classe": "P - P/F - P/S"
 		},
 		{
 			"number": 0,
-			"nom": "Casque en mailles de qualité",
-			"desc": "Un casque en mailles",
-			"effet": "Qualité supérieure : Bonus à l'armure de 2",
-			"classe": "P - P/F"
+			"nom": "Casque en mailles entrelacées",
+			"desc": "Un casque en mailles entrelacées",
+			"effet": "Ensemble 'Mailles entrelacées' : Augmente vos dégâts physique, à distance et votre armure de 3",
+			"classe": "P - P/F - P/S"
 		},
 		{
 			"number": 0,
-			"nom": "Haubert en mailles de qualité",
-			"desc": "Un haubert en mailles de qualité",
-			"effet": "Qualité supérieure : Bonus à l'armure de 2",
-			"classe": "P - P/F"
+			"nom": "Haubert en mailles entrelacées",
+			"desc": "Un haubert en mailles entrelacées",
+			"effet": "Ensemble 'Mailles entrelacées' : Augmente vos dégâts physique, à distance et votre armure de 3",
+			"classe": "P - P/F - P/S"
 		},
 		{
 			"number": 0,
-			"nom": "Jambières en mailles de qualité",
-			"desc": "Des jambières en mailles de qualité",
-			"effet": "Qualité supérieure : Bonus à l'armure de 2",
-			"classe": "P - P/F"
+			"nom": "Jambières en mailles entrelacées",
+			"desc": "Des jambières en mailles entrelacées",
+			"effet": "Ensemble 'Mailles entrelacées' : Augmente vos dégâts physique, à distance et votre armure de 3",
+			"classe": "P - P/F - P/S"
 		},
 		{
 			"number": 0,
-			"nom": "Chausses en maille de qualité",
-			"desc": "Des chausses en maille de qualité",
-			"effet": "Qualité supérieure : Bonus à l'armure de 2",
-			"classe": "P"
+			"nom": "Chausses en maille entrelacées",
+			"desc": "Des chausses en maille entrelacées",
+			"effet": "Ensemble 'Mailles entrelacées' : Augmente vos dégâts physique, à distance et votre armure de 3",
+			"classe": "P -des sorts et à distanceS"
 		},
 		{
 			"number": 0,
-			"nom": "Heaume en plate cabossé",
-			"desc": "Un casque en plate",
-			"effet": "Mauvais état : Armure diminuée de 2",
-			"classe": "P"
+			"nom": "Casque en mailles sérrées",
+			"desc": "Un casque en mailles sérrées",
+			"effet": "Ensemble 'Mailles sérrées' : Augmente vos dégâts physique, des sorts et votre armure de 3",
+			"classe": "P - P/F - P/S"
 		},
 		{
 			"number": 0,
-			"nom": "Plastron en plate cabossé",
-			"desc": "Un haubert en plate cabossé",
-			"effet": "Mauvais état : Armure diminuée de 2",
-			"classe": "P"
+			"nom": "Haubert en mailles sérrées",
+			"desc": "Un haubert en mailles sérrées",
+			"effet": "Ensemble 'Mailles sérrées' : Augmente vos dégâts physique, des sorts et votre armure de 3",
+			"classe": "P - P/F - P/S"
 		},
 		{
 			"number": 0,
-			"nom": "Jambières en plate cabossées",
-			"desc": "Des jambières en plate cabossées",
-			"effet": "Mauvais état : Armure diminuée de 2",
-			"classe": "P"
+			"nom": "Jambières en mailles sérrées",
+			"desc": "Des jambières en mailles sérrées",
+			"effet": "Ensemble 'Mailles sérrées' : Augmente vos dégâts physique, des sorts et votre armure de 3",
+			"classe": "P - P/F - P/S"
 		},
 		{
 			"number": 0,
-			"nom": "Solerets en plate cabossés",
-			"desc": "Des solerets en plate cabossés",
-			"effet": "Mauvais état : Armure diminuée de 2",
-			"classe": "P"
+			"nom": "Chausses en mailles sérrées",
+			"desc": "Des chausses en mailles sérrées",
+			"effet": "Ensemble 'Mailles sérrées' : Augmente vos dégâts physique, des sorts et votre armure de 3",
+			"classe": "P - P/F - P/S"
 		},
 		{
 			"number": 0,
-			"nom": "Heaume en plate",
-			"desc": "Un casque en plate",
+			"nom": "Heaume en plate d'infanterie",
+			"desc": "Un casque en plate d'infanterie",
 			"effet": "Aucun",
 			"classe": "P"
 		},
 		{
 			"number": 0,
-			"nom": "Plastron en plate",
-			"desc": "Un haubert en plate",
+			"nom": "Plastron en plate d'infanterie",
+			"desc": "Un haubert en plate d'infanterie",
 			"effet": "Aucun",
 			"classe": "P"
 		},
 		{
 			"number": 0,
-			"nom": "Jambières en plate",
-			"desc": "Des jambières en plate",
+			"nom": "Jambières en plate d'infanterie",
+			"desc": "Des jambières en plate d'infanterie",
 			"effet": "Aucun",
 			"classe": "P"
 		},
 		{
 			"number": 0,
-			"nom": "Solerets en plate",
-			"desc": "Des solerets en plate",
+			"nom": "Solerets en plate d'infanterie",
+			"desc": "Des solerets en plate d'infanterie",
 			"effet": "Aucun",
 			"classe": "P"
 		},
 		{
 			"number": 0,
-			"nom": "Heaume en plate de qualité",
-			"desc": "Un casque en plate",
-			"effet": "Qualité supérieure : Bonus à l'armure de 3",
+			"nom": "Heaume en plate renforcée",
+			"desc": "Un casque en plate renforcée",
+			"effet": "Ensemble 'Plate renforcée' : Augmente votre armure de 10",
 			"classe": "P"
 		},
 		{
 			"number": 0,
-			"nom": "Plastron en plate de qualité",
-			"desc": "Un haubert en plate de qualité",
-			"effet": "Qualité supérieure : Bonus à l'armure de 3",
+			"nom": "Plastron en plate renforcée",
+			"desc": "Un haubert en plate renforcée",
+			"effet": "Ensemble 'Plate renforcée' : Augmente votre armure de 10",
 			"classe": "P"
 		},
 		{
 			"number": 0,
-			"nom": "Jambières en plate de qualité",
-			"desc": "Des jambières en plate de qualité",
-			"effet": "Qualité supérieure : Bonus à l'armure de 3",
+			"nom": "Jambières en plate renforcée",
+			"desc": "Des jambières en plate renforcée",
+			"effet": "Ensemble 'Plate renforcée' : Augmente votre armure de 10",
 			"classe": "P"
 		},
 		{
 			"number": 0,
-			"nom": "Solerets en plate de qualité",
-			"desc": "Des solerets en plate de qualité",
-			"effet": "Qualité supérieure : Bonus à l'armure de 3",
+			"nom": "Solerets en plate renforcée",
+			"desc": "Des solerets en plate renforcée",
+			"effet": "Ensemble 'Plate renforcée' : Augmente votre armure de 10",
 			"classe": "P"
+		},
+		{
+			"number": 0,
+			"nom": "Heaume en plate de guerrier",
+			"desc": "Un casque en plate de guerrier",
+			"effet": "Ensemble 'Plate de guerrier' : Augmente votre armure de 5 et vos dégâts physique de 3",
+			"classe": "P"
+		},
+		{
+			"number": 0,
+			"nom": "Plastron en plate de guerrier",
+			"desc": "Un haubert en plate de guerrier",
+			"effet": "Ensemble 'Plate de guerrier' : Augmente votre armure de 5 et vos dégâts physique de 3",
+			"classe": "P"
+		},
+		{
+			"number": 0,
+			"nom": "Jambières en plate de guerrier",
+			"desc": "Des jambières en plate de guerrier",
+			"effet": "Ensemble 'Plate de guerrier' : Augmente votre armure de 5 et vos dégâts physique de 3",
+			"classe": "P"
+		},
+		{
+			"number": 0,
+			"nom": "Solerets en plate de guerrier",
+			"desc": "Des solerets en plate de guerrier",
+			"effet": "Ensemble 'Plate de guerrier' : Augmente votre armure de 5 et vos dégâts physique de 3",
+			"classe": "P"
+		},
+		{
+			"number": 0,
+			"nom": "Parchemin de compétance : Tir du cobra",
+			"desc": "Permet de tirer une flèche emposonnée. Coût : 5 énergie",
+			"effet": "Après activation de cette compétance, votre prochain tir à l'arc emposonne la cible de 3pv à la fin de chacun de ses tours pendant 2 tours",
+			"classe": "F"
+		},
+		{
+			"number": 0,
+			"nom": "Parchemin de compétance : Adrénaline",
+			"desc": "Le lanceur est boosté par un regain d'adrénaline Coût : 3 énergie",
+			"effet": "Augmente vos chances de coup critique de 2% pendant 2 tours",
+			"classe": "F"
+		},
+		{
+			"number": 0,
+			"nom": "Parchemin de compétance : Coup de poignard",
+			"desc": "La prochaine attaque furtive à la dague fait plus de dégâts. Coût : 10 énergie. Requis : Dague",
+			"effet": "Activer cette compétance lors d'une attaque furive pour infliger 10 dégâts supplémentaires",
+			"classe": "F"
+		},
+		{
+			"number": 0,
+			"nom": "Parchemin de compétance : Provocation",
+			"desc": "Vous provoquez une cible qui n'attaquera que vous. Coût : 15 endurance",
+			"effet": "Vous provoquez une cible qui n'attaquera que vous pour un tour",
+			"classe": "P"
+		},
+		{
+			"number": 0,
+			"nom": "Parchemin de compétance : Clivage",
+			"desc": "Vous infligez une attaque en arc de cercle avec votre arme. Coût : 5 énergies",
+			"effet": "Inflige les dégâts de votre arme + 1d10 bonus",
+			"classe": "P"
+		},
+		{
+			"number": 0,
+			"nom": "Parchemin de compétance : Fortification",
+			"desc": "augmente faiblement votre armure. Coût : 10 énergies",
+			"effet": "Votre armure est augmentée de 10 pour 2 tours",
+			"classe": "P"
+		},
+		{
+			"number": 0,
+			"nom": "Parchemin de compétance : Éclair",
+			"desc": "Vous lancez un éclair sur un ennemi proche avec une chance qu'il se transmette aux autres personnes aux alentours Coût : 15 mana. Coût : 15 endurance",
+			"effet": "L'Éclair inflige 1d10 + 5 dégâts de foudre avec 25% de chance de se transmettre à une autre personne à moins de 5 mètres et infligeant 1d5 dégâts",
+			"classe": "S"
+		},
+		{
+			"number": 0,
+			"nom": "Parchemin de compétance : Flash de soin",
+			"desc": "Conjure un flash de lumière qui soigne les vivants et blesse les morts-vivants. Coût : 15 mana",
+			"effet": "Soigne un allié proche de 1d10 ou blesse un mort vivant de 1d5",
+			"classe": "S"
+		},
+		{
+			"number": 0,
+			"nom": "Parchemin de compétance : Fortification",
+			"desc": "augmente faiblement votre armure. Coût : 10 énergies",
+			"effet": "Votre armure est augmentée de 10 pour 2 tours",
+			"classe": "S"
 		}
 	],
 	"rare": [
 		{
 			"number": 0,
-			"nom": "Arc à double courbure",
-			"desc": "Un arc de guerre très puissant",
-			"effet": "",
-			"classe": "Aucun"
+			"nom": "Épée large en acier de maître-forgeron",
+			"desc": "Une épée dont la lame en acier à été forgée par un maître-forgeron",
+			"effet": "Large lame : Vous avez 20% de chance de parer les attaques avec cette épée réduisant les dégâts reçu à 0 (L'attaque doit-être parable)",
+			"classe": "P - P/F"
+		},
+		{
+			"number": 0,
+			"nom": "Épée en argent de Shiruma",
+			"desc": "L'argent de cette arme a été extrait dans les mines du Désert de Shiruma, en Hadren",
+			"effet": "Argent de Shiruma : Bonus de dégâts de 15 contre les monstres. De plus, vos attaques ont 10% de chances de brûler la cible lui infligeant 5 dégâts supplémentaires par tour pendant 3 tours",
+			"classe": "P - P/F"
+		},
+		{
+			"number": 0,
+			"nom": "Épée bâtarde en acier de maître-forgeron",
+			"desc": "Une épée bâtarde, idéal pour le combat contre plusieurs ennemies",
+			"effet": "Double tranchant : Si deux ennemies sont proches l'un de l'autre (-3 mètres), vous pouvez les attaquez tous les deux en un seul tour",
+			"classe": "P - P/F"
+		},
+		{
+			"number": 0,
+			"nom": "Espadon en acier de maître-forgeron",
+			"desc": "Un espadon dont la lame en acier à été forgée par un maître-forgeron",
+			"effet": "Brise-armure : Votre arme ignore 15% de l'armure de l'ennemi",
+			"classe": "P"
+		},
+		{
+			"number": 0,
+			"nom": "Espadon en de Shiruma",
+			"desc": "L'argent de cette arme a été extrait dans les mines du Désert de Shiruma, en Hadren",
+			"effet": "Argent de Shiruma : Bonus de dégâts de 15 contre les monstres. De plus, vos attaques ont 10% de chances de brûler la cible lui infligeant 5 dégâts supplémentaires par tour pendant 3 tours",
+			"classe": "P"
+		},
+		{
+			"number": 0,
+			"nom": "Espadon colossal en acier de maître-forgeron",
+			"desc": "Un espadon en acier immense",
+			"effet": "Taille colossal : Vous pouvez frapper les ennemmies sans êtres à portée de leurs coups (3 mètres). Bonus aux dégâts de 1d5. Inutilisable dans les endroits restreints.",
+			"classe": "P"
+		},
+		{
+			"number": 0,
+			"nom": "Dague en acier de maître-forgeron",
+			"desc": "Un dague dont la lame en acier à été forgée par un maître-forgeron",
+			"effet": "Usée : L'arme n'inflige que la moitié de ses dégâts normaux",
+			"classe": "F - F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Dague en argent brillant",
+			"desc": "Une dague en argent brillant de qualité ",
+			"effet": "Argent Brillant : Bonus de dégâts de 10 contre les monstres",
+			"classe": "F - F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Dague en acier",
+			"desc": "Une dague en acier",
+			"effet": "Aucun",
+			"classe": "F - F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Arc en bois de chêne",
+			"desc": "Un arc solide mais difficile à bander",
+			"effet": "Raideur : Effectuez un jet de physique avant chaque tir avec 50% de chance de réussite. S'il est raté, vous tirez magré tout mais les dégâts sont divisés par 3",
+			"classe": "F"
+		},
+		{
+			"number": 0,
+			"nom": "Arc en argent brillant",
+			"desc": "Un arc fait pour tirer des flèches d'argents brillantes",
+			"effet": "Argent Brillant : Bonus de dégâts de 10 contre les monstres",
+			"classe": "F"
+		},
+		{
+			"number": 0,
+			"nom": "Arc en bois de sapin",
+			"desc": "Un arc simple relativement souple en bois de sapin",
+			"effet": "Aucun",
+			"classe": "F"
+		},
+		{
+			"number": 0,
+			"nom": "Grimoire ancien",
+			"desc": "Un grimoire ancien. Les inscriptions sont difficiles à déchiffrer",
+			"effet": "Langue ancienne : 1 chance sur 4 de mal lire les incantations de rater votre prochain sort",
+			"classe": "S"
+		},
+		{
+			"number": 0,
+			"nom": "Grimoire immmaculé",
+			"desc": "Un grimoire contenant des incantations très efficaces contre les monstres",
+			"effet": "Immaculé : Bonus de dégâts de 10 contre les monstres",
+			"classe": "S"
+		},
+		{
+			"number": 0,
+			"nom": "Grimoire de mage",
+			"desc": "Un grimoire standard utilisé par la plupart des mages",
+			"effet": "Aucun",
+			"classe": "S"
+		},
+		{
+			"number": 0,
+			"nom": "Bâton en bois de frêne",
+			"desc": "Un bâton magique assez fragile",
+			"effet": "Fragilité : L'arme a 1 chance sur 5 de se briser en attaquant avec",
+			"classe": "P/S"
+		},
+		{
+			"number": 0,
+			"nom": "Bâton en argent brillant",
+			"desc": "Un bâton feuilleté d'argent brillant",
+			"effet": "Argent brillant : Bonus de dégâts de 10 contre les monstres",
+			"classe": "P/S"
+		},
+		{
+			"number": 0,
+			"nom": "Bâton en bois de sapin",
+			"desc": "Un bâton solide en bois de sapin",
+			"effet": "Aucun",
+			"classe": "P/S"
+		},
+		{
+			"number": 0,
+			"nom": "Chakram en acier émoussé",
+			"desc": "Un Chakram en acier peu tranchant",
+			"effet": "Émoussé : L'arme n'inflige que la moitié de ses dégâts normaux",
+			"classe": "P/S"
+		},
+		{
+			"number": 0,
+			"nom": "Chakram en argent brillant",
+			"desc": "Un Chakram feuilleté d'argent brillant",
+			"effet": "Argent brillant : Bonus de dégâts de 10 contre les monstres",
+			"classe": "P/S"
+		},
+		{
+			"number": 0,
+			"nom": "Chakram en acier",
+			"desc": "Un Chakram simple en acier",
+			"effet": "Aucun",
+			"classe": "P/S"
+		},
+		{
+			"number": 0,
+			"nom": "Lame d'éther instable",
+			"desc": "L'éther de cette lame est très instable et ses effets imprévisibles",
+			"effet": "Instabilité : En attaquant avec cette arme, jetez 1d100, entre 1 et 25, l'arme inflige 1,5x ses dégâts normaux, entre 26 et 51, l'arme inflige ses dégâts normaux, au dessus de 51, l'arme inflige la moitié de ses dégâts normaux.",
+			"classe": "F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Lame d'éther brillante argentée",
+			"desc": "L'éther de cette lame est très efficace contre les monstres",
+			"effet": "Argent Brillant : Dégâts normaux contre les monstres",
+			"classe": "F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Lame d'éther stable",
+			"desc": "Une lame d'éther stable et fiable",
+			"effet": "Aucun",
+			"classe": "F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Chaine en acier de faible qualité",
+			"desc": "L'acier de cette chaîne est de piêtre qualité",
+			"effet": "Faible qualité : L'arme a 1 chance sur 3 de se briser quand vous attaquez avec",
+			"classe": "P/F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Chaîne d'argent brillant",
+			"desc": "Une chaine en argent brillant capable d'immobilisé des monstres plus puissants",
+			"effet": "Argent Brillant : Peut immobiliser les monstres de taille d'homme",
+			"classe": "P/F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Chaine en acier à pointes",
+			"desc": "Une chaine en acier commune",
+			"effet": "Saignement : 1 chance sur 3 de provoquer un saignement de la cible équivalent à 5% de ses points de vies par tour en l'immobilisant avec cette chaîne.",
+			"classe": "P/F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Lame Elfique en acier de qualité",
+			"desc": "Une lame elfique en bon acier",
+			"effet": "Aucun",
+			"classe": "F - P/F"
+		},
+		{
+			"number": 0,
+			"nom": "Lame Eflique en argent brillant",
+			"desc": "Une belle lame Elfique en argent brillant",
+			"effet": "Argent brillant elfique : Bonus de dégâts de 1d15 + 5 contre les monstres",
+			"classe": "F - P/F"
+		},
+		{
+			"number": 0,
+			"nom": "Lame Elfique en vif-acier",
+			"desc": "Une lame elfique en bon acier",
+			"effet": "Aucun",
+			"classe": "F - P/F"
+		},
+		{
+			"number": 0,
+			"nom": "Faux en acier émoussé",
+			"desc": "Une faux en acier émoussé",
+			"effet": "Émoussé : L'arme n'inflige que la moitié de ses dégâts normaux",
+			"classe": "F - F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Faux en argent brillant",
+			"desc": "Une grande faux en argent brillant",
+			"effet": "Argent brillant : Bonus de dégâts de 10 contre les monstres",
+			"classe": "F - F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Faux en acier",
+			"desc": "Une faux en acier",
+			"effet": "Aucun",
+			"classe": "F - F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Griffes endommagées en acier ",
+			"desc": "Il manque quelques doigts à ces griffes",
+			"effet": "Mauvais état : L'arme n'inflige que la moitié de ses dégâts normaux",
+			"classe": "F - F/P"
+		},
+		{
+			"number": 0,
+			"nom": "Griffes en argent brillant",
+			"desc": "Des griffes en argent brillant",
+			"effet": "Argent brillant : Bonus de dégâts de 10 contre les monstres",
+			"classe": "F - F/P"
+		},
+		{
+			"number": 0,
+			"nom": "Griffes en acier",
+			"desc": "Des griffes en acier",
+			"effet": "Aucun",
+			"classe": "F - F/P"
 		}
 	],
 	"epic": [
