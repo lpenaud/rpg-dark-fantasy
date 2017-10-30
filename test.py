@@ -20,15 +20,22 @@ def displayLoot(loot):
 
 randLoot = example.loot()
 i = 1
+choix = ''
+SetRarety = 'mythical'
 
-while randLoot['options']['rarety'] != 'mythical':
-    randLoot = example.loot()
-    i += 1
+choix = input('Faites un choix : J = Jouer // N = NombreEssais // R = ChangerRareté (default = mythical) // E = exit : ')
+if choix == 'J' or choix == 'j':
+    for loot in example.history:
+        displayLoot(loot)
+        break
+if choix == 'N' or choix == 'n':
+    while randLoot['options']['rarety'] != SetRarety:
+        randLoot = example.loot()
+        i += 1
 
-if randLoot['options']['rarety'] == 'mythical':
-    print(i)
-
-# displayLoot(randLoot)
-    
-#for loot in example.history:
-    #displayLoot(loot)
+if randLoot['options']['rarety'] == SetRarety:
+    print('Nombre d\'essais pour la rareté',SetRarety,':', i)
+       
+if choix == 'E' or choix == 'e':
+    print('Fin du programme')
+    exit()

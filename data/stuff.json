@@ -172,7 +172,7 @@
 			"number": 0,
 			"nom": "Lame d'éther affaiblie",
 			"desc": "L'éther de cette lame semble s'être affaiblie",
-			"effet": "Rouillé : L'arme a 1 chance sur 3 de vous blesser de 2pv quand vous attaquez avec",
+			"effet": "Faible : L'arme a 1 chance sur 3 de ne causer qu'1 seul point de dégât",
 			"classe": "F/S"
 		},
 		{
@@ -699,7 +699,7 @@
 			"number": 0,
 			"nom": "Grimoire ancien",
 			"desc": "Un grimoire ancien. Les inscriptions sont difficiles à déchiffrer",
-			"effet": "Langue ancienne : 1 chance sur 4 de mal lire les incantations de rater votre prochain sort",
+			"effet": "Langue ancienne : 1 chance sur 4 de mal lire les incantations et de rater votre prochain sort",
 			"classe": "S"
 		},
 		{
@@ -1266,8 +1266,8 @@
 	"rare": [
 		{
 			"number": 0,
-			"nom": "Épée large en acier de maître-forgeron",
-			"desc": "Une épée dont la lame en acier à été forgée par un maître-forgeron",
+			"nom": "Épée large en vif-acier",
+			"desc": "Une épée dont la lame à été forgée en vif-acier",
 			"effet": "Large lame : Vous avez 20% de chance de parer les attaques avec cette épée réduisant les dégâts reçu à 0 (L'attaque doit-être parable)",
 			"classe": "P - P/F"
 		},
@@ -1275,77 +1275,77 @@
 			"number": 0,
 			"nom": "Épée en argent de Shiruma",
 			"desc": "L'argent de cette arme a été extrait dans les mines du Désert de Shiruma, en Hadren",
-			"effet": "Argent de Shiruma : Bonus de dégâts de 15 contre les monstres. De plus, vos attaques ont 10% de chances de brûler la cible lui infligeant 5 dégâts supplémentaires par tour pendant 3 tours",
+			"effet": "Argent de Shiruma : Bonus de dégâts de 1d15 contre les monstres. De plus, vos attaques ont 10% de chances de brûler la cible lui infligeant 5 dégâts supplémentaires par tour pendant 3 tours",
 			"classe": "P - P/F"
 		},
 		{
 			"number": 0,
-			"nom": "Épée bâtarde en acier de maître-forgeron",
-			"desc": "Une épée bâtarde, idéal pour le combat contre plusieurs ennemies",
+			"nom": "Épée bâtarde en vif-acier",
+			"desc": "Une épée bâtarde en vif-acier, idéal pour le combat contre plusieurs ennemies",
 			"effet": "Double tranchant : Si deux ennemies sont proches l'un de l'autre (-3 mètres), vous pouvez les attaquez tous les deux en un seul tour",
 			"classe": "P - P/F"
 		},
 		{
 			"number": 0,
-			"nom": "Espadon en acier de maître-forgeron",
-			"desc": "Un espadon dont la lame en acier à été forgée par un maître-forgeron",
+			"nom": "Espadon en vif-acier",
+			"desc": "Un espadon dont la lame à été forgée en vif-acier",
 			"effet": "Brise-armure : Votre arme ignore 15% de l'armure de l'ennemi",
 			"classe": "P"
 		},
 		{
 			"number": 0,
-			"nom": "Espadon en de Shiruma",
+			"nom": "Espadon en argent de Shiruma",
 			"desc": "L'argent de cette arme a été extrait dans les mines du Désert de Shiruma, en Hadren",
-			"effet": "Argent de Shiruma : Bonus de dégâts de 15 contre les monstres. De plus, vos attaques ont 10% de chances de brûler la cible lui infligeant 5 dégâts supplémentaires par tour pendant 3 tours",
+			"effet": "Argent de Shiruma : Bonus de dégâts de 1d15 contre les monstres. De plus, vos attaques ont 10% de chances de brûler la cible lui infligeant 5 dégâts supplémentaires par tour pendant 3 tours",
 			"classe": "P"
 		},
 		{
 			"number": 0,
-			"nom": "Espadon colossal en acier de maître-forgeron",
+			"nom": "Espadon colossal en vif-acier",
 			"desc": "Un espadon en acier immense",
 			"effet": "Taille colossal : Vous pouvez frapper les ennemmies sans êtres à portée de leurs coups (3 mètres). Bonus aux dégâts de 1d5. Inutilisable dans les endroits restreints.",
 			"classe": "P"
 		},
 		{
 			"number": 0,
-			"nom": "Dague en acier de maître-forgeron",
-			"desc": "Un dague dont la lame en acier à été forgée par un maître-forgeron",
-			"effet": "Usée : L'arme n'inflige que la moitié de ses dégâts normaux",
+			"nom": "Dague ciselée en vif-acier",
+			"desc": "Un dague dont la lame à été forgée en vif-acier",
+			"effet": "Saignement : Une attaque furtive avec cette arme fait saigner la cible de 5pv par tour pendant 3 tours",
 			"classe": "F - F/S"
 		},
 		{
 			"number": 0,
-			"nom": "Dague en argent brillant",
-			"desc": "Une dague en argent brillant de qualité ",
-			"effet": "Argent Brillant : Bonus de dégâts de 10 contre les monstres",
+			"nom": "Dague en argent de Shiruma",
+			"desc": "L'argent de cette arme a été extrait dans les mines du Désert de Shiruma, en Hadren",
+			"effet": "Bonus de dégâts de 1d15 contre les monstres. De plus, vos attaques ont 10% de chances de brûler la cible lui infligeant 5 dégâts supplémentaires par tour pendant 3 tours",
 			"classe": "F - F/S"
 		},
 		{
 			"number": 0,
-			"nom": "Dague en acier",
-			"desc": "Une dague en acier",
-			"effet": "Aucun",
+			"nom": "Dague d'éclairs en vif-acier ",
+			"desc": "Une dague en vif-acier capable de servir de réceptacle d'éclairs",
+			"effet": "Réceptacle d'éclairs : Vous pouvez utiliser la compétence 'éclair' sur cette dague. Les deux prochains coups portés avec cette dague infligera les effets d'éclairs",
 			"classe": "F - F/S"
 		},
 		{
 			"number": 0,
-			"nom": "Arc en bois de chêne",
-			"desc": "Un arc solide mais difficile à bander",
-			"effet": "Raideur : Effectuez un jet de physique avant chaque tir avec 50% de chance de réussite. S'il est raté, vous tirez magré tout mais les dégâts sont divisés par 3",
+			"nom": "Arc de l'île d'Afgard",
+			"desc": "Un arc fabriqué par les Elfes d'Afgard dans un bois spécial",
+			"effet": "Précision elfique : Vous n'avez à présent que 15% de chance de rater votre tir. De plus, jetez 1d5 de dégâts bonus si vous touchez avec cette arc",
 			"classe": "F"
 		},
 		{
 			"number": 0,
-			"nom": "Arc en argent brillant",
-			"desc": "Un arc fait pour tirer des flèches d'argents brillantes",
-			"effet": "Argent Brillant : Bonus de dégâts de 10 contre les monstres",
+			"nom": "Arc en argent de Shiruma",
+			"desc": "L'argent de cette arme a été extrait dans les mines du Désert de Shiruma, en Hadren",
+			"effet": "Bonus de dégâts de 1d15 contre les monstres. De plus, vos attaques ont 10% de chances de brûler la cible lui infligeant 5 dégâts supplémentaires par tour pendant 3 tours",
 			"classe": "F"
 		},
 		{
 			"number": 0,
-			"nom": "Arc en bois de sapin",
-			"desc": "Un arc simple relativement souple en bois de sapin",
-			"effet": "Aucun",
+			"nom": "Arc de guerre à double courbure",
+			"desc": "Un arc de guerre très puissant capable d'atteindre des cibles lointaines",
+			"effet": "Puissance : Ajoutez 2d10 de dégâts à votre arme",
 			"classe": "F"
 		},
 		{
