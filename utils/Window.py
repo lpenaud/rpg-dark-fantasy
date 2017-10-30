@@ -37,8 +37,8 @@ class LotteryWindow(MyWindow):
     def __init__(self, lottery):
         MyWindow.__init__(self, '../glade/Lottery.glade')
         self.lottery = lottery
-        self.interval = 0.25
-        self.times = 50
+        self.interval = 0.1
+        self.times = 100
 
     def randomise(self, *args):
         def loopDisplayLoot():
@@ -47,7 +47,6 @@ class LotteryWindow(MyWindow):
 
         k = ThreadJob(loopDisplayLoot, self.interval, self.times - 1)
         k.start()
-
 
     def displayLoot(self, numLabel, loot):
         label = self.get_object('label-item-' + str(numLabel))
