@@ -1,9 +1,10 @@
 #!/usr/bin/env/python3
 # coding: utf-8
 
+from setInterval import ThreadJob
 import gi
 gi.require_version('Gtk', '3.0')
-from gi.repository import Gtk, GdkPixbuf, Pango
+from gi.repository import Gtk, GdkPixbuf, Gdk
 
 class MyWindow(Gtk.Builder):
 
@@ -36,17 +37,24 @@ class LotteryWindow(MyWindow):
     def __init__(self, lottery):
         MyWindow.__init__(self, '../glade/Lottery.glade')
         self.lottery = lottery
+        self.interval = 0.25
+        self.times = 50
 
     def randomise(self, *args):
-        for i in range(1, 4):
-            self.displayLoot(i, self.lottery.loot())
+        def loopDisplayLoot():
+            for i in range(1, 4):
+                self.displayLoot(i, self.lottery.loot())
+
+        k = ThreadJob(loopDisplayLoot, self.interval, self.times - 1)
+        k.start()
+
 
     def displayLoot(self, numLabel, loot):
         label = self.get_object('label-item-' + str(numLabel))
         label.set_width_chars(50)
         label.set_line_wrap(True)
         label.set_margin_left(50)
-        label.set_text(self.lottery.displayLoot(loot))
+        label.set_markup('<span color="' + loot['options']['color'] + '">' + self.lottery.displayLoot(loot) + '</span>')
 
 
 

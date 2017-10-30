@@ -90,10 +90,10 @@ class Lottery(object):
         txt = ""
 
         for key, value in loot.items():
-            if key == 'options':
-                continue
             txt += key.title() + ':\n'
             for subKey, subValue in value.items():
+                if subKey == 'color':
+                    continue 
                 txt += '   ' + str(subKey) + ' : ' + str(subValue) + '\n'
 
         return txt
