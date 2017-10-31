@@ -23,7 +23,6 @@ class MyWindow(Gtk.Builder):
 
     def changeImage(self, imageId, file, width=64, height=64):
         image = GdkPixbuf.Pixbuf.new_from_file_at_size(file, width=width, height=height)
-
         self.get_object(imageId).set_from_pixbuf(image)
 
     def changeTextLabel(self, labelId, txt):
@@ -47,12 +46,15 @@ class LotteryWindow(MyWindow):
 
         k = ThreadJob(loopDisplayLoot, self.interval, self.times - 1)
         k.start()
+        # FIXME: Sometime core dumped
+
 
     def displayLoot(self, numLabel, loot):
         label = self.get_object('label-item-' + str(numLabel))
         label.set_width_chars(50)
         label.set_line_wrap(True)
         label.set_margin_left(50)
+        self.changeImage('image-item-' + str(numLabel), '../images/rarety/128x128/' + loot['options']['rarety'] + '.png', width=64, height=64)
         label.set_markup('<span color="' + loot['options']['color'] + '">' + self.lottery.displayLoot(loot) + '</span>')
 
 

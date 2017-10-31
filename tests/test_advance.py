@@ -19,5 +19,4 @@ def button1_clicked(*args):
 builder = Window.LotteryWindow(example)
 builder.changeImage("image-give-me-your-money", '../images/piece.png')
 builder.changeTextLabel("label-give-me-your-money", "Hi stranger!")
-builder.get_object('button1').connect("clicked", button1_clicked)
 Window.load(builder.getWindow(), title="Loterie")
