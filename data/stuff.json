@@ -193,21 +193,21 @@
 			"number": 0,
 			"nom": "Chaine en fer rouillée",
 			"desc": "Une chaine en fer rouillé capable d'immobilisé une cible",
-			"effet": "Rouillé : L'arme a 1 chance sur 3 de vous blesser de 2pv quand vous attaquez avec",
+			"effet": "Rouillé : L'arme a 1 chance sur 3 de vous blesser de 2pv quand vous attaquez avec. 10% de chance d'immobiliser la cible pour 1 tour",
 			"classe": "P/F/S"
 		},
 		{
 			"number": 0,
 			"nom": "Chaîne d'argent",
 			"desc": "Une chaine en argent capable d'immobilisé un monstre",
-			"effet": "Argent : Peut immobiliser les monstres inférieur à une taille d'homme",
+			"effet": "Argent : Peut immobiliser les monstres inférieur à une taille d'homme. 15% de chance d'immobiliser la cible pour 1 tour",
 			"classe": "P/F/S"
 		},
 		{
 			"number": 0,
 			"nom": "Chaine en fer",
 			"desc": "Une chaine en fer commune",
-			"effet": "Aucun",
+			"effet": "Fer : 15% de chance d'immobiliser la cible pour 1 tour.",
 			"classe": "P/F/S"
 		},
 		{
@@ -783,21 +783,21 @@
 			"number": 0,
 			"nom": "Chaine en acier de faible qualité",
 			"desc": "L'acier de cette chaîne est de piêtre qualité",
-			"effet": "Faible qualité : L'arme a 1 chance sur 3 de se briser quand vous attaquez avec",
+			"effet": "Faible qualité : L'arme a 1 chance sur 3 de se briser quand vous attaquez avec. 20% de chance d'immobiliser la cible",
 			"classe": "P/F/S"
 		},
 		{
 			"number": 0,
 			"nom": "Chaîne d'argent brillant",
 			"desc": "Une chaine en argent brillant capable d'immobilisé des monstres plus puissants",
-			"effet": "Argent Brillant : Peut immobiliser les monstres de taille d'homme",
+			"effet": "Argent Brillant : Peut immobiliser les monstres de taille d'homme avec 20% de chance pour 1 tour.",
 			"classe": "P/F/S"
 		},
 		{
 			"number": 0,
 			"nom": "Chaine en acier à pointes",
 			"desc": "Une chaine en acier commune",
-			"effet": "Saignement : 1 chance sur 3 de provoquer un saignement de la cible équivalent à 5% de ses points de vies par tour en l'immobilisant avec cette chaîne.",
+			"effet": "Saignement : 1 chance sur 3 de provoquer un saignement de la cible équivalent à 5% de ses points de vies par tour en l'immobilisant avec cette chaîne. 25% de chance d'immobilisation",
 			"classe": "P/F/S"
 		},
 		{
@@ -956,7 +956,7 @@
 		},
 		{
 			"number": 0,
-			"nom": "Pourpoint en cuir bouillien cuir bouilli",
+			"nom": "Pourpoint en cuir bouilli",
 			"desc": "Un Pourpoint en cuir bouilli",
 			"effet": "Aucun",
 			"classe": "F - F/S"
@@ -1257,9 +1257,9 @@
 		},
 		{
 			"number": 0,
-			"nom": "Parchemin de compétance : Fortification",
-			"desc": "augmente faiblement votre armure. Coût : 10 énergies",
-			"effet": "Votre armure est augmentée de 10 pour 2 tours",
+			"nom": "Parchemin de compétance : Accumulation de puissance",
+			"desc": "Augmente faiblement votre puissance des sorts. Coût : 10 mana",
+			"effet": "Votre puissance des sorts est augmentée de 10 pour 2 tours",
 			"classe": "S"
 		}
 	],
@@ -1317,7 +1317,7 @@
 			"number": 0,
 			"nom": "Dague en argent de Shiruma",
 			"desc": "L'argent de cette arme a été extrait dans les mines du Désert de Shiruma, en Hadren",
-			"effet": "Bonus de dégâts de 1d15 contre les monstres. De plus, vos attaques ont 10% de chances de brûler la cible lui infligeant 5 dégâts supplémentaires par tour pendant 3 tours",
+			"effet": "Argent de Shiruma : Bonus de dégâts de 1d15 contre les monstres. De plus, vos attaques ont 10% de chances de brûler la cible lui infligeant 5 dégâts supplémentaires par tour pendant 3 tours",
 			"classe": "F - F/S"
 		},
 		{
@@ -1338,7 +1338,7 @@
 			"number": 0,
 			"nom": "Arc en argent de Shiruma",
 			"desc": "L'argent de cette arme a été extrait dans les mines du Désert de Shiruma, en Hadren",
-			"effet": "Bonus de dégâts de 1d15 contre les monstres. De plus, vos attaques ont 10% de chances de brûler la cible lui infligeant 5 dégâts supplémentaires par tour pendant 3 tours",
+			"effet": "Argent de Shiruma : Bonus de dégâts de 1d15 contre les monstres. De plus, vos attaques ont 10% de chances de brûler la cible lui infligeant 5 dégâts supplémentaires par tour pendant 3 tours",
 			"classe": "F"
 		},
 		{
@@ -1350,171 +1350,570 @@
 		},
 		{
 			"number": 0,
-			"nom": "Grimoire ancien",
-			"desc": "Un grimoire ancien. Les inscriptions sont difficiles à déchiffrer",
-			"effet": "Langue ancienne : 1 chance sur 4 de mal lire les incantations de rater votre prochain sort",
+			"nom": "Grimoirer runique d'Arkhäne",
+			"desc": "Un grimoire tiré des bibliothèques d'Arkhäne",
+			"effet": "Sorts runique : Une attaque avec cette arme pose une rune sur la cible. Avant le prochain tour de la cible, si la celle-ci subie des dégâts, la rune explose infligeant 1d15 + 10 dégâts. Sinon la rune disparait",
 			"classe": "S"
 		},
 		{
 			"number": 0,
-			"nom": "Grimoire immmaculé",
-			"desc": "Un grimoire contenant des incantations très efficaces contre les monstres",
-			"effet": "Immaculé : Bonus de dégâts de 10 contre les monstres",
+			"nom": "Grimoire des Escadrons d'Argent",
+			"desc": "Un grimoire utilisé par les Mages chasseurs de monstres des Escadrons d'Argent",
+			"effet": "Sorts anti-monstres : Bonus de dégâts de 1d15 contre les monstres. De plus, si la cible est un nécrophage, ajoutez 1d15 de dégâts bonus",
 			"classe": "S"
 		},
 		{
 			"number": 0,
-			"nom": "Grimoire de mage",
-			"desc": "Un grimoire standard utilisé par la plupart des mages",
-			"effet": "Aucun",
+			"nom": "Grimoire de Sanctuaire",
+			"desc": "Un grimoire utilisé par les mages de Sanctuaire. Coût : 20 mana",
+			"effet": "Sanctuaire : Vous pouvez invoquer un cercle de lumière sur le sol de 3 mètres de diamètre (3 personnes max). Les alliés dans le sanctuaire bénéficient d'un bonus à l'amure de 10 et sont soignés de 5pv par tour. Le sanctuaire reste tant qu'il est canalisé et consomme 10 mana par tour. Le lanceur ne peut pas agir pendant la canalisation",
 			"classe": "S"
 		},
 		{
 			"number": 0,
-			"nom": "Bâton en bois de frêne",
-			"desc": "Un bâton magique assez fragile",
-			"effet": "Fragilité : L'arme a 1 chance sur 5 de se briser en attaquant avec",
+			"nom": "Bâton de guerre en vif-acier",
+			"desc": "Un bâton infusé de magie capable également d'asséner des coups puissants",
+			"effet": "Décharge : Les coups direct portés avec cette arme ont 15% de choquer l'ennemi, le rendant incapable d'agir pour 1 tour et lui infligeant 1d5 de dégâts bonus. Cet effet ne peut s'appliquer qu'une fois par ennemi et par combat",
 			"classe": "P/S"
 		},
 		{
 			"number": 0,
-			"nom": "Bâton en argent brillant",
-			"desc": "Un bâton feuilleté d'argent brillant",
-			"effet": "Argent brillant : Bonus de dégâts de 10 contre les monstres",
+			"nom": "Bâton en argent de Shiruma",
+			"desc": "L'argent de cette arme a été extrait dans les mines du Désert de Shiruma, en Hadren",
+			"effet": "Argent de Shiruma : Bonus de dégâts de 1d15 contre les monstres. De plus, vos attaques ont 10% de chances de brûler la cible lui infligeant 5 dégâts supplémentaires par tour pendant 3 tours",
 			"classe": "P/S"
 		},
 		{
 			"number": 0,
-			"nom": "Bâton en bois de sapin",
-			"desc": "Un bâton solide en bois de sapin",
-			"effet": "Aucun",
+			"nom": "Bâton en bois de sorbier",
+			"desc": "Un bâton fabriqué en bois magique de sorbier. Coût du tir de givre : 20 mana",
+			"effet": "Bois de sorbier : Vous pouvez lancer un éclair de givre sur la cible ce qui inflige 1d10 + 5 dégâts à la cible avec 20% de chance de la geler pour 1 tour. Un coup ou de la chaleur dégèle la cible. Vos coups direct ont 5% de chance de geler la cible",
 			"classe": "P/S"
 		},
 		{
 			"number": 0,
-			"nom": "Chakram en acier émoussé",
-			"desc": "Un Chakram en acier peu tranchant",
-			"effet": "Émoussé : L'arme n'inflige que la moitié de ses dégâts normaux",
+			"nom": "Chakram réceptacle en vif-acier",
+			"desc": "Un chakram forgé en vif-acier pouvant acceuillir de l'énergie",
+			"effet": "Réceptacle : Vous pouvez lancer un sort élémentaire sur cette arme. Le prochain coup avec cette arme infligera les dégâts du sort et ses effets pour deux tours.",
 			"classe": "P/S"
 		},
 		{
 			"number": 0,
-			"nom": "Chakram en argent brillant",
-			"desc": "Un Chakram feuilleté d'argent brillant",
-			"effet": "Argent brillant : Bonus de dégâts de 10 contre les monstres",
+			"nom": "Chakram en argent de Shiruma",
+			"desc": "L'argent de cette arme a été extrait dans les mines du Désert de Shiruma, en Hadren",
+			"effet": "Argent de Shiruma : Bonus de dégâts de 1d15 contre les monstres. De plus, vos attaques ont 10% de chances de brûler la cible lui infligeant 5 dégâts supplémentaires par tour pendant 3 tours",
 			"classe": "P/S"
 		},
 		{
 			"number": 0,
-			"nom": "Chakram en acier",
-			"desc": "Un Chakram simple en acier",
-			"effet": "Aucun",
+			"nom": "Chakram en elfique",
+			"desc": "Un Chakram fabriqué et utilisé par les elfes",
+			"effet": "Finesse elfique : Au début de votre tour, si vous décidez d'attaquer avec cette arme, jetez 1d3. Le résultat sera le nombre d'ennemis pouvant être touchés par votre chakram. Si vous ne touchez qu'1 ennemi jetez 1d10 de dégâts supplémentaires",
 			"classe": "P/S"
 		},
 		{
 			"number": 0,
-			"nom": "Lame d'éther instable",
-			"desc": "L'éther de cette lame est très instable et ses effets imprévisibles",
-			"effet": "Instabilité : En attaquant avec cette arme, jetez 1d100, entre 1 et 25, l'arme inflige 1,5x ses dégâts normaux, entre 26 et 51, l'arme inflige ses dégâts normaux, au dessus de 51, l'arme inflige la moitié de ses dégâts normaux.",
+			"nom": "Lame d'éther au crystal de corindon rouge",
+			"desc": "L'éther de cette lame stable et puissante est généré par un crystal de corindon rouge",
+			"effet": "Corindon rouge : Si la lame de cette arme entre en contact avec une lame en fer, cette dernière à 75% de chance d'être coupé en deux. De plus, chaque coup porté avec cette arme brule la cible, infligeant 1d15 de dégâts bonus. Saignement impossible. Peut cautériser les plaies",
 			"classe": "F/S"
 		},
 		{
 			"number": 0,
-			"nom": "Lame d'éther brillante argentée",
-			"desc": "L'éther de cette lame est très efficace contre les monstres",
-			"effet": "Argent Brillant : Dégâts normaux contre les monstres",
+			"nom": "Lame d'éther en corindon blanc de Shurima",
+			"desc": "Le crystal de diamant de cette arme a été extrait dans les mines du Désert de Shiruma, en Hadren",
+			"effet": "Corindon blanc : Bonus de dégâts de 1d15 contre les monstres. De plus, vos attaques ont 20% de chances d'électriser la cible pendant 2 tours augmentant les dégâts reçu de 1d5 par coup reçu durant ces deux tours",
 			"classe": "F/S"
 		},
 		{
 			"number": 0,
-			"nom": "Lame d'éther stable",
-			"desc": "Une lame d'éther stable et fiable",
-			"effet": "Aucun",
+			"nom": "Lame d'éther au crystal de corindon bleu",
+			"desc": "L'éther de cette lame fine et vive est généré par un crystal de corindon bleu",
+			"effet": "Corindon bleu : Si la lame de cette arme entre en contact avec une lame en fer, cette dernière à 75% de chance d'être gelé et de se briser. De plus, chaque coup porté avec cette arme cause une gelure la cible, infligeant 1d15 de dégâts bonus.",
 			"classe": "F/S"
 		},
 		{
 			"number": 0,
-			"nom": "Chaine en acier de faible qualité",
-			"desc": "L'acier de cette chaîne est de piêtre qualité",
-			"effet": "Faible qualité : L'arme a 1 chance sur 3 de se briser quand vous attaquez avec",
+			"nom": "Chaine en vif-acier",
+			"desc": "Une chaine forgée en vif-acier",
+			"effet": "Vif-acier : La chaine peut emprisonner des cibles supérieur à une taille d'homme avec 25% de chance. 35% de chance pour une taille d'homme ou inférieur, le tout pour 1 tour",
 			"classe": "P/F/S"
 		},
 		{
 			"number": 0,
-			"nom": "Chaîne d'argent brillant",
-			"desc": "Une chaine en argent brillant capable d'immobilisé des monstres plus puissants",
-			"effet": "Argent Brillant : Peut immobiliser les monstres de taille d'homme",
+			"nom": "Chaîne d'argent de Shiruma",
+			"desc": "L'argent de cette arme a été extrait dans les mines du Désert de Shiruma, en Hadren",
+			"effet": "Argent de Shiruma : 35% de chance d'imobiliser le monstre à taille d'homme ou inférieur. Pour les monstres plus grands, 25% de chance",
 			"classe": "P/F/S"
 		},
 		{
 			"number": 0,
-			"nom": "Chaine en acier à pointes",
-			"desc": "Une chaine en acier commune",
-			"effet": "Saignement : 1 chance sur 3 de provoquer un saignement de la cible équivalent à 5% de ses points de vies par tour en l'immobilisant avec cette chaîne.",
+			"nom": "Chaine en vif-acier à crochets sérrés",
+			"desc": "Une chaine en vif-acier mortelle",
+			"effet": "Saignement : 1 chance sur 2 de provoquer un saignement de la cible équivalent à 10% de ses points de vies par tour en l'immobilisant avec cette chaîne. 20% de chance d'immobilisation pour 1 tour pour les cibles à taille d'homme ou inférieure",
 			"classe": "P/F/S"
 		},
 		{
 			"number": 0,
-			"nom": "Lame Elfique en acier de qualité",
-			"desc": "Une lame elfique en bon acier",
-			"effet": "Aucun",
+			"nom": "Lame Elfique en fluide-acier",
+			"desc": "Une lame elfique forgée en fluide-acier",
+			"effet": "Fluide-acier : Votre taux de coups critiques est augmentée de 15% avec cette arme. De plus, vos coups critiques inflige 1d30 dégâts supplémentaire",
 			"classe": "F - P/F"
 		},
 		{
 			"number": 0,
-			"nom": "Lame Eflique en argent brillant",
-			"desc": "Une belle lame Elfique en argent brillant",
-			"effet": "Argent brillant elfique : Bonus de dégâts de 1d15 + 5 contre les monstres",
+			"nom": "Lame Eflique en argent de Shiruma",
+			"desc": "L'argent de cette arme a été extrait dans les mines du Désert de Shiruma, en Hadren",
+			"effet": "Argent de Shiruma : Bonus de dégâts de 1d15 contre les monstres. De plus, vos attaques ont 10% de chances de brûler la cible lui infligeant 5 dégâts supplémentaires par tour pendant 3 tours",
 			"classe": "F - P/F"
 		},
 		{
 			"number": 0,
-			"nom": "Lame Elfique en vif-acier",
-			"desc": "Une lame elfique en bon acier",
-			"effet": "Aucun",
+			"nom": "Lame Elfique en corindon rouge",
+			"desc": "Une lame elfique forgée en corindon rouge",
+			"effet": "Corindon rouge : Votre arme à 15% de chance de trancher les armes conventionnelles non-elfique. De plus, ajouter 1d15 de dégâts à votre arme",
 			"classe": "F - P/F"
 		},
 		{
 			"number": 0,
-			"nom": "Faux en acier émoussé",
-			"desc": "Une faux en acier émoussé",
-			"effet": "Émoussé : L'arme n'inflige que la moitié de ses dégâts normaux",
+			"nom": "Faux en vif-acier réceptacle d'âme",
+			"desc": "Une faux forgée en vif-acier capable d'absorbée des âmes mineures",
+			"effet": "Absorbtion d'âmes mineures : Pour chaque ennemi tué avec cette arme (humain taille maximal), augmentez les dégâts de cette arme de 1d5. Cet effet peut se cumuler jusqu'a 5 fois et est permanent",
 			"classe": "F - F/S"
 		},
 		{
 			"number": 0,
-			"nom": "Faux en argent brillant",
-			"desc": "Une grande faux en argent brillant",
-			"effet": "Argent brillant : Bonus de dégâts de 10 contre les monstres",
+			"nom": "Faux en argent de Shiruma",
+			"desc": "L'argent de cette arme a été extrait dans les mines du Désert de Shiruma, en Hadren",
+			"effet": "Argent de Shiruma : Bonus de dégâts de 1d15 contre les monstres. De plus, vos attaques ont 10% de chances de brûler la cible lui infligeant 5 dégâts supplémentaires par tour pendant 3 tours",
 			"classe": "F - F/S"
 		},
 		{
 			"number": 0,
-			"nom": "Faux en acier",
-			"desc": "Une faux en acier",
-			"effet": "Aucun",
+			"nom": "Faux vampirique en vif-acier",
+			"desc": "Une faux vampirique en vif-acier",
+			"effet": "Vampirisme : A chaque coup portée avec cette arme, recever 25% des dégâts infligé en soin. Si vous tuez un ennemi, recevez 50% des dégâts infligés en soin.",
 			"classe": "F - F/S"
 		},
 		{
 			"number": 0,
-			"nom": "Griffes endommagées en acier ",
-			"desc": "Il manque quelques doigts à ces griffes",
-			"effet": "Mauvais état : L'arme n'inflige que la moitié de ses dégâts normaux",
+			"nom": "Griffes recourbées en vif-acier",
+			"desc": "Les griffes en vif-acier sont très recourbées pour maximiser les dégâts",
+			"effet": "Déchirure : Vos attaques ont 30% de chance de faire saigner la cible de 10pv par tour pendant 2 tours",
 			"classe": "F - F/P"
 		},
 		{
 			"number": 0,
-			"nom": "Griffes en argent brillant",
-			"desc": "Des griffes en argent brillant",
-			"effet": "Argent brillant : Bonus de dégâts de 10 contre les monstres",
+			"nom": "Griffes en argent de Shiruma",
+			"desc": "L'argent de cette arme a été extrait dans les mines du Désert de Shiruma, en Hadren",
+			"effet": "Argent de Shiruma : Bonus de dégâts de 1d15 contre les monstres. De plus, vos attaques ont 10% de chances de brûler la cible lui infligeant 5 dégâts supplémentaires par tour pendant 3 tours",
 			"classe": "F - F/P"
 		},
 		{
 			"number": 0,
-			"nom": "Griffes en acier",
-			"desc": "Des griffes en acier",
-			"effet": "Aucun",
+			"nom": "Griffes en fluide-acier",
+			"desc": "Des griffes forgée en fluide-acier elfique",
+			"effet": "Fluide-acier : Votre taux de coups critiques est augmentée de 15% avec cette arme. De plus, vos coups critiques inflige 1d30 dégâts supplémentaire",
 			"classe": "F - F/P"
+		},
+		{
+			"number": 0,
+			"nom": "Capuche en soie",
+			"desc": "Une capuche en soie",
+			"effet": "Ensemble 'Soie' : Augmente les dégâts de vos sorts de 25 si vous avez l'ensemble complet",
+			"classe": "S - S/F"
+		},
+		{
+			"number": 0,
+			"nom": "Tunique en soie",
+			"desc": "Une tunique en soie",
+			"effet": "Ensemble 'Soie' : Augmente les dégâts de vos sorts de 25 si vous avez l'ensemble complet",
+			"classe": "S - S/F"
+		},
+		{
+			"number": 0,
+			"nom": "Pantalon en soie",
+			"desc": "Un pantalon en soie",
+			"effet": "Ensemble 'Soie' : Augmente les dégâts de vos sorts de 25 si vous avez l'ensemble complet",
+			"classe": "S - S/F"
+		},
+		{
+			"number": 0,
+			"nom": "Chausses en soie",
+			"desc": "Des chausses en soie",
+			"effet": "Ensemble 'Soie' : Augmente les dégâts de vos sorts de 25 si vous avez l'ensemble complet",
+			"classe": "S - S/F"
+		},
+		{
+			"number": 0,
+			"nom": "Capuche en tissu Wellanien",
+			"desc": "Une capuche en tissu Wellanien",
+			"effet": "Ensemble 'Tissu Wellanien' : Augmente votre régénération de mana de 10/tour et votre puissance des sorts de 10 si vous avez l'ensemble complet",
+			"classe": "S - S/F"
+		},
+		{
+			"number": 0,
+			"nom": "Tunique en tissu Wellanien",
+			"desc": "Une Tunique en tissu Wellanien",
+			"effet": "Ensemble 'Tissu Wellanien' : Augmente votre régénération de mana de 10/tour et votre puissance des sorts de 10 si vous avez l'ensemble completAugmente votre régénération de mana de 15/tour et votre puissance des sorts de 10 si vous avez l'ensemble complet",
+			"classe": "S - S/F"
+		},
+		{
+			"number": 0,
+			"nom": "Pantalon en tissu Wellanien",
+			"desc": "Un Pantalon en tissu Wellanien",
+			"effet": "Ensemble 'Tissu Wellanien' :  Augmente votre régénération de mana de 10/tour et votre puissance des sorts de 10 si vous avez l'ensemble complet",
+			"classe": "S - S/F"
+		},
+		{
+			"number": 0,
+			"nom": "Chausses en tissu Wellanien",
+			"desc": "Des Chausses en tissu Wellanien",
+			"effet": "Ensemble 'Tissu Wellanien' :  Augmente votre régénération de mana de 10/tour et votre puissance des sorts de 10 si vous avez l'ensemble complet",
+			"classe": "S - S/F"
+		},
+		{
+			"number": 0,
+			"nom": "Capuche fantomatique",
+			"desc": "Une capuche en tissu fantomatique",
+			"effet": "Ensemble 'Tissu fantomatique' : Si vous avez l'ensemble complet, vous obtenez la capacitée de devenir invisible. Si vous faites un mouvement brusque ou attaquez, vous redevenez visible",
+			"classe": "S - S/F"
+		},
+		{
+			"number": 0,
+			"nom": "Tunique fantomatique",
+			"desc": "Une tunique en tissu fantomatique",
+			"effet": "Ensemble 'Tissu fantomatique' : Si vous avez l'ensemble complet, vous obtenez la capacitée de devenir invisible. Si vous faites un mouvement brusque ou attaquez, vous redevenez visible",
+			"classe": "S - S/F"
+		},
+		{
+			"number": 0,
+			"nom": "Pantalon fantomatique",
+			"desc": "Un pantalon en tissu fantomatique",
+			"effet": "Ensemble 'Tissu fantomatique' : Si vous avez l'ensemble complet, vous obtenez la capacitée de devenir invisible. Si vous faites un mouvement brusque ou attaquez, vous redevenez visible",
+			"classe": "S - S/F"
+		},
+		{
+			"number": 0,
+			"nom": "Chausses fantomatique",
+			"desc": "Des chausses en tissu fantomatique",
+			"effet": "Ensemble 'Tissu fantomatique' : Si vous avez l'ensemble complet, vous obtenez la capacitée de devenir invisible (hors-combat uniquement). Si vous faites un mouvement brusque ou attaquez, vous redevenez visible",
+			"classe": "S - S/F"
+		},
+		{
+			"number": 0,
+			"nom": "Chapeau en cuir vaporeux",
+			"desc": "Un Chapeau en cuir vaporeux",
+			"effet": "Ensemble 'Cuir vaporeux' : Si vous avez l'ensemble complet et si vous ratez à l'esquive d'une attaque de puissance raisonnable, vous avez 35% de chance de devenir impalpable et de ne subir aucun dégâts",
+			"classe": "F - F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Pourpoint en cuir vaporeux",
+			"desc": "Un Pourpoint en cuir vaporeux",
+			"effet": "Ensemble 'Cuir vaporeux' : Si vous avez l'ensemble complet et si vous ratez à l'esquive d'une attaque de puissance raisonnable, vous avez 35% de chance de devenir impalpable et de ne subir aucun dégâts",
+			"classe": "F - F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Pantalon en cuir vaporeux",
+			"desc": "Un Pantalon en cuir vaporeux",
+			"effet": "Ensemble 'Cuir vaporeux' : Si vous avez l'ensemble complet et si vous ratez à l'esquive d'une attaque de puissance raisonnable, vous avez 35% de chance de devenir impalpable et de ne subir aucun dégâts",
+			"classe": "F - F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Chaussures en cuir vaporeux",
+			"desc": "Des Chaussures en cuir vaporeux",
+			"effet": "Ensemble 'Cuir vaporeux' : Si vous avez l'ensemble complet et si vous ratez à l'esquive d'une attaque de puissance raisonnable, vous avez 35% de chance de devenir impalpable et de ne subir aucun dégâts",
+			"classe": "F - F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Chapeau de traqueur en cuir",
+			"desc": "Un Chapeau en cuir porté par des traqueurs expérimentés",
+			"effet": "Ensemble 'Traqueur' : Votre première attaque en combat aura 100% de chance de compter comme une attaque furtive. Si l'attaque est effectivement furtive (sans cet effet), ajoutez un bonus de dégâts de 2d5",
+			"classe": "F - F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Pourpoint de traqueur en cuir",
+			"desc": "Un Pourpoint en cuir porté par des traqueurs expérimentés",
+			"effet": "Ensemble 'Traqueur' : Votre première attaque en combat aura 100% de chance de compter comme une attaque furtive. Si l'attaque est effectivement furtive (sans cet effet), ajoutez un bonus de dégâts de 2d5",
+			"classe": "F - F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Pantalon de traqueur en cuir",
+			"desc": "Un pantalon en cuir porté par des traqueurs expérimentés",
+			"effet": "Ensemble 'Traqueur' : Votre première attaque en combat aura 100% de chance de compter comme une attaque furtive. Si l'attaque est effectivement furtive (sans cet effet), ajoutez un bonus de dégâts de 2d5",
+			"classe": "F - F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Chaussures de traqueur en cuir",
+			"desc": "Des Chaussures en cuir portées par des traqueurs expérimentés",
+			"effet": "Ensemble 'Traqueur' : Votre première attaque en combat aura 100% de chance de compter comme une attaque furtive. Si l'attaque est effectivement furtive (sans cet effet), ajoutez un bonus de dégâts de 2d5",
+			"classe": "F - F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Chapeau en cuir des marais",
+			"desc": "Un Chapeau fabriqué en cuir des créatures des marécages",
+			"effet": "Ensemble 'Cuir des marais' : Réduit les dégâts des projectiles de 1d10. Si vous combattez dans un marais, portez ce bonus à 2d10",
+			"classe": "F - F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Pourpoint en cuir des marais",
+			"desc": "Un Pourpoint fabriqué en cuir des créatures des marécages",
+			"effet": "Ensemble 'Cuir des marais' : Réduit les dégâts des projectiles de 1d10. Si vous combattez dans un marais, portez ce bonus à 2d10",
+			"classe": "F - F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Pantalon en cuir des marais",
+			"desc": "Un pantalon fabriqué en cuir des créatures des marécages",
+			"effet": "Ensemble 'Cuir des marais' : Réduit les dégâts des projectiles de 1d10. Si vous combattez dans un marais, portez ce bonus à 2d10",
+			"classe": "F - F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Chaussures en cuir des marais",
+			"desc": "Des Chaussures fabriquées en cuir des créatures des marécages",
+			"effet": "Ensemble 'Cuir des marais' : Réduit les dégâts des projectiles de 1d10. Si vous combattez dans un marais, portez ce bonus à 2d10",
+			"classe": "F - F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Casque en mailles des Bataillons Pourpres",
+			"desc": "Un casque en mailles des Bataillons Pourpres",
+			"effet": "Ensemble 'Bataillons Pourpres' : Réduit les dégâts subies des armes en fer/acier de 1d15",
+			"classe": "P - P/F - P/S"
+		},
+		{
+			"number": 0,
+			"nom": "Haubert en mailles des Bataillons Pourpres",
+			"desc": "Un haubert en mailles des Bataillons Pourpres",
+			"effet": "Ensemble 'Bataillons Pourpres': Réduit les dégâts subies des armes en fer/acier de 1d15",
+			"classe": "P - P/F - P/S"
+		},
+		{
+			"number": 0,
+			"nom": "Jambières en mailles des Bataillons Pourpres",
+			"desc": "Des jambières en mailles des Bataillons Pourpres",
+			"effet": "Ensemble 'Bataillons Pourpres': Réduit les dégâts subies des armes en fer/acier de 1d15",
+			"classe": "P - P/F - P/S"
+		},
+		{
+			"number": 0,
+			"nom": "Chausses en mailles des Bataillons Pourpres",
+			"desc": "Des chausses en mailles des Bataillons Pourpres",
+			"effet": "Ensemble 'Bataillons Pourpres': Réduit les dégâts subies des armes en fer/acier de 1d15",
+			"classe": "P - P/F - P/S"
+		},
+		{
+			"number": 0,
+			"nom": "Casque en mailles des Sabreurs",
+			"desc": "Un casque en mailles porté par les Sabreurs d'Hadren",
+			"effet": "Ensemble 'Sabreurs d'Hadren' : Augmente vos chances de coups critiques de 1% tous les 20 points d'armure",
+			"classe": "P - P/F - P/S"
+		},
+		{
+			"number": 0,
+			"nom": "Haubert en mailles des Sabreurs",
+			"desc": "Un haubert en mailles porté par les Sabreurs d'Hadren",
+			"effet": "Ensemble 'Sabreurs d'Hadren' : Augmente vos chances de coups critiques de 1% tous les 20 points d'armure",
+			"classe": "P - P/F - P/S"
+		},
+		{
+			"number": 0,
+			"nom": "Jambières en mailles des Sabreurs",
+			"desc": "Des jambières en mailles portées par les Sabreurs d'Hadren",
+			"effet": "Ensemble 'Sabreurs d'Hadren' : Augmente vos chances de coups critiques de 1% tous les 20 points d'armure",
+			"classe": "P - P/F - P/S"
+		},
+		{
+			"number": 0,
+			"nom": "Chausses en mailles des Sabreurs",
+			"desc": "Des chausses en mailles portées par les Sabreurs d'Hadren",
+			"effet": "Ensemble 'Sabreurs d'Hadren' : Augmente vos chances de coups critiques de 1% tous les 20 points d'armure",
+			"classe": "P - P/F - P/S"
+		},
+		{
+			"number": 0,
+			"nom": "Casque en mailles des gardes Arkäniens",
+			"desc": "Un casque en maille des gardes Arkäniens",
+			"effet": "Ensemble 'Gardes Arkäniens' : Si vous revez des dégâts physiques, vous créez un bouclier d'éther qui bloque 1/4 des dégâts et augmente votre puissance des sorts de ce même montant. Les dégâts absorbés ne peuvent être supérieur à 35",
+			"classe": "P - P/F - P/S"
+		},
+		{
+			"number": 0,
+			"nom": "Haubert en mailles des gardes Arkäniens",
+			"desc": "Un haubert en mailles des gardes Arkäniens",
+			"effet": "Ensemble 'Gardes Arkäniens' : Si vous revez des dégâts physiques, vous créez un bouclier d'éther qui bloque 1/4 des dégâts et augmente votre puissance des sorts de ce même montant. Les dégâts absorbés ne peuvent être supérieur à 35",
+			"classe": "P - P/F - P/S"
+		},
+		{
+			"number": 0,
+			"nom": "Jambières en mailles des gardes Arkäniens",
+			"desc": "Des jambières en mailles des gardes Arkäniens",
+			"effet": "Ensemble 'Gardes Arkäniens' : Si vous revez des dégâts physiques, vous créez un bouclier d'éther qui bloque 1/4 des dégâts et augmente votre puissance des sorts de ce même montant. Les dégâts absorbés ne peuvent être supérieur à 35",
+			"classe": "P - P/F - P/S"
+		},
+		{
+			"number": 0,
+			"nom": "Chausses en maille des gardes Arkäniens",
+			"desc": "Des chausses en maille des gardes Arkäniens",
+			"effet": "Ensemble 'Gardes Arkäniens' : Si vous revez des dégâts physiques, vous créez un bouclier d'éther qui bloque 1/4 des dégâts et augmente votre puissance des sorts de ce même montant. Les dégâts absorbés ne peuvent être supérieur à 35",
+			"classe": "P - P/F - P/S"
+		},
+		{
+			"number": 0,
+			"nom": "Heaume en plate de chevalier",
+			"desc": "Un casque en plate porter par les chevaliers",
+			"effet": "Ensemble 'Chevalier' : Augmente vos dégâts physique du quart de votre armure total. La limite de dégâts bonus ne peut dépasser 25",
+			"classe": "P"
+		},
+		{
+			"number": 0,
+			"nom": "Plastron en plate de chevalier",
+			"desc": "Un haubert en plate porter par les chevaliers",
+			"effet": "Ensemble 'Chevalier' : Augmente vos dégâts physique du quart de votre armure total. La limite de dégâts bonus ne peut dépasser 25",
+			"classe": "P"
+		},
+		{
+			"number": 0,
+			"nom": "Jambières en plate de chevalier",
+			"desc": "Des jambières en plate porter par les chevaliers",
+			"effet": "Ensemble 'Chevalier' : Augmente vos dégâts physique du quart de votre armure total. La limite de dégâts bonus ne peut dépasser 25",
+			"classe": "P"
+		},
+		{
+			"number": 0,
+			"nom": "Solerets en plate de chevalier",
+			"desc": "Des solerets en plate porter par les chevaliers",
+			"effet": "Ensemble 'Chevalier' : Augmente vos dégâts physique du quart de votre armure total. La limite de dégâts bonus ne peut dépasser 25",
+			"classe": "P"
+		},
+		{
+			"number": 0,
+			"nom": "Heaume en plate feuilleté de corindon noir",
+			"desc": "Un casque en plate feuilleté de corindon noir",
+			"effet": "Ensenble 'Faux Corindon Noir' : Augmente votre armure total de 50",
+			"classe": "P"
+		},
+		{
+			"number": 0,
+			"nom": "Plastron en plate feuilleté de corindon noir",
+			"desc": "Un haubert en plate feuilleté de corindon noir",
+			"effet": "Ensenble 'Faux Corindon Noir' : Augmente votre armure total de 50",
+			"classe": "P"
+		},
+		{
+			"number": 0,
+			"nom": "Jambières en plate feuilleté de corindon noir",
+			"desc": "Des jambières en plate feuilletées de corindon noir",
+			"effet": "Ensenble 'Faux Corindon Noir' : Augmente votre armure total de 50",
+			"classe": "P"
+		},
+		{
+			"number": 0,
+			"nom": "Solerets en plate feuilleté de corindon noir",
+			"desc": "Des solerets en plate feuilletées de corindon noir",
+			"effet": "Ensenble 'Faux Corindon Noir' : Augmente votre armure total de 50",
+			"classe": "P"
+		},
+		{
+			"number": 0,
+			"nom": "Heaume en plate des Berserkers d'Ashara",
+			"desc": "Un casque en plate des Berserkers d'Ashara",
+			"effet": "Ensemble 'Berserker' : Augmente vos pv maximum de 25. Augmente vos dégâts de 2 par chaque points de vie manquant. L'effet ne commence qu'a la moitié des points de vie perdus",
+			"classe": "P"
+		},
+		{
+			"number": 0,
+			"nom": "Plastron en plate des Berserkers d'Ashara",
+			"desc": "Un haubert en plate des Berserkers d'Ashara",
+			"effet": "Ensemble 'Berserker' : Augmente vos pv maximum de 25. Augmente vos dégâts de 2 par chaque points de vie manquant. L'effet ne commence qu'a la moitié des points de vie perdus",
+			"classe": "P"
+		},
+		{
+			"number": 0,
+			"nom": "Jambières en plate des Berserkers d'Ashara",
+			"desc": "Des jambières en plate des Berserkers d'Ashara",
+			"effet": "Ensemble 'Berserker' : Augmente vos pv maximum de 25. Augmente vos dégâts de 2 par chaque points de vie manquant. L'effet ne commence qu'a la moitié des points de vie perdus",
+			"classe": "P"
+		},
+		{
+			"number": 0,
+			"nom": "Solerets en plate des Berserkers d'Ashara",
+			"desc": "Des solerets en plate des Berserkers d'Ashara",
+			"effet": "Ensemble 'Berserker' : Augmente vos pv maximum de 25. Augmente vos dégâts de 2 par chaque points de vie manquant. L'effet ne commence qu'a la moitié des points de vie perdus",
+			"classe": "P"
+		},
+		{
+			"number": 0,
+			"nom": "Parchemin de compétence : Signe Yrden",
+			"desc": "Lance le signe Yrden pour rendre un ennemi confus. Coût : 20 énergie",
+			"effet": "Lancez ce signe pour rendre un ennemi de taille équivalente incapable d'agir pour 1 tour. Effets supplémentaire contre certains monstres",
+			"classe": "F"
+		},
+		{
+			"number": 0,
+			"nom": "Parchemin de compétence : Instinct de tueur",
+			"desc": "Le lanceur est boosté par son instinct de tueur. Coût : 15 énergie",
+			"effet": "Augmente vos chances de coup critique de 6% pendant 2 tours et vous profitez de dégâts bonus lors d'attaques non-furtive de 1d10 et regagnez 1d5 éergies par ennemis tués",
+			"classe": "F"
+		},
+		{
+			"number": 0,
+			"nom": "Parchemin de compétence : Tourbillon de lames",
+			"desc": "La prochaine attaque furtive à la dague fait plus de dégâts. Coût : 40 énergie. Requis : Lames Elfiques ou dague + instinct de tueur",
+			"effet": "Activer cette compétence pour effectuez une attaque tourbillonante infligeant les dégâts de votre arme plus 3d10 de dégâts bonus à un maximum de 5 ennemis proches de vous",
+			"classe": "F"
+		},
+		{
+			"number": 0,
+			"nom": "Parchemin de compétence : Bouclier divin",
+			"desc": "Protège le guerrier d'un bouclier divin. Coût : 35 endurance",
+			"effet": "La moitié de tous les dégâts que vos revecez est convertie en soin pour 2 tours",
+			"classe": "P"
+		},
+		{
+			"number": 0,
+			"nom": "Parchemin de compétence : Frappe tonnerre",
+			"desc": "Vous infligez une puissante attaque avec votre arme. Coût : 5 énergies",
+			"effet": "Inflige les dégâts de votre arme + 2d10 dégâts bonus à 3 ennemis proches maximum avec 20% de chance pour tous de les assomer pour 1 tour",
+			"classe": "P"
+		},
+		{
+			"number": 0,
+			"nom": "Parchemin de compétence : Armure d'épines",
+			"desc": "Recouvre votre armure d'épines qui infligent des dégâts aux ennemis qui vous frappent. Coût : 10 énergies",
+			"effet": "Inflige 10% des dégâts physiques reçus sous forme de dégâts d'épines. Les dégâts renvoyés ne peuvent dépasser 30",
+			"classe": "P"
+		},
+		{
+			"number": 0,
+			"nom": "Parchemin de compétence : Rayon de givre",
+			"desc": "Vous canalisez un rayon de givre pouvant geler les ennemis. Coût : 10 mana/tour",
+			"effet": "Inflige 2d10 dégâts par tour avec 40% de chance de geler l'ennemi. Si l'ennemi est geler, les dégâts passent à 3d10 par tour. Vous ne pouvez pas bougez pendant que vous canalisez le sort",
+			"classe": "S"
+		},
+		{
+			"number": 0,
+			"nom": "Parchemin de compétence : Vague de soin",
+			"desc": "Invoque une vaguelette d'eau curative qui rebondi sur les alliés. Coût : 25 mana",
+			"effet": "Soigne le premier allié de 1d15, le second de 1d10 etc...",
+			"classe": "S"
+		},
+		{
+			"number": 0,
+			"nom": "Parchemin de compétence : Images miroirs",
+			"desc": "Vous créez une copie de vous-même qui lance les même sorts mais n'inflige pas de dégâts. Coût : 15 mana",
+			"effet": "L'image miroir reste 3 tours et lance les même compétances que vous. Elle possède les mêmes caractéristiques mais n'inflige pâs de dégâts. Elle peut en revanche appliquer des effets d'état",
+			"classe": "S"
 		}
 	],
 	"epic": [
