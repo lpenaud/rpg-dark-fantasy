@@ -11,42 +11,42 @@ class Lottery(object):
             (215, 1000): {
                 'items': data['common'],
                 'options': {
-                    'rarety': 'common',
+                    'rarity': 'common',
                     'color': 'grey'
                 }
             },
             (65, 214): {
                 'items': data['unCommon'],
                 'options': {
-                    'rarety': 'unCommon',
+                    'rarity': 'unCommon',
                     'color': 'green'
                 }
             },
             (15, 64): {
                 'items': data['rare'],
                 'options': {
-                    'rarety': 'rare',
+                    'rarity': 'rare',
                     'color': 'blue'
                 }
             },
             (5, 14): {
                 'items': data['epic'],
                 'options': {
-                    'rarety': 'epic',
+                    'rarity': 'epic',
                     'color': 'orange'
                 }
             },
             (2, 4): {
                 'items': data['legendary'],
                 'options': {
-                    'rarety': 'legendary',
+                    'rarity': 'legendary',
                     'color': 'red'
                 }
             },
             (1, 1): {
                 'items': data['mythical'],
                 'options': {
-                    'rarety': 'mythical',
+                    'rarity': 'mythical',
                     'color': 'purple'
                 }
             }

@@ -17,25 +17,3 @@ def displayLoot(loot):
             print('   ', subKey + ':', subValue, sep=' ', end='\n')
 
 # Type your test code here
-
-randLoot = example.loot()
-i = 1
-choix = ''
-SetRarety = 'mythical'
-
-choix = input('Faites un choix : J = Jouer // N = NombreEssais // R = ChangerRareté (default = mythical) // E = exit : ')
-if choix == 'J' or choix == 'j':
-    for loot in example.history:
-        displayLoot(loot)
-        break
-if choix == 'N' or choix == 'n':
-    while randLoot['options']['rarety'] != SetRarety:
-        randLoot = example.loot()
-        i += 1
-
-if randLoot['options']['rarety'] == SetRarety:
-    print('Nombre d\'essais pour la rareté',SetRarety,':', i)
-       
-if choix == 'E' or choix == 'e':
-    print('Fin du programme')
-    exit()
