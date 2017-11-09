@@ -1,4 +1,4 @@
-#!/usr/bin/env/python3
+#!/usr/bin/env python3
 # coding: utf-8
 
 import random as rand
@@ -86,9 +86,3 @@ class Lottery(object):
             'item': category['items'][indexItem],
             'options': category['options']
         }
-        
-
-        
-    
-
-

@@ -1,4 +1,4 @@
-#!/usr/bin/env/python3
+#!/usr/bin/env python3
 # coding: utf-8
 
 import os
@@ -16,7 +16,12 @@ def displayLoot(loot):
         for subKey, subValue in value.items():
             print('   ', subKey + ':', subValue, sep=' ', end='\n')
 
-# Type your test code here
+def clear():
+    if os.name == 'posix':
+        os.system("clear")
+    else:
+        os.system("cls")
+
 randLoot = example.loot()
 i = 1
 listRarity = []
@@ -27,35 +32,45 @@ for obj in example.rarity.values():
 
 choix = ''
 
-while choix != 'e':
-    choix = input('Faites un choix : J = Jouer // N = NombreEssais // R = ChangerRareté (default = mythical) // E = exit : ')
+while choix != 'Q':
+    clear()
+    print("Faites un choix :",
+        "J = Jouer",
+        "N = Nombre d'essais",
+        "R = Changer rareté rareté  = " + listRarity[setRarity],
+        "Q = Quitter", sep='\n', end='\n')
+    choix = input().upper()
 
-    if choix == 'J' or choix == 'j':    
+    clear()
+    if choix == 'J':
         displayLoot(example.loot())
 
-    if choix == 'N' or choix == 'n':
+    elif choix == 'N':
         randLoot = example.loot()
         i = 1
         while randLoot['options']['rarity'] != listRarity[setRarity]:
             randLoot = example.loot()
             i += 1
+        print("Nombre d'essais pour la rareté",listRarity[setRarity],':', i)
 
-    if randLoot['options']['rarity'] == listRarity[setRarity]:
-        print('Nombre d\'essais pour la rareté',listRarity[setRarity],':', i)
-       
-    if choix == 'R' or choix == 'r':
+    elif choix == 'R':
         while 1:
             for value in range(0,len(listRarity)):
                 print(value, listRarity[value])
-            setRarity = int(input('Entrez l\'index de nouvelle rareté cible : '))
+            try:
+                setRarity = int(input('Entrez l\'index de nouvelle rareté cible : '))
+            except ValueError:
+                print("Veuillez saisir un nombre")
+                continue
+
             print('Rareté',listRarity[setRarity],'validée avec succès !')
-            
+
             if setRarity < 0 and setRarity >= len(listRarity):
                 print('Veuillez entrer une raretée valide : ')
                 continue
             else:
                 break
-            
-    if choix == 'E' or choix == 'e':
-        print('Fin du programme')
-        exit()
+
+    input("Appuyer sur <Enter> pour continuer.")
+
+print('Fin du programme')
