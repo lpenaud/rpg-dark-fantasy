@@ -27,19 +27,18 @@ i = 1
 listRarity = []
 setRarity = 5
 
-for obj in example.rarity.values():
-    listRarity.append(obj['options']['rarity'])
+for key in sorted(example.rarity.keys(), reverse=True):
+    listRarity.append(example.rarity[key]['options']['rarity'])
 
 choix = ''
 
-while choix != 'Q':
+while 1:
     clear()
-    print("Faites un choix :",
-        "J = Jouer",
+    print("J = Jouer",
         "N = Nombre d'essais",
-        "R = Changer rareté rareté  = " + listRarity[setRarity],
+        "R = Changer rareté (" + listRarity[setRarity] + ")",
         "Q = Quitter", sep='\n', end='\n')
-    choix = input().upper()
+    choix = input("Faites un choix : ").upper()
 
     clear()
     if choix == 'J':
@@ -70,6 +69,9 @@ while choix != 'Q':
                 continue
             else:
                 break
+
+    elif choix == 'Q':
+        break
 
     input("Appuyer sur <Enter> pour continuer.")
 
