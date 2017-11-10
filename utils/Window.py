@@ -4,7 +4,7 @@
 from setInterval import ThreadJob
 import gi
 gi.require_version('Gtk', '3.0')
-from gi.repository import Gtk, GdkPixbuf, Gdk
+from gi.repository import Gtk, GdkPixbuf, GObject
 
 class MyWindow(Gtk.Builder):
 
@@ -37,17 +37,19 @@ class LotteryWindow(MyWindow):
         MyWindow.__init__(self, '../glade/Lottery.glade')
         self.lottery = lottery
         self.interval = 0.1
-        self.times = 100
+        self.times = 50
+        self.handlerItemId = 0
 
     def randomise(self, *args):
-        def loopDisplayLoot():
+        def loopDisplayRandom():
             for i in range(1, 4):
-                self.displayLoot(i, self.lottery.loot())
+                self.displayRandom(i, self.lottery.loot())
 
-        k = ThreadJob(loopDisplayLoot, self.interval, self.times - 1)
+        def workingThread():
+            GObject.idle_add(loopDisplayRandom)
+
+        k = ThreadJob(workingThread, self.interval, self.times - 1)
         k.start()
-        # FIXME: Sometime core dumped
-
 
     def displayLoot(self, numLabel, loot):
         label = self.get_object('label-item-' + str(numLabel))

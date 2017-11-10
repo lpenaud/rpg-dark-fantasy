@@ -207,25 +207,29 @@
           </packing>
         </child>
         <child>
-          <object class="GtkGrid" id="grid4">
+          <object class="GtkGrid" id="grid-items">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="valign">center</property>
             <property name="column_homogeneous">True</property>
             <child>
-              <object class="GtkBox" id="box3">
+              <object class="GtkBox" id="box-item-1">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="opacity">0.98999999865889554</property>
+                <property name="halign">center</property>
                 <property name="orientation">vertical</property>
                 <child>
-                  <object class="GtkImage" id="image-item-1">
+                  <object class="GtkEventBox" id="eventbox-item-1">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="halign">center</property>
-                    <property name="valign">center</property>
-                    <property name="margin_bottom">10</property>
-                    <property name="stock">gtk-missing-image</property>
+                    <child>
+                      <object class="GtkImage" id="image-item-1">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="stock">gtk-missing-image</property>
+                      </object>
+                    </child>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -254,18 +258,25 @@
               </packing>
             </child>
             <child>
-              <object class="GtkBox" id="box5">
+              <object class="GtkBox" id="box-item-2">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
+                <property name="halign">center</property>
                 <property name="orientation">vertical</property>
                 <child>
-                  <object class="GtkImage" id="image-item-2">
+                  <object class="GtkEventBox" id="eventbox-item-2">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="halign">center</property>
-                    <property name="valign">center</property>
-                    <property name="margin_bottom">10</property>
-                    <property name="stock">gtk-missing-image</property>
+                    <child>
+                      <object class="GtkImage" id="image-item-2">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                        <property name="margin_bottom">10</property>
+                        <property name="stock">gtk-missing-image</property>
+                      </object>
+                    </child>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -294,18 +305,25 @@
               </packing>
             </child>
             <child>
-              <object class="GtkBox" id="box6">
+              <object class="GtkBox" id="box-item-3">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
+                <property name="halign">center</property>
                 <property name="orientation">vertical</property>
                 <child>
-                  <object class="GtkImage" id="image-item-3">
+                  <object class="GtkEventBox" id="eventbox-item-3">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="halign">center</property>
-                    <property name="valign">center</property>
-                    <property name="margin_bottom">10</property>
-                    <property name="stock">gtk-missing-image</property>
+                    <child>
+                      <object class="GtkImage" id="image-item-3">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                        <property name="margin_bottom">10</property>
+                        <property name="stock">gtk-missing-image</property>
+                      </object>
+                    </child>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -344,18 +362,9 @@
           <object class="GtkBox" id="box8">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
+            <property name="homogeneous">True</property>
             <child>
-              <object class="GtkButton" id="button1">
-                <property name="label" translatable="yes">button</property>
-                <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
-              </object>
-              <packing>
-                <property name="expand">False</property>
-                <property name="fill">True</property>
-                <property name="position">0</property>
-              </packing>
+              <placeholder/>
             </child>
             <child>
               <object class="GtkButton" id="button-launch">
@@ -363,8 +372,8 @@
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
-                <property name="margin_left">100</property>
-                <property name="margin_right">100</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
                 <signal name="clicked" handler="randomise" swapped="no"/>
               </object>
               <packing>
@@ -374,19 +383,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="button3">
-                <property name="label" translatable="yes">button</property>
-                <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
-                <property name="margin_left">100</property>
-                <property name="margin_right">100</property>
-              </object>
-              <packing>
-                <property name="expand">False</property>
-                <property name="fill">True</property>
-                <property name="position">2</property>
-              </packing>
+              <placeholder/>
             </child>
           </object>
           <packing>
