@@ -223,10 +223,14 @@
                   <object class="GtkEventBox" id="eventbox-item-1">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
+                    <property name="halign">center</property>
+                    <property name="valign">center</property>
                     <child>
                       <object class="GtkImage" id="image-item-1">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
                         <property name="stock">gtk-missing-image</property>
                       </object>
                     </child>
@@ -243,6 +247,7 @@
                     <property name="can_focus">False</property>
                     <property name="halign">center</property>
                     <property name="valign">center</property>
+                    <property name="margin_top">10</property>
                     <property name="label" translatable="yes">label</property>
                   </object>
                   <packing>
@@ -267,13 +272,15 @@
                   <object class="GtkEventBox" id="eventbox-item-2">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
+                    <property name="halign">center</property>
+                    <property name="valign">center</property>
+                    <property name="visible_window">False</property>
                     <child>
                       <object class="GtkImage" id="image-item-2">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
-                        <property name="margin_bottom">10</property>
                         <property name="stock">gtk-missing-image</property>
                       </object>
                     </child>
@@ -290,6 +297,7 @@
                     <property name="can_focus">False</property>
                     <property name="halign">center</property>
                     <property name="valign">center</property>
+                    <property name="margin_top">10</property>
                     <property name="label" translatable="yes">label</property>
                   </object>
                   <packing>
@@ -314,13 +322,14 @@
                   <object class="GtkEventBox" id="eventbox-item-3">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
+                    <property name="halign">center</property>
+                    <property name="valign">center</property>
                     <child>
                       <object class="GtkImage" id="image-item-3">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
-                        <property name="margin_bottom">10</property>
                         <property name="stock">gtk-missing-image</property>
                       </object>
                     </child>
@@ -337,6 +346,7 @@
                     <property name="can_focus">False</property>
                     <property name="halign">center</property>
                     <property name="valign">center</property>
+                    <property name="margin_top">10</property>
                     <property name="label" translatable="yes">label</property>
                   </object>
                   <packing>

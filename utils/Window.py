@@ -28,6 +28,11 @@ class MyWindow(Gtk.Builder):
     def changeTextLabel(self, labelId, txt):
         self.get_object(labelId).set_text(txt)
 
+    def addEvent(self, objectId, event, callback, *dataCallback):
+        obj = self.get_object(objectId)
+        handlerId = obj.connect(event, callback, dataCallback)
+        return handlerId
+
     def onDeleteWindow(self, *args):
         Gtk.main_quit(*args)
 
@@ -41,23 +46,44 @@ class LotteryWindow(MyWindow):
         self.handlerItemId = 0
 
     def randomise(self, *args):
-        def loopDisplayRandom():
-            for i in range(1, 4):
-                self.displayRandom(i, self.lottery.loot())
+        def workingThreadRandomise():
+            GObject.idle_add(self.displayRandom)
 
-        def workingThread():
-            GObject.idle_add(loopDisplayRandom)
+        self.threadJobRandom = ThreadJob(workingThreadRandomise, self.interval, self.times)
+        self.threadJobRandom.currentTimes = 0
+        self.threadJobRandom.start()
 
-        k = ThreadJob(workingThread, self.interval, self.times - 1)
-        k.start()
+    def displayRandom(self):
+        for number in range(1, 4):
+            keepHistory = number == 2 and self.threadJobRandom.currentTimes == self.times
+            loot = self.lottery.loot(keepHistory=keepHistory)
+            label = self.get_object('label-item-' + str(number))
+            label.set_width_chars(50)
+            label.set_line_wrap(True)
+            label.set_margin_left(50)
+            self.changeImage('image-item-' + str(number), '../images/rarety/128x128/' + loot['options']['rarety'] + '.png', width=64, height=64)
+            label.set_markup('<span weight="bold" color="' + loot['options']['color'] + '">' + loot['item']['nom'] + '</span>')
+            if keepHistory:
+                self.addEventItem(number, **loot)
 
-    def displayLoot(self, numLabel, loot):
-        label = self.get_object('label-item-' + str(numLabel))
-        label.set_width_chars(50)
-        label.set_line_wrap(True)
-        label.set_margin_left(50)
-        self.changeImage('image-item-' + str(numLabel), '../images/rarety/128x128/' + loot['options']['rarety'] + '.png', width=64, height=64)
-        label.set_markup('<span color="' + loot['options']['color'] + '">' + self.lottery.displayLoot(loot) + '</span>')
+
+    def addEventItem(self, number, **dataCallback):
+        idObject = "eventbox-item-" + str(number)
+        if self.handlerItemId != 0:
+            self.get_object(idObject).disconnect(self.handlerItemId)
+        self.handlerItemId = self.addEvent(idObject, 'enter-notify-event', self.displayLoot, dataCallback)
+
+
+    def displayLoot(self, *args):
+        loot = args[2][0]
+        print(self.lottery.history)
+        label = self.get_object('label-item-2')
+        markup = '<span color="' + loot['options']['color'] + '">'
+        markup += '<span weight=' + '"bold"' + '>' + loot['item']['nom'] + '</span>'
+        markup += "\n Description : " + loot['item']['desc']
+        markup += "\n Effet : " + loot['item']['effet']
+        markup += '</span>'
+        label.set_markup(markup) #To get markup : get_label()
 
 
 
