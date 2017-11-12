@@ -86,27 +86,6 @@
 		},
 		{
 			"number": 0,
-			"nom": "Arbalète craquelée moisie",
-			"desc": "Une arbalète dont le bois est fendu",
-			"effet": "Mauvais état : L'arme a 1 chance sur 3 de se briser en attaquant avec",
-			"classe": "P/F"
-		},
-		{
-			"number": 0,
-			"nom": "Arbalète en argent",
-			"desc": "Une arbalète faite pour tirer des carreaux d'argents",
-			"effet": "Argent : Dégâts normaux contre les monstres",
-			"classe": "P/F"
-		},
-		{
-			"number": 0,
-			"nom": "Arc en bois",
-			"desc": "Une arbalète simple en bois",
-			"effet": "Aucun",
-			"classe": "P/F"
-		},
-		{
-			"number": 0,
 			"nom": "Grimoire moisie",
 			"desc": "Un grimoire dont les pages ont moisies",
 			"effet": "Mauvais état : 1 chance sur 3 de mal lire les incantations de rater votre prochain sort",
@@ -1350,7 +1329,7 @@
 		},
 		{
 			"number": 0,
-			"nom": "Grimoirer runique d'Arkhäne",
+			"nom": "Grimoire runique d'Arkhäne",
 			"desc": "Un grimoire tiré des bibliothèques d'Arkhäne",
 			"effet": "Sorts runique : Une attaque avec cette arme pose une rune sur la cible. Avant le prochain tour de la cible, si la celle-ci subie des dégâts, la rune explose infligeant 1d15 + 10 dégâts. Sinon la rune disparait",
 			"classe": "S"
@@ -1854,22 +1833,22 @@
 		},
 		{
 			"number": 0,
-			"nom": "Parchemin de compétence : Signe Yrden",
-			"desc": "Lance le signe Yrden pour rendre un ennemi confus. Coût : 20 énergie",
-			"effet": "Lancez ce signe pour rendre un ennemi de taille équivalente incapable d'agir pour 1 tour. Effets supplémentaire contre certains monstres",
+			"nom": "Parchemin de compétence : Visage mortuaire",
+			"desc": "Utilisez. Coût : 30 énergie",
+			"effet": "Votre visage prend un aspect terrifiant. tous les ennemis en face de vous ont 50% de chance d'être effrayés pour 1 tour. Vous pouvez effrayés vos alliés. Ne fonctionnent que sur les humanoïdes et les monstres de tailles moyennes ou petites",
 			"classe": "F"
 		},
 		{
 			"number": 0,
 			"nom": "Parchemin de compétence : Instinct de tueur",
 			"desc": "Le lanceur est boosté par son instinct de tueur. Coût : 15 énergie",
-			"effet": "Augmente vos chances de coup critique de 6% pendant 2 tours et vous profitez de dégâts bonus lors d'attaques non-furtive de 1d10 et regagnez 1d5 éergies par ennemis tués",
+			"effet": "Augmente vos chances de coup critique de 6% pendant 2 tours et vous profitez de dégâts bonus lors d'attaques non-furtive de 1d10 et regagnez 1d5 énergies par ennemis tués",
 			"classe": "F"
 		},
 		{
 			"number": 0,
 			"nom": "Parchemin de compétence : Tourbillon de lames",
-			"desc": "La prochaine attaque furtive à la dague fait plus de dégâts. Coût : 40 énergie. Requis : Lames Elfiques ou dague + instinct de tueur",
+			"desc": "Vous effectuez une attaque tourbillonnante meurtrière. Coût : 40 énergie. Requis : Lames Elfiques ou dague + instinct de tueur",
 			"effet": "Activer cette compétence pour effectuez une attaque tourbillonante infligeant les dégâts de votre arme plus 3d10 de dégâts bonus à un maximum de 5 ennemis proches de vous",
 			"classe": "F"
 		},
@@ -1919,10 +1898,255 @@
 	"epic": [
 		{
 			"number": 0,
-			"nom": "Arc long en os de dragon",
-			"desc": "Un arc ancien taillé dans l'os d'un dragon",
-			"effet": "",
-			"classe": "Aucun"
+			"nom": "Lame de prétorien Wellanien",
+			"desc": "Une épée de qualitée exceptionnelle, réservée aux gardes d'élites de l'Empire Wellanien, les prétoriens",
+			"effet": "Arme de prétorien : Augmente vos chances de coups critique de 15%. De plus, vos attaques ignore 20% de l'armure de l'ennemi",
+			"classe": "P - P/F"
+		},
+		{
+			"number": 0,
+			"nom": "Lame dentelée des Escadrons d'Argent",
+			"desc": "Une lame en argent des chasseurs de monstres des Escadrons d'Argent",
+			"effet": "Arme des Escadrons d'Argents : Bonus de dégâts de 3d20 contre les monstres. De plus, vos attaques ont 5% de chances d'infecter la cible avec du fluide-argent lui infligeant 5d10 dégâts supplémentaires ce tour-ci",
+			"classe": "P - P/F"
+		},
+		{
+			"number": 0,
+			"nom": "Épée bâtarde en corindon noir",
+			"desc": "Une épée bâtarde forgée en onyx. Sa soliditée et son tranchant sont exemplaires",
+			"effet": "Corindon noir : Votre attaques ignores 80% de l'armure des ennemis en armure de tissu ou cuir. Vos attaques ingores 15% des armures de mailles et de plates",
+			"classe": "P - P/F"
+		},
+		{
+			"number": 0,
+			"nom": "Espadon recourbé de faucheur",
+			"desc": "Un espadon à lame incurvé permettant des attaques circulaires meurtrières",
+			"effet": "Lame recourbée : Votre arme touche tous les ennemis à 3 mètres autour de vous (même vos alliés). Les cibles touchées ont 30% de chances de subir un saignement de 1d10 par tour pendant 3 tours",
+			"classe": "P"
+		},
+		{
+			"number": 0,
+			"nom": "Espadon dentelée des Escadrons d'Argent",
+			"desc": "Une lame en argent des chasseurs de monstres des Escadrons d'Argent",
+			"effet": "Arme des Escadrons d'Argents : Bonus de dégâts de 3d20 contre les monstres. De plus, vos attaques ont 5% de chances d'infecter la cible avec du fluide-argent lui infligeant 5d10 dégâts supplémentaires ce tour-ci",
+			"classe": "P"
+		},
+		{
+			"number": 0,
+			"nom": "Espadon colossal en corindon noir",
+			"desc": "Un espadon immense forgé en corindon noir",
+			"effet": "Corindon noir : Votre attaques ignores 80% de l'armure des ennemis en armure de tissu ou cuir. Vos attaques ingores 15% des armures de mailles et de plates",
+			"classe": "P"
+		},
+		{
+			"number": 0,
+			"nom": "Dague incurvée des Marches-Sables",
+			"desc": "Un dague à lame incurvée utilisée par les assassins du Désert de Shiruma",
+			"effet": "Assassinat : Votre attaque furtive inflige 1d20 de dégâts supplémentaires et déclenchent la compétance 'instinct de tueur' même si vous ne la possédez pas et sans coût d'énergie",
+			"classe": "F - F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Dague dentelée des Escadrons d'Argent",
+			"desc": "Une lame en argent des chasseurs de monstres des Escadrons d'Argent",
+			"effet": "Arme des Escadrons d'Argents : Bonus de dégâts de 3d20 contre les monstres. De plus, vos attaques ont 5% de chances d'infecter la cible avec du fluide-argent lui infligeant 5d10 dégâts supplémentaires ce tour-ci",
+			"classe": "F - F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Dague naine runique",
+			"desc": "Une dague où sont gravées d'anciennnes runes naines",
+			"effet": "Runes naines : Chaque compétence magique utilisée autours de vous augmente rempli une rune de l'arme et augmantant définitivement les dégâts de cette arme (en combat uniquement). Chaque rune remplit augmente les dégâts de 1d10 (additionnez les bonus). il y a 5 runes sur l'arme ",
+			"classe": "F - F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Arc long, fléau des draconides",
+			"desc": "Un arc long dont la puissance à été étudié pour percer au mieux les écailles des créatures draconides",
+			"effet": "Fléau des Draconides : Vos tirs infligent 3d10 de dégâts supplémentaires aux draconides et ont 100% de chances de les faires s'écraser au sol s'ils la cible est dans les airs, occasionnant des dégâts supplémentaires",
+			"classe": "F"
+		},
+		{
+			"number": 0,
+			"nom": "Arc de chasse recourbé des Escadrons d'Argent",
+			"desc": "Un arc en argent des chasseurs de monstres des Escadrons d'Argent",
+			"effet": "Arme des Escadrons d'Argents : Bonus de dégâts de 3d20 contre les monstres. De plus, vos attaques ont 5% de chances d'infecter la cible avec du fluide-argent lui infligeant 5d10 dégâts supplémentaires ce tour-ci",
+			"classe": "F"
+		},
+		{
+			"number": 0,
+			"nom": "Arc long à double courbure d'archer d'élite",
+			"desc": "Un arc de guerre très puissant capable d'atteindre des cibles lointaines et de percer les armures les plus épaisses",
+			"effet": "Perce-armure : Si la cible porte une armure lourde, ignorez l'armure et infligez 1d10 de dégâts supplémentaires",
+			"classe": "F"
+		},
+		{
+			"number": 0,
+			"nom": "Grimoire de l'Ombre",
+			"desc": "Un grimoire contenant des inscriptions obscures",
+			"effet": "Sorts obscures : Si la luminosité ambiante est faible, vos dégâts sont augmentés de 1d30 et votre mana se régénère de 1d5 à chaque fois que vous infligez des dégâts",
+			"classe": "S"
+		},
+		{
+			"number": 0,
+			"nom": "Grimoire de l'Aube",
+			"desc": "Un grimoire contenant des inscriptions de sorts de lumières",
+			"effet": "Sorts lumineux : Bonus de dégâts de 1d30 contre les monstres. Si la luminosité ambiante est élevée, vos dégâts sont augmentés de 1d10 et votre mana se régénère de 1d5 à chaque fois que vous infligez des dégâts",
+			"classe": "S"
+		},
+		{
+			"number": 0,
+			"nom": "Grimoire d'invocateur'",
+			"desc": "Les invocateurs utilisent ce genre de grimoire. Coût : 35 mana",
+			"effet": "Invocation : Vous pouvez invoquer un golem en utilisant un élément près de vous (eau,feu,terre,air). Eau et Terre, le golem possède deux fois vos points de vie et possède la compétance provocation qui force tous les ennemis à l'attaquer pour 1 tour (2 fois seulement). Il ne peut infliger de dégâts et est détruit au bout de 3 tours. Feu et Air, le golem possède deux fois les dégâts de votre arme actuellement équipée. Le golem est détruit au bout de deux tours",
+			"classe": "S"
+		},
+		{
+			"number": 0,
+			"nom": "Bâton de guerre en vif-acier",
+			"desc": "Un bâton infusé de magie capable également d'asséner des coups puissants",
+			"effet": "Décharge : Les coups direct portés avec cette arme ont 15% de choquer l'ennemi, le rendant incapable d'agir pour 1 tour et lui infligeant 1d5 de dégâts bonus. Cet effet ne peut s'appliquer qu'une fois par ennemi et par combat",
+			"classe": "P/S"
+		},
+		{
+			"number": 0,
+			"nom": "Bâton en argent de Shiruma",
+			"desc": "L'argent de cette arme a été extrait dans les mines du Désert de Shiruma, en Hadren",
+			"effet": "Argent de Shiruma : Bonus de dégâts de 1d15 contre les monstres. De plus, vos attaques ont 10% de chances de brûler la cible lui infligeant 5 dégâts supplémentaires par tour pendant 3 tours",
+			"classe": "P/S"
+		},
+		{
+			"number": 0,
+			"nom": "Bâton en bois de sorbier",
+			"desc": "Un bâton fabriqué en bois magique de sorbier. Coût du tir de givre : 20 mana",
+			"effet": "Bois de sorbier : Vous pouvez lancer un éclair de givre sur la cible ce qui inflige 1d10 + 5 dégâts à la cible avec 20% de chance de la geler pour 1 tour. Un coup ou de la chaleur dégèle la cible. Vos coups direct ont 5% de chance de geler la cible",
+			"classe": "P/S"
+		},
+		{
+			"number": 0,
+			"nom": "Chakram réceptacle en vif-acier",
+			"desc": "Un chakram forgé en vif-acier pouvant acceuillir de l'énergie",
+			"effet": "Réceptacle : Vous pouvez lancer un sort élémentaire sur cette arme. Le prochain coup avec cette arme infligera les dégâts du sort et ses effets pour deux tours.",
+			"classe": "P/S"
+		},
+		{
+			"number": 0,
+			"nom": "Chakram en argent de Shiruma",
+			"desc": "L'argent de cette arme a été extrait dans les mines du Désert de Shiruma, en Hadren",
+			"effet": "Argent de Shiruma : Bonus de dégâts de 1d15 contre les monstres. De plus, vos attaques ont 10% de chances de brûler la cible lui infligeant 5 dégâts supplémentaires par tour pendant 3 tours",
+			"classe": "P/S"
+		},
+		{
+			"number": 0,
+			"nom": "Chakram en elfique",
+			"desc": "Un Chakram fabriqué et utilisé par les elfes",
+			"effet": "Finesse elfique : Au début de votre tour, si vous décidez d'attaquer avec cette arme, jetez 1d3. Le résultat sera le nombre d'ennemis pouvant être touchés par votre chakram. Si vous ne touchez qu'1 ennemi jetez 1d10 de dégâts supplémentaires",
+			"classe": "P/S"
+		},
+		{
+			"number": 0,
+			"nom": "Lame d'éther au crystal de corindon rouge",
+			"desc": "L'éther de cette lame stable et puissante est généré par un crystal de corindon rouge",
+			"effet": "Corindon rouge : Si la lame de cette arme entre en contact avec une lame en fer, cette dernière à 75% de chance d'être coupé en deux. De plus, chaque coup porté avec cette arme brule la cible, infligeant 1d15 de dégâts bonus. Saignement impossible. Peut cautériser les plaies",
+			"classe": "F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Lame d'éther en corindon blanc de Shurima",
+			"desc": "Le crystal de diamant de cette arme a été extrait dans les mines du Désert de Shiruma, en Hadren",
+			"effet": "Corindon blanc : Bonus de dégâts de 1d15 contre les monstres. De plus, vos attaques ont 20% de chances d'électriser la cible pendant 2 tours augmentant les dégâts reçu de 1d5 par coup reçu durant ces deux tours",
+			"classe": "F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Lame d'éther au crystal de corindon bleu",
+			"desc": "L'éther de cette lame fine et vive est généré par un crystal de corindon bleu",
+			"effet": "Corindon bleu : Si la lame de cette arme entre en contact avec une lame en fer, cette dernière à 75% de chance d'être gelé et de se briser. De plus, chaque coup porté avec cette arme cause une gelure la cible, infligeant 1d15 de dégâts bonus.",
+			"classe": "F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Chaine en vif-acier",
+			"desc": "Une chaine forgée en vif-acier",
+			"effet": "Vif-acier : La chaine peut emprisonner des cibles supérieur à une taille d'homme avec 25% de chance. 35% de chance pour une taille d'homme ou inférieur, le tout pour 1 tour",
+			"classe": "P/F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Chaîne d'argent de Shiruma",
+			"desc": "L'argent de cette arme a été extrait dans les mines du Désert de Shiruma, en Hadren",
+			"effet": "Argent de Shiruma : 35% de chance d'imobiliser le monstre à taille d'homme ou inférieur. Pour les monstres plus grands, 25% de chance",
+			"classe": "P/F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Chaine en vif-acier à crochets sérrés",
+			"desc": "Une chaine en vif-acier mortelle",
+			"effet": "Saignement : 1 chance sur 2 de provoquer un saignement de la cible équivalent à 10% de ses points de vies par tour en l'immobilisant avec cette chaîne. 20% de chance d'immobilisation pour 1 tour pour les cibles à taille d'homme ou inférieure",
+			"classe": "P/F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Lame Elfique en fluide-acier",
+			"desc": "Une lame elfique forgée en fluide-acier",
+			"effet": "Fluide-acier : Votre taux de coups critiques est augmentée de 15% avec cette arme. De plus, vos coups critiques inflige 1d30 dégâts supplémentaire",
+			"classe": "F - P/F"
+		},
+		{
+			"number": 0,
+			"nom": "Lame Eflique en argent de Shiruma",
+			"desc": "L'argent de cette arme a été extrait dans les mines du Désert de Shiruma, en Hadren",
+			"effet": "Argent de Shiruma : Bonus de dégâts de 1d15 contre les monstres. De plus, vos attaques ont 10% de chances de brûler la cible lui infligeant 5 dégâts supplémentaires par tour pendant 3 tours",
+			"classe": "F - P/F"
+		},
+		{
+			"number": 0,
+			"nom": "Lame Elfique en corindon rouge",
+			"desc": "Une lame elfique forgée en corindon rouge",
+			"effet": "Corindon rouge : Votre arme à 15% de chance de trancher les armes conventionnelles non-elfique. De plus, ajouter 1d15 de dégâts à votre arme",
+			"classe": "F - P/F"
+		},
+		{
+			"number": 0,
+			"nom": "Faux en vif-acier réceptacle d'âme",
+			"desc": "Une faux forgée en vif-acier capable d'absorbée des âmes mineures",
+			"effet": "Absorbtion d'âmes mineures : Pour chaque ennemi tué avec cette arme (humain taille maximal), augmentez les dégâts de cette arme de 1d5. Cet effet peut se cumuler jusqu'a 5 fois et est permanent",
+			"classe": "F - F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Faux en argent de Shiruma",
+			"desc": "L'argent de cette arme a été extrait dans les mines du Désert de Shiruma, en Hadren",
+			"effet": "Argent de Shiruma : Bonus de dégâts de 1d15 contre les monstres. De plus, vos attaques ont 10% de chances de brûler la cible lui infligeant 5 dégâts supplémentaires par tour pendant 3 tours",
+			"classe": "F - F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Faux vampirique en vif-acier",
+			"desc": "Une faux vampirique en vif-acier",
+			"effet": "Vampirisme : A chaque coup portée avec cette arme, recever 25% des dégâts infligé en soin. Si vous tuez un ennemi, recevez 50% des dégâts infligés en soin.",
+			"classe": "F - F/S"
+		},
+		{
+			"number": 0,
+			"nom": "Griffes recourbées en vif-acier",
+			"desc": "Les griffes en vif-acier sont très recourbées pour maximiser les dégâts",
+			"effet": "Déchirure : Vos attaques ont 30% de chance de faire saigner la cible de 10pv par tour pendant 2 tours",
+			"classe": "F - F/P"
+		},
+		{
+			"number": 0,
+			"nom": "Griffes en argent de Shiruma",
+			"desc": "L'argent de cette arme a été extrait dans les mines du Désert de Shiruma, en Hadren",
+			"effet": "Argent de Shiruma : Bonus de dégâts de 1d15 contre les monstres. De plus, vos attaques ont 10% de chances de brûler la cible lui infligeant 5 dégâts supplémentaires par tour pendant 3 tours",
+			"classe": "F - F/P"
+		},
+		{
+			"number": 0,
+			"nom": "Griffes en fluide-acier",
+			"desc": "Des griffes forgée en fluide-acier elfique",
+			"effet": "Fluide-acier : Votre taux de coups critiques est augmentée de 15% avec cette arme. De plus, vos coups critiques inflige 1d30 dégâts supplémentaire",
+			"classe": "F - F/P"
 		}
 	],
 	"legendary": [
@@ -1965,9 +2189,9 @@
 	"mythical": [
 		{
 			"number": 0,
-			"nom": "test nom arme mythique",
-			"effet": "test effet arme mythique",
-			"classe": "test classe arme mythique"
+			"nom": "Épée de Vincent Bellec",
+			"effet": "Vous perdez 10000pv si vous frappez avec (oui c'est nulle)",
+			"classe": "V"
 		}
 	]
 }
