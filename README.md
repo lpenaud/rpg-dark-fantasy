@@ -1,7 +1,7 @@
 # rpg-dark-fantasy
 
 ## TODO
-- [ ] Write a documentation
+- [x] Write a documentation
 - [ ] Create some settings windows
 
 ## Images sources

@@ -5,17 +5,18 @@ import threading
 lock = threading.RLock()
 
 class ThreadJob(threading.Thread):
+    """
+    Runs the callback function after interval seconds x times
+
+    :param callback:  callback function to invoke
+    :type callback: function
+    :param interval: time in seconds after which are required to fire the callback
+    :type interval: float
+    :param time: number of times callback is invoke
+    :type time: int
+    """
+
     def __init__(self,callback,interval,times):
-        '''runs the callback function after interval seconds
-
-        :param callback:  callback function to invoke
-        :type callback: function
-        :param interval: time in seconds after which are required to fire the callback
-        :type interval: float
-        :param time: number of times callback is invoke
-        :type time: int
-        '''
-
         self.callback = callback
         self.event = threading.Event()
         self.interval = interval

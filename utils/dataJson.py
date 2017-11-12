@@ -5,6 +5,7 @@ import json
 def load(strf):
     """
     load a JSON file in a dict
+    
     :param strf: name of the json file
     :type strf: str
     :return: data in JSON file

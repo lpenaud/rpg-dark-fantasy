@@ -1,0 +1,303 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Window &#8212; rpg-dark-fantasy 1.0 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="setInterval" href="setInterval.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="window">
+<h1>Window<a class="headerlink" href="#window" title="Permalink to this headline">¶</a></h1>
+<p><strong>Summary</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><a class="reference external" href="#id2">MyWindow</a></li>
+<li><a class="reference external" href="#id3">LotteryWindow</a></li>
+<li><a class="reference external" href="#id4">load</a></li>
+</ul>
+</div></blockquote>
+<div class="section" id="id1">
+<h2>MyWindow<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Window.MyWindow">
+<em class="property">class </em><code class="descclassname">Window.</code><code class="descname">MyWindow</code><span class="sig-paren">(</span><em>file</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Window.html#MyWindow"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Window.MyWindow" title="Permalink to this definition">¶</a></dt>
+<dd><p>A class which add some useful methods</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>file</strong> (<em>str</em>) – A relative or absolute path of glade file</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="Window.MyWindow.addEvent">
+<code class="descname">addEvent</code><span class="sig-paren">(</span><em>objectId</em>, <em>event</em>, <em>callback</em>, <em>*dataCallback</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Window.html#MyWindow.addEvent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Window.MyWindow.addEvent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Connect a signal a gtkObject</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>objectId</strong> (<em>str</em>) – Id of the gtkObject</li>
+<li><strong>event</strong> (<em>str</em>) – Gtk event of the signal compatible with the selected object</li>
+<li><strong>callback</strong> (<em>function</em>) – Function invoked when the event is triggered</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Handler id to disconnect him</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">int</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Window.MyWindow.changeImage">
+<code class="descname">changeImage</code><span class="sig-paren">(</span><em>imageId</em>, <em>file</em>, <em>width=64</em>, <em>height=64</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Window.html#MyWindow.changeImage"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Window.MyWindow.changeImage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set source of a GtkImage with its id</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>imageId</strong> (<em>str</em>) – Id of a GtkImage</li>
+<li><strong>file</strong> (<em>str</em>) – Absolute or relative path of the image source</li>
+<li><strong>width</strong> (<em>int</em>) – Width in pixel of the image by default 64</li>
+<li><strong>height</strong> (<em>int</em>) – Height in pixel of the image by default 64</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Window.MyWindow.changeTextLabel">
+<code class="descname">changeTextLabel</code><span class="sig-paren">(</span><em>labelId</em>, <em>txt</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Window.html#MyWindow.changeTextLabel"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Window.MyWindow.changeTextLabel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set text of a GtkLabel with its id</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>labelId</strong> (<em>str</em>) – Id of a GtkLabel</li>
+<li><strong>txt</strong> (<em>str</em>) – Text to put into the GtkLabel</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Window.MyWindow.getWindow">
+<code class="descname">getWindow</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Window.html#MyWindow.getWindow"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Window.MyWindow.getWindow" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get window object in the glade file</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Window object</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">Gtk.Window</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Window.MyWindow.onDeleteWindow">
+<code class="descname">onDeleteWindow</code><span class="sig-paren">(</span><em>*args</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Window.html#MyWindow.onDeleteWindow"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Window.MyWindow.onDeleteWindow" title="Permalink to this definition">¶</a></dt>
+<dd><p>Procedure triggered when the user left the main window</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="id2">
+<h2>LotteryWindow<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Window.LotteryWindow">
+<em class="property">class </em><code class="descclassname">Window.</code><code class="descname">LotteryWindow</code><span class="sig-paren">(</span><em>lottery</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Window.html#LotteryWindow"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Window.LotteryWindow" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a new Window to the class Lottery</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>lottery</strong> (<a class="reference internal" href="Lottery.html#Lottery.Lottery" title="Lottery.Lottery"><em>Lottery.Lottery</em></a>) – Lottery to use in the window</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="Window.LotteryWindow.addEventItem">
+<code class="descname">addEventItem</code><span class="sig-paren">(</span><em>number</em>, <em>**dataCallback</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Window.html#LotteryWindow.addEventItem"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Window.LotteryWindow.addEventItem" title="Permalink to this definition">¶</a></dt>
+<dd><p>A procedure to connect the signal of the object looted</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>number</strong> (<em>int</em>) – number (1 to 3) of eventbox-item</li>
+<li><strong>dataCallback</strong> (<em>dict</em>) – Arguments of the callback function</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Window.LotteryWindow.displayLoot">
+<code class="descname">displayLoot</code><span class="sig-paren">(</span><em>*args</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Window.html#LotteryWindow.displayLoot"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Window.LotteryWindow.displayLoot" title="Permalink to this definition">¶</a></dt>
+<dd><p>A procedure to display more informations of the obtained loot (effect and description)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>args</strong> (<em>tuple</em>) – Data : Gtk.Object, Gtk.Event,&lt;tuple (loot (item, options))&gt;</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Window.LotteryWindow.displayRandom">
+<code class="descname">displayRandom</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Window.html#LotteryWindow.displayRandom"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Window.LotteryWindow.displayRandom" title="Permalink to this definition">¶</a></dt>
+<dd><p>A procedure to display name of the loots obtained by the thread triggered by self.randomise procedure</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Window.LotteryWindow.randomise">
+<code class="descname">randomise</code><span class="sig-paren">(</span><em>*args</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Window.html#LotteryWindow.randomise"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Window.LotteryWindow.randomise" title="Permalink to this definition">¶</a></dt>
+<dd><p>A procedure to launch x times Lottery.Loot() in Thread and display the loots (self.displayRandom())</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="id3">
+<h2>load<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><dl class="function">
+<dt id="Window.load">
+<code class="descclassname">Window.</code><code class="descname">load</code><span class="sig-paren">(</span><em>window</em>, <em>title='None'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Window.html#load"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Window.load" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show main GtkWindow</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>window</strong> (<em>Gtk.Window</em>) – Gtk main window to display it</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div></blockquote>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">rpg-dark-fantasy</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="dataJson.html">dataJson</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lottery.html">characters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="setInterval.html">setInterval</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Window</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">MyWindow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">LotteryWindow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">load</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="setInterval.html" title="previous chapter">setInterval</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2017, Loïc Penaud.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.4</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="_sources/Window.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -4,6 +4,13 @@ import random as rand
 from dataJson import *
 
 class Lottery(object):
+    """
+    Create a Lottery with a json file
+
+    :param strf: name of the json file which contain items
+    :type strf: str
+    """
+
     def __init__(self, strf):
         data = load(strf)
         self.__rarity = {
@@ -54,6 +61,12 @@ class Lottery(object):
 
     @property
     def history(self):
+        """
+        Getter of history
+
+        :return: History of Lottery with all loots (dict with item and options)
+        :rtype: tuple
+        """
         history = []
 
         for value in self.__history:
@@ -66,9 +79,23 @@ class Lottery(object):
 
     @property
     def rarity(self):
+        """
+        Getter of rarity
+
+        :return: A copy of rarity of Lottery
+        :rtype: list
+        """
         return self.__rarity.copy()
 
     def loot(self, keepHistory=False):
+        """
+        Play the Lottery
+
+        :param keepHistory: If the loot is keep in history of Lottery by default False
+        :type keepHistory: bool
+        :return: A item with its options (dict with color and rarity)
+        :rtype: dict
+        """
         randNum = rand.randint(1, 1000)
         category = {}
         indexItem = 0
@@ -89,6 +116,14 @@ class Lottery(object):
         }
 
     def displayLoot(self, loot):
+        """
+        Create a string with all informations of a loot
+
+        :param loot: loot returned by Lottery.loot()
+        :type loot: dict
+        :return: Text to display with a print or in label
+        :rtype: str
+        """
         txt = ""
 
         for key, value in loot.items():
