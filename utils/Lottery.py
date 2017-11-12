@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 # coding: utf-8
-
 import random as rand
 from dataJson import *
 
@@ -69,20 +68,34 @@ class Lottery(object):
     def rarity(self):
         return self.__rarity.copy()
 
-    def loot(self):
+    def loot(self, keepHistory=False):
         randNum = rand.randint(1, 1000)
         category = {}
         indexItem = 0
 
-        for key in self.rarity.keys():
+        for key in self.__rarity.keys():
             if randNum >= key[0] and randNum <= key[1]:
-                category = self.rarity[key]
+                category = self.__rarity[key]
                 break
 
         indexItem = rand.randint(0, len(category['items']) - 1)
-        self.__history.append((key, indexItem))
+
+        if keepHistory:
+            self.__history.append((key, indexItem))
 
         return {
             'item': category['items'][indexItem],
             'options': category['options']
         }
+
+    def displayLoot(self, loot):
+        txt = ""
+
+        for key, value in loot.items():
+            txt += key.title() + ':\n'
+            for subKey, subValue in value.items():
+                if subKey == 'color':
+                    continue
+                txt += '   ' + str(subKey) + ' : ' + str(subValue) + '\n'
+
+        return txt

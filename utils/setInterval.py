@@ -1,0 +1,30 @@
+#!/usr/bin/env python3
+# coding: utf-8
+import threading
+
+lock = threading.RLock()
+
+class ThreadJob(threading.Thread):
+    def __init__(self,callback,interval,times):
+        '''runs the callback function after interval seconds
+
+        :param callback:  callback function to invoke
+        :type callback: function
+        :param interval: time in seconds after which are required to fire the callback
+        :type interval: float
+        :param time: number of times callback is invoke
+        :type time: int
+        '''
+
+        self.callback = callback
+        self.event = threading.Event()
+        self.interval = interval
+        self.times = times
+        self.currentTimes = 0
+        super(ThreadJob,self).__init__()
+
+    def run(self):
+        while not(self.event.wait(self.interval)) and self.currentTimes != self.times:
+            with lock:
+                self.callback()
+                self.currentTimes += 1
