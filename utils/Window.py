@@ -1,4 +1,4 @@
-#!/usr/bin/env/python3
+#!/usr/bin/env python3
 # coding: utf-8
 
 from setInterval import ThreadJob
@@ -40,6 +40,8 @@ class LotteryWindow(MyWindow):
 
     def __init__(self, lottery):
         MyWindow.__init__(self, '../glade/Lottery.glade')
+        img = GdkPixbuf.Pixbuf.new_from_file_at_size('../images/RPG-icon.png', width=128, height=128)
+        self.getWindow().set_icon(img)
         self.lottery = lottery
         self.interval = 0.1
         self.times = 50
@@ -76,12 +78,11 @@ class LotteryWindow(MyWindow):
 
     def displayLoot(self, *args):
         loot = args[2][0]
-        print(self.lottery.history)
         label = self.get_object('label-item-2')
         markup = '<span color="' + loot['options']['color'] + '">'
         markup += '<span weight=' + '"bold"' + '>' + loot['item']['nom'] + '</span>'
-        markup += "\n Description : " + loot['item']['desc']
-        markup += "\n Effet : " + loot['item']['effet']
+        markup += "\nDescription : " + loot['item']['desc']
+        markup += "\nEffet : " + loot['item']['effet']
         markup += '</span>'
         label.set_markup(markup) #To get markup : get_label()
 

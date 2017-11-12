@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+# coding: utf-8
 import random as rand
 from dataJson import *
 
@@ -93,7 +95,7 @@ class Lottery(object):
             txt += key.title() + ':\n'
             for subKey, subValue in value.items():
                 if subKey == 'color':
-                    continue 
+                    continue
                 txt += '   ' + str(subKey) + ' : ' + str(subValue) + '\n'
 
         return txt
