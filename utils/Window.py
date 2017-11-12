@@ -63,7 +63,7 @@ class LotteryWindow(MyWindow):
             label.set_width_chars(50)
             label.set_line_wrap(True)
             label.set_margin_left(50)
-            self.changeImage('image-item-' + str(number), '../images/rarety/128x128/' + loot['options']['rarety'] + '.png', width=64, height=64)
+            self.changeImage('image-item-' + str(number), '../images/rarity/128x128/' + loot['options']['rarity'] + '.png', width=64, height=64)
             label.set_markup('<span weight="bold" color="' + loot['options']['color'] + '">' + loot['item']['nom'] + '</span>')
             if keepHistory:
                 self.addEventItem(number, **loot)

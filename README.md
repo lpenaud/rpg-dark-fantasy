@@ -5,6 +5,8 @@
 - [ ] Create some settings windows
 
 ## Images sources
-
-* ![piece.png](images/piece.png) : [emey87 of iconarchive](http://www.iconarchive.com/artist/emey87.html)
-* ![RPG-icon.png](images/RPG-icon.png) : [Teekatas Suwannakrua of iconarchive](http://www.iconarchive.com/artist/raindropmemory.html)
+Teekatas Suwannakrua of iconarchive :
+* [Iconset: Legendora](http://www.iconarchive.com/show/legendora-icons-by-raindropmemory.html)
+    * [![gold-icon.png](images/gold-icon.png)](http://www.iconarchive.com/show/down-to-earth-icons-by-raindropmemory/G12-RPG-icon.html)
+* [Iconset: Down To Earth Icons](http://www.iconarchive.com/show/down-to-earth-icons-by-raindropmemory.html)
+    * [![RPG-icon.png](images/RPG-icon.png)](http://www.iconarchive.com/show/down-to-earth-icons-by-raindropmemory/G12-RPG-icon.html)
