@@ -151,8 +151,8 @@ class LotteryWindow(MyWindow):
         label = self.get_object('label-item-2')
         markup = '<span color="' + loot['options']['color'] + '">'
         markup += '<span weight=' + '"bold"' + '>' + loot['item']['nom'] + '</span>'
-        markup += "\nDescription : " + loot['item']['desc']
-        markup += "\nEffet : " + loot['item']['effet']
+        markup += "\nDescription : " + loot['item']['desc'] # if "desc" in loot['item'].keys() ?
+        markup += "\nEffet : " + loot['item']['effet'] # if "effet" in loot['item'].keys() ?
         markup += '</span>'
         label.set_markup(markup) #To get markup : get_label()
 

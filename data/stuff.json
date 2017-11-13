@@ -2190,6 +2190,7 @@
 		{
 			"number": 0,
 			"nom": "Épée de Vincent Bellec",
+			"desc": "Une épée mythique mais nulle.",
 			"effet": "Vous perdez 10000pv si vous frappez avec (oui c'est nulle)",
 			"classe": "V"
 		}

@@ -5,8 +5,7 @@
 - [ ] Create some settings windows
 
 ## Images sources
-[Teekatas Suwannakrua](https://raindropmemory.deviantart.com) of [iconarchive](http://www.iconarchive.com/artist/raindropmemory.html) :
+Thank to [Teekatas Suwannakrua](https://raindropmemory.deviantart.com) for the icons.
 * [Iconset: Legendora](http://www.iconarchive.com/show/legendora-icons-by-raindropmemory.html)
-    * [![gold-icon.png](images/gold-icon.png)](http://www.iconarchive.com/show/down-to-earth-icons-by-raindropmemory/G12-RPG-icon.html)
 * [Iconset: Down To Earth Icons](http://www.iconarchive.com/show/down-to-earth-icons-by-raindropmemory.html)
     * [![RPG-icon.png](images/RPG-icon.png)](http://www.iconarchive.com/show/down-to-earth-icons-by-raindropmemory/G12-RPG-icon.html)
