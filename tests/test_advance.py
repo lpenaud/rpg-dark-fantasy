@@ -17,6 +17,3 @@ def button1_clicked(*args):
     print(i)
 
 builder = Window.LotteryWindow(example)
-builder.changeImage("image-give-me-your-money", '../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Gold.png')
-builder.changeTextLabel("label-give-me-your-money", "Hi stranger!")
-Window.load(builder.getWindow(), title="Loterie")

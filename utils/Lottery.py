@@ -57,6 +57,44 @@ class Lottery(object):
                 }
             }
         }
+
+        tmpCat = ""
+        tmpStr = ""
+
+        for rarity in self.__rarity.values():
+            for i in range(0, len(rarity['items'])):
+                for key,value in rarity['items'][i].items():
+                    if key == "number" or key == "classe":
+                        continue
+                    tmpStr += value.lower() + " "
+
+                if "parchemin" in tmpStr:
+                    tmpCat = "parchment"
+
+                elif "attaqu" in tmpStr or "arme" in tmpStr:
+                    if "épée" in tmpStr:
+                        tmpCat = "sword"
+                    elif "hache" in tmpStr:
+                        tmpCat = "axe"
+                    else:
+                        tmpCat = "att"
+
+                elif "armure" in tmpStr:
+                    if "chaussure" in tmpStr or "botte" in tmpStr:
+                        tmpCat = "shoe"
+                    elif "casque" in tmpStr:
+                        tmpCat = "helmet"
+                    elif "bouclier" in tmpStr:
+                        tmpCat = "shield"
+                    else:
+                        tmpCat = "armor"
+                else:
+                    tmpCat = "unknown"
+
+                rarity['items'][i]['categorie'] = tmpCat
+                tmpStr = ""
+
+
         self.__history = []
 
     @property

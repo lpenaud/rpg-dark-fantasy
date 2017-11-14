@@ -92,10 +92,25 @@ class LotteryWindow(MyWindow):
         MyWindow.__init__(self, '../glade/Lottery.glade')
         img = GdkPixbuf.Pixbuf.new_from_file_at_size('../images/RPG-icon.png', width=128, height=128)
         self.getWindow().set_icon(img)
+        self.getWindow().set_title("Loterie")
         self.lottery = lottery
         self.interval = 0.1
         self.times = 50
         self.handlerItemId = 0
+        self.catImg = {
+            "parchment":"../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Document.png",
+            "sword":"../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/sword.png",
+            "axe":"../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Axe.png",
+            "att":"../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/SwordAxe.png",
+            "shoe":"../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Pegasus-Boot.png",
+            "helmet":"../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Music-4.png",
+            "shield":"../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Shield-Security.png",
+            "armor":"../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Armor.png",
+            "unknown":"../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Storage.png"
+        }
+        self.changeImage("image-give-me-your-money", '../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Gold.png', width=96, height=96)
+        self.changeTextLabel("label-give-me-your-money", "Hi stranger!")
+        load(self.getWindow())
 
     def randomise(self, *args):
         """
@@ -119,8 +134,8 @@ class LotteryWindow(MyWindow):
             label.set_width_chars(50)
             label.set_line_wrap(True)
             label.set_margin_left(50)
-            self.changeImage('image-item-' + str(number), '../images/rarity/128x128/' + loot['options']['rarity'] + '.png', width=64, height=64)
             label.set_markup('<span weight="bold" color="' + loot['options']['color'] + '">' + loot['item']['nom'] + '</span>')
+            self.changeImage('image-item-' + str(number), self.catImg[loot['item']['categorie']], width=96, height=96)
             if keepHistory:
                 self.addEventItem(number, **loot)
 
@@ -153,18 +168,17 @@ class LotteryWindow(MyWindow):
         markup += '<span weight=' + '"bold"' + '>' + loot['item']['nom'] + '</span>'
         markup += "\nDescription : " + loot['item']['desc'] # if "desc" in loot['item'].keys() ?
         markup += "\nEffet : " + loot['item']['effet'] # if "effet" in loot['item'].keys() ?
+        markup += "\nClasse : " + loot['item']['classe']
+        markup += "\nRareté : " + loot['options']['rarity']
         markup += '</span>'
         label.set_markup(markup) #To get markup : get_label()
 
-def load(window, title="None"):
+def load(window):
     """
     Show main GtkWindow
 
     :param window: Gtk main window to display it
     :type window: Gtk.Window
     """
-    if title != "None":
-        window.set_title(title)
-
     window.show_all()
     Gtk.main()
