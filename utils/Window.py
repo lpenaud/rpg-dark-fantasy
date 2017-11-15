@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # coding: utf-8
 
+import os
 from setInterval import ThreadJob
 import gi
 gi.require_version('Gtk', '3.0')
@@ -88,9 +89,10 @@ class LotteryWindow(MyWindow):
     :type lottery: Lottery.Lottery
     """
 
-    def __init__(self, lottery):
-        MyWindow.__init__(self, '../glade/Lottery.glade')
-        img = GdkPixbuf.Pixbuf.new_from_file_at_size('../images/RPG-icon.png', width=128, height=128)
+    def __init__(self, lottery, **args):
+        rootFolder = realPathDir()
+        MyWindow.__init__(self, rootFolder + '../glade/Lottery.glade')
+        img = GdkPixbuf.Pixbuf.new_from_file_at_size(rootFolder + '../images/RPG-icon.png', width=128, height=128)
         self.getWindow().set_icon(img)
         self.getWindow().set_title("Loterie")
         self.lottery = lottery
@@ -98,15 +100,15 @@ class LotteryWindow(MyWindow):
         self.times = 50
         self.handlerItemId = 0
         self.catImg = {
-            "parchment":"../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Document.png",
-            "sword":"../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/sword.png",
-            "axe":"../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Axe.png",
-            "att":"../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/SwordAxe.png",
-            "shoe":"../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Pegasus-Boot.png",
-            "helmet":"../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Music-4.png",
-            "shield":"../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Shield-Security.png",
-            "armor":"../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Armor.png",
-            "unknown":"../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Storage.png"
+            "parchment":rootFolder+ "../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Document.png",
+            "sword":rootFolder+ "../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/sword.png",
+            "axe":rootFolder+ "../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Axe.png",
+            "att":rootFolder+ "../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/SwordAxe.png",
+            "shoe":rootFolder+"../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Pegasus-Boot.png",
+            "helmet":rootFolder+"../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Music-4.png",
+            "shield":rootFolder+"../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Shield-Security.png",
+            "armor":rootFolder+"../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Armor.png",
+            "unknown":rootFolder+"../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Storage.png"
         }
         self.changeImage("image-give-me-your-money", '../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Gold.png', width=96, height=96)
         self.changeTextLabel("label-give-me-your-money", "Hi stranger!")
@@ -182,3 +184,6 @@ def load(window):
     """
     window.show_all()
     Gtk.main()
+
+def realPathDir():
+    return os.path.dirname(os.path.realpath(__file__)) + '/'
