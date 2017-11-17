@@ -2207,29 +2207,29 @@
 		{
 			"categorie": "none",
 			"nom": "Capuchon des Damnées",
-			"desc": "Une capuche en tissu fantomatique",
-			"effet": "Ensemble 'Tissu fantomatique' : si vous avez au moins 3 pièces de l'ensemble, vous obtenez la capacitée de devenir invisible. Si vous faites un mouvement brusque ou attaquez, vous redevenez visible",
+			"desc": "Un capuchon portée par les âmes damnées de la Forteresse de Vanguard",
+			"effet": "Ensemble 'Tissu damné' : si vous avez au moins 3 pièces de l'ensemble, vous obtenez la capacitée de devenir invisible. Si vous faites un mouvement brusque ou attaquez, vous redevenez visible",
 			"classe": "S - S/F"
 		},
 		{
 			"categorie": "none",
 			"nom": "Tunique des Damnées",
-			"desc": "Une tunique en tissu fantomatique",
-			"effet": "Ensemble 'Tissu fantomatique' : si vous avez au moins 3 pièces de l'ensemble, vous obtenez la capacitée de devenir invisible. Si vous faites un mouvement brusque ou attaquez, vous redevenez visible",
+			"desc": "Une tunique portée par les âmes damnées de la Forteresse de Vanguard",
+			"effet": "Ensemble 'Tissu damné' : si vous avez au moins 3 pièces de l'ensemble, vous obtenez la capacitée de devenir invisible. Si vous faites un mouvement brusque ou attaquez, vous redevenez visible",
 			"classe": "S - S/F"
 		},
 		{
 			"categorie": "none",
 			"nom": "Pantalon des Damnées",
-			"desc": "Un pantalon en tissu fantomatique",
-			"effet": "Ensemble 'Tissu fantomatique' : si vous avez au moins 3 pièces de l'ensemble, vous obtenez la capacitée de devenir invisible. Si vous faites un mouvement brusque ou attaquez, vous redevenez visible",
+			"desc": "Un pantalon portée par les âmes damnées de la Forteresse de Vanguard",
+			"effet": "Ensemble 'Tissu damné' : si vous avez au moins 3 pièces de l'ensemble, vous obtenez la capacitée de devenir invisible. Si vous faites un mouvement brusque ou attaquez, vous redevenez visible",
 			"classe": "S - S/F"
 		},
 		{
 			"categorie": "none",
 			"nom": "Chausses des Damnées",
-			"desc": "Des chausses en tissu fantomatique",
-			"effet": "Ensemble 'Tissu fantomatique' : si vous avez au moins 3 pièces de l'ensemble, vous obtenez la capacitée de devenir invisible (hors-combat uniquement). Si vous faites un mouvement brusque ou attaquez, vous redevenez visible",
+			"desc": "Des chausses portée par les âmes damnées de la Forteresse de Vanguard",
+			"effet": "Ensemble 'Tissu damné' : si vous avez au moins 3 pièces de l'ensemble, vous obtenez la capacitée de devenir invisible (hors-combat uniquement). Si vous faites un mouvement brusque ou attaquez, vous redevenez visible",
 			"classe": "S - S/F"
 		},
 		{
@@ -2524,10 +2524,10 @@
 	],
 	"mythical": [
 		{
-			"categorie": "none",
-			"nom": "Épée de Vincent Bellec, le Sage",
-			"desc": "C'est de la merde en boite, ne mangez pas ça !",
-			"effet": "Vous perdez 10000pv si vous frappez avec (oui c'est nulle)",
+			"categorie": "épée",
+			"nom": "Bebel, épée du Roi Vincent Arâzaon IV",
+			"desc": "Bebel était l'épée du Roi d'Arsénir, Vincent Arâzaon IV. Mort quelques mois après la Quatrième Croisade contre la Liche Valow sur une île qui porte désormais son nom. Le retour de la liche sonna le glas de l'armée du Roi croisé qui fut décimées par les pouvoirs mortifères de la liche. L'épée du roi, teintée du sangs des croisés relevés par la Valow, est encore aujourd'hui une relique très convoitée mais disparue. Beaucoup estime que Valow s'en serai emparé pour son seul bénéfice",
+			"effet": "Bebel, le Fléau des Liches : Si vous combattez des morts-vivants, vos coups ont 80% de chances de faire revivre la cible et de la faire combattre à vos côtés jusqu'à sa mort. A la fin du combat, le serviteur meurt définitivement. De plus, vos dégâts sont augmentés de 100% contre les morts vivants. tuer un mort-vivant avec cette arme vous soigne de 10% des dégâts infligés",
 			"classe": "V"
 		}
 	]
