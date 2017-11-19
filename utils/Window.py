@@ -99,7 +99,8 @@ class LotteryWindow(MyWindow):
         self.lottery = lottery
         self.interval = 0.1
         self.times = 50
-        self.handlerItemId = 0
+        self.handlerItemIdItem = 0
+        self.handlerItemIdRand = self.addEvent('button-launch', 'clicked', self.randomise)
         self.catImg = {
             "parchment":rootFolder+"../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Document.png",
             "book":rootFolder+"../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Ebook.png",
@@ -128,8 +129,9 @@ class LotteryWindow(MyWindow):
             GObject.idle_add(self.displayRandom)
 
         self.get_object('box-item-desc-2').hide()
-        if self.handlerItemId != 0:
-            self.get_object("eventbox-item-2").disconnect(self.handlerItemId)
+        if self.handlerItemIdItem != 0:
+            self.get_object("eventbox-item-2").disconnect(self.handlerItemIdItem)
+        self.get_object('button-launch').disconnect(self.handlerItemIdRand)
         self.threadJobRandom = ThreadJob(workingThreadRandomise, self.interval, self.times)
         self.threadJobRandom.currentTimes = 0
         self.threadJobRandom.start()
@@ -153,6 +155,7 @@ class LotteryWindow(MyWindow):
             self.changeImage('image-item-' + str(number), img, width=96, height=96)
             if keepHistory:
                 self.addEventItem(number, **loot)
+                self.handlerItemIdRand = self.addEvent('button-launch', 'clicked', self.randomise)
 
 
     def addEventItem(self, number, **dataCallback):
@@ -165,7 +168,7 @@ class LotteryWindow(MyWindow):
         :type dataCallback: dict
         """
         idObject = "eventbox-item-" + str(number)
-        self.handlerItemId = self.addEvent(idObject, 'enter-notify-event', self.displayLoot, dataCallback)
+        self.handlerItemIdItem = self.addEvent(idObject, 'enter-notify-event', self.displayLoot, dataCallback)
 
 
     def displayLoot(self, *args):

@@ -529,7 +529,6 @@
                 <property name="receives_default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
-                <signal name="clicked" handler="randomise" swapped="no"/>
               </object>
               <packing>
                 <property name="expand">False</property>
