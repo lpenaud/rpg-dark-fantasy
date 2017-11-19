@@ -174,7 +174,7 @@
             <property name="can_focus">False</property>
             <property name="halign">center</property>
             <property name="valign">center</property>
-            <property name="margin_top">20</property>
+            <property name="margin_top">10</property>
             <property name="orientation">vertical</property>
             <child>
               <object class="GtkImage" id="image-give-me-your-money">
@@ -189,7 +189,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkLabel" id="label-give-me-your-money">
+              <object class="GtkLabel" id="label-name-lottery">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes">label</property>
@@ -211,7 +211,7 @@
           <object class="GtkGrid" id="grid-items">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
-            <property name="valign">center</property>
+            <property name="valign">start</property>
             <property name="margin_top">20</property>
             <property name="column_homogeneous">True</property>
             <child>
@@ -221,6 +221,19 @@
                 <property name="opacity">0.98999999865889554</property>
                 <property name="halign">center</property>
                 <property name="orientation">vertical</property>
+                <child>
+                  <object class="GtkLabel" id="label-title-1">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="margin_bottom">5</property>
+                    <property name="label" translatable="yes">label</property>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">0</property>
+                  </packing>
+                </child>
                 <child>
                   <object class="GtkEventBox" id="eventbox-item-1">
                     <property name="visible">True</property>
@@ -240,11 +253,11 @@
                   <packing>
                     <property name="expand">False</property>
                     <property name="fill">True</property>
-                    <property name="position">0</property>
+                    <property name="position">1</property>
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkLabel" id="label-item-1">
+                  <object class="GtkLabel" id="label-rarity-1">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="halign">center</property>
@@ -255,13 +268,13 @@
                   <packing>
                     <property name="expand">False</property>
                     <property name="fill">True</property>
-                    <property name="position">1</property>
+                    <property name="position">2</property>
                   </packing>
                 </child>
               </object>
               <packing>
                 <property name="left_attach">0</property>
-                <property name="top_attach">0</property>
+                <property name="top_attach">1</property>
               </packing>
             </child>
             <child>
@@ -270,6 +283,20 @@
                 <property name="can_focus">False</property>
                 <property name="halign">center</property>
                 <property name="orientation">vertical</property>
+                <child>
+                  <object class="GtkLabel" id="label-title-2">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="margin_bottom">5</property>
+                    <property name="label" translatable="yes">label</property>
+                    <property name="angle">0.040000000000000001</property>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">0</property>
+                  </packing>
+                </child>
                 <child>
                   <object class="GtkEventBox" id="eventbox-item-2">
                     <property name="visible">True</property>
@@ -290,28 +317,109 @@
                   <packing>
                     <property name="expand">False</property>
                     <property name="fill">True</property>
-                    <property name="position">0</property>
+                    <property name="position">1</property>
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkLabel" id="label-item-2">
+                  <object class="GtkLabel" id="label-rarity-2">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="halign">center</property>
                     <property name="valign">center</property>
                     <property name="margin_top">10</property>
                     <property name="label" translatable="yes">label</property>
+                    <property name="ellipsize">middle</property>
                   </object>
                   <packing>
                     <property name="expand">False</property>
                     <property name="fill">False</property>
-                    <property name="position">1</property>
+                    <property name="position">2</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkBox" id="box-item-desc-2">
+                    <property name="can_focus">False</property>
+                    <property name="no_show_all">True</property>
+                    <property name="margin_top">5</property>
+                    <property name="orientation">vertical</property>
+                    <child>
+                      <object class="GtkLabel" id="label-desc-title-2">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">start</property>
+                        <property name="label" translatable="yes">label</property>
+                        <property name="ellipsize">start</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="label-desc-2">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">start</property>
+                        <property name="label" translatable="yes">label</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="label-effect-title-2">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">start</property>
+                        <property name="label" translatable="yes">label</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
+                        <property name="position">2</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="label-effect-2">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">start</property>
+                        <property name="label" translatable="yes">label</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
+                        <property name="position">3</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="label-class-2">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="no_show_all">True</property>
+                        <property name="halign">start</property>
+                        <property name="label" translatable="yes">label</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
+                        <property name="position">4</property>
+                      </packing>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">False</property>
+                    <property name="position">3</property>
                   </packing>
                 </child>
               </object>
               <packing>
                 <property name="left_attach">1</property>
-                <property name="top_attach">0</property>
+                <property name="top_attach">1</property>
               </packing>
             </child>
             <child>
@@ -320,6 +428,19 @@
                 <property name="can_focus">False</property>
                 <property name="halign">center</property>
                 <property name="orientation">vertical</property>
+                <child>
+                  <object class="GtkLabel" id="label-title-3">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="margin_bottom">5</property>
+                    <property name="label" translatable="yes">label</property>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">0</property>
+                  </packing>
+                </child>
                 <child>
                   <object class="GtkEventBox" id="eventbox-item-3">
                     <property name="visible">True</property>
@@ -339,11 +460,11 @@
                   <packing>
                     <property name="expand">False</property>
                     <property name="fill">True</property>
-                    <property name="position">0</property>
+                    <property name="position">1</property>
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkLabel" id="label-item-3">
+                  <object class="GtkLabel" id="label-rarity-3">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="halign">center</property>
@@ -354,14 +475,34 @@
                   <packing>
                     <property name="expand">False</property>
                     <property name="fill">False</property>
-                    <property name="position">1</property>
+                    <property name="position">2</property>
                   </packing>
                 </child>
               </object>
               <packing>
                 <property name="left_attach">2</property>
+                <property name="top_attach">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkImage" id="image-arrow">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="margin_bottom">15</property>
+                <property name="stock">gtk-missing-image</property>
+              </object>
+              <packing>
+                <property name="left_attach">1</property>
                 <property name="top_attach">0</property>
               </packing>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <placeholder/>
             </child>
           </object>
           <packing>
@@ -374,6 +515,7 @@
           <object class="GtkBox" id="box8">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
+            <property name="valign">start</property>
             <property name="margin_top">20</property>
             <property name="homogeneous">True</property>
             <child>

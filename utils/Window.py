@@ -3,6 +3,7 @@
 
 import os
 from setInterval import ThreadJob
+import utils
 import gi
 gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk, GdkPixbuf, GObject
@@ -90,7 +91,7 @@ class LotteryWindow(MyWindow):
     """
 
     def __init__(self, lottery, **args):
-        rootFolder = realPathDir()
+        rootFolder = utils.realPathDir()
         MyWindow.__init__(self, rootFolder + '../glade/Lottery.glade')
         img = GdkPixbuf.Pixbuf.new_from_file_at_size(rootFolder + '../images/RPG-icon.png', width=128, height=128)
         self.getWindow().set_icon(img)
@@ -110,8 +111,11 @@ class LotteryWindow(MyWindow):
             "armor":rootFolder+"../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Armor.png",
             "unknown":rootFolder+"../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Storage.png"
         }
-        self.changeImage("image-give-me-your-money", '../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Gold.png', width=96, height=96)
-        self.changeTextLabel("label-give-me-your-money", "Hi stranger!")
+        self.changeImage("image-give-me-your-money", rootFolder+'../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Gold.png', width=96, height=96)
+        self.changeTextLabel("label-name-lottery", "Le loto de Ginette")
+        self.changeImage('image-arrow', rootFolder+'../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Download.png', width=96, height=96)
+        self.threadJobRandom = ThreadJob(self.displayRandom, 0.01, 1)
+        self.threadJobRandom.start()
         load(self.getWindow())
 
     def randomise(self, *args):
@@ -121,23 +125,30 @@ class LotteryWindow(MyWindow):
         def workingThreadRandomise():
             GObject.idle_add(self.displayRandom)
 
+        self.get_object('box-item-desc-2').hide()
+        if self.handlerItemId != 0:
+            self.get_object("eventbox-item-2").disconnect(self.handlerItemId)
         self.threadJobRandom = ThreadJob(workingThreadRandomise, self.interval, self.times)
         self.threadJobRandom.currentTimes = 0
         self.threadJobRandom.start()
 
-    def displayRandom(self):
+    def displayRandom(self, keep=True):
         """
         A procedure to display name of the loots obtained by the thread triggered by self.randomise procedure
         """
         for number in range(1, 4):
-            keepHistory = number == 2 and self.threadJobRandom.currentTimes == self.times
+            keepHistory = number == 2 and self.threadJobRandom.currentTimes == self.times and self.times > 1
             loot = self.lottery.loot(keepHistory=keepHistory)
-            label = self.get_object('label-item-' + str(number))
+            if loot['item']['categorie'] in self.catImg.keys():
+                img = self.catImg[loot['item']['categorie']]
+            else:
+                img = self.catImg['unknown']
+            label = self.get_object('label-rarity-' + str(number))
+            title = self.get_object('label-title-' + str(number))
+            title.set_markup('<span weight="bold" color="' + loot['options']['color'] + '">' + loot['item']['nom'].capitalize() + '</span>')
             label.set_width_chars(50)
-            label.set_line_wrap(True)
-            label.set_margin_left(50)
-            label.set_markup('<span weight="bold" color="' + loot['options']['color'] + '">' + loot['item']['nom'] + '</span>')
-            self.changeImage('image-item-' + str(number), self.catImg[loot['item']['categorie']], width=96, height=96)
+            label.set_markup('<span weight="bold" color="' + loot['options']['color'] + '">' + loot['options']['rarity'].capitalize() + '</span>')
+            self.changeImage('image-item-' + str(number), img, width=96, height=96)
             if keepHistory:
                 self.addEventItem(number, **loot)
 
@@ -152,8 +163,6 @@ class LotteryWindow(MyWindow):
         :type dataCallback: dict
         """
         idObject = "eventbox-item-" + str(number)
-        if self.handlerItemId != 0:
-            self.get_object(idObject).disconnect(self.handlerItemId)
         self.handlerItemId = self.addEvent(idObject, 'enter-notify-event', self.displayLoot, dataCallback)
 
 
@@ -165,15 +174,39 @@ class LotteryWindow(MyWindow):
         :type args: tuple
         """
         loot = args[2][0]
-        label = self.get_object('label-item-2')
-        markup = '<span color="' + loot['options']['color'] + '">'
-        markup += '<span weight=' + '"bold"' + '>' + loot['item']['nom'] + '</span>'
-        markup += "\nDescription : " + loot['item']['desc'] # if "desc" in loot['item'].keys() ?
-        markup += "\nEffet : " + loot['item']['effet'] # if "effet" in loot['item'].keys() ?
-        markup += "\nClasse : " + loot['item']['classe']
-        markup += "\nRareté : " + loot['options']['rarity']
-        markup += '</span>'
-        label.set_markup(markup) #To get markup : get_label()
+        markupList = ['<span color="' + loot['options']['color'] + '">',"</span>"]
+        marginLeft = 15
+
+        labelDescTitle = self.get_object('label-desc-title-2')
+        markupListDescTitle = markupList.copy()
+        markupListDescTitle.insert(1, "Description :")
+        labelDescTitle.set_markup("".join(markupListDescTitle))
+
+        labelDesc = self.get_object('label-desc-2')
+        markupListDesc = markupList.copy()
+        markupListDesc.insert(1, loot['item']['desc'])
+        labelDesc.set_line_wrap(True)
+        labelDesc.set_margin_left(marginLeft)
+        labelDesc.set_markup("".join(markupListDesc))
+
+        labelEffectTitle = self.get_object('label-effect-title-2')
+        markupListEffectTitle = markupList.copy()
+        markupListEffectTitle.insert(1, "Effet :")
+        labelEffectTitle.set_markup("".join(markupListEffectTitle))
+
+        labelEffect = self.get_object('label-effect-2')
+        markupListEffect = markupList.copy()
+        markupListEffect.insert(1, loot['item']['effet'])
+        labelEffect.set_line_wrap(True)
+        labelEffect.set_margin_left(marginLeft)
+        labelEffect.set_markup("".join(markupListEffect))
+
+        labelClass = self.get_object('label-class-2')
+        markupListClass = markupList.copy()
+        markupListClass.insert(1, "Classe : ")
+        markupListClass.insert(2, loot['item']['classe'])
+        labelClass.set_markup("".join(markupListClass))
+        self.get_object('box-item-desc-2').show()
 
 def load(window):
     """
@@ -184,6 +217,3 @@ def load(window):
     """
     window.show_all()
     Gtk.main()
-
-def realPathDir():
-    return os.path.dirname(os.path.realpath(__file__)) + '/'
