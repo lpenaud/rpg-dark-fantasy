@@ -101,10 +101,12 @@ class LotteryWindow(MyWindow):
         self.times = 50
         self.handlerItemId = 0
         self.catImg = {
-            "parchment":rootFolder+ "../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Document.png",
+            "parchment":rootFolder+"../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Document.png",
+            "book":rootFolder+"../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Ebook.png",
+            "stick":rootFolder+"../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Stick.png",
             "sword":rootFolder+ "../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/sword.png",
-            "axe":rootFolder+ "../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Axe.png",
-            "att":rootFolder+ "../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/SwordAxe.png",
+            "axe":rootFolder+"../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Axe.png",
+            "att":rootFolder+"../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/SwordAxe.png",
             "shoe":rootFolder+"../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Pegasus-Boot.png",
             "helmet":rootFolder+"../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Music-4.png",
             "shield":rootFolder+"../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Shield-Security.png",
