@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 # coding: utf-8
 
-from config import Lottery, Window
+from config import Lottery, Window, utils
 
-example = Lottery.Lottery('../data/stuff.json')
+example = Lottery.Lottery(utils.realPathDir()+'../data/stuff.json')
 
 def button1_clicked(*args):
     randLoot = example.loot(keepHistory=False)

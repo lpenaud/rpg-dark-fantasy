@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # coding: utf-8
 import random as rand
-from dataJson import *
+from utils import *
 
 class Lottery(object):
     """
@@ -71,6 +71,12 @@ class Lottery(object):
                 if "parchemin" in tmpStr:
                     tmpCat = "parchment"
 
+                elif "grimoire" in tmpStr:
+                    tmpCat = "book"
+
+                elif "bâton" in tmpStr:
+                    tmpCat = "stick"
+
                 elif "attaqu" in tmpStr or "arme" in tmpStr:
                     if "épée" in tmpStr:
                         tmpCat = "sword"
@@ -79,7 +85,7 @@ class Lottery(object):
                     else:
                         tmpCat = "att"
 
-                elif "armure" in tmpStr:
+                elif "armure" in tmpStr or "casque" in tmpStr:
                     if "chaussure" in tmpStr or "botte" in tmpStr:
                         tmpCat = "shoe"
                     elif "casque" in tmpStr:
