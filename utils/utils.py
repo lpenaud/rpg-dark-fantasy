@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
 # coding: utf-8
+
+import os
 import json
 
 def load(strf):
     """
     load a JSON file in a dict
-    
+
     :param strf: name of the json file
     :type strf: str
     :return: data in JSON file
@@ -30,3 +32,6 @@ def load(strf):
         jsonData[key] = obj
 
     return jsonData
+
+def realPathDir():
+    return os.path.dirname(os.path.realpath(__file__)) + '/'
