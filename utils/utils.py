@@ -34,4 +34,10 @@ def load(strf):
     return jsonData
 
 def realPathDir():
+    """
+    Get absolute path of a python script (useful when you have to import file)
+
+    :return: Absolute path of python file
+    :rtype: str
+    """
     return os.path.dirname(os.path.realpath(__file__)) + '/'

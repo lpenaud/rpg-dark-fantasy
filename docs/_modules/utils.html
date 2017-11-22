@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>dataJson &#8212; rpg-dark-fantasy 1.0 documentation</title>
+    <title>utils &#8212; rpg-dark-fantasy 1.0 documentation</title>
     <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script type="text/javascript">
@@ -38,15 +38,17 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <h1>Source code for dataJson</h1><div class="highlight"><pre>
+  <h1>Source code for utils</h1><div class="highlight"><pre>
 <span></span><span class="ch">#!/usr/bin/env python3</span>
 <span class="c1"># coding: utf-8</span>
+
+<span class="kn">import</span> <span class="nn">os</span>
 <span class="kn">import</span> <span class="nn">json</span>
 
-<div class="viewcode-block" id="load"><a class="viewcode-back" href="../dataJson.html#dataJson.load">[docs]</a><span class="k">def</span> <span class="nf">load</span><span class="p">(</span><span class="n">strf</span><span class="p">):</span>
+<div class="viewcode-block" id="load"><a class="viewcode-back" href="../utils.html#utils.load">[docs]</a><span class="k">def</span> <span class="nf">load</span><span class="p">(</span><span class="n">strf</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    load a JSON file in a dict</span>
-<span class="sd">    </span>
+
 <span class="sd">    :param strf: name of the json file</span>
 <span class="sd">    :type strf: str</span>
 <span class="sd">    :return: data in JSON file</span>
@@ -71,6 +73,15 @@
         <span class="n">jsonData</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">obj</span>
 
     <span class="k">return</span> <span class="n">jsonData</span></div>
+
+<div class="viewcode-block" id="realPathDir"><a class="viewcode-back" href="../utils.html#utils.realPathDir">[docs]</a><span class="k">def</span> <span class="nf">realPathDir</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Get absolute path of a python script (useful when you have to import file)</span>
+
+<span class="sd">    :return: Absolute path of python file</span>
+<span class="sd">    :rtype: str</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">realpath</span><span class="p">(</span><span class="vm">__file__</span><span class="p">))</span> <span class="o">+</span> <span class="s1">&#39;/&#39;</span></div>
 </pre></div>
 
           </div>
@@ -90,7 +101,7 @@
 <h3>Navigation</h3>
 <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../dataJson.html">dataJson</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../utils.html">utils</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Lottery.html">Lottery</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../setInterval.html">setInterval</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Window.html">Window</a></li>

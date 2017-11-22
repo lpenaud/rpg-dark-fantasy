@@ -10,7 +10,7 @@ Welcome to rpg-dark-fantasy's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   dataJson
+   utils
    Lottery
    setInterval
    Window
