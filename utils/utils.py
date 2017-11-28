@@ -2,6 +2,7 @@
 # coding: utf-8
 
 import os
+import sys
 import json
 
 def load(strf):
@@ -33,5 +34,16 @@ def load(strf):
 
     return jsonData
 
-def realPathDir():
-    return os.path.dirname(os.path.realpath(__file__)) + '/'
+def realPathDir(f=__file__):
+    return os.path.dirname(os.path.realpath(f)) + '/'
+
+def isFrozen():
+    return getattr(sys, 'frozen', False)
+
+def resolvePath(f):
+    if isFrozen():
+        path = realPathDir()
+    else:
+        path = realPathDir() + '../'
+
+    return path + f
