@@ -1,17 +1,23 @@
 # rpg-dark-fantasy
 
-## Requirements
-The third version of python and GTK.
+## Installation
 
-### Then if you are on GNU/Linux
-If it is not already installed : 
+### If you are on GNU/Linux
+You should have the third version of python and GTK.
+if it is not already installed :
 * with apt-get : `sudo apt-get install python3-gi`
 * with pacman :  `sudo pacman -S python-gobject`
 
-Then, before to launch main.py, type this command `chmod +x main.py`, after `./main.py`, 
-or type `python3 main.py` directly.
+Then to lanch main.py :
+Eitcher you have to execute theses commands (in source folder) : `chmod +x main.py` next `./main.py`
+Or type (in source folder) `python3 main.py`
 
 ### Or if you are on Windows
+**If you have windows 7 64 bits**
+You can download lottery-win.zip and lanch main.exe
+
+**Else**
+
 You have to install some stuff :
 * [MSYS2](http://www.msys2.org/)
 
@@ -22,7 +28,7 @@ and when it's installed, theses commands on MSYS2 terminal :
 |`pacman -S mingw-w64-x86_64-gtk3` | `pacman -S mingw-w64-i686-gtk3` |
 | `pacman -S mingw-w64-x86_64-python3-gobject` | `pacman -S mingw-w64-i686-python3-gobject` |
 
-After you have to play with `cd` and `ls` commands to enter in rpg-dark-fantasy folder next launch the program with : `python3 main.py`.
+After you have to play with `cd` and `ls` commands to enter in rpg-dark-fantasy folder next launch the program with : `python3 main.py` or `./main.py`.
 If it's not working, install python3 : `pacman -S python3`, then retry.
 
 ## TODO
