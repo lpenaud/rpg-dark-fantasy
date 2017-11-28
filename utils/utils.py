@@ -2,6 +2,7 @@
 # coding: utf-8
 
 import os
+import sys
 import json
 
 def load(strf):
@@ -33,11 +34,22 @@ def load(strf):
 
     return jsonData
 
-def realPathDir():
+def realPathDir(f=__file__):
     """
     Get absolute path of a python script (useful when you have to import file)
 
     :return: Absolute path of python file
     :rtype: str
     """
-    return os.path.dirname(os.path.realpath(__file__)) + '/'
+    return os.path.dirname(os.path.realpath(f)) + '/'
+
+def isFrozen():
+    return getattr(sys, 'frozen', False)
+
+def resolvePath(f):
+    if isFrozen():
+        path = realPathDir()
+    else:
+        path = realPathDir() + '../'
+
+    return path + f

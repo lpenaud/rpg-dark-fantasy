@@ -6,20 +6,21 @@ from setInterval import ThreadJob
 import utils
 import gi
 gi.require_version('Gtk', '3.0')
-from gi.repository import Gtk, GdkPixbuf, GObject
+from gi.repository import Gtk, GObject
+from gi.repository.GdkPixbuf import Pixbuf
 
 class MyWindow(Gtk.Builder):
     """
     A class which add some useful methods
 
-    :param file: A relative or absolute path of glade file
-    :type file: str
+    :param f: A relative or absolute path of glade file
+    :type f: str
     """
 
-    def __init__(self, file):
+    def __init__(self, f):
+        fileList = f.split('/')
         Gtk.Builder.__init__(self)
-        fileList = file.split('/')
-        self.add_from_file(file)
+        self.add_from_file(f)
         self.connect_signals(self)
         self.name = fileList[len(fileList) - 1].split('.')[0]
 
@@ -45,7 +46,7 @@ class MyWindow(Gtk.Builder):
         :param height: Height in pixel of the image by default 64
         :type height: int
         """
-        image = GdkPixbuf.Pixbuf.new_from_file_at_size(file, width=width, height=height)
+        image = Pixbuf.new_from_file_at_size(file, width=width, height=height)
         self.get_object(imageId).set_from_pixbuf(image)
 
     def changeTextLabel(self, labelId, txt):
@@ -92,8 +93,8 @@ class LotteryWindow(MyWindow):
 
     def __init__(self, lottery, **args):
         rootFolder = utils.realPathDir()
-        MyWindow.__init__(self, rootFolder + '../glade/Lottery.glade')
-        img = GdkPixbuf.Pixbuf.new_from_file_at_size(rootFolder + '../images/RPG-icon.png', width=128, height=128)
+        MyWindow.__init__(self, utils.resolvePath('glade/Lottery.glade'))
+        img = Pixbuf.new_from_file_at_size(utils.resolvePath('images/RPG-icon.png'), width=128, height=128)
         self.getWindow().set_icon(img)
         self.getWindow().set_title("Loterie")
         self.lottery = lottery
@@ -102,21 +103,21 @@ class LotteryWindow(MyWindow):
         self.handlerItemIdItem = 0
         self.handlerItemIdRand = self.addEvent('button-launch', 'clicked', self.randomise)
         self.catImg = {
-            "parchment":rootFolder+"../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Document.png",
-            "book":rootFolder+"../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Ebook.png",
-            "stick":rootFolder+"../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Stick.png",
-            "sword":rootFolder+ "../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/sword.png",
-            "axe":rootFolder+"../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Axe.png",
-            "att":rootFolder+"../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/SwordAxe.png",
-            "shoe":rootFolder+"../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Pegasus-Boot.png",
-            "helmet":rootFolder+"../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Music-4.png",
-            "shield":rootFolder+"../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Shield-Security.png",
-            "armor":rootFolder+"../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Armor.png",
-            "unknown":rootFolder+"../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Storage.png"
+            "parchment":utils.resolvePath("images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Document.png"),
+            "book":utils.resolvePath("images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Ebook.png"),
+            "stick":utils.resolvePath("images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Stick.png"),
+            "sword":utils.resolvePath("images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/sword.png"),
+            "axe":utils.resolvePath("images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Axe.png"),
+            "att":utils.resolvePath("images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/SwordAxe.png"),
+            "shoe":utils.resolvePath("images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Pegasus-Boot.png"),
+            "helmet":utils.resolvePath("images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Music-4.png"),
+            "shield":utils.resolvePath("images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Shield-Security.png"),
+            "armor":utils.resolvePath("images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Armor.png"),
+            "unknown":utils.resolvePath("images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Storage.png")
         }
-        self.changeImage("image-give-me-your-money", rootFolder+'../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Gold.png', width=96, height=96)
+        self.changeImage("image-give-me-your-money", utils.resolvePath('images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Gold.png'), width=96, height=96)
         self.changeTextLabel("label-name-lottery", "Le loto de Ginette")
-        self.changeImage('image-arrow', rootFolder+'../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Download.png', width=96, height=96)
+        self.changeImage('image-arrow', utils.resolvePath('images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Download.png'), width=96, height=96)
         self.threadJobRandom = ThreadJob(self.displayRandom, 0.01, 1)
         self.threadJobRandom.start()
         load(self.getWindow())
