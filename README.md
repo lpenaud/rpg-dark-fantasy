@@ -37,7 +37,7 @@ If it's not working, install python3 : `pacman -S python3`, then retry.
 - [ ] Window to view the history
 - [ ] Option to lock a rarity in Lottery
 - [ ] Style of the launch button
-- [ ] Slow down the interval just before final loot
+- [x] Slow down the interval just before final loot
 - [ ] Play a sound which depend of the loot rarity
 - [ ] Write "about"
 

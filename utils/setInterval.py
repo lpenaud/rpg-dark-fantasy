@@ -2,8 +2,6 @@
 # coding: utf-8
 import threading
 
-lock = threading.RLock()
-
 class ThreadJob(threading.Thread):
     """
     Runs the callback function after interval seconds x times
@@ -26,6 +24,5 @@ class ThreadJob(threading.Thread):
 
     def run(self):
         while not(self.event.wait(self.interval)) and self.currentTimes != self.times:
-            with lock:
-                self.callback()
-                self.currentTimes += 1
+            self.callback()
+            self.currentTimes += 1

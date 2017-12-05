@@ -144,6 +144,8 @@ class LotteryWindow(MyWindow):
         for number in range(1, 4):
             keepHistory = number == 2 and self.threadJobRandom.currentTimes == self.times and self.times > 1
             loot = self.lottery.loot(keepHistory=keepHistory)
+            if self.threadJobRandom.currentTimes + 10 >= self.times:
+                self.threadJobRandom.interval += 0.015
             if loot['item']['categorie'] in self.catImg.keys():
                 img = self.catImg[loot['item']['categorie']]
             else:
