@@ -92,7 +92,6 @@ class LotteryWindow(MyWindow):
     """
 
     def __init__(self, lottery, **args):
-        rootFolder = utils.realPathDir()
         MyWindow.__init__(self, utils.resolvePath('glade/Lottery.glade'))
         img = Pixbuf.new_from_file_at_size(utils.resolvePath('images/RPG-icon.png'), width=128, height=128)
         self.getWindow().set_icon(img)
@@ -215,6 +214,43 @@ class LotteryWindow(MyWindow):
         markupListClass.insert(2, loot['item']['classe'])
         labelClass.set_markup("".join(markupListClass))
         self.get_object('box-item-desc-2').show()
+
+    def displayHistory(self, *args):
+        dialog = History(self.getWindow(), self.lottery, self.catImg)
+        response = dialog.run()
+        print(response)
+        dialog.destroy()
+
+class History(Gtk.Dialog):
+    def __init__(self, parent, lottery, icons):
+        Gtk.Dialog.__init__(
+            self,
+            "Historique",
+            parent,
+            0,
+            (Gtk.STOCK_OK, Gtk.ResponseType.OK)
+        )
+
+        contentArea = self.get_content_area()
+        for loot in lottery.history:
+            box = Gtk.Box(spacing=6)
+            label = Gtk.Label()
+            if loot['item']['categorie'] in icons.keys():
+                icon = icons[loot['item']['categorie']]
+            else:
+                icon = icons['unknown']
+            pixbufImg = Pixbuf.new_from_file_at_size(icon, width=96, height=96)
+            img = Gtk.Image()
+            img.set_from_pixbuf(pixbufImg)
+            box.pack_start(img, True, True, 0)
+            label.set_text(lottery.displayLoot(loot))
+            box.pack_start(label, True, True, 0)
+            contentArea.add(box)
+        # label = Gtk.Label("This is a dialog to display additional information")
+        self.show_all()
+
+
+
 
 def load(window):
     """
