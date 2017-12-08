@@ -139,9 +139,14 @@ class Lottery(object):
     @minRarity.setter
     def minRarity(self, val):
         if isinstance(val, int):
-            self.__minRarity = val
+            tmp = val
         elif isinstance(val, str):
-            self.__minRarity = self.deterTupleRarity(val)[1]
+            tmp = self.deterTupleRarity(val)[1]
+        else:
+            raise TypeError("minRarity has to be a <str> or a <int>")
+        if tmp < self.__maxRarity:
+            raise ValueError("minRarity has to be higher than maxRarity")
+        self.__minRarity = tmp
 
     @property
     def maxRarity(self):
@@ -150,9 +155,14 @@ class Lottery(object):
     @maxRarity.setter
     def maxRarity(self, val):
         if isinstance(val, int):
-            self.__maxRarity = val
+            tmp = val
         elif isinstance(val, str):
-            self.__maxRarity = self.deterTupleRarity(val)[0]
+            tmp = self.deterTupleRarity(val)[0]
+        else:
+            raise TypeError("maxRarity has to be a <str> or a <int>")
+        if tmp > self.__minRarity:
+            raise ValueError("maxRarity has to be less than minRarity")
+        self.__maxRarity = tmp
 
     def deterNameRarity(self, number):
         for key, obj in self.__items.items():

@@ -264,6 +264,7 @@ class History(Gtk.Dialog):
         self.show_all()
 
 class Preference(Gtk.Dialog):
+    # FIXME: ValueError(setter Lottery.minRarity/Lottery.maxRarity)
     def __init__(self, parent, lottery):
         Gtk.Dialog.__init__(
             self,
