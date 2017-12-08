@@ -218,6 +218,18 @@ class LotteryWindow(MyWindow):
     def displayHistory(self, *args):
         dialog = History(self.getWindow(), self.lottery, self.catImg)
         response = dialog.run()
+        # print(response)
+        dialog.destroy()
+
+    def displayPreference(self, *args):
+        lotteryMinRarity = self.lottery.minRarity
+        lotteryMaxRarity = self.lottery.maxRarity
+        dialog = Preference(self.getWindow(), self.lottery)
+        response = dialog.run()
+
+        if response != -5:
+            self.lottery.minRarity = lotteryMinRarity
+            self.lottery.maxRarity = lotteryMaxRarity
         print(response)
         dialog.destroy()
 
@@ -232,24 +244,86 @@ class History(Gtk.Dialog):
         )
 
         contentArea = self.get_content_area()
-        for loot in lottery.history:
-            box = Gtk.Box(spacing=6)
-            label = Gtk.Label()
-            if loot['item']['categorie'] in icons.keys():
-                icon = icons[loot['item']['categorie']]
-            else:
-                icon = icons['unknown']
-            pixbufImg = Pixbuf.new_from_file_at_size(icon, width=96, height=96)
-            img = Gtk.Image()
-            img.set_from_pixbuf(pixbufImg)
-            box.pack_start(img, True, True, 0)
-            label.set_text(lottery.displayLoot(loot))
-            box.pack_start(label, True, True, 0)
-            contentArea.add(box)
-        # label = Gtk.Label("This is a dialog to display additional information")
+        if len(lottery.history) > 0:
+            for loot in lottery.history:
+                box = Gtk.Box(spacing=6)
+                label = Gtk.Label()
+                if loot['item']['categorie'] in icons.keys():
+                    icon = icons[loot['item']['categorie']]
+                else:
+                    icon = icons['unknown']
+                pixbufImg = Pixbuf.new_from_file_at_size(icon, width=96, height=96)
+                img = Gtk.Image()
+                img.set_from_pixbuf(pixbufImg)
+                box.pack_start(img, True, True, 0)
+                label.set_text(lottery.displayLoot(loot))
+                box.pack_start(label, True, True, 0)
+                contentArea.add(box)
+        else:
+            contentArea.add(Gtk.Label("Vous n'avez pas encore utilisé la loterie."))
         self.show_all()
 
+class Preference(Gtk.Dialog):
+    def __init__(self, parent, lottery):
+        Gtk.Dialog.__init__(
+            self,
+            "Préférence",
+            parent,
+            0,
+            (Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL, Gtk.STOCK_OK, Gtk.ResponseType.OK)
+        )
+        contentArea = self.get_content_area()
+        self.lottery = lottery
+        self.set_default_size(150, 100)
+        hbox = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=10)
+        minRarityStore = Gtk.ListStore(int, str)
+        minRarityCurrentIndex = -1
+        maxRarityStore = Gtk.ListStore(int, str)
+        maxRarityCurrentIndex = -1
+        rendererText = Gtk.CellRendererText()
+        i = 0
+        for key in sorted(self.lottery.items.keys(), reverse=True):
+            obj = self.lottery.items[key]
+            if key[1] == self.lottery.minRarity:
+                minRarityCurrentIndex = i
+            if key[0] == self.lottery.maxRarity:
+                maxRarityCurrentIndex = i
+            minRarityStore.append([key[1], obj['options']['rarity']])
+            maxRarityStore.append([key[0], obj['options']['rarity']])
+            i += 1
 
+        minRarityComboBox = Gtk.ComboBox.new_with_model(minRarityStore)
+        minRarityComboBox.pack_start(rendererText, True)
+        minRarityComboBox.add_attribute(rendererText, "text", 1)
+        minRarityComboBox.connect("changed", self.on_min_rarity_changed)
+        minRarityComboBox.set_active(minRarityCurrentIndex)
+        minRarityVbox = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=6)
+        minRarityVbox.pack_start(Gtk.Label("Rareté minimum"), True, True, 0)
+        minRarityVbox.pack_start(minRarityComboBox, True, True, 0)
+
+        maxRarityComboBox = Gtk.ComboBox.new_with_model(maxRarityStore)
+        maxRarityComboBox.pack_start(rendererText, True)
+        maxRarityComboBox.add_attribute(rendererText, "text", 1)
+        maxRarityComboBox.connect("changed", self.on_combo_changed)
+        maxRarityComboBox.set_active(maxRarityCurrentIndex)
+        maxRarityVbox = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=6)
+        maxRarityVbox.pack_start(Gtk.Label("Rareté maximun"), True, True, 0)
+        maxRarityVbox.pack_start(maxRarityComboBox, True, True, 0)
+
+        hbox.pack_start(minRarityVbox, True, True, 0)
+        hbox.pack_start(maxRarityVbox, True, True, 0)
+        contentArea.add(hbox)
+        self.show_all()
+
+    def on_combo_changed(self, combo):
+        tree_iter = combo.get_active_iter()
+        model = combo.get_model()
+        self.lottery.maxRarity = model[tree_iter][0]
+
+    def on_min_rarity_changed(self, combo):
+        tree_iter = combo.get_active_iter()
+        model = combo.get_model()
+        self.lottery.minRarity = model[tree_iter][0]
 
 
 def load(window):

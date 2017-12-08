@@ -13,7 +13,7 @@ class Lottery(object):
 
     def __init__(self, strf):
         data = load(strf)
-        self.__rarity = {
+        self.__items = {
             (215, 1000): {
                 'items': data['common'],
                 'options': {
@@ -61,9 +61,9 @@ class Lottery(object):
         tmpCat = ""
         tmpStr = ""
 
-        for rarity in self.__rarity.values():
-            for i in range(0, len(rarity['items'])):
-                for key,value in rarity['items'][i].items():
+        for item in self.__items.values():
+            for i in range(0, len(item['items'])):
+                for key,value in item['items'][i].items():
                     if key == "number" or key == "classe":
                         continue
                     tmpStr += value.lower() + " "
@@ -97,11 +97,12 @@ class Lottery(object):
                 else:
                     tmpCat = "unknown"
 
-                rarity['items'][i]['categorie'] = tmpCat
+                item['items'][i]['categorie'] = tmpCat
                 tmpStr = ""
 
-
         self.__history = []
+        self.__minRarity = 1000 # Commun
+        self.__maxRarity = 1 # Mythical
 
     @property
     def history(self):
@@ -115,21 +116,55 @@ class Lottery(object):
 
         for value in self.__history:
             history.append({
-                'item': self.__rarity[value[0]]['items'][value[1]],
-                'options': self.__rarity[value[0]]['options']
+                'item': self.__items[value[0]]['items'][value[1]],
+                'options': self.__items[value[0]]['options']
             })
 
         return tuple(history)
 
     @property
-    def rarity(self):
+    def items(self):
         """
-        Getter of rarity
+        Getter of items
 
-        :return: A copy of rarity of Lottery
+        :return: A copy of item of Lottery
         :rtype: list
         """
-        return self.__rarity.copy()
+        return self.__items.copy()
+
+    @property
+    def minRarity(self):
+        return self.__minRarity
+
+    @minRarity.setter
+    def minRarity(self, val):
+        if isinstance(val, int):
+            self.__minRarity = val
+        elif isinstance(val, str):
+            self.__minRarity = self.deterTupleRarity(val)[1]
+
+    @property
+    def maxRarity(self):
+        return self.__maxRarity
+
+    @maxRarity.setter
+    def maxRarity(self, val):
+        if isinstance(val, int):
+            self.__maxRarity = val
+        elif isinstance(val, str):
+            self.__maxRarity = self.deterTupleRarity(val)[0]
+
+    def deterNameRarity(self, number):
+        for key, obj in self.__items.items():
+            if number in key:
+                return obj['options']['rarity']
+        return None
+
+    def deterTupleRarity(self, nameRarity):
+        for key, obj in self.__items.items():
+            if nameRarity == obj['options']['rarity']:
+                return key
+        raise NameError(val + " - rarity unknown")
 
     def loot(self, keepHistory=False):
         """
@@ -140,13 +175,13 @@ class Lottery(object):
         :return: A item with its options (dict with color and rarity)
         :rtype: dict
         """
-        randNum = rand.randint(1, 1000)
+        randNum = rand.randint(self.__maxRarity, self.__minRarity)
         category = {}
         indexItem = 0
 
-        for key in self.__rarity.keys():
+        for key in self.__items.keys():
             if randNum >= key[0] and randNum <= key[1]:
-                category = self.__rarity[key]
+                category = self.__items[key]
                 break
 
         indexItem = rand.randint(0, len(category['items']) - 1)
@@ -165,7 +200,7 @@ class Lottery(object):
 
         :param loot: loot returned by Lottery.loot()
         :type loot: dict
-        :return: Text to display with a print or in label
+        :return: Text to display with print function or in label
         :rtype: str
         """
         txt = ""

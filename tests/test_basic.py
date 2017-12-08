@@ -3,18 +3,17 @@
 
 from config import Lottery
 
-example = Lottery.Lottery('../data/stuff.json')
+example = Lottery.Lottery('data/stuff.json')
 
 # Type your test code here
 
-randLoot = example.loot()
-i = 1
+print('test', example.deterTupleRarity('mythical'))
+# example.minRarity = 'mythical'
+# example.maxRarity = 'mythical'
 
-while randLoot['options']['rarety'] != 'legendary':
-    randLoot = example.loot(True)
-    i += 1
-
-# displayLoot(randLoot)
-
-for loot in example.history:
-    print(example.displayLoot(loot))
+print(str(example.maxRarity) + ' - ' + str(example.minRarity))
+loot = example.loot(keepHistory=False)
+print(
+    loot['item']['nom'] + ' - ' + loot['options']['rarity'],
+    sep='\n'
+)

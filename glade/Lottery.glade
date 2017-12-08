@@ -2,6 +2,13 @@
 <!-- Generated with glade 3.18.3 -->
 <interface>
   <requires lib="gtk+" version="3.12"/>
+  <object class="GtkAccelGroup" id="accelgroup1"/>
+  <object class="GtkAccelGroup" id="accelgroup2"/>
+  <object class="GtkImage" id="image1">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="stock">gtk-dialog-info</property>
+  </object>
   <object class="GtkWindow" id="Lottery">
     <property name="can_focus">False</property>
     <signal name="destroy" handler="onDeleteWindow" swapped="no"/>
@@ -62,11 +69,11 @@
                     </child>
                     <child>
                       <object class="GtkImageMenuItem" id="imagemenuitem-views-history">
-                        <property name="label">gtk-dialog-info</property>
+                        <property name="label">Historique</property>
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="use_underline">True</property>
-                        <property name="use_stock">True</property>
+                        <property name="image">image1</property>
+                        <property name="use_stock">False</property>
                         <signal name="activate" handler="displayHistory" swapped="no"/>
                       </object>
                     </child>
@@ -101,39 +108,14 @@
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <child>
-                      <object class="GtkImageMenuItem" id="imagemenuitem6">
-                        <property name="label">gtk-cut</property>
+                      <object class="GtkImageMenuItem" id="imagemenuitem-preferences">
+                        <property name="label">gtk-preferences</property>
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="use_underline">True</property>
                         <property name="use_stock">True</property>
-                      </object>
-                    </child>
-                    <child>
-                      <object class="GtkImageMenuItem" id="imagemenuitem7">
-                        <property name="label">gtk-copy</property>
-                        <property name="visible">True</property>
-                        <property name="can_focus">False</property>
-                        <property name="use_underline">True</property>
-                        <property name="use_stock">True</property>
-                      </object>
-                    </child>
-                    <child>
-                      <object class="GtkImageMenuItem" id="imagemenuitem8">
-                        <property name="label">gtk-paste</property>
-                        <property name="visible">True</property>
-                        <property name="can_focus">False</property>
-                        <property name="use_underline">True</property>
-                        <property name="use_stock">True</property>
-                      </object>
-                    </child>
-                    <child>
-                      <object class="GtkImageMenuItem" id="imagemenuitem9">
-                        <property name="label">gtk-delete</property>
-                        <property name="visible">True</property>
-                        <property name="can_focus">False</property>
-                        <property name="use_underline">True</property>
-                        <property name="use_stock">True</property>
+                        <property name="accel_group">accelgroup1</property>
+                        <signal name="activate" handler="displayPreference" swapped="no"/>
                       </object>
                     </child>
                   </object>
