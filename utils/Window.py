@@ -6,7 +6,7 @@ from setInterval import ThreadJob
 import utils
 import gi
 gi.require_version('Gtk', '3.0')
-from gi.repository import Gtk, GObject
+from gi.repository import Gtk, GObject, Pango
 from gi.repository.GdkPixbuf import Pixbuf
 
 class MyWindow(Gtk.Builder):
@@ -209,7 +209,6 @@ class LotteryWindow(MyWindow):
     def displayHistory(self, *args):
         dialog = History(self.getWindow(), self.lottery, self.catImg)
         response = dialog.run()
-        # print(response)
         dialog.destroy()
 
     def displayPreference(self, *args):
@@ -218,10 +217,9 @@ class LotteryWindow(MyWindow):
         dialog = Preference(self.getWindow(), self.lottery)
         response = dialog.run()
 
-        if response != -5:
+        if response != Gtk.ResponseType.OK:
             self.lottery.minRarity = lotteryMinRarity
             self.lottery.maxRarity = lotteryMaxRarity
-        print(response)
         dialog.destroy()
 
 class History(Gtk.Dialog):
@@ -236,9 +234,36 @@ class History(Gtk.Dialog):
 
         contentArea = self.get_content_area()
         if len(lottery.history) > 0:
+            scrolled = Gtk.ScrolledWindow()
+            scrolled.set_policy(Gtk.PolicyType.NEVER, Gtk.PolicyType.AUTOMATIC)
+            scrolled.set_size_request(500, 300)
+            vbox = Gtk.Box(orientation=Gtk.Orientation.VERTICAL)
             for loot in lottery.history:
-                box = Gtk.Box(spacing=6)
+                hbox = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=6)
+                hbox.set_size_request(300, -1)
+                hbox.set_halign(Gtk.Align.START)
                 label = Gtk.Label()
+                label.set_markup(
+                """
+<span color="{color}">
+Nom : <span weight="bold">{name}</span>
+Description : {desc}
+Effet : {effect}
+Rareté : {rarity}
+</span>
+                """.format(
+                        color = loot['options']['color'],
+                        name = loot['item']['nom'],
+                        desc = loot['item']['desc'],
+                        effect = loot['item']['effet'],
+                        rarity = loot['options']['rarity']
+                    )
+                )
+                label.set_halign(Gtk.Justification.LEFT)
+                label.set_max_width_chars(100)
+                label.set_ellipsize(Pango.EllipsizeMode.END)
+                # label.set_size_request(100, -1)
+                label.set_line_wrap(True)
                 if loot['item']['categorie'] in icons.keys():
                     icon = icons[loot['item']['categorie']]
                 else:
@@ -246,10 +271,11 @@ class History(Gtk.Dialog):
                 pixbufImg = Pixbuf.new_from_file_at_size(icon, width=96, height=96)
                 img = Gtk.Image()
                 img.set_from_pixbuf(pixbufImg)
-                box.pack_start(img, True, True, 0)
-                label.set_text(lottery.displayLoot(loot))
-                box.pack_start(label, True, True, 0)
-                contentArea.add(box)
+                hbox.pack_start(img, True, True, 0)
+                hbox.pack_start(label, True, True, 0)
+                vbox.pack_start(hbox, True, True, 0)
+            scrolled.add(vbox)
+            contentArea.add(scrolled)
         else:
             contentArea.add(Gtk.Label("Vous n'avez pas encore utilisé la loterie."))
         self.show_all()
