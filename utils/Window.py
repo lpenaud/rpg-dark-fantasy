@@ -181,38 +181,29 @@ class LotteryWindow(MyWindow):
         :type args: tuple
         """
         loot = args[2][0]
-        markupList = ['<span color="' + loot['options']['color'] + '">',"</span>"]
+        markupTemplate = '<span color="' + loot['options']['color'] + '">{}</span>'
         marginLeft = 15
 
         labelDescTitle = self.get_object('label-desc-title-2')
-        markupListDescTitle = markupList.copy()
-        markupListDescTitle.insert(1, "Description :")
-        labelDescTitle.set_markup("".join(markupListDescTitle))
+        labelDescTitle.set_markup(markupTemplate.format("Description :"))
 
         labelDesc = self.get_object('label-desc-2')
-        markupListDesc = markupList.copy()
-        markupListDesc.insert(1, loot['item']['desc'])
         labelDesc.set_line_wrap(True)
         labelDesc.set_margin_left(marginLeft)
-        labelDesc.set_markup("".join(markupListDesc))
+        labelDesc.set_markup(markupTemplate.format(loot['item']['desc']))
 
         labelEffectTitle = self.get_object('label-effect-title-2')
-        markupListEffectTitle = markupList.copy()
-        markupListEffectTitle.insert(1, "Effet :")
-        labelEffectTitle.set_markup("".join(markupListEffectTitle))
+        labelEffectTitle.set_markup(markupTemplate.format("Effet :"))
 
         labelEffect = self.get_object('label-effect-2')
-        markupListEffect = markupList.copy()
-        markupListEffect.insert(1, loot['item']['effet'])
         labelEffect.set_line_wrap(True)
         labelEffect.set_margin_left(marginLeft)
-        labelEffect.set_markup("".join(markupListEffect))
+        labelEffect.set_markup(markupTemplate.format(loot['item']['effet']))
 
         labelClass = self.get_object('label-class-2')
-        markupListClass = markupList.copy()
-        markupListClass.insert(1, "Classe : ")
-        markupListClass.insert(2, loot['item']['classe'])
-        labelClass.set_markup("".join(markupListClass))
+        labelClass.set_markup(markupTemplate.format(
+            "Classe : " + loot['item']['classe']
+        ))
         self.get_object('box-item-desc-2').show()
 
     def displayHistory(self, *args):
@@ -264,7 +255,6 @@ class History(Gtk.Dialog):
         self.show_all()
 
 class Preference(Gtk.Dialog):
-    # FIXME: ValueError(setter Lottery.minRarity/Lottery.maxRarity)
     def __init__(self, parent, lottery):
         Gtk.Dialog.__init__(
             self,
@@ -278,17 +268,17 @@ class Preference(Gtk.Dialog):
         self.set_default_size(150, 100)
         hbox = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=10)
         minRarityStore = Gtk.ListStore(int, str)
-        minRarityCurrentIndex = -1
+        self.defaultMinRarityIndex = -1
         maxRarityStore = Gtk.ListStore(int, str)
-        maxRarityCurrentIndex = -1
+        self.defaultMaxRarityIndex = -1
         rendererText = Gtk.CellRendererText()
         i = 0
         for key in sorted(self.lottery.items.keys(), reverse=True):
             obj = self.lottery.items[key]
             if key[1] == self.lottery.minRarity:
-                minRarityCurrentIndex = i
+                self.defaultMinRarityIndex = i
             if key[0] == self.lottery.maxRarity:
-                maxRarityCurrentIndex = i
+                self.defaultMaxRarityIndex = i
             minRarityStore.append([key[1], obj['options']['rarity']])
             maxRarityStore.append([key[0], obj['options']['rarity']])
             i += 1
@@ -297,7 +287,7 @@ class Preference(Gtk.Dialog):
         minRarityComboBox.pack_start(rendererText, True)
         minRarityComboBox.add_attribute(rendererText, "text", 1)
         minRarityComboBox.connect("changed", self.on_min_rarity_changed)
-        minRarityComboBox.set_active(minRarityCurrentIndex)
+        minRarityComboBox.set_active(self.defaultMinRarityIndex)
         minRarityVbox = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=6)
         minRarityVbox.pack_start(Gtk.Label("Rareté minimum"), True, True, 0)
         minRarityVbox.pack_start(minRarityComboBox, True, True, 0)
@@ -305,27 +295,39 @@ class Preference(Gtk.Dialog):
         maxRarityComboBox = Gtk.ComboBox.new_with_model(maxRarityStore)
         maxRarityComboBox.pack_start(rendererText, True)
         maxRarityComboBox.add_attribute(rendererText, "text", 1)
-        maxRarityComboBox.connect("changed", self.on_combo_changed)
-        maxRarityComboBox.set_active(maxRarityCurrentIndex)
+        maxRarityComboBox.connect("changed", self.on_max_combo_changed)
+        maxRarityComboBox.set_active(self.defaultMaxRarityIndex)
         maxRarityVbox = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=6)
         maxRarityVbox.pack_start(Gtk.Label("Rareté maximun"), True, True, 0)
         maxRarityVbox.pack_start(maxRarityComboBox, True, True, 0)
 
+        self.labelErr = Gtk.Label()
+        contentArea.add(self.labelErr)
         hbox.pack_start(minRarityVbox, True, True, 0)
         hbox.pack_start(maxRarityVbox, True, True, 0)
         contentArea.add(hbox)
         self.show_all()
 
-    def on_combo_changed(self, combo):
+    def on_max_combo_changed(self, combo):
         tree_iter = combo.get_active_iter()
         model = combo.get_model()
-        self.lottery.maxRarity = model[tree_iter][0]
+        try:
+            self.lottery.maxRarity = model[tree_iter][0]
+            self.defaultMaxRarityIndex = combo.get_active()
+        except ValueError as e:
+            self.labelErr.set_markup('<span color="red">La rareté maximun est inférieur à la rareté minimum</span>')
+            combo.set_active(self.defaultMaxRarityIndex)
+
 
     def on_min_rarity_changed(self, combo):
         tree_iter = combo.get_active_iter()
         model = combo.get_model()
-        self.lottery.minRarity = model[tree_iter][0]
-
+        try:
+            self.lottery.minRarity = model[tree_iter][0]
+            self.defaultMinRarityIndex = combo.get_active()
+        except ValueError as e:
+            self.labelErr.set_markup('<span color="red">La rareté minimum est supérieur à la rareté maximun</span>')
+            combo.set_active(self.defaultMaxRarityIndex)
 
 def load(window):
     """
