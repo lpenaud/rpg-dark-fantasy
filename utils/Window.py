@@ -151,9 +151,9 @@ class LotteryWindow(MyWindow):
                 img = self.catImg['unknown']
             label = self.get_object('label-rarity-' + str(number))
             title = self.get_object('label-title-' + str(number))
-            title.set_markup('<span weight="bold" color="' + loot['options']['color'] + '">' + loot['item']['nom'].capitalize() + '</span>')
+            title.set_markup('<span weight="bold" color="' + loot['options']['color'] + '">' + loot['item']['nom'] + '</span>')
             label.set_width_chars(50)
-            label.set_markup('<span weight="bold" color="' + loot['options']['color'] + '">' + loot['options']['rarity'].capitalize() + '</span>')
+            label.set_markup('<span weight="bold" color="' + loot['options']['color'] + '">' + loot['options']['rarity'] + '</span>')
             self.changeImage('image-item-' + str(number), img, width=96, height=96)
             if keepHistory:
                 self.addEventItem(number, **loot)
