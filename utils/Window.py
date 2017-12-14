@@ -222,6 +222,12 @@ class LotteryWindow(MyWindow):
             self.lottery.maxRarity = lotteryMaxRarity
         dialog.destroy()
 
+    def displayAbout(self, *args):
+        about = About(self.getWindow())
+        about.run()
+        about.destroy()
+
+
 class History(Gtk.Dialog):
     def __init__(self, parent, lottery, icons):
         Gtk.Dialog.__init__(
@@ -354,6 +360,28 @@ class Preference(Gtk.Dialog):
         except ValueError as e:
             self.labelErr.set_markup('<span color="red">La rareté minimum est supérieur à la rareté maximun</span>')
             combo.set_active(self.defaultMaxRarityIndex)
+
+class About(Gtk.AboutDialog):
+    """docstring for About."""
+    def __init__(self, parent):
+        img = utils.resolvePath('images/RPG-icon.png')
+        logo = Pixbuf.new_from_file_at_size(img, width=128, height=128)
+        super(About, self).__init__(
+            parent = parent,
+            artists = ['Teekatas Suwannakrua'],
+            authors = ['Loïc Penaud', 'Erwan Bourhis'],
+            comments = "A RPG Lottery",
+            copyright = "Loïc Penaud",
+            documenters = ['Loïc Penaud'],
+            license_type = Gtk.License.GPL_3_0_ONLY,
+            logo = logo,
+            program_name = "Lottery",
+            version = '1.2',
+            website = 'https://github.com/lpenaud/rpg-dark-fantasy',
+            website_label = 'Github'
+        )
+
+
 
 def load(window):
     """
