@@ -2,10 +2,6 @@
 setInterval
 ==================
 
-**Summary**
-
-  * `ThreadJob <#id2>`_
-
 ThreadJob
 ==================
 

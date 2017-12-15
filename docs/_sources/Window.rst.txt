@@ -2,12 +2,6 @@
 Window
 ==================
 
-**Summary**
-
-  * `MyWindow <#id2>`_
-  * `LotteryWindow <#id3>`_
-  * `load <#id4>`_
-
 MyWindow
 ==================
 
@@ -18,6 +12,24 @@ LotteryWindow
 ==================
 
 .. autoclass:: Window.LotteryWindow
+  :members:
+
+History
+==================
+
+.. autoclass:: Window.History
+  :members:
+
+Preference
+==================
+
+.. autoclass:: Window.Preference
+  :members:
+
+About
+==================
+
+.. autoclass:: Window.About
   :members:
 
 load

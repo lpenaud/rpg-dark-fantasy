@@ -2,10 +2,6 @@
 Lottery
 ==================
 
-**Summary**
-
-  * `Lottery <#id2>`_
-
 Lottery
 ==================
 

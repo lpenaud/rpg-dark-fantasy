@@ -136,7 +136,7 @@ class LotteryWindow(MyWindow):
         self.threadJobRandom.currentTimes = 0
         self.threadJobRandom.start()
 
-    def displayRandom(self, keep=True):
+    def displayRandom(self):
         """
         A procedure to display name of the loots obtained by the thread triggered by self.randomise procedure
         """
@@ -207,11 +207,17 @@ class LotteryWindow(MyWindow):
         self.get_object('box-item-desc-2').show()
 
     def displayHistory(self, *args):
+        """
+        A method to display history of loots in a dialog window.
+        """
         dialog = History(self.getWindow(), self.lottery, self.catImg)
         response = dialog.run()
         dialog.destroy()
 
     def displayPreference(self, *args):
+        """
+        A method to display preferences of the Lottery in a dialog window.
+        """
         lotteryMinRarity = self.lottery.minRarity
         lotteryMaxRarity = self.lottery.maxRarity
         dialog = Preference(self.getWindow(), self.lottery)
@@ -223,19 +229,32 @@ class LotteryWindow(MyWindow):
         dialog.destroy()
 
     def displayAbout(self, *args):
+        """
+        A method to display the "about" in a dialog window.
+        """
         about = About(self.getWindow())
         about.run()
         about.destroy()
 
 
 class History(Gtk.Dialog):
+    """
+    Create a dialog window to display history of loots.
+
+    :param parent: Window which invoke this dialog
+    :type parent: Gtk.Window
+    :param lottery: The source of the loots
+    :type lottery: Lottery
+    :param icons: Icons to use to illustrate loots ({"rarity":"path to the picture"})
+    :type icons: dict(str, str)
+    """
     def __init__(self, parent, lottery, icons):
         Gtk.Dialog.__init__(
             self,
             "Historique",
             parent,
             0,
-            (Gtk.STOCK_OK, Gtk.ResponseType.OK)
+            (Gtk.STOCK_CLOSE, Gtk.ResponseType.CLOSE)
         )
 
         contentArea = self.get_content_area()
@@ -287,6 +306,14 @@ Rareté : {rarity}
         self.show_all()
 
 class Preference(Gtk.Dialog):
+    """
+    Create a dialog window to modify the preference of the lottery
+
+    :param parent: Window which invoke this dialog
+    :type parent: Gtk.Window
+    :param lottery: The lottery to modify
+    :type lottery: Lottery
+    """
     def __init__(self, parent, lottery):
         Gtk.Dialog.__init__(
             self,
@@ -341,6 +368,12 @@ class Preference(Gtk.Dialog):
         self.show_all()
 
     def on_max_combo_changed(self, combo):
+        """
+        Event triggered when the value of the maximum rarity is changed.
+
+        :param combo: The combo box represent the maximum rarity
+        :type combo: Gtk.ComboBox
+        """
         tree_iter = combo.get_active_iter()
         model = combo.get_model()
         try:
@@ -352,6 +385,12 @@ class Preference(Gtk.Dialog):
 
 
     def on_min_rarity_changed(self, combo):
+        """
+        Event triggered when the value of the minimum rarity is changed.
+
+        :param combo: The combo box represent the minimum rarity
+        :type combo: Gtk.ComboBox
+        """
         tree_iter = combo.get_active_iter()
         model = combo.get_model()
         try:
@@ -362,7 +401,12 @@ class Preference(Gtk.Dialog):
             combo.set_active(self.defaultMaxRarityIndex)
 
 class About(Gtk.AboutDialog):
-    """docstring for About."""
+    """
+    Create a dialog window to display "about application"
+
+    :param parent: Window which invoke this dialog
+    :type parent: Gtk.Window
+    """
     def __init__(self, parent):
         img = utils.resolvePath('images/RPG-icon.png')
         logo = Pixbuf.new_from_file_at_size(img, width=128, height=128)

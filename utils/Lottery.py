@@ -134,10 +134,24 @@ class Lottery(object):
 
     @property
     def minRarity(self):
+        """
+        Getter of minRarity
+
+        :return: The minimum rarity
+        :rtype: int
+        """
         return self.__minRarity
 
     @minRarity.setter
     def minRarity(self, val):
+        """
+        Setter of minRarity
+
+        :param val: The new value of the minimum rarity
+        :type val: int or str
+        :raises TypeError: if val param type is not a str or int
+        :raises ValueError: if the new value is less than the maximum rarity
+        """
         if isinstance(val, int):
             tmp = val
         elif isinstance(val, str):
@@ -150,10 +164,24 @@ class Lottery(object):
 
     @property
     def maxRarity(self):
+        """
+        Getter of maxRarity
+
+        :return: The maximun rarity
+        :rtype: int
+        """
         return self.__maxRarity
 
     @maxRarity.setter
     def maxRarity(self, val):
+        """
+        Setter of maxRarity
+
+        :param val: The new value of the maximun rarity
+        :type val: int or str
+        :raises TypeError: if val param type is not a str or int
+        :raises ValueError: if the new value is higher than the minimum rarity
+        """
         if isinstance(val, int):
             tmp = val
         elif isinstance(val, str):
@@ -165,12 +193,29 @@ class Lottery(object):
         self.__maxRarity = tmp
 
     def deterNameRarity(self, number):
+        """
+        Method which determine the rarity string from a number
+
+        :param number: Number which represent a rarity value
+        :type number: int
+        :return: String which represent a rarity value or nothing if number don't correspond at any rarity
+        :rtype: str or None
+        """
         for key, obj in self.__items.items():
             if number in key:
                 return obj['options']['rarity']
         return None
 
     def deterTupleRarity(self, nameRarity):
+        """
+        Method which determine the minimum and the maximun number of a rarity
+
+        :param nameRarity: Name of a rarity
+        :type nameRarity: str
+        :return: A tuple with the minimum and maximun number of a rarity
+        :rtype: tuple
+        :raise NameError: If the nameRarity param don't correspond at any rarity
+        """
         for key, obj in self.__items.items():
             if nameRarity == obj['options']['rarity']:
                 return key

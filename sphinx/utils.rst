@@ -2,17 +2,17 @@
 utils
 ==================
 
-**Summary**
-
-  * `load <#id2>`_
-  * `realPathDir <#id3>`_
-
 load
 ==================
 
   .. autofunction:: utils.load
 
-realPathDir
+isFrozen
 ==================
 
-  .. autofunction:: utils.realPathDir
+  .. autofunction:: utils.isFrozen
+
+resolvePath
+==================
+
+  .. autofunction:: utils.resolvePath

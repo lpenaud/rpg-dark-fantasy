@@ -1,56 +1,173 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>utils &#8212; rpg-dark-fantasy 1.0 documentation</title>
-    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    './',
-        VERSION:     '1.0',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true,
-        SOURCELINK_SUFFIX: '.txt'
-      };
-    </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Lottery" href="Lottery.html" />
-    <link rel="prev" title="Welcome to rpg-dark-fantasy’s documentation!" href="index.html" />
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>utils &mdash; rpg-dark-fantasy 1.2 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="rpg-dark-fantasy 1.2 documentation" href="index.html"/>
+        <link rel="next" title="Lottery" href="Lottery.html"/>
+        <link rel="prev" title="Welcome to rpg-dark-fantasy’s documentation!" href="index.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
    
-  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
-  
-  
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+  <div class="wy-grid-for-nav">
 
-  </head>
-  <body>
-  
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
 
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
-          <div class="body" role="main">
+          
+            <a href="index.html" class="icon icon-home"> rpg-dark-fantasy
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">utils</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#load">load</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#isfrozen">isFrozen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#resolvepath">resolvePath</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Lottery.html">Lottery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="setInterval.html">setInterval</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Window.html">Window</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">rpg-dark-fantasy</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>utils</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/utils.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
             
   <div class="section" id="utils">
 <h1>utils<a class="headerlink" href="#utils" title="Permalink to this headline">¶</a></h1>
-<p><strong>Summary</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><a class="reference external" href="#id2">load</a></li>
-<li><a class="reference external" href="#id3">realPathDir</a></li>
-</ul>
-</div></blockquote>
-<div class="section" id="id1">
-<h2>load<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="load">
+<h2>load<a class="headerlink" href="#load" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><dl class="function">
 <dt id="utils.load">
@@ -72,20 +189,43 @@
 
 </div></blockquote>
 </div>
-<div class="section" id="id2">
-<h2>realPathDir<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="isfrozen">
+<h2>isFrozen<a class="headerlink" href="#isfrozen" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><dl class="function">
-<dt id="utils.realPathDir">
-<code class="descclassname">utils.</code><code class="descname">realPathDir</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/utils.html#realPathDir"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#utils.realPathDir" title="Permalink to this definition">¶</a></dt>
-<dd><p>Get absolute path of a python script (useful when you have to import file)</p>
+<dt id="utils.isFrozen">
+<code class="descclassname">utils.</code><code class="descname">isFrozen</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/utils.html#isFrozen"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#utils.isFrozen" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test if the application is frozen (pyinstaller)</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Absolute path of python file</td>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">True/False depend if the application is frozen</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">str</td>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">bool</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div></blockquote>
+</div>
+<div class="section" id="resolvepath">
+<h2>resolvePath<a class="headerlink" href="#resolvepath" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><dl class="function">
+<dt id="utils.resolvePath">
+<code class="descclassname">utils.</code><code class="descname">resolvePath</code><span class="sig-paren">(</span><em>f</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/utils.html#resolvePath"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#utils.resolvePath" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get absolute path of a file (All the files imports have to use this function)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>f</strong> (<em>str</em>) – Paths relative to the file whose departure is the root of the application</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Absolute path of the file</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">str</td>
 </tr>
 </tbody>
 </table>
@@ -96,70 +236,75 @@
 </div>
 
 
+           </div>
+           <div class="articleComments">
+            
+           </div>
           </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Lottery.html" class="btn btn-neutral float-right" title="Lottery" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="Welcome to rpg-dark-fantasy’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Loïc Penaud.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
         </div>
       </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-<h1 class="logo"><a href="index.html">rpg-dark-fantasy</a></h1>
+
+    </section>
+
+  </div>
+  
 
 
+  
 
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.2',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
 
+  
 
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
 
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
 
-
-<h3>Navigation</h3>
-<p class="caption"><span class="caption-text">Contents:</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">utils</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id1">load</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id2">realPathDir</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Lottery.html">Lottery</a></li>
-<li class="toctree-l1"><a class="reference internal" href="setInterval.html">setInterval</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Window.html">Window</a></li>
-</ul>
-
-<div class="relations">
-<h3>Related Topics</h3>
-<ul>
-  <li><a href="index.html">Documentation overview</a><ul>
-      <li>Previous: <a href="index.html" title="previous chapter">Welcome to rpg-dark-fantasy’s documentation!</a></li>
-      <li>Next: <a href="Lottery.html" title="next chapter">Lottery</a></li>
-  </ul></li>
-</ul>
-</div>
-<div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
-    <form class="search" action="search.html" method="get">
-      <div><input type="text" name="q" /></div>
-      <div><input type="submit" value="Go" /></div>
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
-        </div>
-      </div>
-      <div class="clearer"></div>
-    </div>
-    <div class="footer">
-      &copy;2017, Loïc Penaud.
-      
-      |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.4</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
-      
-      |
-      <a href="_sources/utils.rst.txt"
-          rel="nofollow">Page source</a>
-    </div>
-
-    
-
-    
-  </body>
+</body>
 </html>

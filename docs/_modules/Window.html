@@ -1,42 +1,162 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Window &#8212; rpg-dark-fantasy 1.0 documentation</title>
-    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '../',
-        VERSION:     '1.0',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true,
-        SOURCELINK_SUFFIX: '.txt'
-      };
-    </script>
-    <script type="text/javascript" src="../_static/jquery.js"></script>
-    <script type="text/javascript" src="../_static/underscore.js"></script>
-    <script type="text/javascript" src="../_static/doctools.js"></script>
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Window &mdash; rpg-dark-fantasy 1.2 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="rpg-dark-fantasy 1.2 documentation" href="../index.html"/>
+        <link rel="up" title="Module code" href="index.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
    
-  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
-  
-  
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+  <div class="wy-grid-for-nav">
 
-  </head>
-  <body>
-  
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
 
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
-          <div class="body" role="main">
+          
+            <a href="../index.html" class="icon icon-home"> rpg-dark-fantasy
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../utils.html">utils</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Lottery.html">Lottery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../setInterval.html">setInterval</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Window.html">Window</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">rpg-dark-fantasy</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Module code</a> &raquo;</li>
+        
+      <li>Window</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
             
   <h1>Source code for Window</h1><div class="highlight"><pre>
 <span></span><span class="ch">#!/usr/bin/env python3</span>
@@ -47,20 +167,21 @@
 <span class="kn">import</span> <span class="nn">utils</span>
 <span class="kn">import</span> <span class="nn">gi</span>
 <span class="n">gi</span><span class="o">.</span><span class="n">require_version</span><span class="p">(</span><span class="s1">&#39;Gtk&#39;</span><span class="p">,</span> <span class="s1">&#39;3.0&#39;</span><span class="p">)</span>
-<span class="kn">from</span> <span class="nn">gi.repository</span> <span class="k">import</span> <span class="n">Gtk</span><span class="p">,</span> <span class="n">GdkPixbuf</span><span class="p">,</span> <span class="n">GObject</span>
+<span class="kn">from</span> <span class="nn">gi.repository</span> <span class="k">import</span> <span class="n">Gtk</span><span class="p">,</span> <span class="n">GObject</span><span class="p">,</span> <span class="n">Pango</span>
+<span class="kn">from</span> <span class="nn">gi.repository.GdkPixbuf</span> <span class="k">import</span> <span class="n">Pixbuf</span>
 
 <div class="viewcode-block" id="MyWindow"><a class="viewcode-back" href="../Window.html#Window.MyWindow">[docs]</a><span class="k">class</span> <span class="nc">MyWindow</span><span class="p">(</span><span class="n">Gtk</span><span class="o">.</span><span class="n">Builder</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    A class which add some useful methods</span>
 
-<span class="sd">    :param file: A relative or absolute path of glade file</span>
-<span class="sd">    :type file: str</span>
+<span class="sd">    :param f: A relative or absolute path of glade file</span>
+<span class="sd">    :type f: str</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
-    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">file</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">f</span><span class="p">):</span>
+        <span class="n">fileList</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)</span>
         <span class="n">Gtk</span><span class="o">.</span><span class="n">Builder</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
-        <span class="n">fileList</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">add_from_file</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">add_from_file</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">connect_signals</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">fileList</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">fileList</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
 
@@ -86,7 +207,7 @@
 <span class="sd">        :param height: Height in pixel of the image by default 64</span>
 <span class="sd">        :type height: int</span>
 <span class="sd">        &quot;&quot;&quot;</span>
-        <span class="n">image</span> <span class="o">=</span> <span class="n">GdkPixbuf</span><span class="o">.</span><span class="n">Pixbuf</span><span class="o">.</span><span class="n">new_from_file_at_size</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="n">height</span><span class="p">)</span>
+        <span class="n">image</span> <span class="o">=</span> <span class="n">Pixbuf</span><span class="o">.</span><span class="n">new_from_file_at_size</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="n">height</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">get_object</span><span class="p">(</span><span class="n">imageId</span><span class="p">)</span><span class="o">.</span><span class="n">set_from_pixbuf</span><span class="p">(</span><span class="n">image</span><span class="p">)</span></div>
 
 <div class="viewcode-block" id="MyWindow.changeTextLabel"><a class="viewcode-back" href="../Window.html#Window.MyWindow.changeTextLabel">[docs]</a>    <span class="k">def</span> <span class="nf">changeTextLabel</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">labelId</span><span class="p">,</span> <span class="n">txt</span><span class="p">):</span>
@@ -132,9 +253,8 @@
 <span class="sd">    &quot;&quot;&quot;</span>
 
     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">lottery</span><span class="p">,</span> <span class="o">**</span><span class="n">args</span><span class="p">):</span>
-        <span class="n">rootFolder</span> <span class="o">=</span> <span class="n">utils</span><span class="o">.</span><span class="n">realPathDir</span><span class="p">()</span>
-        <span class="n">MyWindow</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">rootFolder</span> <span class="o">+</span> <span class="s1">&#39;../glade/Lottery.glade&#39;</span><span class="p">)</span>
-        <span class="n">img</span> <span class="o">=</span> <span class="n">GdkPixbuf</span><span class="o">.</span><span class="n">Pixbuf</span><span class="o">.</span><span class="n">new_from_file_at_size</span><span class="p">(</span><span class="n">rootFolder</span> <span class="o">+</span> <span class="s1">&#39;../images/RPG-icon.png&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">128</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">128</span><span class="p">)</span>
+        <span class="n">MyWindow</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">utils</span><span class="o">.</span><span class="n">resolvePath</span><span class="p">(</span><span class="s1">&#39;glade/Lottery.glade&#39;</span><span class="p">))</span>
+        <span class="n">img</span> <span class="o">=</span> <span class="n">Pixbuf</span><span class="o">.</span><span class="n">new_from_file_at_size</span><span class="p">(</span><span class="n">utils</span><span class="o">.</span><span class="n">resolvePath</span><span class="p">(</span><span class="s1">&#39;images/RPG-icon.png&#39;</span><span class="p">),</span> <span class="n">width</span><span class="o">=</span><span class="mi">128</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">128</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">getWindow</span><span class="p">()</span><span class="o">.</span><span class="n">set_icon</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">getWindow</span><span class="p">()</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Loterie&quot;</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">lottery</span> <span class="o">=</span> <span class="n">lottery</span>
@@ -143,21 +263,21 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">handlerItemIdItem</span> <span class="o">=</span> <span class="mi">0</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">handlerItemIdRand</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">addEvent</span><span class="p">(</span><span class="s1">&#39;button-launch&#39;</span><span class="p">,</span> <span class="s1">&#39;clicked&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">randomise</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">catImg</span> <span class="o">=</span> <span class="p">{</span>
-            <span class="s2">&quot;parchment&quot;</span><span class="p">:</span><span class="n">rootFolder</span><span class="o">+</span><span class="s2">&quot;../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Document.png&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;book&quot;</span><span class="p">:</span><span class="n">rootFolder</span><span class="o">+</span><span class="s2">&quot;../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Ebook.png&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;stick&quot;</span><span class="p">:</span><span class="n">rootFolder</span><span class="o">+</span><span class="s2">&quot;../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Stick.png&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;sword&quot;</span><span class="p">:</span><span class="n">rootFolder</span><span class="o">+</span> <span class="s2">&quot;../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/sword.png&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;axe&quot;</span><span class="p">:</span><span class="n">rootFolder</span><span class="o">+</span><span class="s2">&quot;../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Axe.png&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;att&quot;</span><span class="p">:</span><span class="n">rootFolder</span><span class="o">+</span><span class="s2">&quot;../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/SwordAxe.png&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;shoe&quot;</span><span class="p">:</span><span class="n">rootFolder</span><span class="o">+</span><span class="s2">&quot;../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Pegasus-Boot.png&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;helmet&quot;</span><span class="p">:</span><span class="n">rootFolder</span><span class="o">+</span><span class="s2">&quot;../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Music-4.png&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;shield&quot;</span><span class="p">:</span><span class="n">rootFolder</span><span class="o">+</span><span class="s2">&quot;../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Shield-Security.png&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;armor&quot;</span><span class="p">:</span><span class="n">rootFolder</span><span class="o">+</span><span class="s2">&quot;../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Armor.png&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;unknown&quot;</span><span class="p">:</span><span class="n">rootFolder</span><span class="o">+</span><span class="s2">&quot;../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Storage.png&quot;</span>
+            <span class="s2">&quot;parchment&quot;</span><span class="p">:</span><span class="n">utils</span><span class="o">.</span><span class="n">resolvePath</span><span class="p">(</span><span class="s2">&quot;images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Document.png&quot;</span><span class="p">),</span>
+            <span class="s2">&quot;book&quot;</span><span class="p">:</span><span class="n">utils</span><span class="o">.</span><span class="n">resolvePath</span><span class="p">(</span><span class="s2">&quot;images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Ebook.png&quot;</span><span class="p">),</span>
+            <span class="s2">&quot;stick&quot;</span><span class="p">:</span><span class="n">utils</span><span class="o">.</span><span class="n">resolvePath</span><span class="p">(</span><span class="s2">&quot;images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Stick.png&quot;</span><span class="p">),</span>
+            <span class="s2">&quot;sword&quot;</span><span class="p">:</span><span class="n">utils</span><span class="o">.</span><span class="n">resolvePath</span><span class="p">(</span><span class="s2">&quot;images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/sword.png&quot;</span><span class="p">),</span>
+            <span class="s2">&quot;axe&quot;</span><span class="p">:</span><span class="n">utils</span><span class="o">.</span><span class="n">resolvePath</span><span class="p">(</span><span class="s2">&quot;images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Axe.png&quot;</span><span class="p">),</span>
+            <span class="s2">&quot;att&quot;</span><span class="p">:</span><span class="n">utils</span><span class="o">.</span><span class="n">resolvePath</span><span class="p">(</span><span class="s2">&quot;images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/SwordAxe.png&quot;</span><span class="p">),</span>
+            <span class="s2">&quot;shoe&quot;</span><span class="p">:</span><span class="n">utils</span><span class="o">.</span><span class="n">resolvePath</span><span class="p">(</span><span class="s2">&quot;images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Pegasus-Boot.png&quot;</span><span class="p">),</span>
+            <span class="s2">&quot;helmet&quot;</span><span class="p">:</span><span class="n">utils</span><span class="o">.</span><span class="n">resolvePath</span><span class="p">(</span><span class="s2">&quot;images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Music-4.png&quot;</span><span class="p">),</span>
+            <span class="s2">&quot;shield&quot;</span><span class="p">:</span><span class="n">utils</span><span class="o">.</span><span class="n">resolvePath</span><span class="p">(</span><span class="s2">&quot;images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Shield-Security.png&quot;</span><span class="p">),</span>
+            <span class="s2">&quot;armor&quot;</span><span class="p">:</span><span class="n">utils</span><span class="o">.</span><span class="n">resolvePath</span><span class="p">(</span><span class="s2">&quot;images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Armor.png&quot;</span><span class="p">),</span>
+            <span class="s2">&quot;unknown&quot;</span><span class="p">:</span><span class="n">utils</span><span class="o">.</span><span class="n">resolvePath</span><span class="p">(</span><span class="s2">&quot;images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Storage.png&quot;</span><span class="p">)</span>
         <span class="p">}</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">changeImage</span><span class="p">(</span><span class="s2">&quot;image-give-me-your-money&quot;</span><span class="p">,</span> <span class="n">rootFolder</span><span class="o">+</span><span class="s1">&#39;../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Gold.png&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">96</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">96</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">changeImage</span><span class="p">(</span><span class="s2">&quot;image-give-me-your-money&quot;</span><span class="p">,</span> <span class="n">utils</span><span class="o">.</span><span class="n">resolvePath</span><span class="p">(</span><span class="s1">&#39;images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Gold.png&#39;</span><span class="p">),</span> <span class="n">width</span><span class="o">=</span><span class="mi">96</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">96</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">changeTextLabel</span><span class="p">(</span><span class="s2">&quot;label-name-lottery&quot;</span><span class="p">,</span> <span class="s2">&quot;Le loto de Ginette&quot;</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">changeImage</span><span class="p">(</span><span class="s1">&#39;image-arrow&#39;</span><span class="p">,</span> <span class="n">rootFolder</span><span class="o">+</span><span class="s1">&#39;../images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Download.png&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">96</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">96</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">changeImage</span><span class="p">(</span><span class="s1">&#39;image-arrow&#39;</span><span class="p">,</span> <span class="n">utils</span><span class="o">.</span><span class="n">resolvePath</span><span class="p">(</span><span class="s1">&#39;images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Download.png&#39;</span><span class="p">),</span> <span class="n">width</span><span class="o">=</span><span class="mi">96</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">96</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">threadJobRandom</span> <span class="o">=</span> <span class="n">ThreadJob</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">displayRandom</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">threadJobRandom</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
         <span class="n">load</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">getWindow</span><span class="p">())</span>
@@ -177,20 +297,22 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">threadJobRandom</span><span class="o">.</span><span class="n">currentTimes</span> <span class="o">=</span> <span class="mi">0</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">threadJobRandom</span><span class="o">.</span><span class="n">start</span><span class="p">()</span></div>
 
-<div class="viewcode-block" id="LotteryWindow.displayRandom"><a class="viewcode-back" href="../Window.html#Window.LotteryWindow.displayRandom">[docs]</a>    <span class="k">def</span> <span class="nf">displayRandom</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">keep</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+<div class="viewcode-block" id="LotteryWindow.displayRandom"><a class="viewcode-back" href="../Window.html#Window.LotteryWindow.displayRandom">[docs]</a>    <span class="k">def</span> <span class="nf">displayRandom</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        A procedure to display name of the loots obtained by the thread triggered by self.randomise procedure</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="k">for</span> <span class="n">number</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">):</span>
             <span class="n">keepHistory</span> <span class="o">=</span> <span class="n">number</span> <span class="o">==</span> <span class="mi">2</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">threadJobRandom</span><span class="o">.</span><span class="n">currentTimes</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="n">times</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">times</span> <span class="o">&gt;</span> <span class="mi">1</span>
             <span class="n">loot</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">lottery</span><span class="o">.</span><span class="n">loot</span><span class="p">(</span><span class="n">keepHistory</span><span class="o">=</span><span class="n">keepHistory</span><span class="p">)</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">threadJobRandom</span><span class="o">.</span><span class="n">currentTimes</span> <span class="o">+</span> <span class="mi">10</span> <span class="o">&gt;=</span> <span class="bp">self</span><span class="o">.</span><span class="n">times</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">threadJobRandom</span><span class="o">.</span><span class="n">interval</span> <span class="o">+=</span> <span class="mf">0.015</span>
             <span class="k">if</span> <span class="n">loot</span><span class="p">[</span><span class="s1">&#39;item&#39;</span><span class="p">][</span><span class="s1">&#39;categorie&#39;</span><span class="p">]</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">catImg</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
                 <span class="n">img</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">catImg</span><span class="p">[</span><span class="n">loot</span><span class="p">[</span><span class="s1">&#39;item&#39;</span><span class="p">][</span><span class="s1">&#39;categorie&#39;</span><span class="p">]]</span>
             <span class="k">else</span><span class="p">:</span>
                 <span class="n">img</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">catImg</span><span class="p">[</span><span class="s1">&#39;unknown&#39;</span><span class="p">]</span>
             <span class="n">label</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_object</span><span class="p">(</span><span class="s1">&#39;label-rarity-&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">number</span><span class="p">))</span>
             <span class="n">title</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_object</span><span class="p">(</span><span class="s1">&#39;label-title-&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">number</span><span class="p">))</span>
-            <span class="n">title</span><span class="o">.</span><span class="n">set_markup</span><span class="p">(</span><span class="s1">&#39;&lt;span weight=&quot;bold&quot; color=&quot;&#39;</span> <span class="o">+</span> <span class="n">loot</span><span class="p">[</span><span class="s1">&#39;options&#39;</span><span class="p">][</span><span class="s1">&#39;color&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;&quot;&gt;&#39;</span> <span class="o">+</span> <span class="n">loot</span><span class="p">[</span><span class="s1">&#39;item&#39;</span><span class="p">][</span><span class="s1">&#39;nom&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">capitalize</span><span class="p">()</span> <span class="o">+</span> <span class="s1">&#39;&lt;/span&gt;&#39;</span><span class="p">)</span>
+            <span class="n">title</span><span class="o">.</span><span class="n">set_markup</span><span class="p">(</span><span class="s1">&#39;&lt;span weight=&quot;bold&quot; color=&quot;&#39;</span> <span class="o">+</span> <span class="n">loot</span><span class="p">[</span><span class="s1">&#39;options&#39;</span><span class="p">][</span><span class="s1">&#39;color&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;&quot;&gt;&#39;</span> <span class="o">+</span> <span class="n">loot</span><span class="p">[</span><span class="s1">&#39;item&#39;</span><span class="p">][</span><span class="s1">&#39;nom&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;&lt;/span&gt;&#39;</span><span class="p">)</span>
             <span class="n">label</span><span class="o">.</span><span class="n">set_width_chars</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
             <span class="n">label</span><span class="o">.</span><span class="n">set_markup</span><span class="p">(</span><span class="s1">&#39;&lt;span weight=&quot;bold&quot; color=&quot;&#39;</span> <span class="o">+</span> <span class="n">loot</span><span class="p">[</span><span class="s1">&#39;options&#39;</span><span class="p">][</span><span class="s1">&#39;color&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;&quot;&gt;&#39;</span> <span class="o">+</span> <span class="n">loot</span><span class="p">[</span><span class="s1">&#39;options&#39;</span><span class="p">][</span><span class="s1">&#39;rarity&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">capitalize</span><span class="p">()</span> <span class="o">+</span> <span class="s1">&#39;&lt;/span&gt;&#39;</span><span class="p">)</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">changeImage</span><span class="p">(</span><span class="s1">&#39;image-item-&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">number</span><span class="p">),</span> <span class="n">img</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">96</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">96</span><span class="p">)</span>
@@ -220,39 +342,251 @@
 <span class="sd">        :type args: tuple</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="n">loot</span> <span class="o">=</span> <span class="n">args</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
-        <span class="n">markupList</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;&lt;span color=&quot;&#39;</span> <span class="o">+</span> <span class="n">loot</span><span class="p">[</span><span class="s1">&#39;options&#39;</span><span class="p">][</span><span class="s1">&#39;color&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;&quot;&gt;&#39;</span><span class="p">,</span><span class="s2">&quot;&lt;/span&gt;&quot;</span><span class="p">]</span>
+        <span class="n">markupTemplate</span> <span class="o">=</span> <span class="s1">&#39;&lt;span color=&quot;&#39;</span> <span class="o">+</span> <span class="n">loot</span><span class="p">[</span><span class="s1">&#39;options&#39;</span><span class="p">][</span><span class="s1">&#39;color&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;&quot;&gt;</span><span class="si">{}</span><span class="s1">&lt;/span&gt;&#39;</span>
         <span class="n">marginLeft</span> <span class="o">=</span> <span class="mi">15</span>
 
         <span class="n">labelDescTitle</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_object</span><span class="p">(</span><span class="s1">&#39;label-desc-title-2&#39;</span><span class="p">)</span>
-        <span class="n">markupListDescTitle</span> <span class="o">=</span> <span class="n">markupList</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
-        <span class="n">markupListDescTitle</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;Description :&quot;</span><span class="p">)</span>
-        <span class="n">labelDescTitle</span><span class="o">.</span><span class="n">set_markup</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">markupListDescTitle</span><span class="p">))</span>
+        <span class="n">labelDescTitle</span><span class="o">.</span><span class="n">set_markup</span><span class="p">(</span><span class="n">markupTemplate</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s2">&quot;Description :&quot;</span><span class="p">))</span>
 
         <span class="n">labelDesc</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_object</span><span class="p">(</span><span class="s1">&#39;label-desc-2&#39;</span><span class="p">)</span>
-        <span class="n">markupListDesc</span> <span class="o">=</span> <span class="n">markupList</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
-        <span class="n">markupListDesc</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">loot</span><span class="p">[</span><span class="s1">&#39;item&#39;</span><span class="p">][</span><span class="s1">&#39;desc&#39;</span><span class="p">])</span>
         <span class="n">labelDesc</span><span class="o">.</span><span class="n">set_line_wrap</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
         <span class="n">labelDesc</span><span class="o">.</span><span class="n">set_margin_left</span><span class="p">(</span><span class="n">marginLeft</span><span class="p">)</span>
-        <span class="n">labelDesc</span><span class="o">.</span><span class="n">set_markup</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">markupListDesc</span><span class="p">))</span>
+        <span class="n">labelDesc</span><span class="o">.</span><span class="n">set_markup</span><span class="p">(</span><span class="n">markupTemplate</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">loot</span><span class="p">[</span><span class="s1">&#39;item&#39;</span><span class="p">][</span><span class="s1">&#39;desc&#39;</span><span class="p">]))</span>
 
         <span class="n">labelEffectTitle</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_object</span><span class="p">(</span><span class="s1">&#39;label-effect-title-2&#39;</span><span class="p">)</span>
-        <span class="n">markupListEffectTitle</span> <span class="o">=</span> <span class="n">markupList</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
-        <span class="n">markupListEffectTitle</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;Effet :&quot;</span><span class="p">)</span>
-        <span class="n">labelEffectTitle</span><span class="o">.</span><span class="n">set_markup</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">markupListEffectTitle</span><span class="p">))</span>
+        <span class="n">labelEffectTitle</span><span class="o">.</span><span class="n">set_markup</span><span class="p">(</span><span class="n">markupTemplate</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s2">&quot;Effet :&quot;</span><span class="p">))</span>
 
         <span class="n">labelEffect</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_object</span><span class="p">(</span><span class="s1">&#39;label-effect-2&#39;</span><span class="p">)</span>
-        <span class="n">markupListEffect</span> <span class="o">=</span> <span class="n">markupList</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
-        <span class="n">markupListEffect</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">loot</span><span class="p">[</span><span class="s1">&#39;item&#39;</span><span class="p">][</span><span class="s1">&#39;effet&#39;</span><span class="p">])</span>
         <span class="n">labelEffect</span><span class="o">.</span><span class="n">set_line_wrap</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
         <span class="n">labelEffect</span><span class="o">.</span><span class="n">set_margin_left</span><span class="p">(</span><span class="n">marginLeft</span><span class="p">)</span>
-        <span class="n">labelEffect</span><span class="o">.</span><span class="n">set_markup</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">markupListEffect</span><span class="p">))</span>
+        <span class="n">labelEffect</span><span class="o">.</span><span class="n">set_markup</span><span class="p">(</span><span class="n">markupTemplate</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">loot</span><span class="p">[</span><span class="s1">&#39;item&#39;</span><span class="p">][</span><span class="s1">&#39;effet&#39;</span><span class="p">]))</span>
 
         <span class="n">labelClass</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_object</span><span class="p">(</span><span class="s1">&#39;label-class-2&#39;</span><span class="p">)</span>
-        <span class="n">markupListClass</span> <span class="o">=</span> <span class="n">markupList</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
-        <span class="n">markupListClass</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;Classe : &quot;</span><span class="p">)</span>
-        <span class="n">markupListClass</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">loot</span><span class="p">[</span><span class="s1">&#39;item&#39;</span><span class="p">][</span><span class="s1">&#39;classe&#39;</span><span class="p">])</span>
-        <span class="n">labelClass</span><span class="o">.</span><span class="n">set_markup</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">markupListClass</span><span class="p">))</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">get_object</span><span class="p">(</span><span class="s1">&#39;box-item-desc-2&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">()</span></div></div>
+        <span class="n">labelClass</span><span class="o">.</span><span class="n">set_markup</span><span class="p">(</span><span class="n">markupTemplate</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+            <span class="s2">&quot;Classe : &quot;</span> <span class="o">+</span> <span class="n">loot</span><span class="p">[</span><span class="s1">&#39;item&#39;</span><span class="p">][</span><span class="s1">&#39;classe&#39;</span><span class="p">]</span>
+        <span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">get_object</span><span class="p">(</span><span class="s1">&#39;box-item-desc-2&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="LotteryWindow.displayHistory"><a class="viewcode-back" href="../Window.html#Window.LotteryWindow.displayHistory">[docs]</a>    <span class="k">def</span> <span class="nf">displayHistory</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        A method to display history of loots in a dialog window.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">dialog</span> <span class="o">=</span> <span class="n">History</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">getWindow</span><span class="p">(),</span> <span class="bp">self</span><span class="o">.</span><span class="n">lottery</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">catImg</span><span class="p">)</span>
+        <span class="n">response</span> <span class="o">=</span> <span class="n">dialog</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+        <span class="n">dialog</span><span class="o">.</span><span class="n">destroy</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="LotteryWindow.displayPreference"><a class="viewcode-back" href="../Window.html#Window.LotteryWindow.displayPreference">[docs]</a>    <span class="k">def</span> <span class="nf">displayPreference</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        A method to display preferences of the Lottery in a dialog window.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">lotteryMinRarity</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">lottery</span><span class="o">.</span><span class="n">minRarity</span>
+        <span class="n">lotteryMaxRarity</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">lottery</span><span class="o">.</span><span class="n">maxRarity</span>
+        <span class="n">dialog</span> <span class="o">=</span> <span class="n">Preference</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">getWindow</span><span class="p">(),</span> <span class="bp">self</span><span class="o">.</span><span class="n">lottery</span><span class="p">)</span>
+        <span class="n">response</span> <span class="o">=</span> <span class="n">dialog</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+
+        <span class="k">if</span> <span class="n">response</span> <span class="o">!=</span> <span class="n">Gtk</span><span class="o">.</span><span class="n">ResponseType</span><span class="o">.</span><span class="n">OK</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">lottery</span><span class="o">.</span><span class="n">minRarity</span> <span class="o">=</span> <span class="n">lotteryMinRarity</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">lottery</span><span class="o">.</span><span class="n">maxRarity</span> <span class="o">=</span> <span class="n">lotteryMaxRarity</span>
+        <span class="n">dialog</span><span class="o">.</span><span class="n">destroy</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="LotteryWindow.displayAbout"><a class="viewcode-back" href="../Window.html#Window.LotteryWindow.displayAbout">[docs]</a>    <span class="k">def</span> <span class="nf">displayAbout</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        A method to display the &quot;about&quot; in a dialog window.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">about</span> <span class="o">=</span> <span class="n">About</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">getWindow</span><span class="p">())</span>
+        <span class="n">about</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+        <span class="n">about</span><span class="o">.</span><span class="n">destroy</span><span class="p">()</span></div></div>
+
+
+<div class="viewcode-block" id="History"><a class="viewcode-back" href="../Window.html#Window.History">[docs]</a><span class="k">class</span> <span class="nc">History</span><span class="p">(</span><span class="n">Gtk</span><span class="o">.</span><span class="n">Dialog</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Create a dialog window to display history of loots.</span>
+
+<span class="sd">    :param parent: Window which invoke this dialog</span>
+<span class="sd">    :type parent: Gtk.Window</span>
+<span class="sd">    :param lottery: The source of the loots</span>
+<span class="sd">    :type lottery: Lottery</span>
+<span class="sd">    :param icons: Icons to use to illustrate loots ({&quot;rarity&quot;:&quot;path to the picture&quot;})</span>
+<span class="sd">    :type icons: dict(str, str)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parent</span><span class="p">,</span> <span class="n">lottery</span><span class="p">,</span> <span class="n">icons</span><span class="p">):</span>
+        <span class="n">Gtk</span><span class="o">.</span><span class="n">Dialog</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span>
+            <span class="s2">&quot;Historique&quot;</span><span class="p">,</span>
+            <span class="n">parent</span><span class="p">,</span>
+            <span class="mi">0</span><span class="p">,</span>
+            <span class="p">(</span><span class="n">Gtk</span><span class="o">.</span><span class="n">STOCK_CLOSE</span><span class="p">,</span> <span class="n">Gtk</span><span class="o">.</span><span class="n">ResponseType</span><span class="o">.</span><span class="n">CLOSE</span><span class="p">)</span>
+        <span class="p">)</span>
+
+        <span class="n">contentArea</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_content_area</span><span class="p">()</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">lottery</span><span class="o">.</span><span class="n">history</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">scrolled</span> <span class="o">=</span> <span class="n">Gtk</span><span class="o">.</span><span class="n">ScrolledWindow</span><span class="p">()</span>
+            <span class="n">scrolled</span><span class="o">.</span><span class="n">set_policy</span><span class="p">(</span><span class="n">Gtk</span><span class="o">.</span><span class="n">PolicyType</span><span class="o">.</span><span class="n">NEVER</span><span class="p">,</span> <span class="n">Gtk</span><span class="o">.</span><span class="n">PolicyType</span><span class="o">.</span><span class="n">AUTOMATIC</span><span class="p">)</span>
+            <span class="n">scrolled</span><span class="o">.</span><span class="n">set_size_request</span><span class="p">(</span><span class="mi">500</span><span class="p">,</span> <span class="mi">300</span><span class="p">)</span>
+            <span class="n">vbox</span> <span class="o">=</span> <span class="n">Gtk</span><span class="o">.</span><span class="n">Box</span><span class="p">(</span><span class="n">orientation</span><span class="o">=</span><span class="n">Gtk</span><span class="o">.</span><span class="n">Orientation</span><span class="o">.</span><span class="n">VERTICAL</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">loot</span> <span class="ow">in</span> <span class="n">lottery</span><span class="o">.</span><span class="n">history</span><span class="p">:</span>
+                <span class="n">hbox</span> <span class="o">=</span> <span class="n">Gtk</span><span class="o">.</span><span class="n">Box</span><span class="p">(</span><span class="n">orientation</span><span class="o">=</span><span class="n">Gtk</span><span class="o">.</span><span class="n">Orientation</span><span class="o">.</span><span class="n">HORIZONTAL</span><span class="p">,</span> <span class="n">spacing</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span>
+                <span class="n">hbox</span><span class="o">.</span><span class="n">set_size_request</span><span class="p">(</span><span class="mi">300</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+                <span class="n">hbox</span><span class="o">.</span><span class="n">set_halign</span><span class="p">(</span><span class="n">Gtk</span><span class="o">.</span><span class="n">Align</span><span class="o">.</span><span class="n">START</span><span class="p">)</span>
+                <span class="n">label</span> <span class="o">=</span> <span class="n">Gtk</span><span class="o">.</span><span class="n">Label</span><span class="p">()</span>
+                <span class="n">label</span><span class="o">.</span><span class="n">set_markup</span><span class="p">(</span>
+                <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">&lt;span color=&quot;{color}&quot;&gt;</span>
+<span class="sd">Nom : &lt;span weight=&quot;bold&quot;&gt;{name}&lt;/span&gt;</span>
+<span class="sd">Description : {desc}</span>
+<span class="sd">Effet : {effect}</span>
+<span class="sd">Rareté : {rarity}</span>
+<span class="sd">&lt;/span&gt;</span>
+<span class="sd">                &quot;&quot;&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+                        <span class="n">color</span> <span class="o">=</span> <span class="n">loot</span><span class="p">[</span><span class="s1">&#39;options&#39;</span><span class="p">][</span><span class="s1">&#39;color&#39;</span><span class="p">],</span>
+                        <span class="n">name</span> <span class="o">=</span> <span class="n">loot</span><span class="p">[</span><span class="s1">&#39;item&#39;</span><span class="p">][</span><span class="s1">&#39;nom&#39;</span><span class="p">],</span>
+                        <span class="n">desc</span> <span class="o">=</span> <span class="n">loot</span><span class="p">[</span><span class="s1">&#39;item&#39;</span><span class="p">][</span><span class="s1">&#39;desc&#39;</span><span class="p">],</span>
+                        <span class="n">effect</span> <span class="o">=</span> <span class="n">loot</span><span class="p">[</span><span class="s1">&#39;item&#39;</span><span class="p">][</span><span class="s1">&#39;effet&#39;</span><span class="p">],</span>
+                        <span class="n">rarity</span> <span class="o">=</span> <span class="n">loot</span><span class="p">[</span><span class="s1">&#39;options&#39;</span><span class="p">][</span><span class="s1">&#39;rarity&#39;</span><span class="p">]</span>
+                    <span class="p">)</span>
+                <span class="p">)</span>
+                <span class="n">label</span><span class="o">.</span><span class="n">set_halign</span><span class="p">(</span><span class="n">Gtk</span><span class="o">.</span><span class="n">Justification</span><span class="o">.</span><span class="n">LEFT</span><span class="p">)</span>
+                <span class="n">label</span><span class="o">.</span><span class="n">set_max_width_chars</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+                <span class="n">label</span><span class="o">.</span><span class="n">set_ellipsize</span><span class="p">(</span><span class="n">Pango</span><span class="o">.</span><span class="n">EllipsizeMode</span><span class="o">.</span><span class="n">END</span><span class="p">)</span>
+                <span class="c1"># label.set_size_request(100, -1)</span>
+                <span class="n">label</span><span class="o">.</span><span class="n">set_line_wrap</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">loot</span><span class="p">[</span><span class="s1">&#39;item&#39;</span><span class="p">][</span><span class="s1">&#39;categorie&#39;</span><span class="p">]</span> <span class="ow">in</span> <span class="n">icons</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+                    <span class="n">icon</span> <span class="o">=</span> <span class="n">icons</span><span class="p">[</span><span class="n">loot</span><span class="p">[</span><span class="s1">&#39;item&#39;</span><span class="p">][</span><span class="s1">&#39;categorie&#39;</span><span class="p">]]</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">icon</span> <span class="o">=</span> <span class="n">icons</span><span class="p">[</span><span class="s1">&#39;unknown&#39;</span><span class="p">]</span>
+                <span class="n">pixbufImg</span> <span class="o">=</span> <span class="n">Pixbuf</span><span class="o">.</span><span class="n">new_from_file_at_size</span><span class="p">(</span><span class="n">icon</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">96</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">96</span><span class="p">)</span>
+                <span class="n">img</span> <span class="o">=</span> <span class="n">Gtk</span><span class="o">.</span><span class="n">Image</span><span class="p">()</span>
+                <span class="n">img</span><span class="o">.</span><span class="n">set_from_pixbuf</span><span class="p">(</span><span class="n">pixbufImg</span><span class="p">)</span>
+                <span class="n">hbox</span><span class="o">.</span><span class="n">pack_start</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+                <span class="n">hbox</span><span class="o">.</span><span class="n">pack_start</span><span class="p">(</span><span class="n">label</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+                <span class="n">vbox</span><span class="o">.</span><span class="n">pack_start</span><span class="p">(</span><span class="n">hbox</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+            <span class="n">scrolled</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">vbox</span><span class="p">)</span>
+            <span class="n">contentArea</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">scrolled</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">contentArea</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Gtk</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="s2">&quot;Vous n&#39;avez pas encore utilisé la loterie.&quot;</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">show_all</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Preference"><a class="viewcode-back" href="../Window.html#Window.Preference">[docs]</a><span class="k">class</span> <span class="nc">Preference</span><span class="p">(</span><span class="n">Gtk</span><span class="o">.</span><span class="n">Dialog</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Create a dialog window to modify the preference of the lottery</span>
+
+<span class="sd">    :param parent: Window which invoke this dialog</span>
+<span class="sd">    :type parent: Gtk.Window</span>
+<span class="sd">    :param lottery: The lottery to modify</span>
+<span class="sd">    :type lottery: Lottery</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parent</span><span class="p">,</span> <span class="n">lottery</span><span class="p">):</span>
+        <span class="n">Gtk</span><span class="o">.</span><span class="n">Dialog</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span>
+            <span class="s2">&quot;Préférence&quot;</span><span class="p">,</span>
+            <span class="n">parent</span><span class="p">,</span>
+            <span class="mi">0</span><span class="p">,</span>
+            <span class="p">(</span><span class="n">Gtk</span><span class="o">.</span><span class="n">STOCK_CANCEL</span><span class="p">,</span> <span class="n">Gtk</span><span class="o">.</span><span class="n">ResponseType</span><span class="o">.</span><span class="n">CANCEL</span><span class="p">,</span> <span class="n">Gtk</span><span class="o">.</span><span class="n">STOCK_OK</span><span class="p">,</span> <span class="n">Gtk</span><span class="o">.</span><span class="n">ResponseType</span><span class="o">.</span><span class="n">OK</span><span class="p">)</span>
+        <span class="p">)</span>
+        <span class="n">contentArea</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_content_area</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">lottery</span> <span class="o">=</span> <span class="n">lottery</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">set_default_size</span><span class="p">(</span><span class="mi">150</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+        <span class="n">hbox</span> <span class="o">=</span> <span class="n">Gtk</span><span class="o">.</span><span class="n">Box</span><span class="p">(</span><span class="n">orientation</span><span class="o">=</span><span class="n">Gtk</span><span class="o">.</span><span class="n">Orientation</span><span class="o">.</span><span class="n">HORIZONTAL</span><span class="p">,</span> <span class="n">spacing</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+        <span class="n">minRarityStore</span> <span class="o">=</span> <span class="n">Gtk</span><span class="o">.</span><span class="n">ListStore</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">defaultMinRarityIndex</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
+        <span class="n">maxRarityStore</span> <span class="o">=</span> <span class="n">Gtk</span><span class="o">.</span><span class="n">ListStore</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">defaultMaxRarityIndex</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
+        <span class="n">rendererText</span> <span class="o">=</span> <span class="n">Gtk</span><span class="o">.</span><span class="n">CellRendererText</span><span class="p">()</span>
+        <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">lottery</span><span class="o">.</span><span class="n">items</span><span class="o">.</span><span class="n">keys</span><span class="p">(),</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+            <span class="n">obj</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">lottery</span><span class="o">.</span><span class="n">items</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>
+            <span class="k">if</span> <span class="n">key</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="n">lottery</span><span class="o">.</span><span class="n">minRarity</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">defaultMinRarityIndex</span> <span class="o">=</span> <span class="n">i</span>
+            <span class="k">if</span> <span class="n">key</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="n">lottery</span><span class="o">.</span><span class="n">maxRarity</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">defaultMaxRarityIndex</span> <span class="o">=</span> <span class="n">i</span>
+            <span class="n">minRarityStore</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">key</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">obj</span><span class="p">[</span><span class="s1">&#39;options&#39;</span><span class="p">][</span><span class="s1">&#39;rarity&#39;</span><span class="p">]])</span>
+            <span class="n">maxRarityStore</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">key</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">obj</span><span class="p">[</span><span class="s1">&#39;options&#39;</span><span class="p">][</span><span class="s1">&#39;rarity&#39;</span><span class="p">]])</span>
+            <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+
+        <span class="n">minRarityComboBox</span> <span class="o">=</span> <span class="n">Gtk</span><span class="o">.</span><span class="n">ComboBox</span><span class="o">.</span><span class="n">new_with_model</span><span class="p">(</span><span class="n">minRarityStore</span><span class="p">)</span>
+        <span class="n">minRarityComboBox</span><span class="o">.</span><span class="n">pack_start</span><span class="p">(</span><span class="n">rendererText</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+        <span class="n">minRarityComboBox</span><span class="o">.</span><span class="n">add_attribute</span><span class="p">(</span><span class="n">rendererText</span><span class="p">,</span> <span class="s2">&quot;text&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="n">minRarityComboBox</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s2">&quot;changed&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">on_min_rarity_changed</span><span class="p">)</span>
+        <span class="n">minRarityComboBox</span><span class="o">.</span><span class="n">set_active</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">defaultMinRarityIndex</span><span class="p">)</span>
+        <span class="n">minRarityVbox</span> <span class="o">=</span> <span class="n">Gtk</span><span class="o">.</span><span class="n">Box</span><span class="p">(</span><span class="n">orientation</span><span class="o">=</span><span class="n">Gtk</span><span class="o">.</span><span class="n">Orientation</span><span class="o">.</span><span class="n">VERTICAL</span><span class="p">,</span> <span class="n">spacing</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span>
+        <span class="n">minRarityVbox</span><span class="o">.</span><span class="n">pack_start</span><span class="p">(</span><span class="n">Gtk</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="s2">&quot;Rareté minimum&quot;</span><span class="p">),</span> <span class="kc">True</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="n">minRarityVbox</span><span class="o">.</span><span class="n">pack_start</span><span class="p">(</span><span class="n">minRarityComboBox</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+
+        <span class="n">maxRarityComboBox</span> <span class="o">=</span> <span class="n">Gtk</span><span class="o">.</span><span class="n">ComboBox</span><span class="o">.</span><span class="n">new_with_model</span><span class="p">(</span><span class="n">maxRarityStore</span><span class="p">)</span>
+        <span class="n">maxRarityComboBox</span><span class="o">.</span><span class="n">pack_start</span><span class="p">(</span><span class="n">rendererText</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+        <span class="n">maxRarityComboBox</span><span class="o">.</span><span class="n">add_attribute</span><span class="p">(</span><span class="n">rendererText</span><span class="p">,</span> <span class="s2">&quot;text&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="n">maxRarityComboBox</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s2">&quot;changed&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">on_max_combo_changed</span><span class="p">)</span>
+        <span class="n">maxRarityComboBox</span><span class="o">.</span><span class="n">set_active</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">defaultMaxRarityIndex</span><span class="p">)</span>
+        <span class="n">maxRarityVbox</span> <span class="o">=</span> <span class="n">Gtk</span><span class="o">.</span><span class="n">Box</span><span class="p">(</span><span class="n">orientation</span><span class="o">=</span><span class="n">Gtk</span><span class="o">.</span><span class="n">Orientation</span><span class="o">.</span><span class="n">VERTICAL</span><span class="p">,</span> <span class="n">spacing</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span>
+        <span class="n">maxRarityVbox</span><span class="o">.</span><span class="n">pack_start</span><span class="p">(</span><span class="n">Gtk</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="s2">&quot;Rareté maximun&quot;</span><span class="p">),</span> <span class="kc">True</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="n">maxRarityVbox</span><span class="o">.</span><span class="n">pack_start</span><span class="p">(</span><span class="n">maxRarityComboBox</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">labelErr</span> <span class="o">=</span> <span class="n">Gtk</span><span class="o">.</span><span class="n">Label</span><span class="p">()</span>
+        <span class="n">contentArea</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">labelErr</span><span class="p">)</span>
+        <span class="n">hbox</span><span class="o">.</span><span class="n">pack_start</span><span class="p">(</span><span class="n">minRarityVbox</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="n">hbox</span><span class="o">.</span><span class="n">pack_start</span><span class="p">(</span><span class="n">maxRarityVbox</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="n">contentArea</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">hbox</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">show_all</span><span class="p">()</span>
+
+<div class="viewcode-block" id="Preference.on_max_combo_changed"><a class="viewcode-back" href="../Window.html#Window.Preference.on_max_combo_changed">[docs]</a>    <span class="k">def</span> <span class="nf">on_max_combo_changed</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">combo</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Event triggered when the value of the maximum rarity is changed.</span>
+
+<span class="sd">        :param combo: The combo box represent the maximum rarity</span>
+<span class="sd">        :type combo: Gtk.ComboBox</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">tree_iter</span> <span class="o">=</span> <span class="n">combo</span><span class="o">.</span><span class="n">get_active_iter</span><span class="p">()</span>
+        <span class="n">model</span> <span class="o">=</span> <span class="n">combo</span><span class="o">.</span><span class="n">get_model</span><span class="p">()</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">lottery</span><span class="o">.</span><span class="n">maxRarity</span> <span class="o">=</span> <span class="n">model</span><span class="p">[</span><span class="n">tree_iter</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">defaultMaxRarityIndex</span> <span class="o">=</span> <span class="n">combo</span><span class="o">.</span><span class="n">get_active</span><span class="p">()</span>
+        <span class="k">except</span> <span class="ne">ValueError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">labelErr</span><span class="o">.</span><span class="n">set_markup</span><span class="p">(</span><span class="s1">&#39;&lt;span color=&quot;red&quot;&gt;La rareté maximun est inférieur à la rareté minimum&lt;/span&gt;&#39;</span><span class="p">)</span>
+            <span class="n">combo</span><span class="o">.</span><span class="n">set_active</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">defaultMaxRarityIndex</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="Preference.on_min_rarity_changed"><a class="viewcode-back" href="../Window.html#Window.Preference.on_min_rarity_changed">[docs]</a>    <span class="k">def</span> <span class="nf">on_min_rarity_changed</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">combo</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Event triggered when the value of the minimum rarity is changed.</span>
+
+<span class="sd">        :param combo: The combo box represent the minimum rarity</span>
+<span class="sd">        :type combo: Gtk.ComboBox</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">tree_iter</span> <span class="o">=</span> <span class="n">combo</span><span class="o">.</span><span class="n">get_active_iter</span><span class="p">()</span>
+        <span class="n">model</span> <span class="o">=</span> <span class="n">combo</span><span class="o">.</span><span class="n">get_model</span><span class="p">()</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">lottery</span><span class="o">.</span><span class="n">minRarity</span> <span class="o">=</span> <span class="n">model</span><span class="p">[</span><span class="n">tree_iter</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">defaultMinRarityIndex</span> <span class="o">=</span> <span class="n">combo</span><span class="o">.</span><span class="n">get_active</span><span class="p">()</span>
+        <span class="k">except</span> <span class="ne">ValueError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">labelErr</span><span class="o">.</span><span class="n">set_markup</span><span class="p">(</span><span class="s1">&#39;&lt;span color=&quot;red&quot;&gt;La rareté minimum est supérieur à la rareté maximun&lt;/span&gt;&#39;</span><span class="p">)</span>
+            <span class="n">combo</span><span class="o">.</span><span class="n">set_active</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">defaultMaxRarityIndex</span><span class="p">)</span></div></div>
+
+<div class="viewcode-block" id="About"><a class="viewcode-back" href="../Window.html#Window.About">[docs]</a><span class="k">class</span> <span class="nc">About</span><span class="p">(</span><span class="n">Gtk</span><span class="o">.</span><span class="n">AboutDialog</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Create a dialog window to display &quot;about application&quot;</span>
+
+<span class="sd">    :param parent: Window which invoke this dialog</span>
+<span class="sd">    :type parent: Gtk.Window</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parent</span><span class="p">):</span>
+        <span class="n">img</span> <span class="o">=</span> <span class="n">utils</span><span class="o">.</span><span class="n">resolvePath</span><span class="p">(</span><span class="s1">&#39;images/RPG-icon.png&#39;</span><span class="p">)</span>
+        <span class="n">logo</span> <span class="o">=</span> <span class="n">Pixbuf</span><span class="o">.</span><span class="n">new_from_file_at_size</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">128</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">128</span><span class="p">)</span>
+        <span class="nb">super</span><span class="p">(</span><span class="n">About</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
+            <span class="n">parent</span> <span class="o">=</span> <span class="n">parent</span><span class="p">,</span>
+            <span class="n">artists</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Teekatas Suwannakrua&#39;</span><span class="p">],</span>
+            <span class="n">authors</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Loïc Penaud&#39;</span><span class="p">,</span> <span class="s1">&#39;Erwan Bourhis&#39;</span><span class="p">],</span>
+            <span class="n">comments</span> <span class="o">=</span> <span class="s2">&quot;A RPG Lottery&quot;</span><span class="p">,</span>
+            <span class="n">copyright</span> <span class="o">=</span> <span class="s2">&quot;Loïc Penaud&quot;</span><span class="p">,</span>
+            <span class="n">documenters</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Loïc Penaud&#39;</span><span class="p">],</span>
+            <span class="n">license_type</span> <span class="o">=</span> <span class="n">Gtk</span><span class="o">.</span><span class="n">License</span><span class="o">.</span><span class="n">GPL_3_0_ONLY</span><span class="p">,</span>
+            <span class="n">logo</span> <span class="o">=</span> <span class="n">logo</span><span class="p">,</span>
+            <span class="n">program_name</span> <span class="o">=</span> <span class="s2">&quot;Lottery&quot;</span><span class="p">,</span>
+            <span class="n">version</span> <span class="o">=</span> <span class="s1">&#39;1.2&#39;</span><span class="p">,</span>
+            <span class="n">website</span> <span class="o">=</span> <span class="s1">&#39;https://github.com/lpenaud/rpg-dark-fantasy&#39;</span><span class="p">,</span>
+            <span class="n">website_label</span> <span class="o">=</span> <span class="s1">&#39;Github&#39;</span>
+        <span class="p">)</span></div>
+
+
 
 <div class="viewcode-block" id="load"><a class="viewcode-back" href="../Window.html#Window.load">[docs]</a><span class="k">def</span> <span class="nf">load</span><span class="p">(</span><span class="n">window</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
@@ -265,63 +599,66 @@
     <span class="n">Gtk</span><span class="o">.</span><span class="n">main</span><span class="p">()</span></div>
 </pre></div>
 
+           </div>
+           <div class="articleComments">
+            
+           </div>
           </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Loïc Penaud.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
         </div>
       </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-<h1 class="logo"><a href="../index.html">rpg-dark-fantasy</a></h1>
+
+    </section>
+
+  </div>
+  
 
 
+  
 
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.2',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
 
+  
 
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
 
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
 
-
-<h3>Navigation</h3>
-<p class="caption"><span class="caption-text">Contents:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../utils.html">utils</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Lottery.html">Lottery</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../setInterval.html">setInterval</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Window.html">Window</a></li>
-</ul>
-
-<div class="relations">
-<h3>Related Topics</h3>
-<ul>
-  <li><a href="../index.html">Documentation overview</a><ul>
-  <li><a href="index.html">Module code</a><ul>
-  </ul></li>
-  </ul></li>
-</ul>
-</div>
-<div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
-    <form class="search" action="../search.html" method="get">
-      <div><input type="text" name="q" /></div>
-      <div><input type="submit" value="Go" /></div>
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
-        </div>
-      </div>
-      <div class="clearer"></div>
-    </div>
-    <div class="footer">
-      &copy;2017, Loïc Penaud.
-      
-      |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.4</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
-      
-    </div>
-
-    
-
-    
-  </body>
+</body>
 </html>

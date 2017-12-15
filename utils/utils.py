@@ -34,22 +34,27 @@ def load(strf):
 
     return jsonData
 
-def realPathDir(f=__file__):
-    """
-    Get absolute path of a python script (useful when you have to import file)
-
-    :return: Absolute path of python file
-    :rtype: str
-    """
-    return os.path.dirname(os.path.realpath(f)) + '/'
-
 def isFrozen():
+    """
+    Test if the application is frozen (pyinstaller)
+
+    :return: True/False depend if the application is frozen
+    :rtype: bool
+    """
     return getattr(sys, 'frozen', False)
 
 def resolvePath(f):
+    """
+    Get absolute path of a file (All the files imports have to use this function)
+
+    :param f: Paths relative to the file whose departure is the root of the application
+    :type f: str
+    :return: Absolute path of the file
+    :rtype: str
+    """
     if isFrozen():
-        path = realPathDir()
+        path = os.path.dirname(os.path.realpath(__file__)) + '/'
     else:
-        path = realPathDir() + '../'
+        path = os.path.dirname(os.path.realpath(__file__)) + '/../'
 
     return path + f
