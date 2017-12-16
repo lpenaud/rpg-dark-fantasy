@@ -11,7 +11,7 @@ added_files = [
 ]
 
 a = Analysis(['main.py'],
-             pathex=['utils', '/data/home/loic/Documents/git/rpg-dark-fantasy'],
+             pathex=['utils'],
              binaries=[],
              datas=added_files,
              hiddenimports=[],
