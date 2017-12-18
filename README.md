@@ -2,21 +2,25 @@
 
 ## Installation
 
-### If you are on GNU/Linux
+### Simple installation for Windows
+Follow this link : https://github.com/lpenaud/rpg-dark-fantasy/releases
+
+Then, download the latest release for Windows, unzip the .zip folder. 
+Last step : launch Lottery.exe !
+
+### From Source Code
+
+#### If you are on GNU/Linux
 You should have the third version of python and GTK.
 if it is not already installed :
 * with apt-get : `sudo apt-get install python3-gi`
 * with pacman :  `sudo pacman -S python-gobject`
 
-Then to lanch main.py :
+Then to launch main.py :
 Eitcher you have to execute theses commands (in source folder) : `chmod +x main.py` next `./main.py`
 Or type (in source folder) `python3 main.py`
 
-### Or if you are on Windows
-**If you have windows 7 64 bits**
-You can download lottery-win.zip and lanch main.exe
-
-**Else**
+#### Or if you are on Windows
 
 You have to install some stuff :
 * [MSYS2](http://www.msys2.org/)
