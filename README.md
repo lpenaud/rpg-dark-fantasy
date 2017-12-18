@@ -5,7 +5,7 @@
 ### Simple installation for Windows
 Follow this link : https://github.com/lpenaud/rpg-dark-fantasy/releases
 
-Then, download the latest release for Windows, unzip the .zip folder. 
+Then, download the latest release for Windows, unzip the .zip folder.
 Last step : launch Lottery.exe !
 
 ### From Source Code
@@ -45,7 +45,7 @@ If it's not working, install python3 : `pacman -S python3`, then retry.
 - [ ] Play a sound which depend of the loot rarity
 - [x] Write "about"
 - [ ] Add a new template to the GTK Window
-- [ ] Copy/paste from history window
+- [x] Copy/paste from history window
 
 ## Images sources
 Thank to [Teekatas Suwannakrua](https://raindropmemory.deviantart.com) for the icons.

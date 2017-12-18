@@ -287,7 +287,7 @@ Rareté : {rarity}
                 label.set_halign(Gtk.Justification.LEFT)
                 label.set_max_width_chars(100)
                 label.set_ellipsize(Pango.EllipsizeMode.END)
-                # label.set_size_request(100, -1)
+                label.set_selectable(True)
                 label.set_line_wrap(True)
                 if loot['item']['categorie'] in icons.keys():
                     icon = icons[loot['item']['categorie']]
