@@ -33,13 +33,15 @@ If it's not working, install python3 : `pacman -S python3`, then retry.
 
 ## TODO
 - [x] Write a documentation
-- [x] Write data/stuff.json
+- [ ] Finish data/stuff.json
 - [x] Window to view the history
 - [x] Option to lock a rarity in Lottery
 - [ ] Style of the launch button
 - [x] Slow down the interval just before final loot
 - [ ] Play a sound which depend of the loot rarity
 - [x] Write "about"
+- [ ] Add a new template to the GTK Window
+- [ ] Copy/paste from history window
 
 ## Images sources
 Thank to [Teekatas Suwannakrua](https://raindropmemory.deviantart.com) for the icons.
