@@ -1,19 +1,11 @@
 #!/usr/bin/env python3
 # coding: utf-8
 
-from config import Lottery
+from config import Sqlite, Category
 
-example = Lottery.Lottery('data/stuff.json')
+db = Sqlite.Database('../data/data.db')
+cat = Category.Category(db)
+print(cat.getNameFields())
 
-# Type your test code here
-
-print('test', example.deterTupleRarity('mythical'))
-# example.minRarity = 'mythical'
-# example.maxRarity = 'mythical'
-
-print(str(example.maxRarity) + ' - ' + str(example.minRarity))
-loot = example.loot(keepHistory=False)
-print(
-    loot['item']['nom'] + ' - ' + loot['options']['rarity'],
-    sep='\n'
-)
+db.dropTable(cat.tableName)
+db.close()
