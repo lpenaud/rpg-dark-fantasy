@@ -2552,85 +2552,85 @@
 		{
 			"categorie": "none",
 			"nom": "Niamor, Épée de l'Honorable Tavernier",
-			"desc": "",
-			"effet": "",
+			"desc": "Une épée de soldat du Vieux Royaume d'Estangelt. Bien que banale, les épreuves parcourues et la main qui la maniée l'ont rendue unique en tout point. Un honneur sans faille est nécéssaire pour pouvoir la porter",
+			"effet": "Force de l'Honneur : Cette arme inflige 300% de ses dégâts normaux aux ennemis déshonorables (bandits, voleurs, déserteurs...). Les monstres ne sont pas considérés comme tels mais subissent malgré tout 2d30 dégâts supplémentaires",
 			"classe": "P - P/F"
 		},
 		{
 			"categorie": "none",
 			"nom": "Neired, Hache naine en Onyx raffiné de Jögrok Rimvar",
-			"desc": "",
-			"effet": "",
+			"desc": "Les Nains se battent à la hache c'est bien connu. C'était d'autant plus vrai pour le 2ème Kâzan Nain qui utilisait Neired pour trancher os et armures de ses ennemis",
+			"effet": "Frappe des Tréfonds : Votre première frappe contre un monstre nécrophage lui infligera 50% de ses points de vie max de dégâts (sans compter les dégâts de l'arme). Si le monstre est tué, vous rejouez instantanément",
 			"classe": "P - P/F"
 		},
 		{
 			"categorie": "none",
 			"nom": "Waaln, Guisarme pourpre du Conquérant",
-			"desc": "",
-			"effet": "",
+			"desc": "La Guisarme de l'Empereur Elrim'ä-ar est légendaire. Maniant cette arme prodigieuse, il conquit tous les Royaumes Humains connus à ce jour avant d'aller siéger comme premier Empereur Wellanien, à Ethernum. On ignore presque tout des orignes de cette arme de fabriquation Wellanienne mais elle a probablement été forgée par delà l'océan de l'Ouest d'où sont venus les envahisseurs il y a plus d'un siècle",
+			"effet": "Vaincre ou Périr : Votre arme inflige 2d(vos pv manquants) en plus de ses dégâts de base",
 			"classe": "P"
 		},
 		{
 			"categorie": "none",
 			"nom": "Échine de Delgabal",
-			"desc": "",
-			"effet": "",
+			"desc": "Dans les registres, ont dénombres quelques centaines de dragons répertoriés. Delgabal était le nom d'un dragon ayant vécu au temps des Rois du Nord. Sa longévité fut exceptionnelle, ayant connu le règne d'Aedhgar le Pieu à celui de Maedh II le Fol. Il fut tué dans la rébéllion contre ce dernier à l'âge de 590 ans. C'était de loin le plus grands dragon 'domestiqué' ayant vécu, atteignant les 35 mètres de circonférance toutes ailes déployés",
+			"effet": "Aile de Mort : Vous pouvez toucher les créatures aîlés en plein vol jusqu'a 150 mètres de distances. Les draconides et les créatures ailées subissent 100% de dégâts supplémentaires. Ignorez 60% de l'amure des ennemis avec cette arme",
 			"classe": "P"
 		},
 		{
 			"categorie": "none",
 			"nom": "Celleb, Dague empoisonnée en mythril de Lanus Lovien",
-			"desc": "",
-			"effet": "",
+			"desc": "Lanus Lovien était un contrebandier à la solde du Cartel de Shurïm à la tête du Conglomerat Marchand d'Hadren. Son père, Erberus Lovien était quent à lui un honnête marchand disparut lors d'une tempête près de l'archipel des Skïnos. Il a légué cette dague à son fils qui à pris grand soin de larendre encore plus mortelle en l'enduisant de perma-strangleur, un poison permanent issu d'une plante du Désert de Shurïm. Le poison cause une mort atrocement lente et douloureuse, la victime s'étranglant durant des semaines avant de périr",
+			"effet": "Perma-Strangleur : Chaque ennemi touché à 50% de chance d'être empoisonné pour toute la durée du combat. Les cibles empoisonnées subissent des coups critiques 25% plus facilement",
 			"classe": "F - F/S"
 		},
 		{
 			"categorie": "none",
 			"nom": "Scalpel en Onyx de Valzébial",
-			"desc": "",
-			"effet": "",
+			"desc": "Utilisé par le sombre Saigneur Valzébial, ce scalpel à servit à dédepcer les pauvres âmes échouées et enlevées. Les expériences se déroulaient dans les sombres cavernes de l'archipel des Skïnos puis après dans la Forteresse de Valden Pyyk. Ce scalpel aura probablement été l'un des outil qui aurait permit de créer la première Peste qui ravagea le Vélendil et les peuples Varyens",
+			"effet": "Rituel noir : Vous pouvez vous entailler les veines ce qui vous inflige 1d30pv et vous permet de lancer une peste sanglante sur les ennemis. Les ennemis proches sont infectés et perdent par tour 1,5 fois le montant de dégâts que vous vous êtes infligé en lançant le sort",
 			"classe": "F - F/S"
 		},
 		{
 			"categorie": "none",
 			"nom": "Vaul'daür, La Mort Sifflante",
-			"desc": "",
-			"effet": "",
+			"desc": "Un arc très ancien ayant appartenu à un haut gradé de l'armée Drakkan. De grande taille, cet arc en os d'Oron, des créatures draconique sous-terraine, offre une grande flexibilité à l'arc et permet de toucher des cibles avec précision à une distance extrême. Cet arme fut très probablement utilisé pour abattre des dragons",
+			"effet": "Perce-écailles : Ignorez l'armure des ennemis en attaquant avec cette arme. Pour les monstres puissants (appréciation du MJ), ignorez 50% de l'armure",
 			"classe": "F"
 		},
 		{
 			"categorie": "none",
 			"nom": "Mÿr, Arc de chasse en os de Dragon d'Hadrian",
-			"desc": "",
-			"effet": "",
+			"desc": "Traquer les monstres comme les hommes, Hadrian d'Henshür s'y connait. Son arc, Mÿr, à été conçu par ses soins en bois des arbres sacrés du Bois d'Argent ce qui le rend d'une incroyable puissance pour sa légèreté. Coût: 20% énergie",
+			"effet": "Ami du Traqueur : Vous pouvez invoquer une panthère des Forêts de l'Arlain. Cette dernière inflige les dégâts de cette arme et possède 30% de chance d'effectuer un coup furtif. Les coups furtif font saigner la cible à hauteur de 10% de ses pv par tour jusqu'a sa mort. La panthère possède le double de vos pv mais pas d'armure",
 			"classe": "F"
 		},
 		{
 			"categorie": "none",
 			"nom": "Grimoire de la Flamme Interdite",
-			"desc": "",
-			"effet": "",
+			"desc": "Ce grimoire a appartenu à tous les Grands Arcanistes qui se sont succédés à la tête de l'Ordre des Mages. Le grimoire contient toutes les inscriptions notées par les Arcanistes au fil des siècles. Son dernier détenteur connu serait le très jeune arcaniste Willian Arcturus. On ingore où il vit actuellement mais il aurait rajouté des inscriptions extrêmement puissante. Coût : 50% mana",
+			"effet": "INFERNO : Vous canalisez une tempête de 4 météores sur un ennemi qui lui inflige les dégâts de votre arme + 1d100 de dégâts de feu. La cible est brûlée et subie 1d30 de dégâts par tour pendant 3 tours",
 			"classe": "S"
 		},
 		{
 			"categorie": "none",
-			"nom": "Vöohl'ndr, Grimoire des Arts Occultes des Saigneurs",
-			"desc": "",
-			"effet": "",
+			"nom": "Uldarag, Le Grimoire des Arts Occultes des Saigneurs",
+			"desc": "Les sombres saigneurs avaient pour pratique de mener de expériences atroces sur des sujets bien viants. Les sciences occultes qui en étaient tirées étaient inscrites dans des grimoires comme celui-ci. Ils peuvent contenir bon nombre d'inscriptions destructrices qu'elles soient entre de bonnes ou de mauvaises mains. Coût: 30% mana",
+			"effet": "Infection Cadavérique : Vous pouvez infecter un ennemi en lui implantant un virus extrêmement virulant. Si la victime meurt avant les 3 tours après sa contamination, vous obtenez 1d(pv max de la cible) et 1d(dégats magiques de la cible) jusqu'a ce que vous perdiez des pv. Ne peut pas se cumuler",
 			"classe": "S"
 		},
 		{
 			"categorie": "none",
 			"nom": "Nayrb, Bâton de l'Esprit Maudit du Gibon Blanc",
-			"desc": "",
-			"effet": "",
+			"desc": "Il est des histoires peu communes. Tel fut celle d'un Varyen nommé Isindil Aranel. Arière petit-Fils de Seto Aranel, Isindil naquit probablement vers -1000 avant la Conquête. Isindil avait une affinité toute particulière avec le feu éthéré et ne cessait d'améliorer ses talents. Il trouva un jour ce bâton qui lui conféra une plus grande maîtrise encore, plus grande que tout ce qu'il aurait pu espérer. Mais le bâton avait été maudit et l'esprit qu'il contenait ce lia à l'elfe à son plus grand désarroi.",
+			"effet": "Saleté de Macaque ! : L'esprit du Gibon Blanc à 30% de chance d'apparaitre à chacun de vos tours de jeu (même hors combat) (jet de dés secret du MJ). Le singe est contrôlé par le MJ et n'en feras qu'a sa tête, pour votre plus grand regret... ou pas ! Vous devrez apprendre à connaitre l'Esprit pour mieux l'apprivoiser. Si le MJ juge que vous avez assez appris sur l'Esprit, vous pourrez alors le contrôler",
 			"classe": "P/S"
 		},
 		{
 			"categorie": "none",
-			"nom": "Aldo'reï, Bâton en Orichalque du Nécromancien Qwyn Araï",
-			"desc": "",
-			"effet": "",
+			"nom": "Aldo'reï, Bâton en Orichalque du Nécromant Qwyn Araï",
+			"desc": "Qwyn Araï est un homme originaire de la cité de Brumaire. Après avoir combattu aux côtésd des rebelles lors de la Rébéllion de Léahn Gveiln, il perdit sa femme, capturée et brûlée le même jour que Léahn dans la Forteresse de Klasamer. Cet évènement le rendit d'abord emplit de haine et d'un grand désir de vengeance. Aux delà de ces instincts primaires, Qwyn décida d'étudier les arcanes de la magie noire afin de revoir sa femme, ce qu'il réussi. Loin d'utiliser ses pouvoirs à mauvais compte, le nécromant rejoignit l'Académi d'Argent et mit ses talents en magie noire au service du bien.",
+			"effet": "Des Ténèbres nait la Lumière : Vous pouvez réssussiter un joueur mort. Le joueur sera sans équipement et sans or mais conservera son niveau d'avant son décès. Ne peut être utilisé qu'une seule fois. Si le détenteur du bâton meurt, ce dernier est détruit et le joueur réssucite instantanément sans pertes et avec 50% de ses ressources",
 			"classe": "P/S"
 		},
 		{
@@ -2642,14 +2642,14 @@
 		},
 		{
 			"categorie": "none",
-			"nom": "Disques faucheurs de Hurleuse",
+			"nom": "Disques fantomatiques de Hurleuse",
 			"desc": "",
 			"effet": "",
 			"classe": "P/S"
 		},
 		{
 			"categorie": "none",
-			"nom": "Lame d'éther des Monarques de Médilen",
+			"nom": "Arzzaön, Lame d'éther des Monarques de Médilen",
 			"desc": "",
 			"effet": "",
 			"classe": "F/S"
@@ -2678,7 +2678,7 @@
 		{
 			"categorie": "none",
 			"nom": "Ravingard, Double-lame Elfique de Seto Aranel",
-			"desc": "",
+			"desc": "Seto Aranel fut propablement l'un des Varyens les plus connus de tous les temps, hormis son oncle, Sindari. Mort en -2664 lors de la Chute du Vélendil causé par la toute première Peste Sanglante créer par le Saigneur Valzébial. Ravingard était sa lame, forgée selon les plus fins arts varyens, elle était admirée et redoutée. Malheureusement, elle disparue avec son propriétaire dans le gigantesque charnier de Phossoria sur l'île d'Alombra",
 			"effet": "",
 			"classe": "F - P/F"
 		},
@@ -2691,22 +2691,22 @@
 		},
 		{
 			"categorie": "none",
-			"nom": "Ghölnn, La Faux d'Arken Vallow'",
-			"desc": "",
+			"nom": "Ghölnn, Faux d'Arken Vallow'",
+			"desc": "Arken Vallow était autrefois un homme d'Ethernum ayant vécu aux temps des Croisades. Son lieu de naissance est inconnu mais on pense qu'il serait né la même année que celle de la création du Voile. Arken disposait d'une affinitée avec l'éther absolument prodigieuse ce qui lui permettait entre autre, de communiquer avec les défunts. Entre autre, il se lia d'amitié avec le fantôme d'un pestiféré éliminé par les croisés. Cette faculté à parler aux morts finit par le rendre fou et il réalisa le Rituel d'Âprenuit, faisant de lui une puissante Liche. C'est à la Liche Vallow à qui l'on doit le massacre du Roi Arazzaön III et de son armée sur le Rocher de Valow",
 			"effet": "",
 			"classe": "F - F/S"
 		},
 		{
 			"categorie": "none",
 			"nom": "Faux des Chevaleresses aux Lanternes",
-			"desc": "",
+			"desc": "Les Chevaleresses aux Lanternes sont des femmes mystérieuses ayant jurées de défendre les secrets de la sombre Forteresse de Vangard. Elles forment un Ordre mystique fondé à une date inconnue, probablement après le premier siège de la Forteresse de Vangard. Ces guerrières utilisent des faux avec lesquelles elles n'hésitent pas à happer leurs victimes afin de nourir le Coeur Noir qui sommeil en la Forteresse",
 			"effet": "",
 			"classe": "F - F/S"
 		},
 		{
 			"categorie": "none",
 			"nom": "Griffes Drakkan",
-			"desc": "",
+			"desc": "Les Drakkans étaient une race draconique apparue il y a des millénaire. Elle devint rapidement larace dominante en exterminant les Orons et les Dragons. Un Drakkan adulte pouvant mesurer dans les 2m50, on imagine horriblement bien la taille de ces griffes mutilatrices de chair",
 			"effet": "",
 			"classe": "F - F/P"
 		},
@@ -2719,28 +2719,112 @@
 		},
 		{
 			"categorie": "none",
-			"nom": "Heaume à plumes de la Flamme Blanche",
+			"nom": "Bandana en Tisse-Éther de l'Archimage",
+			"desc": "",
+			"effet": "",
+			"classe": "Aucun"
+		},
+		{
+			"categorie": "none",
+			"nom": "Robe en Tisse-Éther de l'Archimage",
+			"desc": "",
+			"effet": "",
+			"classe": "Aucun"
+		},
+		{
+			"categorie": "none",
+			"nom": "Pantalon en Tisse-Éther de l'Archimage",
+			"desc": "",
+			"effet": "",
+			"classe": "Aucun"
+		},
+		{
+			"categorie": "none",
+			"nom": "Chaussures en Tisse-Éther de l'Archimage",
+			"desc": "",
+			"effet": "",
+			"classe": "Aucun"
+		},
+		{
+			"categorie": "none",
+			"nom": "Chapeau en Cuir Draconien des Rôdeurs du Nord",
+			"desc": "",
+			"effet": "",
+			"classe": "Aucun"
+		},
+		{
+			"categorie": "none",
+			"nom": "Gilet en Cuir Draconien des Rôdeurs du Nord",
+			"desc": "",
+			"effet": "",
+			"classe": "Aucun"
+		},
+		{
+			"categorie": "none",
+			"nom": "Jambières en Cuir Draconien des Rôdeurs du Nord",
+			"desc": "",
+			"effet": "",
+			"classe": "Aucun"
+		},
+		{
+			"categorie": "none",
+			"nom": "Chaussures en Cuir Draconien des Rôdeurs du Nord",
+			"desc": "",
+			"effet": "",
+			"classe": "Aucun"
+		},
+		{
+			"categorie": "none",
+			"nom": "Couvre-Chef en Mailles d'Orichalque des Belluaires de Shurïm",
+			"desc": "",
+			"effet": "",
+			"classe": "Aucun"
+		},
+		{
+			"categorie": "none",
+			"nom": "Haubert en Mailles d'Orichalque des Belluaires de Shurïm",
+			"desc": "",
+			"effet": "",
+			"classe": "Aucun"
+		},
+		{
+			"categorie": "none",
+			"nom": "Molletières en Mailles d'Orichalque des Belluaires de Shurïm",
+			"desc": "",
+			"effet": "",
+			"classe": "Aucun"
+		},
+		{
+			"categorie": "none",
+			"nom": "Gamaches en Mailles d'Orichalque des Belluaires de Shurïm",
+			"desc": "",
+			"effet": "",
+			"classe": "Aucun"
+		},
+		{
+			"categorie": "none",
+			"nom": "Heaume immaculé à plumes de la Flamme Blanche",
 			"desc": "Un splendide heaume des Chevaliers de la Flamme Blanche",
 			"effet": "Ensemble-Honneur : Si vous portez 2 pièces d'armure de la Flamme Blanche, vous gagnez un bonus à l'armure de 20%. Ce bonus est doublé si vous avez au moins 3 pièces de l'ensemble",
 			"classe": "Aucun"
 		},
 		{
 			"categorie": "none",
-			"nom": "Plastron de la Flamme Blanche",
+			"nom": "Plastron immaculé de la Flamme Blanche",
 			"desc": "Un solide plastron des Chevaliers de la Flamme Blanche",
 			"effet": "Ensemble-Honneur : Si vous portez 2 pièces d'armure de la Flamme Blanche, vous gagnez un bonus à l'armure de 20%. Ce bonus est doublé si vous avez au moins 3 pièces de l'ensemble",
 			"classe": "Aucun"
 		},
 		{
 			"categorie": "none",
-			"nom": "Cnémide de la Flamme Blanche",
+			"nom": "Cnémide immaculés de la Flamme Blanche",
 			"desc": "Une paire de jambière des Chevaliers de la Flamme Blanche",
 			"effet": "Ensemble-Honneur : Si vous portez 2 pièces d'armure de la Flamme Blanche, vous gagnez un bonus à l'armure de 20%. Ce bonus est doublé si vous avez au moins 3 pièces de l'ensemble",
 			"classe": "Aucun"
 		},
 		{
 			"categorie": "none",
-			"nom": "Bottillons de la Flamme Blanche",
+			"nom": "Bottillons immaculés de la Flamme Blanche",
 			"desc": "Une paire de bottes en plate des Chevaliers de la Flamme Blanche",
 			"effet": "Ensemble-Honneur : Si vous portez 2 pièces d'armure de la Flamme Blanche, vous gagnez un bonus à l'armure de 20%. Ce bonus est doublé si vous avez au moins 3 pièces de l'ensemble",
 			"classe": "Aucun"
@@ -2749,17 +2833,199 @@
 	"mythical": [
 		{
 			"categorie": "épée",
-			"nom": "Bebel, Épée du Roi Vincent Arazzaön III",
-			"desc": "Bebel était l'épée du Roi d'Arsénir, Vincent Arâzaon III. Le monarque est mort quelques mois après la Troisième Croisade, cette fois-ci portée contre la Liche Valow sur une île qui porte désormais son nom. Le retour de la liche sonna le glas de l'armée du Roi croisé qui fut décimées par les pouvoirs mortifères de la liche. L'épée du roi, teintée du sangs des croisés relevés par la Valow, est encore aujourd'hui une relique très convoitée mais disparue. Beaucoup estime que Valow s'en serai emparé pour son seul bénéfice",
+			"nom": "Bebel, Épée du Roi Hystof Arazzaön III",
+			"desc": "Bebel était l'épée du Roi d'Arsénir, Hystof Arâzaon III. Le monarque est mort quelques mois après la Troisième Croisade, cette fois-ci portée contre la Liche Valow sur une île qui porte désormais son nom. Le retour de la liche sonna le glas de l'armée du Roi croisé qui fut décimée par les pouvoirs mortifères de la liche. L'épée du roi, teintée du sangs des croisés relevés par Valow, est encore aujourd'hui une relique très convoitée mais évidemment disparue. Beaucoup estime que Valow s'en serai emparé pour son seul bénéfice",
 			"effet": "Le Fléau des Liches : Si vous combattez des morts-vivants, vos coups ont 80% de chances de faire revivre la cible et de la faire combattre à vos côtés jusqu'à sa mort. A la fin du combat, le serviteur meurt définitivement. De plus, vos dégâts sont augmentés de 100% contre les morts vivants. Tuer un mort-vivant avec cette arme vous soigne de 10% des dégâts infligés",
 			"classe": "P - P/F"
 		},
 		{
 			"categorie": "épée",
-			"nom": "Solarius, Épée du Roi Solitaire",
+			"nom": "Solarius, Épée en Orichalque du Roi Solitaire",
 			"desc": "Solarius était le nom du Dragon rouge du dernier roi du Nord, Naethal Deggan. Cette épée d'orichalque pur était autrefois nommée Daen'el. Elle fut renommée à la mort du Roi car l'esprit du Dragon, mort de tristesse aurait fusionné avec la lame, la rendant autrement plus puissante. Bien qu'enterrée dans la crypte royale des Deggan, cette arme unique aurait possiblement été dérobée par des pilleurs de tombes. Elle ne révélera ses pouvoirs que si l'âme du dragon enfermé trouve le porteur honorable",
 			"effet": "Fureur de Solarius : A chaque coup, vous avez 15% de chance de faire apparaître l'esprit éthérée du Dragon Solarius. Ce dernier balaiera le terrains d'un torrent de feu éthérée en touchant tout les ennemis. Ces derniers subieront 3d100 dégâts de feu ainsi que 1d100 de dégâts par tour pendant 3 tours. Ci les cibles sont des draconides, augmentez les dégâts de cette arme de 50%",
 			"classe": "P - P/F"
+		},
+		{
+			"categorie": "none",
+			"nom": "Phal'Méria, le Porte-Lumière",
+			"desc": "",
+			"effet": "",
+			"classe": "P"
+		},
+		{
+			"categorie": "none",
+			"nom": "Galgoshör, Le Noir Fracas des Mondes",
+			"desc": "",
+			"effet": "",
+			"classe": "P"
+		},
+		{
+			"categorie": "none",
+			"nom": "Dague du Traître",
+			"desc": "",
+			"effet": "",
+			"classe": "F - F/S"
+		},
+		{
+			"categorie": "none",
+			"nom": "Agwin, Le Glaive du Nord",
+			"desc": "",
+			"effet": "",
+			"classe": "F - F/S"
+		},
+		{
+			"categorie": "none",
+			"nom": "Arc de Guerre à Double Courbure du Général Gardien de l'Ordre de la Flamme Blanche",
+			"desc": "",
+			"effet": "",
+			"classe": "F"
+		},
+		{
+			"categorie": "none",
+			"nom": "Vagriel, Arc Elfique des Îles d'Aman",
+			"desc": "",
+			"effet": "",
+			"classe": "F"
+		},
+		{
+			"categorie": "none",
+			"nom": "Nécronomicon du Fléau d'Âprenuit",
+			"desc": "",
+			"effet": "Effet secret",
+			"classe": "S"
+		},
+		{
+			"categorie": "none",
+			"nom": "Naezim, Grimoire des Savoirs Occultes",
+			"desc": "",
+			"effet": "",
+			"classe": "S"
+		},
+		{
+			"categorie": "none",
+			"nom": "Eleador, l'Arme de la Liberté",
+			"desc": "",
+			"effet": "",
+			"classe": "P/S"
+		},
+		{
+			"categorie": "none",
+			"nom": "Sceptre de l'Arcaniste Arcturus Vacírdr",
+			"desc": "",
+			"effet": "",
+			"classe": "P/S"
+		},
+		{
+			"categorie": "none",
+			"nom": "Lasnos et Losnas, Les Chakrams des Rois de Faroe",
+			"desc": "",
+			"effet": "",
+			"classe": "P/S"
+		},
+		{
+			"categorie": "none",
+			"nom": "Kfrndr, Chakram du Seigneur des Fanatiques Drakkan",
+			"desc": "",
+			"effet": "",
+			"classe": "P/S"
+		},
+		{
+			"categorie": "none",
+			"nom": "Luonën, Lame Éthérée du Chevalier des Ombres Sir Andregon de Vangard",
+			"desc": "",
+			"effet": "",
+			"classe": "F/S"
+		},
+		{
+			"categorie": "none",
+			"nom": "Furhyel, Lame d'Éther de Maedh Deggan II",
+			"desc": "",
+			"effet": "",
+			"classe": "F/S"
+		},
+		{
+			"categorie": "none",
+			"nom": "Rachelle, La Chaine en Argent du Grand Maître de la Société Royale des Aphoticaires",
+			"desc": "",
+			"effet": "",
+			"classe": "P/S"
+		},
+		{
+			"categorie": "none",
+			"nom": "Chaine en Onyx du Bourreau George Wenmuel",
+			"desc": "",
+			"effet": "",
+			"classe": "P/F/S"
+		},
+		{
+			"categorie": "none",
+			"nom": "Thirsar, Épée Étoilée du Marcheur Blanc",
+			"desc": "",
+			"effet": "",
+			"classe": "F - P/F"
+		},
+		{
+			"categorie": "none",
+			"nom": "Lame du Dreydgion",
+			"desc": "",
+			"effet": "",
+			"classe": "F - P/F"
+		},
+		{
+			"categorie": "none",
+			"nom": "Zûur, La Faux Spectrale du Seigneur des Ombres",
+			"desc": "",
+			"effet": "",
+			"classe": "F - F/S"
+		},
+		{
+			"categorie": "none",
+			"nom": "Faux de Kendra Shallel",
+			"desc": "",
+			"effet": "",
+			"classe": "F - F/S"
+		},
+		{
+			"categorie": "none",
+			"nom": "Griffes du Démon",
+			"desc": "",
+			"effet": "",
+			"classe": "F - F/P"
+		},
+		{
+			"categorie": "none",
+			"nom": "Serres de l'Ange",
+			"desc": "",
+			"effet": "",
+			"classe": "F - F/P"
+		},
+		{
+			"categorie": "none",
+			"nom": "Unarion, Fragment de l'Éther",
+			"desc": "",
+			"effet": "",
+			"classe": "F - F/P"
+		},
+		{
+			"categorie": "none",
+			"nom": "Brasérion, Fragment des Flammes",
+			"desc": "",
+			"effet": "",
+			"classe": "F - F/P"
+		},
+		{
+			"categorie": "none",
+			"nom": "Golgarion, Fragment de la Peste",
+			"desc": "",
+			"effet": "",
+			"classe": "F - F/P"
+		},
+		{
+			"categorie": "none",
+			"nom": "Aenddurion, Fragment de l'Esprit",
+			"desc": "",
+			"effet": "",
+			"classe": "F - F/P"
 		}
 	]
 }
