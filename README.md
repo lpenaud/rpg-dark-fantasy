@@ -37,7 +37,7 @@ If it's not working, install python3 : `pacman -S python3`, then retry.
 
 ## TODO
 - [x] Write a documentation
-- [ ] Finish data/stuff.json
+- [x] Finish data/stuff.json
 - [x] Window to view the history
 - [x] Option to lock a rarity in Lottery
 - [ ] Style of the launch button
