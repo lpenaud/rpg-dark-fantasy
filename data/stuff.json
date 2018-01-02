@@ -1,4 +1,4 @@
-{
+﻿{
 	"common": [
 		{
 			"categorie": "none",
@@ -1961,7 +1961,7 @@
 		},
 		{
 			"categorie": "none",
-			"nom": "Arc long, fléau des draconides",
+			"nom": "Arc long fléau des draconides",
 			"desc": "Un arc long dont la puissance à été étudié pour percer au mieux les écailles des créatures draconides",
 			"effet": "Fléau des Draconides : Vos tirs infligent 3d10 de dégâts supplémentaires aux draconides et ont 100% de chances de les faires s'écraser au sol s'ils la cible est dans les airs, occasionnant des dégâts supplémentaires",
 			"classe": "F"
@@ -2580,7 +2580,7 @@
 		{
 			"categorie": "none",
 			"nom": "Celleb, Dague empoisonnée en mythril de Lanus Lovien",
-			"desc": "Lanus Lovien était un contrebandier à la solde du Cartel de Shurïm à la tête du Conglomerat Marchand d'Hadren. Son père, Erberus Lovien était quent à lui un honnête marchand disparut lors d'une tempête près de l'archipel des Skïnos. Il a légué cette dague à son fils qui à pris grand soin de larendre encore plus mortelle en l'enduisant de perma-strangleur, un poison permanent issu d'une plante du Désert de Shurïm. Le poison cause une mort atrocement lente et douloureuse, la victime s'étranglant durant des semaines avant de périr",
+			"desc": "Lanus Lovien était un contrebandier à la solde du Cartel de Shurïm à la tête du Conglomerat Marchand d'Hadren. Son père, Erberus Lovien était quent à lui un honnête marchand disparut lors d'une tempête près de l'archipel des Skïnos. Il a légué cette dague à son fils qui à pris grand soin de la rendre encore plus mortelle en l'enduisant de perma-strangleur, un poison permanent issu d'une plante du Désert de Shurïm. Le poison cause une mort atrocement lente et douloureuse, la victime s'étranglant durant des semaines avant de périr",
 			"effet": "Perma-Strangleur : Chaque ennemi touché à 50% de chance d'être empoisonné pour toute la durée du combat. Les cibles empoisonnées subissent des coups critiques 25% plus facilement",
 			"classe": "F - F/S"
 		},
@@ -2636,197 +2636,197 @@
 		{
 			"categorie": "none",
 			"nom": "Chakram de la Main Noire",
-			"desc": "",
-			"effet": "",
+			"desc": "La Main Noire, le sombre individu siégeant aux côtés des Empereurs Wellaniens depuis le Conquérant. Il serait, selon les dires, capable d'influencer les esprits grâce à une puissante maîtrise de l'éther. Selon les dires, il serait le seul responsable des multiples guerres intestines entre les hommes.",
+			"effet": "Malédiction de l'Esprit : Au prix de 20% de votre mana, vous pouvez tenter d'influencer un ennemi. Jetez alors 1d3. 1 = L'ennemi est désorienté pour 2 tours. 2 = L'ennemi frappent alliés comme ennemis sans discernement. 3 = L'ennemi vous obéit au doigts et à l'oeil aussi longtemps que vous le désirez",
 			"classe": "P/S"
 		},
 		{
 			"categorie": "none",
 			"nom": "Disques fantomatiques de Hurleuse",
-			"desc": "",
-			"effet": "",
+			"desc": "Il fait un froid glacial autours de vous... La nuit est sombre et permanente... Vos membres gèlent et vous entendez le hurlement sinistre... Ne vous en faite-pas, la Mort vient pour vous. 'Ballade Faroënne'",
+			"effet": "Touché de la Morte : Chaque être vivant touché par un de ces chakram à 30% de chance d'être infecter par le Touché de la Morte. La victime voit toutes ses caractéristique divisées par 2 pendant 3 tours",
 			"classe": "P/S"
 		},
 		{
 			"categorie": "none",
-			"nom": "Arzzaön, Lame d'éther des Monarques de Médilen",
-			"desc": "",
-			"effet": "",
+			"nom": "Arzzaön, Lame d'éther des Roi-Sorciers de Médilen",
+			"desc": "Médilen était la plus grande cité d'Arsénir et la seule capable de rivaliser avec Ethernum. Gouvernée par Les Rois-Sorciers de l'Astredain, Médilen était une figure majestueuse de la grandeur des Hommes. Elle fut détruite en 129 AC dans un Cataclysme d'origine inconnue",
+			"effet": "Frappe du Roi-Sorcier : Vos attaques comptent comme des attaques furtives. De plus, ajoutez 10% de votre mana/énergie max comme dégâts supplémentaires à chaque coup (cela ne dépense pas votre ressource). Vous ne pouvez pas effectuez de coups critiques",
 			"classe": "F/S"
 		},
 		{
 			"categorie": "none",
 			"nom": "Lame du Frappe-Esprit",
-			"desc": "",
+			"desc": "'Il dort sous ton escalier... Il vit la nuit et dévore la chair ! Finis ta soupe ou le Frappe-Esprit viendra te manger !' Comptine de Brumaire",
 			"effet": "",
 			"classe": "F/S"
 		},
 		{
 			"categorie": "none",
 			"nom": "Anglezark, L'emprise éternelle",
-			"desc": "",
-			"effet": "",
-			"classe": "P/S"
+			"desc": "Un chasseur, une chaine en argent, un monstre mort. 'Parole d'un chasseur de monstres'",
+			"effet": "Emprise éternelle : Vous pouvez emprisonner des monstres de toutes tailles avec 75% de chances. Le monstre à 10% de chance de se libérer par tour mais il subira les dégâts de l'arme en se libérant",
+			"classe": "P/F/S"
 		},
 		{
 			"categorie": "none",
-			"nom": "Chaine en argent purifié d'Axxel Winderfelld",
-			"desc": "",
-			"effet": "",
+			"nom": "Chaine en argent purifié d'Axxel Vinderfelld",
+			"desc": "Les chaînes servent généralement à emprisonner les monstres afin de les étudier ou de les maintenir captif. Le cruel Commandant des Escadrons D'argent, Axxel Vinderfelld se sert de cette cruelle chaîne pour lacérer ses cibles jusqu'à la mort",
+			"effet": "Fouet d'Argent : Les dégâts de cette arme sont augmenté de 50% des pv max de la cible avec un maximum du montant des dégâts de cette arme",
 			"classe": "P/F/S"
 		},
 		{
 			"categorie": "none",
 			"nom": "Ravingard, Double-lame Elfique de Seto Aranel",
-			"desc": "Seto Aranel fut propablement l'un des Varyens les plus connus de tous les temps, hormis son oncle, Sindari. Mort en -2664 lors de la Chute du Vélendil causé par la toute première Peste Sanglante créer par le Saigneur Valzébial. Ravingard était sa lame, forgée selon les plus fins arts varyens, elle était admirée et redoutée. Malheureusement, elle disparue avec son propriétaire dans le gigantesque charnier de Phossoria sur l'île d'Alombra",
-			"effet": "",
+			"desc": "Seto Aranel fut propablement l'un des Varyens les plus connus de tous les temps, hormis son oncle, Sindari. Il serai mort en -2664 lors de la Chute du Vélendil causée par la toute première Peste Sanglante créée par le Saigneur Valzébial. Ravingard était sa lame, forgée selon les plus fins arts varyens, elle était admirée et redoutée. Malheureusement, elle disparue avec son propriétaire dans le gigantesque charnier de Phossoria sur l'île d'Alombra",
+			"effet": "Double frappe : A chaque coup, vous avez 33% de chance de porter 2 attaques au lieu d'une. Cette double frappe vous permet de rejouer immédiatement mais vous ne pourrez pas effectuer de double frappe ce tour-ci",
 			"classe": "F - P/F"
 		},
 		{
 			"categorie": "none",
 			"nom": "Tö'Oshar, Rapière Elfique en Onyx de Maïnas le Noir",
-			"desc": "",
-			"effet": "",
+			"desc": "Premier et dernier représentant des Valézims, un ancien clan Varyen, Maïnas était un guerrier nomade et son caractère belliqueux faisait dangereusement balancer l'équilibre précaire du peuple Varyen. Il périt de la main de Maedh Deggan lors du Sac d'Oxxend",
+			"effet": "Furie des Valézims : A chaque ennemi tué, vous avez 15% de chance d'entrer en furie des Valézims ce qui double vos chances de coups critiques et augmente votre attaque de 50% pour 3 tours",
 			"classe": "F - P/F"
 		},
 		{
 			"categorie": "none",
 			"nom": "Ghölnn, Faux d'Arken Vallow'",
 			"desc": "Arken Vallow était autrefois un homme d'Ethernum ayant vécu aux temps des Croisades. Son lieu de naissance est inconnu mais on pense qu'il serait né la même année que celle de la création du Voile. Arken disposait d'une affinitée avec l'éther absolument prodigieuse ce qui lui permettait entre autre, de communiquer avec les défunts. Entre autre, il se lia d'amitié avec le fantôme d'un pestiféré éliminé par les croisés. Cette faculté à parler aux morts finit par le rendre fou et il réalisa le Rituel d'Âprenuit, faisant de lui une puissante Liche. C'est à la Liche Vallow à qui l'on doit le massacre du Roi Arazzaön III et de son armée sur le Rocher de Valow",
-			"effet": "",
+			"effet": "RéZuréction : Une ennemi abattu par cette faux se transforme en zombie. Ce dernier ne possède qu'un pv et inflige 10% des dégâts de votre arme mais augmente vos dégâts de 100% tant qu'il est actif. Vous ne pouvez avoir que deux zombies actifs simultanément",
 			"classe": "F - F/S"
 		},
 		{
 			"categorie": "none",
 			"nom": "Faux des Chevaleresses aux Lanternes",
 			"desc": "Les Chevaleresses aux Lanternes sont des femmes mystérieuses ayant jurées de défendre les secrets de la sombre Forteresse de Vangard. Elles forment un Ordre mystique fondé à une date inconnue, probablement après le premier siège de la Forteresse de Vangard. Ces guerrières utilisent des faux avec lesquelles elles n'hésitent pas à happer leurs victimes afin de nourir le Coeur Noir qui sommeil en la Forteresse",
-			"effet": "",
+			"effet": "Fléau des Esprits : Vous pouvez toucher et voir les créatures spectrales sans avoir à utiliser le signe Yrden. Vos dégâts contre elles augmente de 50%",
 			"classe": "F - F/S"
 		},
 		{
 			"categorie": "none",
 			"nom": "Griffes Drakkan",
-			"desc": "Les Drakkans étaient une race draconique apparue il y a des millénaire. Elle devint rapidement larace dominante en exterminant les Orons et les Dragons. Un Drakkan adulte pouvant mesurer dans les 2m50, on imagine horriblement bien la taille de ces griffes mutilatrices de chair",
-			"effet": "",
+			"desc": "Les Drakkans formaient une race draconique apparue il y a des millénaires. Elle devint rapidement la race dominante en exterminant les Orons et l'immense majorité des Dragons. Un Drakkan adulte pouvant mesurer dans les 2m50, on imagine horriblement bien la taille de ces griffes mutilatrices de chair",
+			"effet": "Trancheur furieux : Vos pv sont augmentés de 50% des dégâts de cette arme. Vous ignorez 50% de l'armure naturelle de vos ennemis",
 			"classe": "F - F/P"
 		},
 		{
 			"categorie": "none",
 			"nom": "Griffes de Faucheur D'Araxxis",
-			"desc": "",
-			"effet": "",
+			"desc": "Peu après la destruction du Codex, d'immondes créatures, fruits des déchets radioactifs mélangés aux fragments du Codex, ont vu le jour. Les créatures les plus connus étaient les faucheurs d'Araxxis, des créatures d'apparence frêlent et blanchâtres. En pratique, il s'agissaient de tueurs snguinaires dont la proie favorite était les humains. Il disparuent peu à peu, massacré par les premiers Varyens",
+			"effet": "Chasseur d'homme : Les humains subissent 100% de dégâts en plus de votre part avec ces griffes",
 			"classe": "F - F/P"
 		},
 		{
 			"categorie": "none",
 			"nom": "Bandana en Tisse-Éther de l'Archimage",
-			"desc": "",
-			"effet": "",
+			"desc": "On dénombre très peu d'Archimages dans les récits. Un aspect de leur personnalité revient néanmoins dans chaque cas, une maîtrise et une puissance de l'éther incommensurable. Le tisse-éther était l'étoffe favorite de leurs protections, leurs conférants une affinité accrue avec les puissances élémentaires",
+			"effet": "Surcharge d'éther : Vous pouvez lancer n'importe quelle compétence ou activable sans utiliser de ressources. Deux tour après, vous recevez 1d de dégâts du montant de la ressources utilisées",
 			"classe": "Aucun"
 		},
 		{
 			"categorie": "none",
 			"nom": "Robe en Tisse-Éther de l'Archimage",
-			"desc": "",
-			"effet": "",
+			"desc": "On dénombre très peu d'Archimages dans les récits. Un aspect de leur personnalité revient néanmoins dans chaque cas, une maîtrise et une puissance de l'éther incommensurable. Le tisse-éther était l'étoffe favorite de leurs protections, leurs conférants une affinité accrue avec les puissances élémentaires",
+			"effet": "Surcharge d'éther : Vous pouvez lancer n'importe quelle compétence ou activable sans utiliser de ressources. Deux tour après, vous recevez 1d de dégâts du montant de la ressources utilisées",
 			"classe": "Aucun"
 		},
 		{
 			"categorie": "none",
 			"nom": "Pantalon en Tisse-Éther de l'Archimage",
-			"desc": "",
-			"effet": "",
+			"desc": "On dénombre très peu d'Archimages dans les récits. Un aspect de leur personnalité revient néanmoins dans chaque cas, une maîtrise et une puissance de l'éther incommensurable. Le tisse-éther était l'étoffe favorite de leurs protections, leurs conférants une affinité accrue avec les puissances élémentaires",
+			"effet": "Surcharge d'éther : Vous pouvez lancer n'importe quelle compétence ou activable sans utiliser de ressources. Deux tour après, vous recevez 1d de dégâts du montant de la ressources utilisées",
 			"classe": "Aucun"
 		},
 		{
 			"categorie": "none",
 			"nom": "Chaussures en Tisse-Éther de l'Archimage",
-			"desc": "",
-			"effet": "",
+			"desc": "On dénombre très peu d'Archimages dans les récits. Un aspect de leur personnalité revient néanmoins dans chaque cas, une maîtrise et une puissance de l'éther incommensurable. Le tisse-éther était l'étoffe favorite de leurs protections, leurs conférants une affinité accrue avec les puissances élémentaires",
+			"effet": "Surcharge d'éther : Vous pouvez lancer n'importe quelle compétence ou activable sans utiliser de ressources. Deux tour après, vous recevez 1d de dégâts du montant de la ressources utilisées",
 			"classe": "Aucun"
 		},
 		{
 			"categorie": "none",
 			"nom": "Chapeau en Cuir Draconien des Rôdeurs du Nord",
-			"desc": "",
-			"effet": "",
+			"desc": "Les Terres Gelées d'Aionïa sont une grande source de mysteres, de trésors... et de morts prématurées. Le Corps Expéditionnaire de Fort Emnesys compte pas moins d'une centaine de Rôdeurs, des traqueurs d'élites formés pour survivre dans les terres hostiles du grand nords",
+			"effet": "L'Ombre du Nord : Si la température est négative, vous pouvez devenir invisible à votre gré (hors combat). Vous obtenez également 25% de chance d'esquiver toutes les attaques.",
 			"classe": "Aucun"
 		},
 		{
 			"categorie": "none",
 			"nom": "Gilet en Cuir Draconien des Rôdeurs du Nord",
-			"desc": "",
-			"effet": "",
+			"desc": "Les Terres Gelées d'Aionïa sont une grande source de mysteres, de trésors... et de morts prématurées. Le Corps Expéditionnaire de Fort Emnesys compte pas moins d'une centaine de Rôdeurs, des traqueurs d'élite formés pour survivre dans les trres hostiles du grand nords",
+			"effet": "L'Ombre du Nord : Si la température est négative, vous pouvez devenir invisible à votre gré (hors combat). Vous obtenez également 25% de chance d'esquiver toutes les attaques.",
 			"classe": "Aucun"
 		},
 		{
 			"categorie": "none",
 			"nom": "Jambières en Cuir Draconien des Rôdeurs du Nord",
-			"desc": "",
-			"effet": "",
+			"desc": "Les Terres Gelées d'Aionïa sont une grande source de mysteres, de trésors... et de morts prématurées. Le Corps Expéditionnaire de Fort Emnesys compte pas moins d'une centaine de Rôdeurs, des traqueurs d'élite formés pour survivre dans les trres hostiles du grand nords",
+			"effet": "L'Ombre du Nord : Si la température est négative, vous pouvez devenir invisible à votre gré (hors combat). Vous obtenez également 25% de chance d'esquiver toutes les attaques.",
 			"classe": "Aucun"
 		},
 		{
 			"categorie": "none",
 			"nom": "Chaussures en Cuir Draconien des Rôdeurs du Nord",
-			"desc": "",
-			"effet": "",
+			"desc": "Les Terres Gelées d'Aionïa sont une grande source de mysteres, de trésors... et de morts prématurées. Le Corps Expéditionnaire de Fort Emnesys compte pas moins d'une centaine de Rôdeurs, des traqueurs d'élite formés pour survivre dans les trres hostiles du grand nords",
+			"effet": "L'Ombre du Nord : Si la température est négative, vous pouvez devenir invisible à votre gré (hors combat). Vous obtenez également 25% de chance d'esquiver toutes les attaques.",
 			"classe": "Aucun"
 		},
 		{
 			"categorie": "none",
 			"nom": "Couvre-Chef en Mailles d'Orichalque des Belluaires de Shurïm",
-			"desc": "",
-			"effet": "",
+			"desc": "Shurïm est le paradis des riches marchands de biens comme d'esclaves. Les plus malchanceux finissent comme gladiateurs dans les arènes du désert brûlant de Shurïm. Peux s'en sortent vivant mais il y en à certains qui parviennent à transfigurer leur condition et à devenir des légendes de l'arène. Ce sont les Belluaires",
+			"effet": "Du Feu et du Sang : Tuer un ennemi vous octroie 1d(vos pv max) de dégâts ou de pv (à votre convenance) jusqu'à la fin du combat (max 1 fois par combat). Vous êtes également immunisé à tous les dégâts degâts liés à la chaleur",
 			"classe": "Aucun"
 		},
 		{
 			"categorie": "none",
 			"nom": "Haubert en Mailles d'Orichalque des Belluaires de Shurïm",
-			"desc": "",
-			"effet": "",
+			"desc": "Shurïm est le paradis des riches marchands de biens comme d'esclaves. Les plus malchanceux finissent comme gladiateurs dans les arènes du désert brûlant de Shurïm. Peux s'en sortent vivant mais il y en à certains qui parviennent à transfigurer leur condition et à devenir des légendes de l'arène. Ce sont les Belluaires",
+			"effet": "Du Feu et du Sang : Tuer un ennemi vous octroie 1d(vos pv max) de dégâts ou de pv (à votre convenance) jusqu'à la fin du combat (max 1 fois par combat). Vous êtes également immunisé à tous les dégâts degâts liés à la chaleur",
 			"classe": "Aucun"
 		},
 		{
 			"categorie": "none",
 			"nom": "Molletières en Mailles d'Orichalque des Belluaires de Shurïm",
-			"desc": "",
-			"effet": "",
+			"desc": "Shurïm est le paradis des riches marchands de biens comme d'esclaves. Les plus malchanceux finissent comme gladiateurs dans les arènes du désert brûlant de Shurïm. Peux s'en sortent vivant mais il y en à certains qui parviennent à transfigurer leur condition et à devenir des légendes de l'arène. Ce sont les Belluaires",
+			"effet": "Du Feu et du Sang : Tuer un ennemi vous octroie 1d(vos pv max) de dégâts ou de pv (à votre convenance) jusqu'à la fin du combat (max 1 fois par combat). Vous êtes également immunisé à tous les dégâts degâts liés à la chaleur",
 			"classe": "Aucun"
 		},
 		{
 			"categorie": "none",
 			"nom": "Gamaches en Mailles d'Orichalque des Belluaires de Shurïm",
-			"desc": "",
-			"effet": "",
+			"desc": "Shurïm est le paradis des riches marchands de biens comme d'esclaves. Les plus malchanceux finissent comme gladiateurs dans les arènes du désert brûlant de Shurïm. Peux s'en sortent vivant mais il y en à certains qui parviennent à transfigurer leur condition et à devenir des légendes de l'arène. Ce sont les Belluaires",
+			"effet": "Du Feu et du Sang : Tuer un ennemi vous octroie 1d(vos pv max) de dégâts ou de pv (à votre convenance) jusqu'à la fin du combat (max 1 fois par combat). Vous êtes également immunisé à tous les dégâts degâts liés à la chaleur",
 			"classe": "Aucun"
 		},
 		{
 			"categorie": "none",
 			"nom": "Heaume immaculé à plumes de la Flamme Blanche",
-			"desc": "Un splendide heaume des Chevaliers de la Flamme Blanche",
-			"effet": "Ensemble-Honneur : Si vous portez 2 pièces d'armure de la Flamme Blanche, vous gagnez un bonus à l'armure de 20%. Ce bonus est doublé si vous avez au moins 3 pièces de l'ensemble",
+			"desc": "Depuis l'ascension au trône du Vélendil par L'Empereur Elrim'ä-ar, un seul ordre est resté le même, il s'agit de l'Ordre de la Flamme Blanche. Regroupant les plus grands chevaliers de tous horizons, ces derniers sont tenu au serment de servir l'ordre, la justice et l'honneur de la chevalerie. Depuis l'époque des Rois Navigateurs, il s'agit également de l'Ordre chargé de la protection du Roi du Vélendil. L'ordre ne prend en revanche pas pars aux intrigues politiques et reste totalement autonome vis-à-vis de la couronne",
+			"effet": "Ensemble-Honneur : Vous gagnez un bonus à l'armure de 20%. Ce bonus est triplé si vous avez au moins 2 pièces de l'ensemble",
 			"classe": "Aucun"
 		},
 		{
 			"categorie": "none",
 			"nom": "Plastron immaculé de la Flamme Blanche",
-			"desc": "Un solide plastron des Chevaliers de la Flamme Blanche",
-			"effet": "Ensemble-Honneur : Si vous portez 2 pièces d'armure de la Flamme Blanche, vous gagnez un bonus à l'armure de 20%. Ce bonus est doublé si vous avez au moins 3 pièces de l'ensemble",
+			"desc": "Depuis l'ascension au trône du Vélendil par L'Empereur Elrim'ä-ar, un seul ordre est resté le même, il s'agit de l'Ordre de la Flamme Blanche. Regroupant les plus grands chevaliers de tous horizons, ces derniers sont tenu au serment de servir l'ordre, la justice et l'honneur de la chevalerie. Depuis l'époque des Rois Navigateurs, il s'agit également de l'Ordre chargé de la protection du Roi du Vélendil. L'ordre ne prend en revanche pas pars aux intrigues politiques et reste totalement autonome vis-à-vis de la couronne",
+			"effet": "Ensemble-Honneur : Vous gagnez un bonus à l'armure de 20%. Ce bonus est triplé si vous avez au moins 2 pièces de l'ensemble",
 			"classe": "Aucun"
 		},
 		{
 			"categorie": "none",
 			"nom": "Cnémide immaculés de la Flamme Blanche",
-			"desc": "Une paire de jambière des Chevaliers de la Flamme Blanche",
-			"effet": "Ensemble-Honneur : Si vous portez 2 pièces d'armure de la Flamme Blanche, vous gagnez un bonus à l'armure de 20%. Ce bonus est doublé si vous avez au moins 3 pièces de l'ensemble",
+			"desc": "Depuis l'ascension au trône du Vélendil par L'Empereur Elrim'ä-ar, un seul ordre est resté le même, il s'agit de l'Ordre de la Flamme Blanche. Regroupant les plus grands chevaliers de tous horizons, ces derniers sont tenu au serment de servir l'ordre, la justice et l'honneur de la chevalerie. Depuis l'époque des Rois Navigateurs, il s'agit également de l'Ordre chargé de la protection du Roi du Vélendil. L'ordre ne prend en revanche pas pars aux intrigues politiques et reste totalement autonome vis-à-vis de la couronne",
+			"effet": "Ensemble-Honneur : Vous gagnez un bonus à l'armure de 20%. Ce bonus est triplé si vous avez au moins 2 pièces de l'ensemble",
 			"classe": "Aucun"
 		},
 		{
 			"categorie": "none",
 			"nom": "Bottillons immaculés de la Flamme Blanche",
-			"desc": "Une paire de bottes en plate des Chevaliers de la Flamme Blanche",
-			"effet": "Ensemble-Honneur : Si vous portez 2 pièces d'armure de la Flamme Blanche, vous gagnez un bonus à l'armure de 20%. Ce bonus est doublé si vous avez au moins 3 pièces de l'ensemble",
+			"desc": "Depuis l'ascension au trône du Vélendil par L'Empereur Elrim'ä-ar, un seul ordre est resté le même, il s'agit de l'Ordre de la Flamme Blanche. Regroupant les plus grands chevaliers de tous horizons, ces derniers sont tenu au serment de servir l'ordre, la justice et l'honneur de la chevalerie. Depuis l'époque des Rois Navigateurs, il s'agit également de l'Ordre chargé de la protection du Roi du Vélendil. L'ordre ne prend en revanche pas pars aux intrigues politiques et reste totalement autonome vis-à-vis de la couronne",
+			"effet": "Ensemble-Honneur : Vous gagnez un bonus à l'armure de 20%. Ce bonus est triplé si vous avez au moins 2 pièces de l'ensemble",
 			"classe": "Aucun"
 		}
 	],
@@ -2834,7 +2834,7 @@
 		{
 			"categorie": "épée",
 			"nom": "Bebel, Épée du Roi Hystof Arazzaön III",
-			"desc": "Bebel était l'épée du Roi d'Arsénir, Hystof Arâzaon III. Le monarque est mort quelques mois après la Troisième Croisade, cette fois-ci portée contre la Liche Valow sur une île qui porte désormais son nom. Le retour de la liche sonna le glas de l'armée du Roi croisé qui fut décimée par les pouvoirs mortifères de la liche. L'épée du roi, teintée du sangs des croisés relevés par Valow, est encore aujourd'hui une relique très convoitée mais évidemment disparue. Beaucoup estime que Valow s'en serai emparé pour son seul bénéfice",
+			"desc": "Bebel était l'épée du Roi d'Arsénir, Hystof Arazzaön III. Le monarque est mort quelques mois après la Troisième Croisade, cette fois-ci portée contre la Liche Valow sur une île qui porte désormais son nom. Le retour de la liche sonna le glas de l'armée du Roi croisé qui fut décimée par les pouvoirs mortifères de la liche. L'épée du roi, teintée du sangs des croisés relevés par Valow, est encore aujourd'hui une relique très convoitée mais évidemment disparue. Beaucoup estime que Valow s'en serai emparé pour son seul bénéfice",
 			"effet": "Le Fléau des Liches : Si vous combattez des morts-vivants, vos coups ont 80% de chances de faire revivre la cible et de la faire combattre à vos côtés jusqu'à sa mort. A la fin du combat, le serviteur meurt définitivement. De plus, vos dégâts sont augmentés de 100% contre les morts vivants. Tuer un mort-vivant avec cette arme vous soigne de 10% des dégâts infligés",
 			"classe": "P - P/F"
 		},
@@ -2842,189 +2842,189 @@
 			"categorie": "épée",
 			"nom": "Solarius, Épée en Orichalque du Roi Solitaire",
 			"desc": "Solarius était le nom du Dragon rouge du dernier roi du Nord, Naethal Deggan. Cette épée d'orichalque pur était autrefois nommée Daen'el. Elle fut renommée à la mort du Roi car l'esprit du Dragon, mort de tristesse aurait fusionné avec la lame, la rendant autrement plus puissante. Bien qu'enterrée dans la crypte royale des Deggan, cette arme unique aurait possiblement été dérobée par des pilleurs de tombes. Elle ne révélera ses pouvoirs que si l'âme du dragon enfermé trouve le porteur honorable",
-			"effet": "Fureur de Solarius : A chaque coup, vous avez 15% de chance de faire apparaître l'esprit éthérée du Dragon Solarius. Ce dernier balaiera le terrains d'un torrent de feu éthérée en touchant tout les ennemis. Ces derniers subieront 3d100 dégâts de feu ainsi que 1d100 de dégâts par tour pendant 3 tours. Ci les cibles sont des draconides, augmentez les dégâts de cette arme de 50%",
+			"effet": "Fureur de Solarius : A chaque coup, vous avez 15% de chance de faire apparaître l'esprit éthérée du Dragon Solarius. Ce dernier balaiera le terrain d'un torrent de feu éthéré en touchant tous les ennemis. Ces derniers subieront 3d(dégâts de l'arme en dégâts de feu) ainsi que 1d(de dégâts de l'arme) par tour pendant 3 tours. Ci les cibles sont des draconides, augmentez les dégâts de cette arme de 50%",
 			"classe": "P - P/F"
 		},
 		{
 			"categorie": "none",
 			"nom": "Phal'Méria, le Porte-Lumière",
-			"desc": "",
-			"effet": "",
+			"desc": "Phal'Méria était une grande épée Varyenne ayant appartenue au Varyen Sindari. Avec cette arme, il combatit les faucheurs d'Araxxis et plus tard le Maléfique Nazrïl lors de nombreuses batailles. L'arme disparue lors du combat légedaire qui opposa l'elfe au Noir Ennemi et à son immense Marteau Démoniaque",
+			"effet": "Fléau des Ténèbres : Les Edars, les Chevaliers des Ombres et leurs serviteurs subissent 300% de dégâts supplémentaires",
 			"classe": "P"
 		},
 		{
 			"categorie": "none",
 			"nom": "Galgoshör, Le Noir Fracas des Mondes",
-			"desc": "",
-			"effet": "",
+			"desc": "Le Marteau de Guerre du Noir Ennemi qui servit à briser le corps du Varyen Sindari. Wyr comme il était appelé, était autrefois un vaillant défenseur de la Justice en tant que Commandant du Panthéon des Séraphins. Mais il se lassa de sa mission et se tourna vers les Ténèbres. Ne cherchez plus l'origine du mal, vous l'avez devant vous",
+			"effet": "Fracas Infernal : Vous avez 20% de chance de tuer n'importe quel ennemi sur le coup",
 			"classe": "P"
 		},
 		{
 			"categorie": "none",
 			"nom": "Dague du Traître",
-			"desc": "",
-			"effet": "",
+			"desc": "Roham Javell est un nom à ne pas prononcer devant n'importe qui. Main droite de la rebelle Léahn Gveiln durant toute la rébellion, il trahira la cause en livrant Léahn aux Wellaniens qui la brûeront avec du feu gelé dans la forteresse de Klasamer",
+			"effet": "Traîtrise : Vos attaques furtives comptent désormais comme des attaques traitresses. Elle infligent ainsi 3d(dégâts de votre arme). Après une attaque traîtresse, toutes vos autres attaques normales durant ce même combat seront quant à elles transformées en attaques furtives. Dégâts des coups critiques diminués de 25%",
 			"classe": "F - F/S"
 		},
 		{
 			"categorie": "none",
-			"nom": "Agwin, Le Glaive du Nord",
-			"desc": "",
-			"effet": "",
+			"nom": "Agwin, Le Glaive du Panthéon de Wyr",
+			"desc": "Dans la myhologie des Veilleurs, Wyr est le Séraphin de la Sagesse. Avant sont exil, il était le chef du Panthéon et celui qui insuffla la major partie de son pouvoir en ce glaive ce qui en fait une relique divine",
+			"effet": "Frappe de Wyr : Frapper un ennemi a 40% de chance de lui arracher la partie lumineuse de son âme et de la faire combattre à vos côtés (vos intentions doivent être pures). L'âme arraché ne peut qu'infliger et recevoir des dégâts de son corps d'origine mais elle inflige à chaque coup 2d(dégats de l'arme) avec une chance de coups critiques de 50%. L'âme disparait avec la mort du corps auquel elle est liée",
 			"classe": "F - F/S"
 		},
 		{
 			"categorie": "none",
 			"nom": "Arc de Guerre à Double Courbure du Général Gardien de l'Ordre de la Flamme Blanche",
-			"desc": "",
-			"effet": "",
+			"desc": "Être nommé Général Gardien de l'Ordre de la Flamme Blanche est l'ultime honneur qu'un chevalier peut se voir offir. La grandiose cérémonie est généralement clôturé par la remise de L'Arc Blanc au nouveau Général Gardien. L'arc reste une arme de cérémonie et quitte rarement son socle au Cloître du Pénitent à Fort d'Été, le quartier général de l'Ordre",
+			"effet": "Précision Mortelle : En utilisant 10% de votre énergie, vous pouvez utiliser le chiffre des dizaines de votre taux de coups critiques ce qui sera le nombre de dés de dégâts que vous pourrez effectuer ce tour ci. Ce tir ne pourra pas être un coup critique",
 			"classe": "F"
 		},
 		{
 			"categorie": "none",
 			"nom": "Vagriel, Arc Elfique des Îles d'Aman",
-			"desc": "",
-			"effet": "",
+			"desc": "Les elfes réfugiés sur l'île d'Aman sont les lointains descendants des Varyens de la cité de Baloneä. Ils parmis les derniers représentants de leur espèce et vivent reclut quant à la menace que représente l'Empire. Leurs arcs sont les meilleurs de tous et il en existent très peu en dehors de l'archipel",
+			"effet": "Averse de flèches : Chacun de vos tir à 25% de chance de déclencher une pluie de flèches dévastatrices ce qui cause à tous les ennemis dans la zone 1d(degats de votre arme). Chacun flèche qui retombe a 80% de chance d'être un coup critique",
 			"classe": "F"
 		},
 		{
 			"categorie": "none",
 			"nom": "Nécronomicon du Fléau d'Âprenuit",
-			"desc": "",
-			"effet": "Effet secret",
+			"desc": "Âprenuit résonne dans l'esprit collectif comme une terrible légende. Elle est aujourd'hui une gigantesque forêt marécageuse longeant la côte nord-ouest de l'Aionïa. Cette forêt maudite serai l'origine des premiers nécromanciens et de la toute première Liche. C'est également ici qu'auraitété créer le Fléau d'Âprenuit ayant rayé de la carte le Royaume du Nord et ses habitants ainsi que les Dragons. Depuis lors, Aionïa n'est plus qu'un vaste désert de glace stéril",
+			"effet": "Fléau : En utilisant 100% de votre mana max, vous pouvez à la mort de n'IMPORTE quel ennemi le relever et faire de lui votre serviteur jusqu'à sa nouvelle mort. Un seul serviteur en même temps",
 			"classe": "S"
 		},
 		{
 			"categorie": "none",
-			"nom": "Naezim, Grimoire des Savoirs Occultes",
-			"desc": "",
-			"effet": "",
+			"nom": "Grand Livre des Veilleurs",
+			"desc": "La religion des Veilleurs a bercer l'humanité depuis bien avant l'arrivée des hommes sur en ces Terres. Le Veilleurs sont aujourd'hui adorés en Wellanie tout autant qu'en Arsénir. Les Chevalresses aux Lanternes seraient pour ainsi dire leurs envoyés mortels.",
+			"effet": "A chaque fois qu'un allié ou vous même recevez des dégâts, vous avez 20% de chances de faire apparaître l'Echos de Daendelle qui soignera la ou les cibles ayant reçu des dégâts en dernier d'un montant 1d(deux fois supérieur aux dégâts reçus)",
 			"classe": "S"
 		},
 		{
 			"categorie": "none",
 			"nom": "Eleador, l'Arme de la Liberté",
-			"desc": "",
-			"effet": "",
+			"desc": "Brandit par la révolutionnaire Léahn Gveiln, Eleador était un puissant bâton de guerre permettant de canaliser une certaine forme d'éther. Cette arme est rapidement devenue le symbole de la lutte des Mages contre l'opression Wellanienne et la Troisième Purge des Mages",
+			"effet": "Aura des Signes : Au prix de 15% de votre ressource, vous pouvez créer une aura capable de booster tous les signes de votre groupe au niveau maximal pour 2 tours. Les signes infligent 50% de dégâts supplémentaires",
 			"classe": "P/S"
 		},
 		{
 			"categorie": "none",
 			"nom": "Sceptre de l'Arcaniste Arcturus Vacírdr",
-			"desc": "",
-			"effet": "",
+			"desc": "Arcturus Vacírdr est un jeune homme originaire des îles d'Aman. Né d'un père elfe et d'une mère humaine, Arcturus présenta très vite un don inné pour la manipulation de l'éther et plus particulièrement celle du feu éthéré. Il est l'être le plus à même de créer et de manipuler le feu que crachait les dragons dans des temps lointains. Il étudie aujourd'hui dans la secrete Académie d'Argent et se sépare rarement de son Sceptre",
+			"effet": "Hydre des Flammes : Au prix de 30% de votre mana vous avez la posibilité de créer une hydre de flammes éthérées. L'hydre possède le double de vos pv et inflige les dégâts de cette arme aux ennemis. En mourrant, l'hydre explose infligeant les dégâts de cette arme à tous les ennemis à moins de 50 mètres et vous regagnez 1d(pv max de l'hydre) en pv",
 			"classe": "P/S"
 		},
 		{
 			"categorie": "none",
-			"nom": "Lasnos et Losnas, Les Chakrams des Rois de Faroe",
-			"desc": "",
-			"effet": "",
+			"nom": "Vengeance de Mel'Darial",
+			"desc": "Mel'Darial, Chevalier de l'Ombre et Régicide, Seigneur de la Souffrance et personnification de la Vengeance. Mel'Darial est l'un des Chevaliers de l'Ombre les plus redoutés. Il s'agit de l'assassin du dernier Roi du Nord, Naethal Deggan qu'il a mortellement empoisonné lors de son combat singulier avant d'être à son tour grievement blessé et brûler vif par le Dragon de son adversaire, Solarius. Il laisse depuis lors des cendres à son passage",
+			"effet": "Poison Vengeur : En combatant avec cette arme, vous empoisonnez les ennemis. A chaque fois qu'un ennemi epoisonné vous inflige des dégâts, renvoyez lui ce montant en jetant 1d du montant des déâts reçu",
 			"classe": "P/S"
 		},
 		{
 			"categorie": "none",
-			"nom": "Kfrndr, Chakram du Seigneur des Fanatiques Drakkan",
-			"desc": "",
-			"effet": "",
+			"nom": "Chakram du Seigneur des Fanatiques Drakkan",
+			"desc": "Les fanatiques sont des hommes vivants par delà le gouffre séparant les Terres Foudroyés du Vélendil aux Vieux Têtres Draconiques. Sont sont des sauvages ayant apprivoisé les rudes plaines Sud-Ouest de l'Aionïa. Ils vénèrent les vielles races draconiques disparues et tentent de les faire renaître",
+			"effet": "Rituel Draconique : Du cadavre d'un ennemi puissant, vous pouvez effectuez un rituel au prix de 1d(moitié de vos pv max). Le rituel à 50% de chance de faire apparaître un guerrier drakkan qui sera à votre service pour 5 tours de combats. Le Drakkan possède 200% de vos pv et inflige 150% des dégâts de cette arme",
 			"classe": "P/S"
 		},
 		{
 			"categorie": "none",
-			"nom": "Luonën, Lame Éthérée du Chevalier des Ombres Sir Andregon de Vangard",
-			"desc": "",
-			"effet": "",
+			"nom": "Luonën, Lame Éthérée du Chevaleir de l'Ombre Sir Andregon de Vangard",
+			"desc": "L'épée blanche du Chevalier Andregon fait frémir d'horreur les plus hardis d'entre nous. On ignore la véritable identité de ce bretteur légendaire que l'on sait être à la tête de l'Ordre des Chevaleir de l'Ombre. Il sert son maître et ne reculera devant rien pour le faire revenir à sa terrifiante grandeur d'antan",
+			"effet": "Éclat de Terreur : Au début de chaque combat, tous les ennemis ont 50% de chance d'être effrayés pour 1 tours. Pour chaque ennemi effrayé, les dégâts de cette arme sont augmentés de 100% (max 500%)",
 			"classe": "F/S"
 		},
 		{
 			"categorie": "none",
 			"nom": "Furhyel, Lame d'Éther de Maedh Deggan II",
-			"desc": "",
-			"effet": "",
+			"desc": "Portant le nom de son illustre ancêtre, Maedh Ier le Brave, Roi d'Oxxend, Maedh II était le prince héritier au trône du Nord. Fils aîné de l'aflligeant Gaerod III et profitant du chaos dû à l'invasion Drakkan, Maedh prit le pouvoir après un coup d'état sanglant en assassinant son propre père. Il se proclamera alors dans toute sa folie, Empereur du Nord, détruisant de ce fait tous les héritages royaux de sa glorieuse lignée. Il se montrera néanmoins incapable de repousser les envhisseurs Drakkan. Persécutant son propre peuple terriblement divisé, il sera abbatu par le Commandant de la Rébellion, son proprre frère, Naethal Deggan sur les marches du trône de Daen'Asha",
+			"effet": "Folie du Roi : Chaque coup porté à 25% de chance de déclencher la Folie du Roi. Lorsque cela se produit, vos dégâts sont multipliés du nombre d'ennemis vous faisant face (max 4 ennemis) pour ce tour-ci uniquement",
 			"classe": "F/S"
 		},
 		{
 			"categorie": "none",
-			"nom": "Rachelle, La Chaine en Argent du Grand Maître de la Société Royale des Aphoticaires",
-			"desc": "",
-			"effet": "",
+			"nom": "Rachelle, La Chaine en Argent du Grand Alchimiste de la Société Royale des Apothicaires",
+			"desc": "Wilman Dagnus Elipher est l'actuel Grand Alchimiste de la Société Royale des Apothicaires. Sa chaine en argent, Rachelle, est l'une des chose qu'il chérit le plus au monde. Son nom étrange pour un objet si particulier cache en réalité un lourd épisode du passé tourmenté du vieil apothicaire",
+			"effet": "Étreinte Sordide : Cette chaine capture n'importe quelle cible avec 75% de chance. Une cible emprisonnée ne peut s'échapper. Vous avez la possibilité de ponctionner 1d(vie max de la cible) par tour de combat mais la cible aura alors 20% de chance de s'échapper et la chaine aura 5% de chance de se briser",
 			"classe": "P/S"
 		},
 		{
 			"categorie": "none",
-			"nom": "Chaine en Onyx du Bourreau George Wenmuel",
-			"desc": "",
-			"effet": "",
+			"nom": "Chaine de l'Esprit de la Forêt",
+			"desc": "Maanyü, l'Esprit de la Forêt dans la culture Faroënne, est une puissante divinité qui commande à toute la nature et pas uniquement aux Forêts comme son nom pourrait le laisser entendre. Maanyü à une place importante dans la mythologie Faroënne et ses pouvoirs bienfaiteurs sont vénérés par la population de l'Île",
+			"effet": "Étreinte de Vie : Cette chaine capture n'importe quelle cible avec 75% de chance. Une cible emprisonnée ne peut s'échapper. Cette chaine peut capturer jusqu'à 3 ennemis simultanément. (jetez 1d3) Vous pouvez également enrouler cette chaine autour d'un allié (il sera alors immobilisé et en état de stase). Cela lui permettra de régénérer 25% de sa vie par tour de jeu (hors combat +25% de vie et la cible sors de stase) La cible ne peut subir qu'une stase par combat (ou toutes les heures) et ne sortira de stase qu'après 4 tours. Vous pouvez choisir de sortr de stase plus tôt avec 25% de chance",
 			"classe": "P/F/S"
 		},
 		{
 			"categorie": "none",
 			"nom": "Thirsar, Épée Étoilée du Marcheur Blanc",
-			"desc": "",
-			"effet": "",
+			"desc": "Les Marcheurs Blancs font parti intégrante du folklore de l'île d'Alombra. Ils ont en réalités bien existés et le connu d'entre eux, un certain Nazrïl était un émérite combattant Varyen avant de se révéler être l'Edar Aegedar. Nazrïl combattait avec Thirsar, son épée forgée à partir des firmaments d'un météore écrasé sur terre",
+			"effet": "Illusion du Masque : Les nuits étoilées, cette arme inflige 200% de ses dégâts normaux. De plus, la virvoltance de cette épée éthéré rends confus les ennemis vous faisant face. Chacun d'entre eux devra jeter 1d100 et aura 30% de chance de passer son tour à cause de la confusion",
 			"classe": "F - P/F"
 		},
 		{
 			"categorie": "none",
 			"nom": "Lame du Dreydgion",
-			"desc": "",
-			"effet": "",
+			"desc": "La Lame du Dreydgion fut créée en l'honneur du pacte éponyme conclu entre les Hommes et les Varyens en -2400 AC. C'est grâce à ce pacte que les Varyens et les hommes ont pu de nouveaux prospérer dans la plus longue période de paix connu à ce jour. la période des rois Navigateurs",
+			"effet": "Frère d'Arme : Si votre groupe est composé d'au moins un humain et un elfe, multipliez les dégâts de cette arme par 2 et augmenter les dégâts de l'arme d'un allié (elfe ou humain) des dégâts de cette arme",
 			"classe": "F - P/F"
 		},
 		{
 			"categorie": "none",
 			"nom": "Zûur, La Faux Spectrale du Seigneur des Ombres",
-			"desc": "",
-			"effet": "",
+			"desc": "Andregon possède bien des armes redoutables. Parmis-elles, la plus redoutée est certainement sa Faux Spectrale. Fabriqué sur Abnoriban, cette arme possède des facultés terribles octroyées par la Forge des Edars",
+			"effet": "Colère des Edars : Au prix de 100% de votre mana max, vous reproduisez le Cataclysme d'Abnoriban sur vos ennemis. Une pluie de météores s'abbat sur eux et inflige à chacun 200% des dégâts de cette arme pendant 1 tour. Chaque enemi tué augmente la durée de la pluie de météores de 1 tours (max 3 tours)",
 			"classe": "F - F/S"
 		},
 		{
 			"categorie": "none",
 			"nom": "Faux de Kendra Shallel",
-			"desc": "",
-			"effet": "",
+			"desc": "Kendra Shallel était une jeune élève ayant étudiée à l'Académie d'Argent. Terriblement frappée par la perte de ses parents lors de la Catastrophe de Médilen, elle finit par se détourner de ses aptitudes de guérisseuse et se tourna ves la nécromancie. Elle quittera l'Académie peu de temps après. On ignore ce qu'elle est devenu mais sa puissance est immensément grande",
+			"effet": "Vision de la Nécromante : Vous faites percevoir à un ennemi une vision de sa propre mort ce qui divise toutes ses caractéristiques max par 2 (max 1 fois par combat)",
 			"classe": "F - F/S"
 		},
 		{
 			"categorie": "none",
-			"nom": "Griffes du Démon",
-			"desc": "",
-			"effet": "",
+			"nom": "Griffes de l'Edar",
+			"desc": "Les Edars sont des créatures divines né de la division du Panthéon de Wyr des Séraphins. Ce sont des êtres obscurs motivés par leur propres désirs personnels. Leur capital, aujourd'hui détruite, était la planète Abnoriban. Les Edars et les Séraphins s'oppose depuis des millions d'années et cet affrontement est à l'origine de tous les évènements sur Aegion",
+			"effet": "Maléfice d'Abnoriban : Les ennemis possédants moins de 50% de leurs pv sont marqués si vous les avez déjà attaqués avec cette arme et subissent 25% de dégâts supplémentaire de toutes les sources de dégâts",
 			"classe": "F - F/P"
 		},
 		{
 			"categorie": "none",
-			"nom": "Serres de l'Ange",
-			"desc": "",
-			"effet": "",
+			"nom": "Serres du Séraphin",
+			"desc": "Les Séraphins sont des créatures divine né de la pensée de Norï. Ensembles ils fondèrent le Panthéon de Wyr et commencèrent à créer la vie partout où leur chemin les menaient. Ce sont des être généralement calmes et raisonnés comme l'était Daendelle. Ils peuvent néanmoins se révélés violent et impétueux comme l'était son frère Wearius",
+			"effet": "Colère de Wyr : Votre première attaque contre un ennemi infligera un pourcentage de dégâts supplémentaite (jetez 1d100)",
 			"classe": "F - F/P"
 		},
 		{
 			"categorie": "none",
-			"nom": "Unarion, Fragment de l'Éther",
-			"desc": "",
-			"effet": "",
+			"nom": "Unarion, Fragment Éthéré",
+			"desc": "Unarion est le Fragment Père. Probablement le plus puissant de tous, il permet un contrôle total de toutes les formes d'éthers possible. Il est activement recherché par les Chevaliers de l'Ombre",
+			"effet": "Déchainement de Puissance : Augmente tous les dégâts éthérés de 100%",
 			"classe": "F - F/P"
 		},
 		{
 			"categorie": "none",
-			"nom": "Brasérion, Fragment des Flammes",
-			"desc": "",
-			"effet": "",
+			"nom": "Brasérion, Fragment Brûlant",
+			"desc": "Brasérion est le fragment des Braises. Découvert par Medraut Fëal dans une mine du Désert d'Ankosh. Il permit la révolte des humains du Felenshär qui sont aujourd'hui les ancêtres des humains auters que de Wellanie",
+			"effet": "Puissance du Colosse : Augmente tous les dégâts de vos attaques physique de 80%. De plus, vos attaques ont 25% de chances de brûler la cible infligeant 1d100 de dégâts supplémentaire",
 			"classe": "F - F/P"
 		},
 		{
 			"categorie": "none",
-			"nom": "Golgarion, Fragment de la Peste",
-			"desc": "",
-			"effet": "",
+			"nom": "Golgarion, Fragment Pestiféré",
+			"desc": "Golgarion est un fragment à l'origine des pestes frappants encore aujourd'hui les Royaumes Humains. Il fut utilisé la première fois par le Saigneur Valzébial sur l'Archipel des Skïnos afin de créer la Peste Sanguine qui décimera le Vélendil et déclenchera la chute des Varyens et les premières croisades",
+			"effet": "Nécrose : Les effets de vos poisons sont doublés. Votre taux de coups critique passe à 40% (aucune autre amélioration passive des coups critiques possible)",
 			"classe": "F - F/P"
 		},
 		{
 			"categorie": "none",
-			"nom": "Aenddurion, Fragment de l'Esprit",
-			"desc": "",
-			"effet": "",
+			"nom": "Aenddurion, Fragment Spirituel",
+			"desc": "Propablement le plu mystérieux de tous, Aenddurion est un fragment mystic capable d'influencer les esprits en masse. Sa seule utilisation avérée est lorsque le Varyen Sindari l'utilisa pour sortir son peuple de la servitude dans laquelle ils étaient tombés face aux Traître Nazrïl qui s'est révélé être Aegedar",
+			"effet": "Contrôle de l'Âme : Votre signe Axii permet désormais de voler avec 50% de chance les pv/ressources de l'ennemi. Jetez 1d100 et choisissez quoi voler (une fois par combat et par ennemi)",
 			"classe": "F - F/P"
 		}
 	]
