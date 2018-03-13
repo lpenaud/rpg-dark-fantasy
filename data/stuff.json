@@ -1,424 +1,520 @@
 ﻿{
 	"common": [
 		{
-			"categorie": "none",
+			"categorie": "Épée",
+			"ATQ": "ATQ 1d6",
+			"Stats": "+1 Force/Agilité",
 			"nom": "Épée en fer émoussé",
 			"desc": "Une épée dont la lame est émoussée",
 			"effet": "Émoussé : L'arme n'inflige que la moitié de ses dégâts normaux",
-			"classe": "P - P/F"
+			"classe": "Puissance/Finesse"
 		},
 		{
-			"categorie": "none",
+			"categorie": "Épée",
+			"ATQ": "ATQ 1d6",
+			"Stats": "+1 Force/Agilité",
 			"nom": "Épée en argent",
 			"desc": "Une épée en argent de faible qualité",
 			"effet": "Argent : Dégâts normaux contre les monstres",
-			"classe": "P - P/F"
+			"classe": "Puissance/Finesse"
 		},
 		{
-			"categorie": "none",
+			"categorie": "Épée",
+			"ATQ": "ATQ 1d6",
+			"Stats": "+1 Force/Agilité",
 			"nom": "Épée en fer",
 			"desc": "Une épée en acier basique",
 			"effet": "Aucun",
-			"classe": "P - P/F"
+			"classe": "Puissance/Finesse"
 		},
 		{
-			"categorie": "none",
+			"categorie": "Espadon",
+			"ATQ": "ATQ 1d12",
+			"Stats": "+2 Force",
 			"nom": "Espadon en fer brisé",
 			"desc": "Un espadon brisé en deux",
 			"effet": "Brisé : L'arme n'inflige que la moitié de ses dégâts normaux",
-			"classe": "P"
+			"classe": "Puissance"
 		},
 		{
-			"categorie": "none",
+			"categorie": "Espadon",
+			"ATQ": "ATQ 1d12",
+			"Stats": "+2 Force",
 			"nom": "Espadon en argent",
 			"desc": "Un espadon en argent",
 			"effet": "Argent : Dégâts normaux contre les monstres",
-			"classe": "P"
+			"classe": "Puissance"
 		},
 		{
-			"categorie": "none",
+			"categorie": "Espadon",
+			"ATQ": "ATQ 1d12",
+			"Stats": "+2 Force",
 			"nom": "Espadon en acier",
 			"desc": "Un espadon en fer ordinaire",
 			"effet": "Aucun",
-			"classe": "P"
+			"classe": "Puissance"
 		},
 		{
-			"categorie": "none",
+			"categorie": "Dague",
+			"ATQ": "ATQ 1d6",
+			"Stats": "+2 Agiltié",
 			"nom": "Dague fêlée",
 			"desc": "Un dague très abîmée",
 			"effet": "Usée : L'arme n'inflige que la moitié de ses dégâts normaux",
-			"classe": "F - F/S"
+			"classe": "Finesse"
 		},
 		{
-			"categorie": "none",
+			"categorie": "Dague",
+			"ATQ": "ATQ 1d6",
+			"Stats": "+2 Agiltié",
 			"nom": "Dague en argent",
 			"desc": "Une dague en argent de piêtre qualitée",
 			"effet": "Argent : Dégâts normaux contre les monstres",
-			"classe": "F - F/S"
+			"classe": "Finesse"
 		},
 		{
-			"categorie": "none",
+			"categorie": "Dague",
+			"ATQ": "ATQ 1d6",
+			"Stats": "+2 Agiltié",
 			"nom": "Dague en fer",
 			"desc": "Une dague en fer",
 			"effet": "Aucun",
-			"classe": "F - F/S"
+			"classe": "Finesse"
 		},
 		{
-			"categorie": "none",
+			"categorie": "Arc",
+			"ATQ": "ATQ 1d8",
+			"Stats": "+2 Agilité",
 			"nom": "Arc moisie",
 			"desc": "Un arc dont le bois est moisie",
 			"effet": "Moisie : L'arme a 1 chance sur 3 de se briser en attaquant avec",
-			"classe": "F"
+			"classe": "Finesse"
 		},
 		{
-			"categorie": "none",
+			"categorie": "Arc",
+			"ATQ": "ATQ 1d8",
+			"Stats": "+2 Agilité",
 			"nom": "Arc en argent",
 			"desc": "Un arc fait pour tirer des flèches d'argents",
 			"effet": "Argent : Dégâts normaux contre les monstres",
-			"classe": "F"
+			"classe": "Finesse"
 		},
 		{
-			"categorie": "none",
+			"categorie": "Arc",
+			"ATQ": "ATQ 1d8",
+			"Stats": "+2 Agilité",
 			"nom": "Arc en bois",
 			"desc": "Un arc simple en bois",
 			"effet": "Aucun",
-			"classe": "F"
+			"classe": "Finesse"
 		},
 		{
-			"categorie": "none",
+			"categorie": "Grimoire",
+			"ATQ": "ATQ 1d8",
+			"Stats": "+2 Intelligence",
 			"nom": "Grimoire moisie",
 			"desc": "Un grimoire dont les pages ont moisies",
 			"effet": "Mauvais état : 1 chance sur 3 de mal lire les incantations de rater votre prochain sort",
-			"classe": "S"
+			"classe": "Sorcellerie"
 		},
 		{
-			"categorie": "none",
+			"categorie": "Grimoire",
+			"ATQ": "ATQ 1d8",
+			"Stats": "+2 Intelligence",
 			"nom": "Grimoire de sort de lumières",
 			"desc": "Un grimoire contenant des incantations contre les monstres",
 			"effet": "Sorts de Lumières : Dégâts normaux contre les monstres",
-			"classe": "S"
+			"classe": "Sorcellerie"
 		},
 		{
-			"categorie": "none",
+			"categorie": "Grimoire",
+			"ATQ": "ATQ 1d8",
+			"Stats": "+2 Intelligence",
 			"nom": "Grimoire basique",
 			"desc": "Un grimoire basique",
 			"effet": "Aucun",
-			"classe": "S"
+			"classe": "Sorcellerie"
 		},
 		{
-			"categorie": "none",
+			"categorie": "Bâton",
+			"ATQ": "ATQ 1d6",
+			"Stats": "+1 Force/Intelligence",
 			"nom": "Bâton brisé en bois",
 			"desc": "Un bâton magique au manche cassé",
-			"effet": "Mauvais état : L'arme a 1 chance sur 3 de se briser en attaquant avec",
-			"classe": "P/S"
+			"effet": "Mauvais état : L'arme a 1 chance sur 4 de se briser en attaquant avec",
+			"classe": "Puissance/Sorcellerie"
 		},
 		{
-			"categorie": "none",
+			"categorie": "Bâton",
+			"ATQ": "ATQ 1d6",
+			"Stats": "+1 Force/Intelligence",
 			"nom": "Bâton en argent",
 			"desc": "Un bâton feuilleté d'argent",
 			"effet": "Argent : Dégâts normaux contre les monstres",
-			"classe": "P/S"
+			"classe": "Puissance/Sorcellerie"
 		},
 		{
-			"categorie": "none",
+			"categorie": "Bâton",
+			"ATQ": "ATQ 1d6",
+			"Stats": "+1 Force/Intelligence",
 			"nom": "Bâton en bois",
 			"desc": "Un bâton simple en bois",
 			"effet": "Aucun",
-			"classe": "P/S"
+			"classe": "Puissance/Sorcellerie"
 		},
 		{
-			"categorie": "none",
+			"categorie": "Chakram",
+			"ATQ": "ATQ 1d8",
+			"Stats": "+1 Agilité/Intelligence",
 			"nom": "Chakram en fer rouillé",
 			"desc": "Un Chakram rouillé de très faible qualité",
 			"effet": "Rouillé : L'arme a 1 chance sur 3 de vous blesser de 2pv quand vous attaquez avec",
-			"classe": "S - S/F"
+			"classe": "Sorcellerie/Finesse"
 		},
 		{
-			"categorie": "none",
+			"categorie": "Chakram",
+			"ATQ": "ATQ 1d8",
+			"Stats": "+1 Agilité/Intelligence",
 			"nom": "Chakram en argent",
 			"desc": "Un Chakram feuilleté d'argent",
 			"effet": "Argent : Dégâts normaux contre les monstres",
-			"classe": "S - S/F"
+			"classe": "Sorcellerie/Finesse"
 		},
 		{
-			"categorie": "none",
+			"categorie": "Chakram",
+			"ATQ": "ATQ 1d8",
+			"Stats": "+1 Agilité/Intelligence",
 			"nom": "Chakram en fer",
 			"desc": "Un Chakram simple en fer",
 			"effet": "Aucun",
-			"classe": "S - S/F"
+			"classe": "Sorcellerie/Finesse"
 		},
 		{
-			"categorie": "none",
+			"categorie": "Lame d'éther",
+			"ATQ": "ATQ 1d10",
+			"Stats": "+1 Agilité/Intelligence",
 			"nom": "Lame d'éther affaiblie",
 			"desc": "L'éther de cette lame semble s'être affaiblie",
 			"effet": "Faible : L'arme a 1 chance sur 3 de ne causer qu'1 seul point de dégât",
-			"classe": "F/S"
+			"classe": "Finesse/Sorcellerie"
 		},
 		{
-			"categorie": "none",
+			"categorie": "Lame d'éther",
+			"ATQ": "ATQ 1d10",
+			"Stats": "+1 Agilité/Intelligence",
 			"nom": "Lame d'éther argentée",
 			"desc": "L'éther de cette lame est efficace contre les monstres",
 			"effet": "Argent : Dégâts normaux contre les monstres",
-			"classe": "F/S"
+			"classe": "Finesse/Sorcellerie"
 		},
 		{
-			"categorie": "none",
+			"categorie": "Lame d'éther",
+			"ATQ": "ATQ 1d10",
+			"Stats": "+1 Agilité/Intelligence",
 			"nom": "Lame d'éther",
 			"desc": "Une lame d'éther commune",
 			"effet": "Aucun",
-			"classe": "F/S"
+			"classe": "Finesse/Sorcellerie"
 		},
 		{
-			"categorie": "none",
+			"categorie": "Chaine",
+			"ATQ": "ATQ nulle",
+			"Stats": "+1 Force/Agilité/Intelligence",
 			"nom": "Chaine en fer rouillée",
 			"desc": "Une chaine en fer rouillé capable d'immobilisé une cible",
 			"effet": "Rouillé : L'arme a 1 chance sur 3 de vous blesser de 2pv quand vous attaquez avec. 10% de chance d'immobiliser la cible pour 1 tour",
-			"classe": "P/F/S"
+			"classe": "Puissance/Finesse/Sorcellerie"
 		},
 		{
-			"categorie": "none",
+			"categorie": "Chaine",
+			"ATQ": "ATQ nulle",
+			"Stats": "+1 Force/Agilité/Intelligence",
 			"nom": "Chaîne d'argent",
 			"desc": "Une chaine en argent capable d'immobilisé un monstre",
 			"effet": "Argent : Peut immobiliser les monstres inférieur à une taille d'homme. 15% de chance d'immobiliser la cible pour 1 tour",
-			"classe": "P/F/S"
+			"classe": "Puissance/Finesse/Sorcellerie"
 		},
 		{
-			"categorie": "none",
+			"categorie": "Chaine",
+			"ATQ": "ATQ nulle",
+			"Stats": "+1 Force/Agilité/Intelligence",
 			"nom": "Chaine en fer",
 			"desc": "Une chaine en fer commune",
 			"effet": "Fer : 15% de chance d'immobiliser la cible pour 1 tour.",
-			"classe": "P/F/S"
+			"classe": "Puissance/Finesse/Sorcellerie"
 		},
 		{
-			"categorie": "none",
+			"categorie": "Lame elfique",
+			"ATQ": "ATQ 1d10",
+			"Stats": "+1 Agilité/Intelligence",
 			"nom": "Lame Elfique en fer",
 			"desc": "Bien qu'ayant la forme d'une épée elfique, cette lame est sans doute une contrefaçon",
 			"effet": "Contrefaçon : L'arme n'inflige que 1/4 des dégâts normaux",
-			"classe": "F - P/F"
+			"classe": "Finesse/Puissance"
 		},
 		{
-			"categorie": "none",
+			"categorie": "Lame elfique",
+			"ATQ": "ATQ 1d10",
+			"Stats": "+1 Agilité/Intelligence",
 			"nom": "Lame Elfique argentée",
 			"desc": "Une belle lame Elfique en argent",
 			"effet": "Argent elfique : Bonus de dégâts de 1d5 contre les monstres",
-			"classe": "F - P/F"
+			"classe": "Finesse/Puissance"
 		},
 		{
-			"categorie": "none",
+			"categorie": "Lame elfique",
+			"ATQ": "ATQ 1d10",
+			"Stats": "+1 Agilité/Intelligence",
 			"nom": "Lame Elfique en acier",
 			"desc": "Une lame elfique en acier",
 			"effet": "Aucun",
-			"classe": "F - P/F"
+			"classe": "Finesse/Puissance"
 		},
 		{
-			"categorie": "none",
+			"categorie": "Faux",
+			"ATQ": "ATQ 1d10",
+			"Stats": "+1 Agilité/Intelligence",
 			"nom": "Faux abîmée en fer",
 			"desc": "Une faux très endomagée et presque inutilisable",
 			"effet": "Mauvais état : L'arme n'inflige que 1/3 des dégâts normaux",
-			"classe": "F - F/S"
+			"classe": "Finesse/Sorcellerie"
 		},
 		{
-			"categorie": "none",
+			"categorie": "Faux",
+			"ATQ": "ATQ 1d10",
+			"Stats": "+1 Agilité/Intelligence",
 			"nom": "Faux en argent",
 			"desc": "Une grande faux en argent",
 			"effet": "Argent : Dégâts normaux contre les monstres",
-			"classe": "F - F/S"
+			"classe": "Finesse/Sorcellerie"
 		},
 		{
-			"categorie": "none",
+			"categorie": "Faux",
+			"ATQ": "ATQ 1d10",
+			"Stats": "+1 Agilité/Intelligence",
 			"nom": "Faux en fer",
 			"desc": "Une faux en fer banale",
 			"effet": "Aucun",
-			"classe": "F - F/S"
+			"classe": "Finesse/Sorcellerie"
 		},
 		{
-			"categorie": "none",
+			"categorie": "Griffes",
+			"ATQ": "ATQ 1d6",
+			"Stats": "+1 Force/Agilité",
 			"nom": "Griffes en fer cassé",
 			"desc": "Des griffes faites d'un fer fort rouillé",
 			"effet": "Mauvais état : L'arme a 1 chance sur 3 de se briser en attaquant avec",
-			"classe": "F - F/P"
+			"classe": "Finesse/Puissance"
 		},
 		{
-			"categorie": "none",
+			"categorie": "Griffes",
+			"ATQ": "ATQ 1d6",
+			"Stats": "+1 Force/Agilité",
 			"nom": "Griffes en argent",
 			"desc": "Des griffes en argent",
 			"effet": "Argent : Dégâts normaux contre les monstres",
-			"classe": "F - F/P"
+			"classe": "Finesse/Puissance"
 		},
 		{
-			"categorie": "none",
+			"categorie": "Griffes",
+			"ATQ": "ATQ 1d6",
+			"Stats": "+1 Force/Agilité",
 			"nom": "Griffes en fer",
 			"desc": "Des griffes en fer classique",
 			"effet": "Aucun",
-			"classe": "F - F/P"
+			"classe": "Finesse/Puissance"
 		},
 		{
-			"categorie": "none",
+			"categorie": "Tissu",
+			"Stats": "+1 Vitalité",
 			"nom": "Capuche en haillon",
 			"desc": "Une capuche en tissu miteux",
 			"effet": "Miteux : Armure diminuée de 1",
-			"classe": "S - S/F"
+			"classe": "Sorcellerie/Finesse"
 		},
 		{
-			"categorie": "none",
+			"categorie": "Tissu",
+			"Stats": "+1 Vitalité",
 			"nom": "Tunique en haillon",
 			"desc": "Une Tunique en tissu miteux",
 			"effet": "Miteux : Armure diminuée de 1",
-			"classe": "S - S/F"
+			"classe": "Sorcellerie/Finesse"
 		},
 		{
-			"categorie": "none",
+			"categorie": "Tissu",
+			"Stats": "+1 Vitalité",
 			"nom": "Pantalon en haillon",
 			"desc": "Un Pantalon en tissu miteux",
 			"effet": "Miteux : Armure diminuée de 1",
-			"classe": "S - S/F"
+			"classe": "Sorcellerie/Finesse"
 		},
 		{
-			"categorie": "none",
+			"categorie": "Tissu",
+			"Stats": "+1 Vitalité",
 			"nom": "Chausses en haillon",
 			"desc": "Des Chausses en tissu miteux",
 			"effet": "Miteux : Armure diminuée de 1",
-			"classe": "S - S/F"
+			"classe": "Sorcellerie/Finesse"
 		},
 		{
-			"categorie": "none",
+			"categorie": "Tissu",
+			"Stats": "+1 Vitalité, +1 Intelligence/Agilité",
 			"nom": "Capuche en lin",
 			"desc": "Une capuche en lin",
 			"effet": "Aucun",
-			"classe": "S - S/F"
+			"classe": "Sorcellerie/Finesse"
 		},
 		{
-			"categorie": "none",
+			"categorie": "Tissu",
+			"Stats": "+1 Vitalité, +1 Intelligence/Agilité",
 			"nom": "Tunique en lin",
 			"desc": "Une tunique en lin",
 			"effet": "Aucun",
-			"classe": "S - S/F"
+			"classe": "Sorcellerie/Finesse"
 		},
 		{
-			"categorie": "none",
+			"categorie": "Tissu",
+			"Stats": "+1 Vitalité, +1 Intelligence/Agilité",
 			"nom": "Pantalon en lin",
 			"desc": "Un pantalon en lin",
 			"effet": "Aucun",
-			"classe": "S - S/F"
+			"classe": "Sorcellerie/Finesse"
 		},
 		{
-			"categorie": "none",
+			"categorie": "Tissu",
+			"Stats": "+1 Vitalité, +1 Intelligence/Agilité, +1 Armure",
 			"nom": "Chausses en lin",
 			"desc": "Des chausses en lin",
 			"effet": "Aucun",
-			"classe": "S - S/F"
+			"classe": "Sorcellerie/Finesse"
 		},
 		{
-			"categorie": "none",
+			"categorie": "Tissu",
+			"Stats": "+1 Vitalité, +1 Intelligence/Agilité, +1 Armure",
 			"nom": "Capuche en lin de qualité",
 			"desc": "Une capuche en lin de qualité",
 			"effet": "Qualité supérieure : Bonus à l'armure de 1",
-			"classe": "S - S/F"
+			"classe": "Sorcellerie/Finesse"
 		},
 		{
-			"categorie": "none",
+			"categorie": "Tissu",
+			"Stats": "+1 Vitalité, +1 Intelligence/Agilité, +1 Armure",
 			"nom": "Tunique en lin de qualité",
 			"desc": "Une tunique en lin de qualité",
 			"effet": "Qualité supérieure : Bonus à l'armure de 1",
-			"classe": "S - S/F"
+			"classe": "Sorcellerie/Finesse"
 		},
 		{
-			"categorie": "none",
+			"categorie": "Tissu",
+			"Stats": "+1 Vitalité, +1 Intelligence/Agilité, +1 Armure",
 			"nom": "Pantalon en lin de qualité",
 			"desc": "Un pantalon en lin de qualité",
 			"effet": "Qualité supérieure : Bonus à l'armure de 1",
-			"classe": "S - S/F"
+			"classe": "Sorcellerie/Finesse"
 		},
 		{
-			"categorie": "none",
+			"categorie": "Tissu",
+			"Stats": "+1 Vitalité, +1 Intelligence/Agilité, +1 Armure",
 			"nom": "Chausses en lin de qualité",
 			"desc": "Des chausses en lin de qualité",
 			"effet": "Qualité supérieure : Bonus à l'armure de 1",
-			"classe": "S - S/F"
+			"classe": "Sorcellerie/Finesse"
 		},
 		{
-			"categorie": "none",
+			"categorie": "Cuir",
+			"Stats": "+1 Vitalité",
 			"nom": "Chapeau en cuir percé",
 			"desc": "Une Chapeau en cuir percé",
 			"effet": "Mauvais état : Armure diminuée de 1",
-			"classe": "F - F/S"
+			"classe": "Finesse/Sorcellerie"
 		},
 		{
-			"categorie": "none",
+			"categorie": "Cuir",
+			"Stats": "+1 Vitalité",
 			"nom": "Pourpoint en cuir percé",
 			"desc": "Un Pourpoint en cuir percé",
 			"effet": "Mauvais état : Armure diminuée de 1",
-			"classe": "F - F/S"
+			"classe": "Finesse/Sorcellerie"
 		},
 		{
-			"categorie": "none",
+			"categorie": "Cuir",
+			"Stats": "+1 Vitalité",
 			"nom": "Guenille en cuir percé",
 			"desc": "Des Guenilles en cuir percé",
 			"effet": "Mauvais état : Armure diminuée de 1",
-			"classe": "F - F/S"
+			"classe": "Finesse/Sorcellerie"
 		},
 		{
-			"categorie": "none",
+			"categorie": "Cuir",
+			"Stats": "+1 Vitalité",
 			"nom": "Chaussures en cuir percé",
 			"desc": "Des Chaussures en cuir percé",
 			"effet": "Mauvais état : Armure diminuée de 1",
-			"classe": "F - F/S"
+			"classe": "Finesse/Sorcellerie"
 		},
 		{
-			"categorie": "none",
+			"categorie": "Cuir",
+			"Stats": "+1 Vitalité",						
 			"nom": "Chapeau en cuir",
 			"desc": "Une Chapeau en cuir",
 			"effet": "Aucun",
-			"classe": "F - F/S"
+			"classe": "Finesse/Sorcellerie"
 		},
 		{
-			"categorie": "none",
+			"categorie": "Cuir",
+			"Stats": "+1 Vitalité, +1 Agilité/Intelligence",
 			"nom": "Pourpoint en cuir",
 			"desc": "Un Pourpoint en cuir",
 			"effet": "Aucun",
-			"classe": "F - F/S"
+			"classe": "Finesse/Sorcellerie"
 		},
 		{
 			"categorie": "none",
+			"Stats": "+1 Vitalité, +1 Agilité/Intelligence",
 			"nom": "Guenille en cuir",
 			"desc": "Des Guenilles en cuir",
 			"effet": "Aucun",
-			"classe": "F - F/S"
+			"classe": "Finesse/Sorcellerie"
 		},
 		{
 			"categorie": "none",
+			"Stats": "+1 Vitalité, +1 Agilité/Intelligence",
 			"nom": "Chaussures en cuir",
 			"desc": "Des Chaussures en cuir",
 			"effet": "Aucun",
-			"classe": "F - F/S"
+			"classe": "Finesse/Sorcellerie"
 		},
 		{
 			"categorie": "none",
+			"Stats": "+1 Vitalité, +1 Agilité/Intelligence, +1 Armure",
 			"nom": "Chapeau en cuir de qualité",
 			"desc": "Une Chapeau en cuir de qualité",
 			"effet": "Qualité supérieure : Bonus à l'armure de 1",
-			"classe": "F - F/S"
+			"classe": "Finesse/Sorcellerie"
 		},
 		{
 			"categorie": "none",
+			"Stats": "+1 Vitalité, +1 Agilité/Intelligence, +1 Armure",
 			"nom": "Pourpoint en cuir de qualité",
 			"desc": "Un Pourpoint en cuir de qualité",
 			"effet": "Qualité supérieure : Bonus à l'armure de 1",
-			"classe": "F - F/S"
+			"classe": "Finesse/Sorcellerie"
 		},
 		{
 			"categorie": "none",
+			"Stats": "+1 Vitalité, +1 Agilité/Intelligence, +1 Armure",
 			"nom": "Guenille en cuir de qualité",
 			"desc": "Des Guenilles en cuir de qualité",
 			"effet": "Qualité supérieure : Bonus à l'armure de 1",
-			"classe": "F - F/S"
+			"classe": "Finesse/Sorcellerie"
 		},
 		{
 			"categorie": "none",
+			"Stats": "+1 Vitalité, +1 Agilité/Intelligence, +1 Armure",
 			"nom": "Chaussures en cuir de qualité",
 			"desc": "Des Chaussures en cuir de qualité",
 			"effet": "Qualité supérieure : Bonus à l'armure de 1",
-			"classe": "F - F/S"
+			"classe": "Finesse/Sorcellerie"
 		},
 		{
 			"categorie": "none",
