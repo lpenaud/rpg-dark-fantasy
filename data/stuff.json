@@ -725,7 +725,7 @@
 			"Stats": "+2 Force/Agilité",
 			"nom": "Épée en argent brillant",
 			"desc": "Une épée en argent brillant de qualité",
-			"effet": "Argent Brillant : Bonus de dégâts de 10 contre les monstres",
+			"effet": "Argent Brillant : Bonus de dégâts de 1d10 contre les monstres",
 			"classe": "Puissance/Finesse"
 		},
 		{
@@ -752,7 +752,7 @@
 			"Stats": "+2 Force",
 			"nom": "Espadon en argent brillant",
 			"desc": "Un espadon en argent brillant de qualité",
-			"effet": "Argent Brillant : Bonus de dégâts de 10 contre les monstres",
+			"effet": "Argent Brillant : Bonus de dégâts de 1d10 contre les monstres",
 			"classe": "Puissance"
 		},
 		{
@@ -775,7 +775,7 @@
 			"categorie": "dague",
 			"nom": "Dague en argent brillant",
 			"desc": "Une dague en argent brillant de qualité ",
-			"effet": "Argent Brillant : Bonus de dégâts de 10 contre les monstres",
+			"effet": "Argent Brillant : Bonus de dégâts de 1d10 contre les monstres",
 			"classe": "Finesse/Sorcellerie"
 		},
 		{
@@ -789,14 +789,14 @@
 			"categorie": "arc",
 			"nom": "Arc en bois de chêne",
 			"desc": "Un arc solide mais difficile à bander",
-			"effet": "Raideur : Effectuez un jet de physique avant chaque tir avec 50% de chance de réussite. S'il est raté, vous tirez magré tout mais les dégâts sont divisés par 3",
+			"effet": "Raideur : Effectuez un jet de physique avant chaque tir avec 50% de chance de réussite. S'il est raté, vous tirez magré tout mais les dégâts sont diminués de 1d5",
 			"classe": "Finesse"
 		},
 		{
 			"categorie": "arc",
 			"nom": "Arc en argent brillant",
 			"desc": "Un arc fait pour tirer des flèches d'argents brillantes",
-			"effet": "Argent Brillant : Bonus de dégâts de 10 contre les monstres",
+			"effet": "Argent Brillant : Bonus de dégâts de 1d10 contre les monstres",
 			"classe": "Finesse"
 		},
 		{
@@ -810,14 +810,14 @@
 			"categorie": "grimoire",
 			"nom": "Grimoire ancien",
 			"desc": "Un grimoire ancien. Les inscriptions sont difficiles à déchiffrer",
-			"effet": "Langue ancienne : 1 chance sur 4 de mal lire les incantations et de rater votre prochain sort",
+			"effet": "Langue ancienne : Jetez 1d100 avec 1 chance sur 4 de mal lire les incantations et de rater votre prochain sort",
 			"classe": "Sorcellerie"
 		},
 		{
 			"categorie": "grimoire",
 			"nom": "Grimoire immmaculé",
 			"desc": "Un grimoire contenant des incantations très efficaces contre les monstres",
-			"effet": "Immaculé : Bonus de dégâts de 10 contre les monstres",
+			"effet": "Immaculé : Bonus de dégâts de 1d10 contre les monstres",
 			"classe": "Sorcellerie"
 		},
 		{
@@ -838,7 +838,7 @@
 			"categorie": "bâton",
 			"nom": "Bâton en argent brillant",
 			"desc": "Un bâton feuilleté d'argent brillant",
-			"effet": "Argent brillant : Bonus de dégâts de 10 contre les monstres",
+			"effet": "Argent Brillant : Bonus de dégâts de 1d10 contre les monstres",
 			"classe": "Puissance/Sorcellerie"
 		},
 		{
@@ -859,7 +859,7 @@
 			"categorie": "chakram",
 			"nom": "Chakram en argent brillant",
 			"desc": "Un Chakram feuilleté d'argent brillant",
-			"effet": "Argent brillant : Bonus de dégâts de 10 contre les monstres",
+			"effet": "Argent Brillant : Bonus de dégâts de 1d10 contre les monstres",
 			"classe": "Sorcellerie/Finesse"
 		},
 		{
@@ -894,7 +894,7 @@
 			"categorie": "chaine",
 			"nom": "Chaine en acier de faible qualité",
 			"desc": "L'acier de cette chaîne est de piêtre qualité",
-			"effet": "Faible qualité : L'arme a 1 chance sur 3 de se briser quand vous attaquez avec. 20% de chance d'immobiliser la cible",
+			"effet": "Faible qualité : L'arme a 1 chance sur 3 de se briser quand vous attaquez avec. 20% de chance d'immobiliser la cible pour 1 tour",
 			"classe": "Puissance/Finesse/Sorcellerie"
 		},
 		{
@@ -908,7 +908,7 @@
 			"categorie": "chaine",
 			"nom": "Chaine en acier à pointes",
 			"desc": "Une chaine en acier commune",
-			"effet": "Saignement : 1 chance sur 3 de provoquer un saignement de la cible équivalent à 5% de ses points de vies par tour en l'immobilisant avec cette chaîne. 25% de chance d'immobilisation",
+			"effet": "Saignement : 1 chance sur 3 de provoquer un saignement de la cible équivalent à 1d5 pv par tour en l'immobilisant avec cette chaîne. 25% de chance d'immobilisation",
 			"classe": "Puissance/Finesse/Sorcellerie"
 		},
 		{
@@ -922,7 +922,7 @@
 			"categorie": "épée",
 			"nom": "Lame Elfique en argent brillant",
 			"desc": "Une belle lame Elfique en argent brillant",
-			"effet": "Argent brillant elfique : Bonus de dégâts de 1d15 + 5 contre les monstres",
+			"effet": "Argent brillant elfique : Bonus de dégâts de 1d15 contre les monstres",
 			"classe": "Finesse/Puissance"
 		},
 		{
@@ -943,7 +943,7 @@
 			"categorie": "faux",
 			"nom": "Faux en argent brillant",
 			"desc": "Une grande faux en argent brillant",
-			"effet": "Argent brillant : Bonus de dégâts de 10 contre les monstres",
+			"effet": "Argent Brillant : Bonus de dégâts de 1d10 contre les monstres",
 			"classe": "Finesse/Sorcellerie"
 		},
 		{
@@ -964,7 +964,7 @@
 			"categorie": "griffes",
 			"nom": "Griffes en argent brillant",
 			"desc": "Des griffes en argent brillant",
-			"effet": "Argent brillant : Bonus de dégâts de 10 contre les monstres",
+			"effet": "Argent Brillant : Bonus de dégâts de 1d10 contre les monstres",
 			"classe": "Finesse/Puissance"
 		},
 		{
@@ -1006,56 +1006,56 @@
 			"categorie": "tête",
 			"nom": "Capuche en bon lin",
 			"desc": "Une capuche en lin qualitatif",
-			"effet": "Ensemble 'Bon lin' : Augmente vos dégâts des sorts de 10 si vous avez au moins 3 pièces de l'ensemble",
+			"effet": "Ensemble 'Bon lin' : Augmente vos dégâts des sorts de 10 ",
 			"classe": "Sorcellerie/Finesse"
 		},
 		{
 			"categorie": "torse",
 			"nom": "Tunique en bon lin",
 			"desc": "Une Tunique en lin qualitatif",
-			"effet": "Ensemble 'Bon lin' : Augmente vos dégâts des sorts de 10 si vous avez au moins 3 pièces de l'ensemble",
+			"effet": "Ensemble 'Bon lin' : Augmente vos dégâts des sorts de 10 ",
 			"classe": "Sorcellerie/Finesse"
 		},
 		{
 			"categorie": "jambe",
 			"nom": "Pantalon en bon lin",
 			"desc": "Un Pantalon en lin qualitatif",
-			"effet": "Ensemble 'Bon lin' : Augmente vos dégâts des sorts de 10 si vous avez au moins 3 pièces de l'ensemble",
+			"effet": "Ensemble 'Bon lin' : Augmente vos dégâts des sorts de 10 ",
 			"classe": "Sorcellerie/Finesse"
 		},
 		{
 			"categorie": "pied",
 			"nom": "Chausses en bon lin",
 			"desc": "Des Chausses en lin qualitatif",
-			"effet": "Ensemble 'Bon lin' : Augmente vos dégâts des sorts de 10 si vous avez au moins 3 pièces de l'ensemble",
+			"effet": "Ensemble 'Bon lin' : Augmente vos dégâts des sorts de 10 ",
 			"classe": "Sorcellerie/Finesse"
 		},
 		{
 			"categorie": "tête",
 			"nom": "Capuche en coton supérieur",
 			"desc": "Une capuche en coton supérieur",
-			"effet": "Ensemble 'Coton supérieur' : Augmente vos dégâts des sorts de 7 et votre armure de 3 si vous avez au moins 3 pièces de l'ensemble",
+			"effet": "Ensemble 'Coton supérieur' : Augmente vos dégâts des sorts de 7 et votre armure de 3 ",
 			"classe": "Sorcellerie/Finesse"
 		},
 		{
 			"categorie": "torse",
 			"nom": "Tunique en coton supérieur",
 			"desc": "Une tunique en coton supérieur",
-			"effet": "Ensemble 'Coton supérieur' : Augmente vos dégâts des sorts de 7 et votre armure de 3 si vous avez au moins 3 pièces de l'ensemble",
+			"effet": "Ensemble 'Coton supérieur' : Augmente vos dégâts des sorts de 7 et votre armure de 3 ",
 			"classe": "Sorcellerie/Finesse"
 		},
 		{
 			"categorie": "jambe",
 			"nom": "Pantalon en coton supérieur",
 			"desc": "Un pantalon en coton supérieur",
-			"effet": "Ensemble 'Coton supérieur' : Augmente vos dégâts des sorts de 7 et votre armure de 3 si vous avez au moins 3 pièces de l'ensemble",
+			"effet": "Ensemble 'Coton supérieur' : Augmente vos dégâts des sorts de 7 et votre armure de 3 ",
 			"classe": "Sorcellerie/Finesse"
 		},
 		{
 			"categorie": "pied",
 			"nom": "Chausses en coton supérieur",
 			"desc": "Des chausses en coton supérieur",
-			"effet": "Ensemble 'Coton supérieur' : Augmente vos dégâts des sorts de 7 et votre armure de 3 si vous avez au moins 3 pièces de l'ensemble",
+			"effet": "Ensemble 'Coton supérieur' : Augmente vos dégâts des sorts de 7 et votre armure de 3 ",
 			"classe": "Sorcellerie/Finesse"
 		},
 		{
@@ -1314,42 +1314,42 @@
 			"categorie": "Parchemin",
 			"nom": "Parchemin de compétence : Tir du cobra",
 			"desc": "Permet de tirer une flèche emposonnée. Coût : 5 énergie",
-			"effet": "Après activation de cette compétence, votre prochain tir à l'arc emposonne la cible de 3pv à la fin de chacun de ses tours pendant 2 tours",
+			"effet": "Après activation de cette compétence, votre prochain tir à l'arc empoisonne la cible de 5pv à la fin de chacun de ses tours pendant 2 tours",
 			"classe": "Finesse"
 		},
 		{
 			"categorie": "Parchemin",
 			"nom": "Parchemin de compétence : Adrénaline",
 			"desc": "Le lanceur est boosté par un regain d'adrénaline Coût : 3 énergie",
-			"effet": "Augmente vos chances de coup critique de 2% pendant 2 tours",
+			"effet": "Augmente vos chances de coup critique de 10% pendant 2 tours",
 			"classe": "Finesse"
 		},
 		{
 			"categorie": "Parchemin",
 			"nom": "Parchemin de compétence : Coup de poignard",
 			"desc": "La prochaine attaque furtive à la dague fait plus de dégâts. Coût : 10 énergie. Requis : Dague",
-			"effet": "Activer cette compétence lors d'une attaque furive pour infliger 10 dégâts supplémentaires",
+			"effet": "Activer cette compétence lors d'une attaque furive pour infliger 1d15 dégâts supplémentaires",
 			"classe": "Finesse"
 		},
 		{
 			"categorie": "Parchemin",
 			"nom": "Parchemin de compétence : Provocation",
 			"desc": "Vous provoquez une cible qui n'attaquera que vous. Coût : 15 endurance",
-			"effet": "Vous provoquez une cible qui n'attaquera que vous pour un tour",
+			"effet": "Vous provoquez une cible qui n'attaquera que vous pour 2 tours",
 			"classe": "Puissance"
 		},
 		{
 			"categorie": "Parchemin",
 			"nom": "Parchemin de compétence : Clivage",
 			"desc": "Vous infligez une attaque en arc de cercle avec votre arme. Coût : 5 énergies",
-			"effet": "Inflige les dégâts de votre arme + 1d10 bonus",
+			"effet": "Inflige les dégâts de votre arme + 1d15 bonus",
 			"classe": "Puissance"
 		},
 		{
 			"categorie": "Parchemin",
 			"nom": "Parchemin de compétence : Fortification",
 			"desc": "augmente faiblement votre armure. Coût : 10 énergies",
-			"effet": "Votre armure est augmentée de 10 pour 2 tours",
+			"effet": "Votre armure est augmentée de 20 pour 2 tours",
 			"classe": "Puissance"
 		},
 		{
@@ -1361,16 +1361,16 @@
 		},
 		{
 			"categorie": "Parchemin",
-			"nom": "Parchemin de compétence : Flash de soin",
+			"nom": "Parchemin de compétence : Horion Sacré",
 			"desc": "Conjure un flash de lumière qui soigne les vivants et blesse les morts-vivants. Coût : 15 mana",
-			"effet": "Soigne un allié proche de 1d10 ou blesse un mort vivant de 1d5",
+			"effet": "Soigne un allié proche de 1d5 + 5 ou blesse un mort vivant de 1d10 + 5",
 			"classe": "Sorcellerie"
 		},
 		{
 			"categorie": "Parchemin",
 			"nom": "Parchemin de compétence : Accumulation de puissance",
 			"desc": "Augmente faiblement votre puissance des sorts. Coût : 10 mana",
-			"effet": "Votre puissance des sorts est augmentée de 10 pour 2 tours",
+			"effet": "Votre puissance des sorts est augmentée et ces derniers infligent 2d10 de dégâts supplémentaires pour 2 tours",
 			"classe": "Sorcellerie"
 		}
 	],
@@ -1386,7 +1386,7 @@
 			"categorie": "épée",
 			"nom": "Épée en argent de Shurhïm",
 			"desc": "L'argent de cette arme a été extrait dans les mines du Désert de Shurhïm, en Hadren",
-			"effet": "Argent de Shurhïm : Bonus de dégâts de 1d15 contre les monstres. De plus, vos attaques ont 10% de chances de brûler la cible lui infligeant 5 dégâts supplémentaires par tour pendant 3 tours",
+			"effet": "Argent de Shurhïm : Bonus de dégâts de 1d15 contre les monstres. De plus, vos attaques ont 10% de chances de brûler la cible lui infligeant 10 dégâts supplémentaires par tour pendant 3 tours",
 			"classe": "Puissance/Finesse"
 		},
 		{
@@ -1400,35 +1400,35 @@
 			"categorie": "espadon",
 			"nom": "Espadon en vif-acier",
 			"desc": "Un espadon dont la lame à été forgée en vif-acier",
-			"effet": "Brise-armure : Votre arme ignore 15% de l'armure de l'ennemi",
+			"effet": "Brise-armure : Votre arme ignore 1d20 de l'armure de l'ennemi. Si l'ennemi n'a pas d'armure, infligez 1d20 de dégâts supplémentaire à la place",
 			"classe": "Puissance"
 		},
 		{
 			"categorie": "espadon",
 			"nom": "Espadon en argent de Shurhïm",
 			"desc": "L'argent de cette arme a été extrait dans les mines du Désert de Shurhïm, en Hadren",
-			"effet": "Argent de Shurhïm : Bonus de dégâts de 1d15 contre les monstres. De plus, vos attaques ont 10% de chances de brûler la cible lui infligeant 5 dégâts supplémentaires par tour pendant 3 tours",
+			"effet": "Argent de Shurhïm : Bonus de dégâts de 1d15 contre les monstres. De plus, vos attaques ont 10% de chances de brûler la cible lui infligeant 10 dégâts supplémentaires par tour pendant 3 tours",
 			"classe": "Puissance"
 		},
 		{
 			"categorie": "espadon",
 			"nom": "Espadon colossal en vif-acier",
 			"desc": "Un espadon en acier immense",
-			"effet": "Taille colossal : Vous pouvez frapper les ennemmies sans êtres à portée de leurs coups (3 mètres). Bonus aux dégâts de 1d5. Inutilisable dans les endroits restreints.",
+			"effet": "Taille colossal : Vous pouvez frapper les ennemmies sans êtres à portée de leurs coups (3 mètres). Bonus aux dégâts de 1d10. Inutilisable dans les endroits restreints.",
 			"classe": "Puissance"
 		},
 		{
 			"categorie": "dague",
 			"nom": "Dague ciselée en vif-acier",
 			"desc": "Un dague dont la lame à été forgée en vif-acier",
-			"effet": "Saignement : Une attaque furtive avec cette arme fait saigner la cible de 5pv par tour pendant 3 tours",
+			"effet": "Saignement : Une attaque furtive avec cette arme fait saigner la cible de 10pv par tour pendant 2 tours",
 			"classe": "Finesse/Sorcellerie"
 		},
 		{
 			"categorie": "dague",
 			"nom": "Dague en argent de Shurhïm",
 			"desc": "L'argent de cette arme a été extrait dans les mines du Désert de Shurhïm, en Hadren",
-			"effet": "Argent de Shurhïm : Bonus de dégâts de 1d15 contre les monstres. De plus, vos attaques ont 10% de chances de brûler la cible lui infligeant 5 dégâts supplémentaires par tour pendant 3 tours",
+			"effet": "Argent de Shurhïm : Bonus de dégâts de 1d15 contre les monstres. De plus, vos attaques ont 10% de chances de brûler la cible lui infligeant 10 dégâts supplémentaires par tour pendant 3 tours",
 			"classe": "Finesse/Sorcellerie"
 		},
 		{
@@ -1442,14 +1442,14 @@
 			"categorie": "arc",
 			"nom": "Arc de l'île d'Afgard",
 			"desc": "Un arc fabriqué par les Elfes d'Afgard dans un bois spécial",
-			"effet": "Précision elfique : Vous n'avez à présent que 15% de chance de rater votre tir. De plus, jetez 1d5 de dégâts bonus si vous touchez avec cette arc",
+			"effet": "Précision elfique : Vous n'avez à présent que 5% de chance de rater votre tir. De plus, jetez 1d10 de dégâts bonus si vous effectuez un coup critique avec cette arc",
 			"classe": "Finesse"
 		},
 		{
 			"categorie": "arc",
 			"nom": "Arc en argent de Shurhïm",
 			"desc": "L'argent de cette arme a été extrait dans les mines du Désert de Shurhïm, en Hadren",
-			"effet": "Argent de Shurhïm : Bonus de dégâts de 1d15 contre les monstres. De plus, vos attaques ont 10% de chances de brûler la cible lui infligeant 5 dégâts supplémentaires par tour pendant 3 tours",
+			"effet": "Argent de Shurhïm : Bonus de dégâts de 1d15 contre les monstres. De plus, vos attaques ont 10% de chances de brûler la cible lui infligeant 10 dégâts supplémentaires par tour pendant 3 tours",
 			"classe": "Finesse"
 		},
 		{
@@ -1463,14 +1463,14 @@
 			"categorie": "grimoire",
 			"nom": "Grimoire runique d'Arkhäne",
 			"desc": "Un grimoire tiré des bibliothèques d'Arkhäne",
-			"effet": "Sorts runique : Une attaque avec cette arme pose une rune sur la cible. Avant le prochain tour de la cible, si la celle-ci subie des dégâts, la rune explose infligeant 1d15 + 10 dégâts. Sinon la rune disparait",
+			"effet": "Sorts runique : Une attaque avec cette arme pose une rune sur la cible. Avant le prochain tour de la cible, si la celle-ci subie des dégâts de n'importe quelle source, la rune explose infligeant 1d15 + 10 dégâts. Sinon la rune disparait",
 			"classe": "Sorcellerie"
 		},
 		{
 			"categorie": "grimoire",
 			"nom": "Grimoire des Escadrons d'Argent",
 			"desc": "Un grimoire utilisé par les Mages chasseurs de monstres des Escadrons d'Argent",
-			"effet": "Sorts anti-monstres : Bonus de dégâts de 1d15 contre les monstres. De plus, si la cible est un nécrophage, ajoutez 1d15 de dégâts bonus",
+			"effet": "Fléau du nécrophage : Bonus de dégâts de 1d15 contre les monstres. De plus, si la cible est un nécrophage, ajoutez 1d15 de dégâts bonus",
 			"classe": "Sorcellerie"
 		},
 		{
@@ -1491,7 +1491,7 @@
 			"categorie": "bâton",
 			"nom": "Bâton en argent de Shurhïm",
 			"desc": "L'argent de cette arme a été extrait dans les mines du Désert de Shurhïm, en Hadren",
-			"effet": "Argent de Shurhïm : Bonus de dégâts de 1d15 contre les monstres. De plus, vos attaques ont 10% de chances de brûler la cible lui infligeant 5 dégâts supplémentaires par tour pendant 3 tours",
+			"effet": "Argent de Shurhïm : Bonus de dégâts de 1d15 contre les monstres. De plus, vos attaques ont 10% de chances de brûler la cible lui infligeant 10 dégâts supplémentaires par tour pendant 3 tours",
 			"classe": "Puissance/Sorcellerie"
 		},
 		{
@@ -1512,7 +1512,7 @@
 			"categorie": "chakram",
 			"nom": "Chakram en argent de Shurhïm",
 			"desc": "L'argent de cette arme a été extrait dans les mines du Désert de Shurhïm, en Hadren",
-			"effet": "Argent de Shurhïm : Bonus de dégâts de 1d15 contre les monstres. De plus, vos attaques ont 10% de chances de brûler la cible lui infligeant 5 dégâts supplémentaires par tour pendant 3 tours",
+			"effet": "Argent de Shurhïm : Bonus de dégâts de 1d15 contre les monstres. De plus, vos attaques ont 10% de chances de brûler la cible lui infligeant 10 dégâts supplémentaires par tour pendant 3 tours",
 			"classe": "Sorcellerie/Finesse"
 		},
 		{
@@ -1526,7 +1526,7 @@
 			"categorie": "épée",
 			"nom": "Lame d'éther au crystal de corindon rouge",
 			"desc": "L'éther de cette lame stable et puissante est généré par un crystal de corindon rouge",
-			"effet": "Corindon rouge : Si la lame de cette arme entre en contact avec une lame en fer, cette dernière à 75% de chance d'être coupé en deux. De plus, chaque coup porté avec cette arme brule la cible, infligeant 1d15 de dégâts bonus. Saignement impossible. Peut cautériser les plaies",
+			"effet": "Corindon rouge : Si la lame de cette arme entre en contact avec une lame en fer, cette dernière à 50% de chance d'être coupé en deux. De plus, chaque coup porté avec cette arme brule la cible, infligeant 1d10 de dégâts bonus. Saignement impossible. Peut cautériser les plaies",
 			"classe": "Finesse/Sorcellerie"
 		},
 		{
@@ -1540,7 +1540,7 @@
 			"categorie": "épée",
 			"nom": "Lame d'éther au crystal de corindon bleu",
 			"desc": "L'éther de cette lame fine et vive est généré par un crystal de corindon bleu",
-			"effet": "Corindon bleu : Si la lame de cette arme entre en contact avec une lame en fer, cette dernière à 75% de chance d'être gelé et de se briser. De plus, chaque coup porté avec cette arme cause une gelure la cible, infligeant 1d15 de dégâts bonus.",
+			"effet": "Corindon bleu : Si la lame de cette arme entre en contact avec une lame en fer, cette dernière à 50% de chance d'être gelé et de se briser. De plus, chaque coup porté avec cette arme cause une gelure la cible, infligeant 1d15 de dégâts bonus.",
 			"classe": "Finesse/Sorcellerie"
 		},
 		{
@@ -1568,14 +1568,14 @@
 			"categorie": "épée",
 			"nom": "Lame Elfique en fluide-acier",
 			"desc": "Une lame elfique forgée en fluide-acier",
-			"effet": "Fluide-acier : Votre taux de coups critiques est augmentée de 15% avec cette arme. De plus, vos coups critiques inflige 1d30 dégâts supplémentaire",
+			"effet": "Fluide-acier : Votre taux de coups critiques est augmentée de 15% avec cette arme. De plus, vos coups critiques inflige 1d15 dégâts supplémentaire",
 			"classe": "Finesse/Puissance"
 		},
 		{
 			"categorie": "épée",
 			"nom": "Lame Elfique en argent de Shurhïm",
 			"desc": "L'argent de cette arme a été extrait dans les mines du Désert de Shurhïm, en Hadren",
-			"effet": "Argent de Shurhïm : Bonus de dégâts de 1d15 contre les monstres. De plus, vos attaques ont 10% de chances de brûler la cible lui infligeant 5 dégâts supplémentaires par tour pendant 3 tours",
+			"effet": "Argent de Shurhïm : Bonus de dégâts de 1d15 contre les monstres. De plus, vos attaques ont 10% de chances de brûler la cible lui infligeant 10 dégâts supplémentaires par tour pendant 3 tours",
 			"classe": "Finesse/Puissance"
 		},
 		{
@@ -1589,21 +1589,21 @@
 			"categorie": "faux",
 			"nom": "Faux en vif-acier réceptacle d'âme",
 			"desc": "Une faux forgée en vif-acier capable d'absorbée des âmes mineures",
-			"effet": "Absorbtion d'âmes mineures : Pour chaque ennemi tué avec cette arme (humain taille maximal), augmentez les dégâts de cette arme de 1d5. Cet effet peut se cumuler jusqu'a 5 fois et est permanent",
+			"effet": "Absorbtion d'âmes mineures : Pour chaque ennemi tué avec cette arme (humain taille maximal), augmentez les dégâts de cette arme de 1d5. Cet effet peut se cumuler jusqu'a 3 fois et est permanent",
 			"classe": "Finesse/Sorcellerie"
 		},
 		{
 			"categorie": "faux",
 			"nom": "Faux en argent de Shurhïm",
 			"desc": "L'argent de cette arme a été extrait dans les mines du Désert de Shurhïm, en Hadren",
-			"effet": "Argent de Shurhïm : Bonus de dégâts de 1d15 contre les monstres. De plus, vos attaques ont 10% de chances de brûler la cible lui infligeant 5 dégâts supplémentaires par tour pendant 3 tours",
+			"effet": "Argent de Shurhïm : Bonus de dégâts de 1d15 contre les monstres. De plus, vos attaques ont 10% de chances de brûler la cible lui infligeant 10 dégâts supplémentaires par tour pendant 3 tours",
 			"classe": "Finesse/Sorcellerie"
 		},
 		{
 			"categorie": "faux",
 			"nom": "Faux vampirique en vif-acier",
 			"desc": "Une faux vampirique en vif-acier",
-			"effet": "Vampirisme : A chaque coup portée avec cette arme, recever 25% des dégâts infligé en soin. Si vous tuez un ennemi, recevez 50% des dégâts infligés en soin.",
+			"effet": "Vampirisme : A chaque coup portée avec cette arme, recevez 1d des dégâts infligé en soin. Si vous tuez un ennemi, recevez 2d des dégâts infligés en soin.",
 			"classe": "Finesse/Sorcellerie"
 		},
 		{
@@ -1617,126 +1617,126 @@
 			"categorie": "griffes",
 			"nom": "Griffes en argent de Shurhïm",
 			"desc": "L'argent de cette arme a été extrait dans les mines du Désert de Shurhïm, en Hadren",
-			"effet": "Argent de Shurhïm : Bonus de dégâts de 1d15 contre les monstres. De plus, vos attaques ont 10% de chances de brûler la cible lui infligeant 5 dégâts supplémentaires par tour pendant 3 tours",
+			"effet": "Argent de Shurhïm : Bonus de dégâts de 1d15 contre les monstres. De plus, vos attaques ont 10% de chances de brûler la cible lui infligeant 10 dégâts supplémentaires par tour pendant 3 tours",
 			"classe": "Finesse/Puissance"
 		},
 		{
 			"categorie": "griffes",
 			"nom": "Griffes en fluide-acier",
 			"desc": "Des griffes forgée en fluide-acier elfique",
-			"effet": "Fluide-acier : Votre taux de coups critiques est augmentée de 15% avec cette arme. De plus, vos coups critiques inflige 1d30 dégâts supplémentaire",
+			"effet": "Fluide-acier : Votre taux de coups critiques est augmentée de 15% avec cette arme. De plus, vos coups critiques inflige 1d15 dégâts supplémentaire",
 			"classe": "Finesse/Puissance"
 		},
 		{
 			"categorie": "none",
 			"nom": "Capuche en soie",
 			"desc": "Une capuche en soie",
-			"effet": "Ensemble 'Soie' : Augmente les dégâts de vos sorts de 25 si vous avez au moins 3 pièces de l'ensemble",
+			"effet": "Ensemble 'Soie' : Augmente les dégâts de vos sorts de 25 ",
 			"classe": "Sorcellerie/Finesse"
 		},
 		{
 			"categorie": "none",
 			"nom": "Tunique en soie",
 			"desc": "Une tunique en soie",
-			"effet": "Ensemble 'Soie' : Augmente les dégâts de vos sorts de 25 si vous avez au moins 3 pièces de l'ensemble",
+			"effet": "Ensemble 'Soie' : Augmente les dégâts de vos sorts de 25 ",
 			"classe": "Sorcellerie/Finesse"
 		},
 		{
 			"categorie": "none",
 			"nom": "Pantalon en soie",
 			"desc": "Un pantalon en soie",
-			"effet": "Ensemble 'Soie' : Augmente les dégâts de vos sorts de 25 si vous avez au moins 3 pièces de l'ensemble",
+			"effet": "Ensemble 'Soie' : Augmente les dégâts de vos sorts de 25 ",
 			"classe": "Sorcellerie/Finesse"
 		},
 		{
 			"categorie": "none",
 			"nom": "Chausses en soie",
 			"desc": "Des chausses en soie",
-			"effet": "Ensemble 'Soie' : Augmente les dégâts de vos sorts de 25 si vous avez au moins 3 pièces de l'ensemble",
+			"effet": "Ensemble 'Soie' : Augmente les dégâts de vos sorts de 25 ",
 			"classe": "Sorcellerie/Finesse"
 		},
 		{
 			"categorie": "none",
 			"nom": "Capuche en tissu Wellanien",
 			"desc": "Une capuche en tissu Wellanien",
-			"effet": "Ensemble 'Tissu Wellanien' : Augmente votre régénération de mana de 10/tour et votre puissance des sorts de 10 si vous avez au moins 3 pièces de l'ensemble",
+			"effet": "Ensemble 'Tissu Wellanien' : Augmente votre régénération de mana de 10/tour et votre puissance des sorts de 10 ",
 			"classe": "Sorcellerie/Finesse"
 		},
 		{
 			"categorie": "none",
 			"nom": "Tunique en tissu Wellanien",
 			"desc": "Une Tunique en tissu Wellanien",
-			"effet": "Ensemble 'Tissu Wellanien' : Augmente votre régénération de mana de 10/tour et votre puissance des sorts de 10 si vous avez au moins 3 pièces de l'ensemble",
+			"effet": "Ensemble 'Tissu Wellanien' : Augmente votre régénération de mana de 10/tour et votre puissance des sorts de 10 ",
 			"classe": "Sorcellerie/Finesse"
 		},
 		{
 			"categorie": "none",
 			"nom": "Pantalon en tissu Wellanien",
 			"desc": "Un Pantalon en tissu Wellanien",
-			"effet": "Ensemble 'Tissu Wellanien' :  Augmente votre régénération de mana de 10/tour et votre puissance des sorts de 10 si vous avez au moins 3 pièces de l'ensemble",
+			"effet": "Ensemble 'Tissu Wellanien' :  Augmente votre régénération de mana de 10/tour et votre puissance des sorts de 10 ",
 			"classe": "Sorcellerie/Finesse"
 		},
 		{
 			"categorie": "none",
 			"nom": "Chausses en tissu Wellanien",
 			"desc": "Des Chausses en tissu Wellanien",
-			"effet": "Ensemble 'Tissu Wellanien' :  Augmente votre régénération de mana de 10/tour et votre puissance des sorts de 10 si vous avez au moins 3 pièces de l'ensemble",
+			"effet": "Ensemble 'Tissu Wellanien' :  Augmente votre régénération de mana de 10/tour et votre puissance des sorts de 10 ",
 			"classe": "Sorcellerie/Finesse"
 		},
 		{
 			"categorie": "none",
 			"nom": "Capuche fantomatique",
 			"desc": "Une capuche en tissu fantomatique",
-			"effet": "Ensemble 'Tissu fantomatique' : Si vous avez au moins 3 pièces de l'ensemble, vous obtenez la capacitée de devenir invisible. Si vous faites un mouvement brusque ou attaquez, vous redevenez visible",
+			"effet": "Ensemble 'Tissu fantomatique' : , vous obtenez la capacitée de devenir invisible. Si vous faites un mouvement brusque ou attaquez, vous redevenez visible",
 			"classe": "Sorcellerie/Finesse"
 		},
 		{
 			"categorie": "none",
 			"nom": "Tunique fantomatique",
 			"desc": "Une tunique en tissu fantomatique",
-			"effet": "Ensemble 'Tissu fantomatique' : Si vous avez au moins 3 pièces de l'ensemble, vous obtenez la capacitée de devenir invisible. Si vous faites un mouvement brusque ou attaquez, vous redevenez visible",
+			"effet": "Ensemble 'Tissu fantomatique' : , vous obtenez la capacitée de devenir invisible. Si vous faites un mouvement brusque ou attaquez, vous redevenez visible",
 			"classe": "Sorcellerie/Finesse"
 		},
 		{
 			"categorie": "none",
 			"nom": "Pantalon fantomatique",
 			"desc": "Un pantalon en tissu fantomatique",
-			"effet": "Ensemble 'Tissu fantomatique' : Si vous avez au moins 3 pièces de l'ensemble, vous obtenez la capacitée de devenir invisible. Si vous faites un mouvement brusque ou attaquez, vous redevenez visible",
+			"effet": "Ensemble 'Tissu fantomatique' : , vous obtenez la capacitée de devenir invisible. Si vous faites un mouvement brusque ou attaquez, vous redevenez visible",
 			"classe": "Sorcellerie/Finesse"
 		},
 		{
 			"categorie": "none",
 			"nom": "Chausses fantomatique",
 			"desc": "Des chausses en tissu fantomatique",
-			"effet": "Ensemble 'Tissu fantomatique' : Si vous avez au moins 3 pièces de l'ensemble, vous obtenez la capacitée de devenir invisible (hors-combat uniquement). Si vous faites un mouvement brusque ou attaquez, vous redevenez visible",
+			"effet": "Ensemble 'Tissu fantomatique' : , vous obtenez la capacitée de devenir invisible (hors-combat uniquement). Si vous faites un mouvement brusque ou attaquez, vous redevenez visible",
 			"classe": "Sorcellerie/Finesse"
 		},
 		{
 			"categorie": "none",
 			"nom": "Chapeau en cuir vaporeux",
 			"desc": "Un Chapeau en cuir vaporeux",
-			"effet": "Ensemble 'Cuir vaporeux' : Si vous avez au moins 3 pièces de l'ensemble et si vous ratez à l'esquive d'une attaque de puissance raisonnable, vous avez 35% de chance de devenir impalpable et de ne subir aucun dégâts",
+			"effet": "Ensemble 'Cuir vaporeux' :  et si vous ratez à l'esquive d'une attaque de puissance raisonnable, vous avez 35% de chance de devenir impalpable et de ne subir aucun dégâts",
 			"classe": "Finesse/Sorcellerie"
 		},
 		{
 			"categorie": "none",
 			"nom": "Pourpoint en cuir vaporeux",
 			"desc": "Un Pourpoint en cuir vaporeux",
-			"effet": "Ensemble 'Cuir vaporeux' : Si vous avez au moins 3 pièces de l'ensemble et si vous ratez à l'esquive d'une attaque de puissance raisonnable, vous avez 35% de chance de devenir impalpable et de ne subir aucun dégâts",
+			"effet": "Ensemble 'Cuir vaporeux' :  et si vous ratez à l'esquive d'une attaque de puissance raisonnable, vous avez 35% de chance de devenir impalpable et de ne subir aucun dégâts",
 			"classe": "Finesse/Sorcellerie"
 		},
 		{
 			"categorie": "none",
 			"nom": "Pantalon en cuir vaporeux",
 			"desc": "Un Pantalon en cuir vaporeux",
-			"effet": "Ensemble 'Cuir vaporeux' : Si vous avez au moins 3 pièces de l'ensemble et si vous ratez à l'esquive d'une attaque de puissance raisonnable, vous avez 35% de chance de devenir impalpable et de ne subir aucun dégâts",
+			"effet": "Ensemble 'Cuir vaporeux' :  et si vous ratez à l'esquive d'une attaque de puissance raisonnable, vous avez 35% de chance de devenir impalpable et de ne subir aucun dégâts",
 			"classe": "Finesse/Sorcellerie"
 		},
 		{
 			"categorie": "none",
 			"nom": "Chaussures en cuir vaporeux",
 			"desc": "Des Chaussures en cuir vaporeux",
-			"effet": "Ensemble 'Cuir vaporeux' : Si vous avez au moins 3 pièces de l'ensemble et si vous ratez à l'esquive d'une attaque de puissance raisonnable, vous avez 35% de chance de devenir impalpable et de ne subir aucun dégâts",
+			"effet": "Ensemble 'Cuir vaporeux' :  et si vous ratez à l'esquive d'une attaque de puissance raisonnable, vous avez 35% de chance de devenir impalpable et de ne subir aucun dégâts",
 			"classe": "Finesse/Sorcellerie"
 		},
 		{
@@ -1974,21 +1974,21 @@
 			"categorie": "none",
 			"nom": "Parchemin de compétence : Instinct de tueur",
 			"desc": "Le lanceur est boosté par son instinct de tueur. Coût : 15 énergie",
-			"effet": "Augmente vos chances de coup critique de 6% pendant 2 tours et vous profitez de dégâts bonus lors d'attaques non-furtive de 2d10 et regagnez 1d5 énergies par ennemis tués",
+			"effet": "Augmente vos chances de coup critique de 10% pendant 2 tours et vous profitez de dégâts bonus lors d'attaques non-furtive de 2d10 et regagnez 1d5 pv par ennemis tués",
 			"classe": "Finesse"
 		},
 		{
 			"categorie": "none",
 			"nom": "Parchemin de compétence : Tourbillon de lames",
 			"desc": "Vous effectuez une attaque tourbillonnante meurtrière. Coût : 40 énergie. Requis : Lames Elfiques ou dague + instinct de tueur",
-			"effet": "Activer cette compétence pour effectuez une attaque tourbillonante infligeant les dégâts de votre arme plus 3d10 de dégâts bonus à un maximum de 5 ennemis proches de vous",
+			"effet": "Activer cette compétence pour effectuez une attaque tourbillonante infligeant les dégâts de votre arme plus 1d10 de dégâts bonus à un maximum de 5 ennemis proches de vous",
 			"classe": "Finesse"
 		},
 		{
 			"categorie": "none",
 			"nom": "Parchemin de compétence : Bouclier divin",
 			"desc": "Protège le guerrier d'un bouclier divin. Coût : 35 endurance",
-			"effet": "La moitié de tous les dégâts que vos revecez est convertie en soin pour 2 tours",
+			"effet": "La moitié de tous les dégâts que vos recevez est convertie en soin pour 2 tours",
 			"classe": "Puissance"
 		},
 		{
@@ -2002,14 +2002,14 @@
 			"categorie": "none",
 			"nom": "Parchemin de compétence : Armure d'épines",
 			"desc": "Recouvre votre armure d'épines qui infligent des dégâts aux ennemis qui vous frappent. Coût : 10 énergies",
-			"effet": "Inflige 10% des dégâts physiques reçus sous forme de dégâts d'épines. Les dégâts renvoyés ne peuvent dépasser 30",
+			"effet": "Inflige 1d des dégâts physiques reçus sous forme de dégâts d'épines. Les dégâts renvoyés ne peuvent dépasser 30",
 			"classe": "Puissance"
 		},
 		{
 			"categorie": "none",
 			"nom": "Parchemin de compétence : Rayon de givre",
 			"desc": "Vous canalisez un rayon de givre pouvant geler les ennemis. Coût : 10 mana/tour",
-			"effet": "Inflige 2d10 dégâts par tour avec 40% de chance de geler l'ennemi. Si l'ennemi est geler, les dégâts passent à 3d10 par tour. Vous ne pouvez pas bougez pendant que vous canalisez le sort",
+			"effet": "Inflige 2d10 dégâts par tour avec 40% de chance de geler l'ennemi. Si l'ennemi est gelé, les dégâts passent à 3d10 par tour. Vous ne pouvez pas bougez pendant que vous canalisez le sort",
 			"classe": "Sorcellerie"
 		},
 		{
@@ -2023,7 +2023,7 @@
 			"categorie": "none",
 			"nom": "Parchemin de compétence : Images miroirs",
 			"desc": "Vous créez une copie de vous-même qui lance les même sorts mais n'inflige pas de dégâts. Coût : 15 mana",
-			"effet": "L'image miroir reste 3 tours et lance les même compétences que vous. Elle possède les mêmes caractéristiques mais n'inflige pâs de dégâts. Elle peut en revanche appliquer des effets d'état",
+			"effet": "L'image miroir reste 3 tours et lance les même compétences que vous. Elle possède les mêmes caractéristiques mais n'inflige pas de dégâts. Elle peut en revanche appliquer des effets d'état",
 			"classe": "Sorcellerie"
 		}
 	],
@@ -2032,14 +2032,14 @@
 			"categorie": "none",
 			"nom": "Lame de prétorien Wellanien",
 			"desc": "Une épée de qualitée exceptionnelle, réservée aux gardes d'élites de l'Empire Wellanien, les prétoriens",
-			"effet": "Arme de prétorien : Augmente vos chances de coups critique de 15%. De plus, vos attaques ignore 20% de l'armure de l'ennemi",
+			"effet": "Arme de prétorien : Augmente vos chances de coups critique de 15%. De plus, vos attaques ignore 1d20 de l'armure de l'ennemi",
 			"classe": "Puissance/Finesse"
 		},
 		{
 			"categorie": "none",
 			"nom": "Lame dentelée des Escadrons d'Argent",
 			"desc": "Une lame en argent des chasseurs de monstres des Escadrons d'Argent",
-			"effet": "Arme des Escadrons d'Argents : Bonus de dégâts de 3d20 contre les monstres. De plus, vos attaques ont 5% de chances d'infecter la cible avec du fluide-argent lui infligeant 5d10 dégâts supplémentaires ce tour-ci",
+			"effet": "Arme des Escadrons d'Argents : Bonus de dégâts de 3d10 contre les monstres. De plus, vos attaques ont 5% de chances d'infecter la cible avec du fluide-argent lui infligeant 2d10 dégâts supplémentaires ce tour-ci",
 			"classe": "Puissance/Finesse"
 		},
 		{
@@ -2060,14 +2060,14 @@
 			"categorie": "none",
 			"nom": "Espadon dentelée des Escadrons d'Argent",
 			"desc": "Une lame en argent des chasseurs de monstres des Escadrons d'Argent",
-			"effet": "Arme des Escadrons d'Argents : Bonus de dégâts de 3d20 contre les monstres. De plus, vos attaques ont 5% de chances d'infecter la cible avec du fluide-argent lui infligeant 5d10 dégâts supplémentaires ce tour-ci",
+			"effet": "Arme des Escadrons d'Argents : Bonus de dégâts de 3d10 contre les monstres. De plus, vos attaques ont 5% de chances d'infecter la cible avec du fluide-argent lui infligeant 2d10 dégâts supplémentaires ce tour-ci",
 			"classe": "Puissance"
 		},
 		{
 			"categorie": "none",
 			"nom": "Espadon colossal en corindon noir",
 			"desc": "Un espadon immense forgé en corindon noir",
-			"effet": "Corindon noir : Votre attaques ignores 80% de l'armure des ennemis en armure de tissu ou cuir. Vos attaques ingores 15% des armures de mailles et de plates",
+			"effet": "Corindon noir : Votre attaques ignores 1d de l'armure totale des ennemis en armure de tissu ou cuir ou naturelle (légère/moyenne). Vos attaques ingores 1d15 des armures de mailles et de plates (ou lourde)",
 			"classe": "Puissance"
 		},
 		{
@@ -2081,7 +2081,7 @@
 			"categorie": "none",
 			"nom": "Dague dentelée des Escadrons d'Argent",
 			"desc": "Une lame en argent des chasseurs de monstres des Escadrons d'Argent",
-			"effet": "Arme des Escadrons d'Argents : Bonus de dégâts de 3d20 contre les monstres. De plus, vos attaques ont 5% de chances d'infecter la cible avec du fluide-argent lui infligeant 5d10 dégâts supplémentaires ce tour-ci",
+			"effet": "Arme des Escadrons d'Argents : Bonus de dégâts de 3d10 contre les monstres. De plus, vos attaques ont 5% de chances d'infecter la cible avec du fluide-argent lui infligeant 2d10 dégâts supplémentaires ce tour-ci",
 			"classe": "Finesse/Sorcellerie"
 		},
 		{
@@ -2102,7 +2102,7 @@
 			"categorie": "none",
 			"nom": "Arc de chasse recourbé des Escadrons d'Argent",
 			"desc": "Un arc en argent des chasseurs de monstres des Escadrons d'Argent",
-			"effet": "Arme des Escadrons d'Argents : Bonus de dégâts de 3d20 contre les monstres. De plus, vos attaques ont 5% de chances d'infecter la cible avec du fluide-argent lui infligeant 5d10 dégâts supplémentaires ce tour-ci",
+			"effet": "Arme des Escadrons d'Argents : Bonus de dégâts de 3d10 contre les monstres. De plus, vos attaques ont 5% de chances d'infecter la cible avec du fluide-argent lui infligeant 2d10 dégâts supplémentaires ce tour-ci",
 			"classe": "Finesse"
 		},
 		{
@@ -2123,7 +2123,7 @@
 			"categorie": "none",
 			"nom": "Grimoire de l'Aube",
 			"desc": "Un grimoire contenant des inscriptions de sorts de lumières",
-			"effet": "Sorts lumineux : Bonus de dégâts de 1d30 contre les monstres. Si la luminosité ambiante est élevée, vos dégâts sont augmentés de 1d10 et votre mana se régénère de 1d5 à chaque fois que vous infligez des dégâts",
+			"effet": "Sorts lumineux : Bonus de dégâts de 1d30 contre les monstres. Si la luminosité ambiante est élevée, vos dégâts sont augmentés de 1d15 et votre mana se régénère de 1d10 à chaque fois que vous infligez des dégâts",
 			"classe": "Sorcellerie"
 		},
 		{
@@ -2144,7 +2144,7 @@
 			"categorie": "none",
 			"nom": "Bâton de traque des Escadrons d'Argent",
 			"desc": "Un bâton en argent des chasseurs de monstres des Escadrons d'Argent",
-			"effet": "Arme des Escadrons d'Argents : Bonus de dégâts de 3d20 contre les monstres. De plus, vos attaques ont 5% de chances d'infecter la cible avec du fluide-argent lui infligeant 5d10 dégâts supplémentaires ce tour-ci",
+			"effet": "Arme des Escadrons d'Argents : Bonus de dégâts de 3d10 contre les monstres. De plus, vos attaques ont 5% de chances d'infecter la cible avec du fluide-argent lui infligeant 2d10 dégâts supplémentaires ce tour-ci",
 			"classe": "Puissance/Sorcellerie"
 		},
 		{
@@ -2165,7 +2165,7 @@
 			"categorie": "none",
 			"nom": "Chakram des Escadrons d'Argent",
 			"desc": "Un chakram en argent des chasseurs de monstres des Escadrons d'Argent",
-			"effet": "Arme des Escadrons d'Argents : Bonus de dégâts de 3d20 contre les monstres. De plus, vos attaques ont 5% de chances d'infecter la cible avec du fluide-argent lui infligeant 5d10 dégâts supplémentaires ce tour-ci",
+			"effet": "Arme des Escadrons d'Argents : Bonus de dégâts de 3d10 contre les monstres. De plus, vos attaques ont 5% de chances d'infecter la cible avec du fluide-argent lui infligeant 2d10 dégâts supplémentaires ce tour-ci",
 			"classe": "Sorcellerie/Finesse"
 		},
 		{
@@ -2207,7 +2207,7 @@
 			"categorie": "none",
 			"nom": "Chaîne des Escadrons d'Argent",
 			"desc": "Une chaine en argent des chasseurs de monstres des Escadrons d'Argent",
-			"effet": "Arme des Escadrons d'Argents : Bonus de dégâts de 3d20 contre les monstres. De plus, vos attaques ont 5% de chances d'infecter la cible avec du fluide-argent lui infligeant 5d10 dégâts supplémentaires ce tour-ci",
+			"effet": "Arme des Escadrons d'Argents : Bonus de dégâts de 3d10 contre les monstres. De plus, vos attaques ont 5% de chances d'infecter la cible avec du fluide-argent lui infligeant 2d10 dégâts supplémentaires ce tour-ci",
 			"classe": "Puissance/Finesse/Sorcellerie"
 		},
 		{
@@ -2228,7 +2228,7 @@
 			"categorie": "none",
 			"nom": "Lame Elfique des Escadrons d'Argent",
 			"desc": "Une lame elfique en argent des chasseurs de monstres des Escadrons d'Argent",
-			"effet": "Arme des Escadrons d'Argents : Bonus de dégâts de 3d20 contre les monstres. De plus, vos attaques ont 5% de chances d'infecter la cible avec du fluide-argent lui infligeant 5d10 dégâts supplémentaires ce tour-ci",
+			"effet": "Arme des Escadrons d'Argents : Bonus de dégâts de 3d10 contre les monstres. De plus, vos attaques ont 5% de chances d'infecter la cible avec du fluide-argent lui infligeant 2d10 dégâts supplémentaires ce tour-ci",
 			"classe": "Finesse/Puissance"
 		},
 		{
@@ -2249,7 +2249,7 @@
 			"categorie": "none",
 			"nom": "Faux de cruauté des Escadrons d'Argent",
 			"desc": "Une faux en argent des chasseurs de monstres des Escadrons d'Argent",
-			"effet": "Arme des Escadrons d'Argents : Bonus de dégâts de 3d20 contre les monstres. De plus, vos attaques ont 5% de chances d'infecter la cible avec du fluide-argent lui infligeant 5d10 dégâts supplémentaires ce tour-ci",
+			"effet": "Arme des Escadrons d'Argents : Bonus de dégâts de 3d10 contre les monstres. De plus, vos attaques ont 5% de chances d'infecter la cible avec du fluide-argent lui infligeant 2d10 dégâts supplémentaires ce tour-ci",
 			"classe": "Finesse/Sorcellerie"
 		},
 		{
@@ -2270,7 +2270,7 @@
 			"categorie": "none",
 			"nom": "Griffes acérées des Escadrons d'Argent",
 			"desc": "Des griffes en argent des chasseurs de monstres des Escadrons d'Argent",
-			"effet": "Arme des Escadrons d'Argents : Bonus de dégâts de 3d20 contre les monstres. De plus, vos attaques ont 5% de chances d'infecter la cible avec du fluide-argent lui infligeant 5d10 dégâts supplémentaires ce tour-ci",
+			"effet": "Arme des Escadrons d'Argents : Bonus de dégâts de 3d10 contre les monstres. De plus, vos attaques ont 5% de chances d'infecter la cible avec du fluide-argent lui infligeant 2d10 dégâts supplémentaires ce tour-ci",
 			"classe": "Finesse/Puissance"
 		},
 		{
@@ -2284,91 +2284,91 @@
 			"categorie": "none",
 			"nom": "Capuchon de Grenda la Folle",
 			"desc": "Le capuchon de la sorcière Grenda. Une senteur désagréable des marécages s'en échappe",
-			"effet": "Ensemble 'Grenda la Folle' : Si vous êtes dans un marécage, votre puissance des sorts est augmentée de 50 et vos pv max de 25 si vous avez au moins 2 pièces de l'ensemble",
+			"effet": "Ensemble 'Grenda la Folle' : Votre puissance des sorts est augmentée de 25 et vos pv max de 25 ",
 			"classe": "Sorcellerie/Finesse"
 		},
 		{
 			"categorie": "none",
 			"nom": "Robe de Grenda la Folle",
 			"desc": "La tunique de la sorcière Grenda. Une senteur désagréable des marécages s'en échappe",
-			"effet": "Ensemble 'Grenda la Folle' : Si vous êtes dans un marécage, votre puissance des sorts est augmentée de 50 et vos pv max de 25 si vous avez au moins 2 pièces de l'ensemble",
+			"effet": "Ensemble 'Grenda la Folle' : Votre puissance des sorts est augmentée de 25 et vos pv max de 25 ",
 			"classe": "Sorcellerie/Finesse"
 		},
 		{
 			"categorie": "none",
 			"nom": "Culotte de Grenda la Folle",
 			"desc": "La culotte de la sorcière Grenda. Une senteur désagréable des marécages s'en échappe. C'est particulirement immonde à porter mais s'il faut le faire...",
-			"effet": "Ensemble 'Grenda la Folle' : Si vous êtes dans un marécage, votre puissance des sorts est augmentée de 50 et vos pv max de 25 si vous avez au moins 2 pièces de l'ensemble",
+			"effet": "Ensemble 'Grenda la Folle' : Votre puissance des sorts est augmentée de 25 et vos pv max de 25 ",
 			"classe": "Sorcellerie/Finesse"
 		},
 		{
 			"categorie": "none",
 			"nom": "Chausses de Grenda la Folle",
 			"desc": "Les chausses de la sorcière Grenda. Une senteur désagréable des marécages s'en échappe",
-			"effet": "Ensemble 'Grenda la Folle' : Si vous êtes dans un marécage, votre puissance des sorts est augmentée de 50 et vos pv max de 25 si vous avez au moins 2 pièces de l'ensemble",
+			"effet": "Ensemble 'Grenda la Folle' : Votre puissance des sorts est augmentée de 25 et vos pv max de 25 ",
 			"classe": "Sorcellerie/Finesse"
 		},
 		{
 			"categorie": "none",
 			"nom": "Capuchon de contresort en toile d'éther",
 			"desc": "Une capuche capable de repousser les sorts intermédiaires",
-			"effet": "Ensemble 'Contresort' : Si vous avez au moins 2 pièces d'ensemble, les dégâts des sorts que vous recevez sont réduits de 1d (votre armure total). De plus, jetez 1d10. Si le résultat est 5, vous renvoyez le sort (s'il s'agit d'un projectile), si le résultat est 8, vous réduisez les dégâts de 1d10 supplémentaire, si le résultat est 3, vous absorbez le sort et gagnez 1d15 pv",
+			"effet": "Ensemble 'Contresort' : Les dégâts des sorts que vous recevez sont réduits de 1d (votre armure total). De plus, jetez 1d10. Si le résultat est 5, vous renvoyez le sort (s'il s'agit d'un projectile), si le résultat est 8, vous réduisez les dégâts de 1d10 supplémentaire, si le résultat est 3, vous absorbez le sort et gagnez 1d15 pv",
 			"classe": "Sorcellerie/Finesse"
 		},
 		{
 			"categorie": "none",
 			"nom": "Tunique de contresort en toile d'éther",
 			"desc": "Une Tunique capable de repousser les sorts intermédiaires",
-			"effet": "Ensemble 'Contresort' : Si vous avez au moins 2 pièces d'ensemble, les dégâts des sorts que vous recevez sont réduits de 1d (votre armure total). De plus, jetez 1d10. Si le résultat est 5, vous renvoyez le sort (s'il s'agit d'un projectile), si le résultat est 8, vous réduisez les dégâts de 1d10 supplémentaire, si le résultat est 3, vous absorbez le sort et gagnez 1d15 pv",
+			"effet": "Ensemble 'Contresort' : Les dégâts des sorts que vous recevez sont réduits de 1d (votre armure total). De plus, jetez 1d10. Si le résultat est 5, vous renvoyez le sort (s'il s'agit d'un projectile), si le résultat est 8, vous réduisez les dégâts de 1d10 supplémentaire, si le résultat est 3, vous absorbez le sort et gagnez 1d15 pv",
 			"classe": "Sorcellerie/Finesse"
 		},
 		{
 			"categorie": "none",
 			"nom": "Pantalon de contresort en toile d'éther",
 			"desc": "Un Pantalon capable de repousser les sorts intermédiaires",
-			"effet": "Ensemble 'Contresort' : Si vous avez au moins 2 pièces d'ensemble, les dégâts des sorts que vous recevez sont réduits de 1d (votre armure total). De plus, jetez 1d10. Si le résultat est 5, vous renvoyez le sort (s'il s'agit d'un projectile), si le résultat est 8, vous réduisez les dégâts de 1d10 supplémentaire, si le résultat est 3, vous absorbez le sort et gagnez 1d15 pv",
+			"effet": "Ensemble 'Contresort' : Les dégâts des sorts que vous recevez sont réduits de 1d (votre armure total). De plus, jetez 1d10. Si le résultat est 5, vous renvoyez le sort (s'il s'agit d'un projectile), si le résultat est 8, vous réduisez les dégâts de 1d10 supplémentaire, si le résultat est 3, vous absorbez le sort et gagnez 1d15 pv",
 			"classe": "Sorcellerie/Finesse"
 		},
 		{
 			"categorie": "none",
 			"nom": "Chausses de contresort en toile d'éther",
 			"desc": "Des Chausses capable de repousser les sorts intermédiaires",
-			"effet": "Ensemble 'Contresort' : Si vous avez au moins 2 pièces d'ensemble, les dégâts des sorts que vous recevez sont réduits de 1d (votre armure total). De plus, jetez 1d10. Si le résultat est 5, vous renvoyez le sort (s'il s'agit d'un projectile), si le résultat est 8, vous réduisez les dégâts de 1d10 supplémentaire, si le résultat est 3, vous absorbez le sort et gagnez 1d15 pv",
+			"effet": "Ensemble 'Contresort' : Les dégâts des sorts que vous recevez sont réduits de 1d (votre armure total). De plus, jetez 1d10. Si le résultat est 5, vous renvoyez le sort (s'il s'agit d'un projectile), si le résultat est 8, vous réduisez les dégâts de 1d10 supplémentaire, si le résultat est 3, vous absorbez le sort et gagnez 1d15 pv",
 			"classe": "Sorcellerie/Finesse"
 		},
 		{
 			"categorie": "none",
 			"nom": "Capuchon des Damnées",
 			"desc": "Un capuchon portée par les âmes damnées de la Forteresse de Vanguard",
-			"effet": "Ensemble 'Tissu damné' : Si vous avez au moins 2 pièces d'ensemble, vous pouvez vous transformer en morts-vivants pour 2 tours au prix de 1d35 pv. Dans cet état, vous ne pouvez plus être soigné mais vos sorts infligent 50% de dégâts supplémentaires. De plus, le signe d'Aard permet de geler les ennemis pour 1 tour. Si vous avez déjà l'amélioration du signe, les ennemis sont gelés un tour de plus",
+			"effet": "Ensemble 'Tissu damné' : Vous pouvez vous transformer en morts-vivants pour 2 tours au prix de 1d35 pv. Dans cet état, vous ne pouvez plus être soigné mais vos sorts infligent 50% de dégâts supplémentaires. De plus, le signe d'Aard permet de geler les ennemis pour 1 tour. Si vous avez déjà l'amélioration du signe, les ennemis sont gelés un tour de plus",
 			"classe": "Sorcellerie/Finesse"
 		},
 		{
 			"categorie": "none",
 			"nom": "Tunique des Damnées",
 			"desc": "Une tunique portée par les âmes damnées de la Forteresse de Vanguard",
-			"effet": "Ensemble 'Tissu damné' : Si vous avez au moins 2 pièces d'ensemble, vous pouvez vous transformer en morts-vivants pour 2 tours au prix de 1d35 pv. Dans cet état, vous ne pouvez plus être soigné mais vos sorts infligent 50% de dégâts supplémentaires. De plus, le signe d'Aard permet de geler les ennemis pour 1 tour. Si vous avez déjà l'amélioration du signe, les ennemis sont gelés un tour de plus",
+			"effet": "Ensemble 'Tissu damné' : Vous pouvez vous transformer en morts-vivants pour 2 tours au prix de 1d35 pv. Dans cet état, vous ne pouvez plus être soigné mais vos sorts infligent 50% de dégâts supplémentaires. De plus, le signe d'Aard permet de geler les ennemis pour 1 tour. Si vous avez déjà l'amélioration du signe, les ennemis sont gelés un tour de plus",
 			"classe": "Sorcellerie/Finesse"
 		},
 		{
 			"categorie": "none",
 			"nom": "Pantalon des Damnées",
 			"desc": "Un pantalon portée par les âmes damnées de la Forteresse de Vanguard",
-			"effet": "Ensemble 'Tissu damné' : Si vous avez au moins 2 pièces d'ensemble, vous pouvez vous transformer en morts-vivants pour 2 tours au prix de 1d35 pv. Dans cet état, vous ne pouvez plus être soigné mais vos sorts infligent 50% de dégâts supplémentaires. De plus, le signe d'Aard permet de geler les ennemis pour 1 tour. Si vous avez déjà l'amélioration du signe, les ennemis sont gelés un tour de plus",
+			"effet": "Ensemble 'Tissu damné' : Vous pouvez vous transformer en morts-vivants pour 2 tours au prix de 1d35 pv. Dans cet état, vous ne pouvez plus être soigné mais vos sorts infligent 50% de dégâts supplémentaires. De plus, le signe d'Aard permet de geler les ennemis pour 1 tour. Si vous avez déjà l'amélioration du signe, les ennemis sont gelés un tour de plus",
 			"classe": "Sorcellerie/Finesse"
 		},
 		{
 			"categorie": "none",
 			"nom": "Chausses des Damnées",
 			"desc": "Des chausses portée par les âmes damnées de la Forteresse de Vanguard",
-			"effet": "Ensemble 'Tissu damné' : Si vous avez au moins 2 pièces d'ensemble, vous pouvez vous transformer en morts-vivants pour 2 tours au prix de 1d35 pv. Dans cet état, vous ne pouvez plus être soigné mais vos sorts infligent 50% de dégâts supplémentaires. De plus, le signe d'Aard permet de geler les ennemis pour 1 tour. Si vous avez déjà l'amélioration du signe, les ennemis sont gelés un tour de plus",
+			"effet": "Ensemble 'Tissu damné' : Vous pouvez vous transformer en morts-vivants pour 2 tours au prix de 1d35 pv. Dans cet état, vous ne pouvez plus être soigné mais vos sorts infligent 50% de dégâts supplémentaires. De plus, le signe d'Aard permet de geler les ennemis pour 1 tour. Si vous avez déjà l'amélioration du signe, les ennemis sont gelés un tour de plus",
 			"classe": "Sorcellerie/Finesse"
 		},
 		{
 			"categorie": "none",
 			"nom": "Couvre-chef d'Arold Jacker",
 			"desc": "Un Chapeau en cuir vaporeux",
-			"effet": "Ensemble 'Arold Jacker' : Vous obtenez les objets de gauche et de droite de la loterie mais pas celui du milieu. Néanmoins, vous devrez en plus du prix de la loterie payer le prix de l'objet du centre. Si vous avez l'ensemble complet, vos jets de loterie coûtent 30% moins chers et vous pouvez améliorer le niveau de rareté de l'objet obtenu de 1 (jusqu'a rare maximum)",
+			"effet": "Ensemble 'Arold Jacker' : Vous obtenez les objets de gauche et de droite de la loterie mais pas celui du milieu. Néanmoins, vous devrez en plus du prix de la loterie payer le prix de l'objet du centre. Si vous avez l'ensemble complet, vos jets de loterie coûtent 30% moins chers et vous pouvez améliorer le niveau de rareté de l'objet obtenu de 1 (jusqu'a épique maximum)",
 			"classe": "Finesse/Sorcellerie"
 		},
 		{
@@ -2389,7 +2389,7 @@
 			"categorie": "none",
 			"nom": "Chaussures en cuir d'Arold Jacker",
 			"desc": "Des Chaussures en cuir vaporeux",
-			"effet": "Ensemble 'Arold Jacker' : Si vous terminez une mission complète avec au moins trois pièces de l'ensemble Arol Jacker, vos trois prochains jets de loterie seront gratuits. Si vous avez l'ensemble complet, vos jets de loterie coûtent 30% moins chers et vous pouvez améliorer le niveau de rareté de l'objet obtenu de 1 (jusqu'a rare maximum)",
+			"effet": "Ensemble 'Arold Jacker' : Si vous terminez une mission complète avec au moins trois pièces de l'ensemble Arold Jacker, vos trois prochains jets de loterie seront gratuits. Si vous avez l'ensemble complet, vos jets de loterie coûtent 30% moins chers et vous pouvez améliorer le niveau de rareté de l'objet obtenu de 1 (jusqu'a rare maximum)",
 			"classe": "Finesse/Sorcellerie"
 		},
 		{
@@ -2641,7 +2641,7 @@
 			"categorie": "none",
 			"nom": "Parchemin de compétence : Apposition des mains",
 			"desc": "Vous apposez vos mains bénies d'une lumière sacrée sur un allié afin de le guérir blessures les plus graves. Coût : X endurance",
-			"effet": "Choisissez le nombre de points d'endurence à conférer au sort. Ce montant sera le nombre de pv redonné à la cible. 30% de chance de redonner 1d(pv redonnés) en plus du soin de base ",
+			"effet": "Choisissez le nombre de points d'endurance à conférer au sort. Ce montant sera le nombre de pv redonné à la cible. 30% de chance de redonner 1d(pv redonnés) en plus du soin de base ",
 			"classe": "Puissance"
 		},
 		{
@@ -2654,7 +2654,7 @@
 		{
 			"categorie": "none",
 			"nom": "Parchemin de compétence : Bannière du Courage",
-			"desc": "Vous insufflez un puissant courage en tous vos alliés ce qui les rendra bien plus aptes aux combats. Coût : 10 énergies",
+			"desc": "Vous insufflez un puissant courage en tous vos alliés ce qui les rendra bien plus aptes aux combats. Coût : 30 endurance",
 			"effet": "Vous et tous vos alliés voient leur armure et pv augmentés de 50 pour 3 tours",
 			"classe": "Puissance"
 		},
@@ -2662,7 +2662,7 @@
 			"categorie": "none",
 			"nom": "Parchemin de compétence : Trait du Chaos",
 			"desc": "Vous déchaînez les puissances chaotiques de l'éther et lancez une explosion de chaos sur un ennemi. Coût : 50% mana",
-			"effet": "Votre trait du chaos inflige votre puissance des sorts + 1d(votre puissance des sorts) + 2d(taux de coups critiques). Le sort est forcément un coup critique. Si vous effectuez une réussite critique, ajoutez encore 1d(taux de coups critiques) au dégâts du sort",
+			"effet": "Votre trait du chaos inflige vos dégâts de l'arme + 2d(votre puissance des sorts bonus). Ce sort est forcément un coup critique, de ce fait, doublé les dégâts de ce sort",
 			"classe": "Sorcellerie"
 		},
 		{
@@ -2937,28 +2937,28 @@
 			"categorie": "none",
 			"nom": "Heaume immaculé à plumes de la Flamme Blanche",
 			"desc": "Depuis l'ascension au trône du Vélendil par L'Empereur Elrim'ä-ar, un seul ordre est resté le même, il s'agit de l'Ordre de la Flamme Blanche. Regroupant les plus grands chevaliers de tous horizons, ces derniers sont tenu au serment de servir l'ordre, la justice et l'honneur de la chevalerie. Depuis l'époque des Rois Navigateurs, il s'agit également de l'Ordre chargé de la protection du Roi du Vélendil. L'ordre ne prend en revanche pas pars aux intrigues politiques et reste totalement autonome vis-à-vis de la couronne",
-			"effet": "Ensemble-Honneur : Vous gagnez un bonus à l'armure de 20%. Ce bonus est triplé si vous avez au moins 2 pièces de l'ensemble",
+			"effet": "Ensemble-Honneur : Vous gagnez un bonus à l'armure de 20%. Ce bonus est triplé ",
 			"classe": "Aucun"
 		},
 		{
 			"categorie": "none",
 			"nom": "Plastron immaculé de la Flamme Blanche",
 			"desc": "Depuis l'ascension au trône du Vélendil par L'Empereur Elrim'ä-ar, un seul ordre est resté le même, il s'agit de l'Ordre de la Flamme Blanche. Regroupant les plus grands chevaliers de tous horizons, ces derniers sont tenu au serment de servir l'ordre, la justice et l'honneur de la chevalerie. Depuis l'époque des Rois Navigateurs, il s'agit également de l'Ordre chargé de la protection du Roi du Vélendil. L'ordre ne prend en revanche pas pars aux intrigues politiques et reste totalement autonome vis-à-vis de la couronne",
-			"effet": "Ensemble-Honneur : Vous gagnez un bonus à l'armure de 20%. Ce bonus est triplé si vous avez au moins 2 pièces de l'ensemble",
+			"effet": "Ensemble-Honneur : Vous gagnez un bonus à l'armure de 20%. Ce bonus est triplé ",
 			"classe": "Aucun"
 		},
 		{
 			"categorie": "none",
 			"nom": "Cnémide immaculés de la Flamme Blanche",
 			"desc": "Depuis l'ascension au trône du Vélendil par L'Empereur Elrim'ä-ar, un seul ordre est resté le même, il s'agit de l'Ordre de la Flamme Blanche. Regroupant les plus grands chevaliers de tous horizons, ces derniers sont tenu au serment de servir l'ordre, la justice et l'honneur de la chevalerie. Depuis l'époque des Rois Navigateurs, il s'agit également de l'Ordre chargé de la protection du Roi du Vélendil. L'ordre ne prend en revanche pas pars aux intrigues politiques et reste totalement autonome vis-à-vis de la couronne",
-			"effet": "Ensemble-Honneur : Vous gagnez un bonus à l'armure de 20%. Ce bonus est triplé si vous avez au moins 2 pièces de l'ensemble",
+			"effet": "Ensemble-Honneur : Vous gagnez un bonus à l'armure de 20%. Ce bonus est triplé ",
 			"classe": "Aucun"
 		},
 		{
 			"categorie": "none",
 			"nom": "Bottillons immaculés de la Flamme Blanche",
 			"desc": "Depuis l'ascension au trône du Vélendil par L'Empereur Elrim'ä-ar, un seul ordre est resté le même, il s'agit de l'Ordre de la Flamme Blanche. Regroupant les plus grands chevaliers de tous horizons, ces derniers sont tenu au serment de servir l'ordre, la justice et l'honneur de la chevalerie. Depuis l'époque des Rois Navigateurs, il s'agit également de l'Ordre chargé de la protection du Roi du Vélendil. L'ordre ne prend en revanche pas pars aux intrigues politiques et reste totalement autonome vis-à-vis de la couronne",
-			"effet": "Ensemble-Honneur : Vous gagnez un bonus à l'armure de 20%. Ce bonus est triplé si vous avez au moins 2 pièces de l'ensemble",
+			"effet": "Ensemble-Honneur : Vous gagnez un bonus à l'armure de 20%. Ce bonus est triplé ",
 			"classe": "Aucun"
 		}
 	],
