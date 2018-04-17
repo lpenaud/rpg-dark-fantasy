@@ -18,7 +18,7 @@ def load(strf):
     if not(isinstance(strf, str)):
         raise TypeError("arg must be a str")
 
-    with open(strf, mode='r', encoding="utf-8") as f:
+    with open(strf, mode='r', encoding="utf-8-sig") as f:
         tmp = json.loads(f.read())
 
     jsonData = {}

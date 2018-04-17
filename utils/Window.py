@@ -119,7 +119,9 @@ class LotteryWindow(MyWindow):
         self.changeImage('image-arrow', utils.resolvePath('images/Legendora-Icon-Set-by-Raindropmemory/Legendora-Icon-Set/Icon/Download.png'), width=96, height=96)
         self.threadJobRandom = ThreadJob(self.displayRandom, 0.01, 1)
         self.threadJobRandom.start()
-        self.get_object('box-item-desc-2').set_selectable(True)
+        self.get_object('label-desc-2').set_selectable(True)
+        self.get_object('label-effect-2').set_selectable(True)
+        self.get_object('label-title-2').set_selectable(True)
         load(self.getWindow())
 
     def randomise(self, *args):
